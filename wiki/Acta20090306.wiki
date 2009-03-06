@@ -1,0 +1,8 @@
+#labels poket,reference,referencia,bolsillo,vhdl,iee,1164
+Referencia de bolsillo vhdl
+
+
+ * [http://www.eda.org/rassp/vhdl/guidelines/vhdlqrc.pdf|format=PDF VHDL quick reference card version=1.1]
+ * [http://www.eda.org/rassp/vhdl/guidelines/1164qrc.pdf 1164 packages quick reference card version=1.0]
+ * [http://vega.unitbv.ro/~nicula/asd/resources/vhdl_ref.pdf VHDL quick reference card version=2.2]
+ * [http://vega.unitbv.ro/~nicula/asd/resources/1164pkg.pdf 1164 packages quick reference card version=2.2]
