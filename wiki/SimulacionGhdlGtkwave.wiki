@@ -1,0 +1,7 @@
+#labels vhdl,simulación,ghdl,gtkwave
+Enlaces:
+
+ * http://web.madritel.es/personales4/raragon/vhdl/index.html
+ * http://www.armadeus.com/wiki/index.php?title=How_to_make_a_VHDL_design_in_Ubuntu/Debian
+ * http://es.wikibooks.org/wiki/VHDL_/_Ap%C3%A9ndices_/_Instalaci%C3%B3n_y_uso_de_gHDL
+ * http://fpgalibre.sourceforge.net/simul.html
