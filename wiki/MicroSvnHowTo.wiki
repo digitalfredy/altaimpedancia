@@ -1,3 +1,41 @@
+#labels svn,howto
+= Tutorial =
+
+Instalación:
+{{{
+# apt-get install subversion
+}}}
+
+[http://code.google.com/p/altaimpedancia/source/checkout Copiar el repositorio] (Reemplazar $USER por el usuario):
+{{{
+$ checkout https://altaimpedancia.googlecode.com/svn/trunk/ altaimpedancia/ --username $USER 
+}}}
+
+
+Entramos en el directorio donde estan los archivos del proyecto:
+{{{
+$ cd altaimpedancia
+}}}
+
+ejemplo crear un nuevo archivo y publicarlo:
+{{{
+$ echo "altaimpedancia es electrónica libre" > archivo.txt
+$ svn add archivo.txt 
+$ svn commit
+}}}
+
+ejemplo modificar archivo y publicarlo
+{{{
+$ echo "altaimpedancia es open hardware" >> archivo.txt
+$ svn commit
+}}}
+
+ejemplo borrar archivo
+{{{
+$ svn remove archivo.txt
+}}}
+
 = Enlaces =
 
-[http://svnbook.red-bean.com/ El libro de svn]
+ * [http://svnbook.red-bean.com/ El libro de svn]
+ * [http://www.csoft.net/docs/svn.html.en mini how to] (en ingles)
