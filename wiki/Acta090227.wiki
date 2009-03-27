@@ -1,4 +1,4 @@
-#Segunda reunión.
+Segunda reunión.
 
 Revisamos los slides de la clase de Melgarejo se hicieron algunos ejemplos básicos
 Emacs tiene modo para vhdl
