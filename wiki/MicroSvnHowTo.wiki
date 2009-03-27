@@ -1,5 +1,6 @@
 #labels svn,howto
-= Tutorial =
+= Mini Tutorial de sbuversion =
+Si quiere saber que es subversion por favor revise los enlaces al final.
 
 Instalación:
 {{{
@@ -11,8 +12,7 @@ Instalación:
 $ checkout https://altaimpedancia.googlecode.com/svn/trunk/ altaimpedancia/ --username $USER 
 }}}
 
-
-Entramos en el directorio donde estan los archivos del proyecto:
+Entramos en el directorio donde están los archivos del proyecto:
 {{{
 $ cd altaimpedancia
 }}}
@@ -35,7 +35,11 @@ ejemplo borrar archivo
 $ svn remove archivo.txt
 }}}
 
+Para actualizar el contenido desde el repositorio
+{{{
+$ svn update
+}}}
 = Enlaces =
-
  * [http://svnbook.red-bean.com/ El libro de svn]
+ * [http://www.wikilearning.com/tutorial/tutorial_de_subversion-para_que_sirve_subversion/6411-1 Tutorial de Subversion]
  * [http://www.csoft.net/docs/svn.html.en mini how to] (en ingles)
