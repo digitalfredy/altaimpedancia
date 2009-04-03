@@ -1,4 +1,4 @@
-#labels svn,howto
+#labels svn,howto,developer
 = Mini Tutorial de sbuversion =
 Si quiere saber que es subversion por favor revise los enlaces al final.
 
@@ -9,7 +9,7 @@ Instalación:
 
 [http://code.google.com/p/altaimpedancia/source/checkout Copiar el repositorio] (Reemplazar $USER por el usuario):
 {{{
-$ checkout https://altaimpedancia.googlecode.com/svn/trunk/ altaimpedancia/ --username $USER 
+$ svn checkout https://altaimpedancia.googlecode.com/svn/trunk/ altaimpedancia/ --username $USER 
 }}}
 
 Entramos en el directorio donde están los archivos del proyecto:
