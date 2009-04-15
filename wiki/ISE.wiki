@@ -1,0 +1,1 @@
+Hay que instalar los paquetes libmotif3 y libstc++5 para que funcione el programa de asignación de pines
