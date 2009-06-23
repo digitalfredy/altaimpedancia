@@ -34,15 +34,15 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="2.1648245"
-     inkscape:cx="109.99256"
+     inkscape:cx="-9.8785889"
      inkscape:cy="48.955438"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="742"
+     inkscape:window-width="1143"
      inkscape:window-height="719"
-     inkscape:window-x="-4"
-     inkscape:window-y="6" />
+     inkscape:window-x="4"
+     inkscape:window-y="49" />
   <metadata
      id="metadata3634">
     <rdf:RDF>
@@ -68,7 +68,7 @@
             <dc:title>Fredy Pulido López/ Jorge Ernesto Guevara Cuenca</dc:title>
           </cc:Agent>
         </dc:publisher>
-        <dc:identifier></dc:identifier>
+        <dc:identifier />
         <dc:subject>
           <rdf:Bag>
             <rdf:li>AltaImpedancia</rdf:li>
@@ -85,9 +85,9 @@
             <rdf:li>source</rdf:li>
           </rdf:Bag>
         </dc:subject>
-        <dc:description>El triangu</dc:description>
+        <dc:description>El triangulo es la A y la resistencia es la I :-P</dc:description>
         <cc:license
-           rdf:resource="http://creativecommons.org/licenses/by-nd/3.0/" />
+           rdf:resource="http://creativecommons.org/licenses/by-nd/2.5/co" />
       </cc:Work>
       <cc:License
          rdf:about="http://creativecommons.org/licenses/by-nd/3.0/">
