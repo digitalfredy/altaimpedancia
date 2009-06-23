@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="100.25915"
+   height="86.826965"
+   id="svg3629"
+   sodipodi:version="0.32"
+   inkscape:version="0.46"
+   version="1.0"
+   sodipodi:docname="altaimpedancia.svg"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape">
+  <defs
+     id="defs3631">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       id="perspective3637" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="2.1648245"
+     inkscape:cx="109.99256"
+     inkscape:cy="48.955438"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="742"
+     inkscape:window-height="719"
+     inkscape:window-x="-4"
+     inkscape:window-y="6" />
+  <metadata
+     id="metadata3634">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>Simbolo AltaImpedancia</dc:title>
+        <dc:date>2009 06 22</dc:date>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Fredy Pulido López/ Jorge Ernesto Guevara Cuenca</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:rights>
+          <cc:Agent>
+            <dc:title>Fredy Pulido López/ Jorge Ernesto Guevara Cuenca</dc:title>
+          </cc:Agent>
+        </dc:rights>
+        <dc:publisher>
+          <cc:Agent>
+            <dc:title>Fredy Pulido López/ Jorge Ernesto Guevara Cuenca</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:identifier></dc:identifier>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>AltaImpedancia</rdf:li>
+            <rdf:li>alta</rdf:li>
+            <rdf:li>impedancia</rdf:li>
+            <rdf:li>electrónica</rdf:li>
+            <rdf:li>open</rdf:li>
+            <rdf:li>free</rdf:li>
+            <rdf:li>hardware</rdf:li>
+            <rdf:li>desing</rdf:li>
+            <rdf:li>software</rdf:li>
+            <rdf:li>libre</rdf:li>
+            <rdf:li>abierto</rdf:li>
+            <rdf:li>source</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+        <dc:description>El triangu</dc:description>
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/by-nd/3.0/" />
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/licenses/by-nd/3.0/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Notice" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Attribution" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-296.60396,-136.94456)">
+    <path
+       sodipodi:type="star"
+       style="fill:#ff0000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.77165353;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path2573"
+       sodipodi:sides="3"
+       sodipodi:cx="94.180107"
+       sodipodi:cy="40.174717"
+       sodipodi:r1="58.615593"
+       sodipodi:r2="29.307796"
+       sodipodi:arg1="1.5707963"
+       sodipodi:arg2="2.6179939"
+       inkscape:flatsided="false"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="M 94.180109,98.79031 L 68.798811,54.828615 L 43.417514,10.866922 L 94.180108,10.86692 L 144.9427,10.866919 L 119.5614,54.828616 L 94.180109,98.79031 z"
+       transform="matrix(0.9875298,0,0,-0.9875298,253.72787,234.50293)" />
+    <path
+       sodipodi:type="star"
+       style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:3.45729542;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path2399"
+       sodipodi:sides="3"
+       sodipodi:cx="94.180107"
+       sodipodi:cy="40.174717"
+       sodipodi:r1="58.615593"
+       sodipodi:r2="29.307796"
+       sodipodi:arg1="1.5707963"
+       sodipodi:arg2="2.6179939"
+       inkscape:flatsided="false"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="M 94.180109,98.79031 L 68.798811,54.828615 L 43.417514,10.866922 L 94.180108,10.86692 L 144.9427,10.866919 L 119.5614,54.828616 L 94.180109,98.79031 z"
+       transform="matrix(0.8677303,0,0,-0.8677303,265.0106,229.8609)" />
+    <g
+       id="g3183"
+       transform="matrix(1,0,0,-1,22.449907,358.50764)">
+      <path
+         sodipodi:nodetypes="cc"
+         id="path22316"
+         d="M 324.08189,138.65798 L 324.08193,145.90802"
+         style="fill:none;fill-opacity:0.75;fill-rule:evenodd;stroke:#ffffff;stroke-width:3.62503219;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;display:inline" />
+      <path
+         sodipodi:nodetypes="cc"
+         id="path22318"
+         d="M 324.08193,189.40837 L 324.08189,196.65844"
+         style="fill:none;fill-opacity:0.75;fill-rule:evenodd;stroke:#ffffff;stroke-width:3.62503219;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;display:inline" />
+      <path
+         sodipodi:nodetypes="cccccccc"
+         id="path22320"
+         d="M 324.28365,189.40837 L 331.53368,185.78335 L 317.03357,178.53329 L 331.53368,171.28322 L 317.03357,164.03315 L 331.53368,156.78311 L 317.03357,149.53304 L 324.28365,145.90802"
+         style="fill:none;fill-opacity:0.75;fill-rule:evenodd;stroke:#ffffff;stroke-width:3.62503219;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    </g>
+  </g>
+</svg>
