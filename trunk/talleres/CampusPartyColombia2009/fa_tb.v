@@ -1,26 +1,19 @@
 module TestBench;
-	reg   B1, B2, Cin;
-	wire  S, Cout;
+   reg [2:0] Input;
+   wire      S, Cout;
 
-	FA FA_1(B1, B2, Cin, S, Cout);
+	FA FA_1(Input[1], Input[2], Input[0], S, Cout);
 
 	initial begin
-		B1 = 0;
-		B2 = 0;
-		Cin = 0;
+		Input = 000;
 
-		#1 B1 <= 0;
-		   B2 <= 0;
-		   Cin <= 1;
-		#1 B1 <= 0;
-		   B2 <= 1;
-		   Cin = 0;
-		#1 B1 <= 0;
-		   B2 <= 1;
-		   Cin = 1;
-		#1 B1 <= 1;
-		   B2 <= 0;
-		   Cin <= 0;
+
+		#1 Input[1] <= 1;
+		   Input[2] <= 0;
+		   Input[0] <= 0;
+	        #1 Input[1] <= 0;
+		   Input[2] <= 0;
+		   Input[0] <= 1;
 	end
 
 	initial begin
