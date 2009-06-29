@@ -2,24 +2,23 @@ module TestBench;
    reg [2:0] Input;
    wire      S, Cout;
 
-	FA FA_1(Input[1], Input[2], Input[0], S, Cout);
+   FA FA_Instancia1(Input[1], Input[2], Input[0], S, Cout);
 
-	initial begin
-		Input = 000;
+   initial begin
+      Input = 000;
+   end
 
+   initial begin
+      repeat (8) begin
+	 #1 Input <= Input+1;
+      end
+      
+   end
 
-		#1 Input <= 101;
-	        #1 Input[1] <= 0;
-		   Input[2] <= 1;
-		   Input[0] <= 0;
-	   #1 Input <= 000;
-	   
-	end
-
-	initial begin
-		$dumpfile ("fa.vcd");
-		$dumpvars;
-	end
+   initial begin
+      $dumpfile ("fa.vcd");
+      $dumpvars;
+   end
 
 endmodule // TestBench
 
