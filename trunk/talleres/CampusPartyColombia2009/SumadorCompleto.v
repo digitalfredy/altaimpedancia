@@ -1,4 +1,4 @@
-module FA (Bit1, Bit2, CarryIn, Sum, CarryOut); //Descripcion de bloque FullAdder con 5 conexiones
+module SumadorCompleto (Bit1, Bit2, CarryIn, Sum, CarryOut); //Descripcion de bloque FullAdder con 5 conexiones
    //este bloque permite sumar 2 bit con acarreo de entrada y salida para uso en cascada
 	input Bit1, Bit2, CarryIn; //Bit1 y Bit2 son los sumandos, CarryIn el acarreo de entrada
 	output Sum, CarryOut;      //Sum es la suma de los bits y CarryOut el acarreo de salida
@@ -11,7 +11,7 @@ module FA (Bit1, Bit2, CarryIn, Sum, CarryOut); //Descripcion de bloque FullAdde
 	assign CarryOut = W1 | W3;  //Compuerta O1, entradas: W1 y W3, salida: CarryOut
 	assign Sum = CarryIn ^ W2;  //Compuerta X2, entradas: CarryIn y W2, salida: Sum
 	
-endmodule // Fin de la descripción del bloque FullAdder
+endmodule // Fin de la descripción del bloque SumadorCompleto
 
 /*NOTA:
  Notacion didactica para compuertas:

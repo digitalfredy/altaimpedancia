@@ -1,0 +1,106 @@
+$date
+	Wed Jul  1 10:05:23 2009
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module Laboratorio $end
+$var wire 1 ! Salida $end
+$var reg 4 " Entrada[3:0] $end
+$scope module InstanciaExtArit $end
+$var wire 1 # BitEntrada $end
+$var wire 1 ! BitSalida $end
+$var wire 1 $ Cable1 $end
+$var wire 1 % Cable2 $end
+$var wire 1 & ControlModo $end
+$var wire 2 ' SelectorOperacion[1:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 '
+0&
+0%
+0$
+0#
+b0 "
+0!
+$end
+#1
+b1 "
+1#
+#2
+1!
+1$
+1&
+b10 "
+0#
+#3
+0$
+1%
+b11 "
+1#
+#4
+0!
+0%
+b1 '
+0&
+b100 "
+0#
+#5
+b101 "
+1#
+#6
+1&
+b110 "
+0#
+#7
+1!
+1%
+b111 "
+1#
+#8
+0!
+0%
+b10 '
+0&
+b1000 "
+0#
+#9
+b1001 "
+1#
+#10
+1!
+1$
+1&
+b1010 "
+0#
+#11
+0!
+0$
+b1011 "
+1#
+#12
+b11 '
+0&
+b1100 "
+0#
+#13
+b1101 "
+1#
+#14
+1&
+b1110 "
+0#
+#15
+b1111 "
+1#
+#16
+b0 '
+0&
+b0 "
+0#
