@@ -1,0 +1,19 @@
+#summary One-sentence summary of this page. El prop√sito de esta p√gina es enumerar la lista de variables que afectan la libertad del hardware.
+
+= Introduction =
+* Herramientas usadas para su dise√o
+* Portabilidad e ineteroperabilidad de los formatos
+* Formatos nativos de las herramientas
+* Formato de publicaci√n de archivos
+* Herramientas para editar o visualizar archivos publicados
+* Disponibilidad de Documentaci√≥n
+* Cuestiones legales (licencias,patentes...)
+Add your content here.
+
+
+= Details =
+
+Add your content here.  Format your content with:
+  * Text in *bold* or _italic_
+  * Headings, paragraphs, and lists
+  * Automatic links to other wiki pages
