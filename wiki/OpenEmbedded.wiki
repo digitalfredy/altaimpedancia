@@ -1,0 +1,22 @@
+#OpenEmbedded
+
+= 1 =
+{{{
+# echo deb http://oss.leggewie.org/oe/deb ./ >> /etc/apt/sources.list
+# apt-get update
+# apt-get install openembedded-sonkei
+oe-setup-sonkei stable
+cd ~/oe
+}}}
+==Referencias==
+  * http://blog.leggewie.org/?p=39
+  * http://wiki.openembedded.net/index.php/Getting_started
+  * http://docs.openembedded.org/usermanual/usermanual.html
+= 2 =
+{{{
+wget http://wiki.openembedded.net/snapshots/historical/OE-this-is-for-mtn-0.37.mtn.bz2
+bunzip2 OE-this-is-for-mtn-0.37.mtn.bz2
+}}}
+==Referencias==
+  * http://wiki.emqbit.com/xsvnwiki-discuss/openembedded
+  * http://biestado.kraptor.com/2006/03/15/tutorial-de-openembedded-2
