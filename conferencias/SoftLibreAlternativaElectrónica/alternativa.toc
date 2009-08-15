@@ -1,0 +1,16 @@
+\beamer@endinputifotherversion {3.07pt}
+\select@language {spanish}
+\beamer@sectionintoc {2}{Como se hace el hardware}{5}{0}{1}
+\beamer@subsectionintoc {2}{1}{Lo que se necesita}{5}{0}{1}
+\beamer@subsectionintoc {2}{2}{Como se hace}{27}{0}{1}
+\beamer@subsectionintoc {2}{3}{Lo que se obtiene}{29}{0}{1}
+\beamer@sectionintoc {3}{Software Libre disponible}{39}{0}{2}
+\beamer@subsectionintoc {3}{1}{gEDA}{39}{0}{2}
+\beamer@subsectionintoc {3}{2}{Simuladores de circuitos}{80}{0}{2}
+\beamer@subsectionintoc {3}{3}{Herramientas para el dise\IeC {\~n}o de circuitos impresos}{84}{0}{2}
+\beamer@subsectionintoc {3}{4}{Simuladores de circuitos digitales}{87}{0}{2}
+\beamer@subsectionintoc {3}{5}{Software para desarrollo con microcontroladores}{90}{0}{2}
+\beamer@subsectionintoc {3}{6}{Herramientas para dise\IeC {\~n}o VLSI}{119}{0}{2}
+\beamer@subsectionintoc {3}{7}{Herramientas para desarrollo con HDLs}{128}{0}{2}
+\beamer@subsectionintoc {3}{8}{Herramienta para documentar}{137}{0}{2}
+\beamer@sectionintoc {4}{Proyectos de Open Source Hardware}{145}{0}{3}
