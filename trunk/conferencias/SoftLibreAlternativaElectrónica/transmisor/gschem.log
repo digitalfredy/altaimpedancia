@@ -1,0 +1,86 @@
+gEDA/gschem version 1.4.3.20081231
+gEDA/gschem comes with ABSOLUTELY NO WARRANTY; see COPYING for more details.
+This is free software, and you are welcome to redistribute it under certain
+conditions; please see the COPYING file for more details.
+
+Read system-gafrc file [/etc/gEDA/system-gafrc]
+Read ~/.gEDA/gafrc file [/home/jegc/.gEDA/gafrc]
+Did not find optional local gafrc file [/home/jegc/AltaImpedancia/conferencias/SoftLibreAlternativaElectrónica/transmisor/gafrc]
+Read system-gschemrc file [/etc/gEDA/system-gschemrc]
+Read ~/.gEDA/gschemrc file [/home/jegc/.gEDA/gschemrc]
+Did not find optional local gschemrc file [/home/jegc/AltaImpedancia/conferencias/SoftLibreAlternativaElectrónica/transmisor/gschemrc]
+Read init scm file [/usr/share/gEDA/scheme/gschem.scm]
+Loading schematic [/home/jegc/AltaImpedancia/conferencias/SoftLibreAlternativaElectrónica/transmisor/metropolis_transmitter.sch]
+Did not find specified gafrc file [/home/jegc/AltaImpedancia/conferencias/SoftLibreAlternativaElectrónica/transmisor/gafrc]
+WARNING: Symbol version mismatch on refdes C3 (capacitor-1.sym):
+	Symbol in library is newer than instantiated symbol
+	Minor version change (file 0.100, instantiated 0.000)
+WARNING: Symbol version mismatch on refdes LED1 (led-1.sym):
+	Symbol in library is newer than instantiated symbol
+	Minor version change (file 0.100, instantiated 0.000)
+WARNING: Symbol version mismatch on refdes C8 (capacitor-1.sym):
+	Symbol in library is newer than instantiated symbol
+	Minor version change (file 0.100, instantiated 0.000)
+WARNING: Symbol version mismatch on refdes C6 (capacitor-1.sym):
+	Symbol in library is newer than instantiated symbol
+	Minor version change (file 0.100, instantiated 0.000)
+WARNING: Symbol version mismatch on refdes C9 (capacitor-2.sym):
+	Symbol in library is newer than instantiated symbol
+	Minor version change (file 0.100, instantiated 0.000)
+WARNING: Symbol version mismatch on refdes C11 (capacitor-1.sym):
+	Symbol in library is newer than instantiated symbol
+	Minor version change (file 0.100, instantiated 0.000)
+WARNING: Symbol version mismatch on refdes C17 (capacitor-1.sym):
+	Symbol in library is newer than instantiated symbol
+	Minor version change (file 0.100, instantiated 0.000)
+WARNING: Symbol version mismatch on refdes C16 (capacitor-1.sym):
+	Symbol in library is newer than instantiated symbol
+	Minor version change (file 0.100, instantiated 0.000)
+WARNING: Symbol version mismatch on refdes C5 (capacitor-1.sym):
+	Symbol in library is newer than instantiated symbol
+	Minor version change (file 0.100, instantiated 0.000)
+WARNING: Symbol version mismatch on refdes L1 (coil-2.sym):
+	Symbol in library is newer than instantiated symbol
+	Minor version change (file 0.100, instantiated 0.000)
+WARNING: Symbol version mismatch on refdes C2 (capacitor-1.sym):
+	Symbol in library is newer than instantiated symbol
+	Minor version change (file 0.100, instantiated 0.000)
+WARNING: Symbol version mismatch on refdes C13 (capacitor-1.sym):
+	Symbol in library is newer than instantiated symbol
+	Minor version change (file 0.100, instantiated 0.000)
+WARNING: Symbol version mismatch on refdes C1 (capacitor-1.sym):
+	Symbol in library is newer than instantiated symbol
+	Minor version change (file 0.100, instantiated 0.000)
+WARNING: Symbol version mismatch on refdes C7 (capacitor-1.sym):
+	Symbol in library is newer than instantiated symbol
+	Minor version change (file 0.100, instantiated 0.000)
+WARNING: Symbol version mismatch on refdes C4 (capacitor-1.sym):
+	Symbol in library is newer than instantiated symbol
+	Minor version change (file 0.100, instantiated 0.000)
+WARNING: Symbol version mismatch on refdes C14 (capacitor-1.sym):
+	Symbol in library is newer than instantiated symbol
+	Minor version change (file 0.100, instantiated 0.000)
+WARNING: Symbol version mismatch on refdes C18 (capacitor-2.sym):
+	Symbol in library is newer than instantiated symbol
+	Minor version change (file 0.100, instantiated 0.000)
+WARNING: Symbol version mismatch on refdes C15 (capacitor-1.sym):
+	Symbol in library is newer than instantiated symbol
+	Minor version change (file 0.100, instantiated 0.000)
+WARNING: Symbol version mismatch on refdes C12 (capacitor-1.sym):
+	Symbol in library is newer than instantiated symbol
+	Minor version change (file 0.100, instantiated 0.000)
+WARNING: Symbol version mismatch on refdes C10 (capacitor-1.sym):
+	Symbol in library is newer than instantiated symbol
+	Minor version change (file 0.100, instantiated 0.000)
+Component [2n3904-2.sym] was not found in the component library
+Component [2n3904-2.sym] was not found in the component library
+Component [rim-1.sym] was not found in the component library
+Component [rim-1.sym] was not found in the component library
+Component [rim-1.sym] was not found in the component library
+Component [rim-1.sym] was not found in the component library
+Component [rim-1.sym] was not found in the component library
+Component [rim-1.sym] was not found in the component library
+Component [rim-1.sym] was not found in the component library
+Component [rim-1.sym] was not found in the component library
+Component [rim-1.sym] was not found in the component library
+Component [rim-1.sym] was not found in the component library
