@@ -23,6 +23,7 @@ Los recursos existentes de momento son el repositorio y el wiki de code.google.c
 == Repositorio ===
 Por cada proyecto se crea una carpeta con el nombre corto del proyecto que debe  contener las siguientes carpetas:
  * ABOUT
+  * README // archivo de texto que como mínimo contiene la url de la pág wiki del proyecto
  * misc
  * code
  * doc
