@@ -1,9 +1,6 @@
 #summary Liberando digitales II UD
 #labels verilog,latex,linux
 
-||Nombre largo: Liberando digitales II UD||
-||Nombre corto: d2udl||
-
 = Objetivo General =
 Generar documentación libre en idioma español (licencia CC-BYSA) y descripciones de hardware libres en formato Verilog (licencia GPL) que puedan ser usadas como Objetos Virtuales de Aprendizaje (OVA's) para facilitar el desarrollo de la asignatura digitales II (Universidad Distrital Francisco José de Caldas - Bogotá/Colombia) usando el lenguaje de descripción de hardware Verilog y herramientas Software Libre (OpenSource).
 
