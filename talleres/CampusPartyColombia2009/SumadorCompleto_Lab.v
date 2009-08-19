@@ -16,6 +16,7 @@ module Laboratorio;
    end
 
    initial begin
+      #5
       $dumpfile ("SumadorCompleto.vcd");
       $dumpvars;
    end
