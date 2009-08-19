@@ -1,7 +1,7 @@
-#summary Digitales II UD, libre
+#summary Liberando digitales II UD
 #labels verilog,latex,linux
 
-||Nombre largo: *Digitales II UD, libre*||
+||Nombre largo: Liberando digitales II UD||
 ||Nombre corto: d2udl||
 
 = Objetivo General =
