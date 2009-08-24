@@ -62,16 +62,16 @@ El plan de trabajo se desarrollará usando los recursos proporcionados por altai
  * Tomar notas de clase y publicarlas (opcional)
 
 = Entregalbes =
-== Entregables Teoria ==
+== Teoria ==
 Todos los entregables serán publicados en el repositorio de altaimpedancia.org con licencias GPL y CC-BYSA.
  * Descripciones en Verilog de lecciones 3, 4 y 6.
  * Diapositivas lecciones 3 y 4 con enfasis en Verilog en vez de VHDL
  * Descripción en Verilog de microprocesador CISC del profesor Muños
  * Material liberado publicado organizadamente en el repositorio
  * Ejercicios de clase y tareas desarrollados usando Verilog (opcional)
-== Entregables laboratorio ==
+== Laboratorio ==
  * Tutoriales de uso de Software Libre (pendiente complementar esta sección)
-== Entrgable IEEE ==
+== IEEE ==
  * Artículo sobre verilog y Software Libre escrito en Latex
 
 = Noticias =
