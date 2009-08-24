@@ -30,15 +30,11 @@ _"La democratización del conocimiento para garantizar, a nombre de la sociedad 
 _Incentivar la creación y liberación de diseños de hardware que puedan convertirse o ser parte de dispositivos de hardware de fuente abierta._
 
 = Justificaciones Específicas =
- * La asignatura digitales II se convertirá en Análisis y Diseño de Microprocesadores, SUN Microsistems ha liberado bajo licencia GPL (!OpenSource Hardware) la descripción de hardware escrita en lenguaje verilog del microprocesador Ultra SPAR* Desarrollar el contenido de la asignatura usando Verilog HDL.
- * C T2 ahora conocida con el nombre de OpenSPARC, el primer y único procesador RISC multihilo de 64bit con 8 nucleos que es totalmente !OpenSource Hardware y que está acompañado de documentación y herramientas que facilitan la investigación y desarrollo sobre el mismo, gracias a trabajo de voluntarios independientes y de acuerdos de colaboración como el existente entre SUN y Xilinix existen variables más sencillas de este procesador que son faciles de sintetizar en tecnología FPGA usando kits de desarrollo que ya son ofrecidos en el mercado y principalemte por las universidades parte de "OpenSPARC University Program"
- *
- *
- *
-  * Deseo iniciar una investigación en este área proyectandome a la tesis de grado
-  * Para poder usar al máximo Software Libre
-  * Para facilitar el aprendizaje
-
+== Uso del lenguaje Verilog ==
+ * la asignatura digitales II se convertirá en Análisis y Diseño de Microprocesadores, SUN Microsistems ha liberado bajo licencia GPL (!OpenSource Hardware) la descripción de hardware escrita en lenguaje Verilog del microprocesador Ultra SPARC T2 ahora conocida con el nombre de OpenSPARC, el primer y único procesador RISC multihilo de 64bit con 8 nucleos que es totalmente !OpenSource Hardware y que está acompañado de documentación y herramientas que facilitan la investigación y desarrollo sobre el mismo, gracias a trabajo de voluntarios independientes y de acuerdos de colaboración como el existente entre SUN y Xilinix existen variables más sencillas de este procesador que son faciles de sintetizar en tecnología FPGA usando kits de desarrollo que ya son ofrecidos en el mercado y principalmente por las universidades parte de "OpenSPARC University Program"
+ * Deseo iniciar una investigación en este área proyectandome a la tesis de grado
+ * Para poder usar al máximo Software Libre
+ * Para facilitar el aprendizaje
  * Por que en Software Libre hay un mejor soporte para este lenguaje
  * Por que el lenguaje Verilog es más familiar a los vistos en las asignaturas de programación
 
@@ -77,9 +73,7 @@ las obras generadas y liberadas en el desarrollo del proyecto estarán disponibl
  * Por que en Software Libre hay un mejor soporte para este lenguaje
  * Por que el lenguaje Verilog es más familiar a los vistos en las asignaturas de programaciónitorio de altaimpedancia.org y podrán ser accedidas, copiadas y usadas libremente por cualquier persona o institución siempre que se cumplan los términos del licenciamiento.
 
-Desarrollar este proyecto como un plan de trabajo alternativo para la asignatura digitales II que haga sinergia entre los siguientes espacios u organizaciones con los cuales estoy involucrado: el SIG altaimpedancia.org, el capítulo Circuits and Systems de la rama estudiantil IEEE UD y la asignatura digitales II del proyecto curricular Ingeniería Electrónica de la UD , ###y el LAMIC### que permita usar los recursos físocos y humanos de los mencionados para
-
-tres lecciones 3 y 4 + la de maquinas de estado
+ que haga sinergia entre los siguientes espacios u organizaciones con los cuales estoy involucrado: el SIG altaimpedancia.org, el capítulo Circuits and Systems de la rama estudiantil IEEE UD y la asignatura digitales II del proyecto curricular Ingeniería Electrónica de la UD , ###y el LAMIC### que permita usar los recursos físocos y humanos de los mencionados para
 
 
 = Noticias =
