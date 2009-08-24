@@ -2,7 +2,7 @@
 #labels verilog,latex,linux
 
 = Objetivo General =
-Generar documentación libre (licencia CC-BYSA y descripciones de hardware libres (licencia GPL) que puedan ser usadas como Objetos Virtuales de Aprendizaje (OVA's) para facilitar el desarrollo de la asignatura digitales II usando el lenguaje de descripción de hardware Verilog y herramientas Software Libre (OpenSource).
+Generar documentación libre (licencia CC-BYSA y descripciones de hardware libres (licencia GPL) que puedan ser usadas como Objetos Virtuales de Aprendizaje (OVA's) para facilitar el desarrollo de la asignatura digitales II usando el lenguaje de descripción de hardware Verilog y herramientas Software Libre (!OpenSource).
 
 = Objetivos Especificos =
 * Desarrollar el contenido de la asignatura relacionado con lenguajes de descripción de hardware usando herramientas de Software Libre.
