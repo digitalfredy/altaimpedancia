@@ -32,7 +32,7 @@ _Incentivar la creación y liberación de diseños de hardware que puedan conver
 = Justificaciones Específicas =
 == Proyecto ==
  * Convergencia de intereses en asignatura digitales II, capítulo circuits and systems IEEE UD y altaimpedancia.org
- * En la investigación preliminar no se encontró material similar libre en español.
+ * No se conoce material libre en español con las características del que se espera generar y liberar.
 == Uso del lenguaje Verilog ==
  * La asignatura digitales II se convertirá en Análisis y Diseño de Microprocesadores, SUN Microsistems ha liberado bajo licencia GPL (!OpenSource Hardware) la descripción de hardware escrita en lenguaje Verilog del microprocesador Ultra SPARC T2 ahora conocida con el nombre de OpenSPARC, el primer y único procesador RISC multihilo de 64bit con 8 nucleos que es totalmente !OpenSource Hardware y que está acompañado de documentación y herramientas que facilitan la investigación y desarrollo sobre el mismo, gracias a trabajo de voluntarios independientes y de acuerdos de colaboración como el existente entre SUN y Xilinix existen variables más sencillas de este procesador que son faciles de sintetizar en tecnología FPGA usando kits de desarrollo que ya son ofrecidos en el mercado y principalmente por las universidades parte de "OpenSPARC University Program"
  * Hay grandes posibilidades para desarrollar trabajos de grado relacionados con el microprocesador OpenSPARC.
