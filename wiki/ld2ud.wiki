@@ -17,12 +17,17 @@ Generar documentación libre (licencia CC-BYSA) y descripciones de hardware libr
  * Usar como base el diseño del procesador CISC liberado por el profesor Muñoz para describirlo y publicarlo en lenguaje Verilog.
  * Generar documentación de instalación y uso de herramientas de Software Libre relacionadas con Verilog y FPGA's para sistema operativo Linux
  * Publicar notas y ejercicios de clase
+ * Publicar desarrollo laboratorios
  * Desarrollar este proyecto como alternativa de trabajo para la asignatura digitlaes II
  * Escribir un artículo relacionado con Verilog y Software Libre que sea publicado por IEEE
 = Justificación General =
-La misisón de la Universidad Distrital Francisco Jose de Caldas expresada a continuación:
+La misisón de la Universidad Distrital Francisco Jose de Caldas y el objetivo general del SIG altaimpedancia.org
 
+== Misión Universidad Distrital Francisco José de Caldas ==
 _"La democratización del conocimiento para garantizar, a nombre de la sociedad y con participación del Estado, el derecho social a una educación superior con criterios de excelencia, equidad y competitividad mediante la generación y difusión de saberes y conocimientos, con autonomía y vocación hacia el desarrollo sociocultural y contribuir al progreso de la ciudad región de Bogotá y el país. (Plan Estratégico de Desarrollo 2007 - 2016)"_
+
+== Objetivo General SIG altaimpedancia.org ==
+_Incentivar la creación y liberación de diseños de hardware que puedan convertirse o ser parte de dispositivos de hardware de fuente abierta._
 
 = Justificaciones Específicas =
  * La asignatura digitales II se convertirá en Análisis y Diseño de Microprocesadores, SUN Microsistems ha liberado bajo licencia GPL (!OpenSource Hardware) la descripción de hardware escrita en lenguaje verilog del microprocesador Ultra SPAR* Desarrollar el contenido de la asignatura usando Verilog HDL.
