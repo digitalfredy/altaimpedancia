@@ -30,13 +30,18 @@ _"La democratización del conocimiento para garantizar, a nombre de la sociedad 
 _Incentivar la creación y liberación de diseños de hardware que puedan convertirse o ser parte de dispositivos de hardware de fuente abierta._
 
 = Justificaciones Específicas =
+== Proyecto ==
+ * Convergencia de intereses en asignatura digitales II, capítulo circuits and systems IEEE UD y altaimpedancia.org
+ * En la investigación preliminar no se encontró material similar libre en español.
 == Uso del lenguaje Verilog ==
- * la asignatura digitales II se convertirá en Análisis y Diseño de Microprocesadores, SUN Microsistems ha liberado bajo licencia GPL (!OpenSource Hardware) la descripción de hardware escrita en lenguaje Verilog del microprocesador Ultra SPARC T2 ahora conocida con el nombre de OpenSPARC, el primer y único procesador RISC multihilo de 64bit con 8 nucleos que es totalmente !OpenSource Hardware y que está acompañado de documentación y herramientas que facilitan la investigación y desarrollo sobre el mismo, gracias a trabajo de voluntarios independientes y de acuerdos de colaboración como el existente entre SUN y Xilinix existen variables más sencillas de este procesador que son faciles de sintetizar en tecnología FPGA usando kits de desarrollo que ya son ofrecidos en el mercado y principalmente por las universidades parte de "OpenSPARC University Program"
- * Deseo iniciar una investigación en este área proyectandome a la tesis de grado
- * Para poder usar al máximo Software Libre
- * Para facilitar el aprendizaje
- * Por que en Software Libre hay un mejor soporte para este lenguaje
- * Por que el lenguaje Verilog es más familiar a los vistos en las asignaturas de programación
+ * La asignatura digitales II se convertirá en Análisis y Diseño de Microprocesadores, SUN Microsistems ha liberado bajo licencia GPL (!OpenSource Hardware) la descripción de hardware escrita en lenguaje Verilog del microprocesador Ultra SPARC T2 ahora conocida con el nombre de OpenSPARC, el primer y único procesador RISC multihilo de 64bit con 8 nucleos que es totalmente !OpenSource Hardware y que está acompañado de documentación y herramientas que facilitan la investigación y desarrollo sobre el mismo, gracias a trabajo de voluntarios independientes y de acuerdos de colaboración como el existente entre SUN y Xilinix existen variables más sencillas de este procesador que son faciles de sintetizar en tecnología FPGA usando kits de desarrollo que ya son ofrecidos en el mercado y principalmente por las universidades parte de "OpenSPARC University Program"
+ * Hay grandes posibilidades para desarrollar trabajos de grado relacionados con el microprocesador OpenSPARC.
+ * Es el lenguaje de descripción de hardware que tiene mayor soporte y popularidad entre la comunidad Software Libre
+ * Su sintaxis es menos compleja que la de VHDL y facilita un aprendizaje rápido de la misma
+== Uso Software Libre ==
+ * El estudio y modificación del software en ambientes académicos es algo deseable
+ * Los estudiantes, profesores y grupos de investigación podrán modificar y mejorar el software o crear software nuevo a partir del existente
+ * No impone restricciones de uso permitiendo el desarrollo de las actividades académicas y futuro desarrollo de actividades empresariales sin incurrir en elevados costos
 
 = Plan de trabajo =
  * Investigación acerca de descripción de hardware con lenguaje Verilog.
@@ -55,27 +60,20 @@ _Incentivar la creación y liberación de diseños de hardware que puedan conver
  * Describir en Verilog procesador CISC
  * Tomar notas de clase y publicarlas (opcional)
 
-= Entregables Teoria =
+= Entregalbes =
+== Entregables Teoria ==
 Todos los entregables serán publicados en el repositorio de altaimpedancia.org con licencias GPL y CC-BYSA.
  * Descripciones en Verilog de lecciones 3, 4 y 6.
  * Diapositivas lecciones 3 y 4 con enfasis en Verilog en vez de VHDL
  * Descripción en Verilog de microprocesador CISC del profesor Muños
  * Material liberado publicado organizadamente en el repositorio
  * Ejercicios de clase y tareas desarrollados usando Verilog (opcional)
-
-
-= misc =
-NOTA: Tal vez primero hacer todo el codigo ... y luego al final las presentaciones en LaTeX como final, eso permite concentrarse en lo importante y al final o se hace o se hace por que es el entregable
-
-en formato LaTEX (preferiblemente)
-
-las obras generadas y liberadas en el desarrollo del proyecto estarán disponibles públicamente en Internet en el repos
- * Por que en Software Libre hay un mejor soporte para este lenguaje
- * Por que el lenguaje Verilog es más familiar a los vistos en las asignaturas de programaciónitorio de altaimpedancia.org y podrán ser accedidas, copiadas y usadas libremente por cualquier persona o institución siempre que se cumplan los términos del licenciamiento.
-
- que haga sinergia entre los siguientes espacios u organizaciones con los cuales estoy involucrado: el SIG altaimpedancia.org, el capítulo Circuits and Systems de la rama estudiantil IEEE UD y la asignatura digitales II del proyecto curricular Ingeniería Electrónica de la UD , ###y el LAMIC### que permita usar los recursos físocos y humanos de los mencionados para
-
+== Entregables laboratorio ==
+ * Tutoriales de uso de Software Libre (pendiente complementar esta sección)
+== Entrgable IEEE ==
+ * Artículo sobre verilog y Software Libre escrito en Latex
 
 = Noticias =
+ * 20090824: RC de la propuesta del proyecto
  * 20090819: En esta página inicialmente se hará el borrador del documento del proyecto.
  * 20090819: Creada esta página wiki y carpeta del proyecto en el repositorio siguiendo [PropuestaGeneralTrabajo].
