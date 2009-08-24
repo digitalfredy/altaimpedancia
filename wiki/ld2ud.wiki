@@ -44,6 +44,7 @@ _Incentivar la creación y liberación de diseños de hardware que puedan conver
  * No impone restricciones de uso permitiendo el desarrollo de las actividades académicas y futuro desarrollo de actividades empresariales sin incurrir en elevados costos
 
 = Plan de trabajo =
+El plan de trabajo se desarrollará usando los recursos proporcionados por altaimpedancia.org, el LAMIC de la Universidad Distrital y el capítulo circuits and sistems IEEE UD.
  * Investigación acerca de descripción de hardware con lenguaje Verilog.
  * Eleción de herramientas de Software Libre para sistema operativo Linux relacionadas con lenguaje Verilog y FPGA's.
  * Inventario de manterial digitales II 2009-1
