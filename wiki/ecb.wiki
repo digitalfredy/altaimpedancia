@@ -1,0 +1,24 @@
+#EmQbit Computer Board
+
+= Objetivo General =
+Poner a funcionar y usar las boards
+
+= Objetivos específicos =
+ * Poner a funcionar V1
+
+= Justificación General =
+
+= Justificaciones específicas =
+
+= Entregables =
+ * Tutorial de como poner a funcionar V1
+ * V1 funcionando
+
+= Desarrollo =
+ * Primer inteto: preparar FS en una SD y ponerselo a la board para ver si funciona
+  * Listo Zea se conecto por minicom y arranco u-boot
+ * Ahora yo voy a preparar el sistema de archivos siguiendo http://emqbit.com/deboostrap-debian
+  * el repositorio de la doc (http://ftp.at.debian.org/debian) no funciona, he usado este: http://ftp.uk.debian.org/debian
+
+== Buscando Info ==
+* Página de la board
