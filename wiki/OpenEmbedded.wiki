@@ -1,5 +1,40 @@
 #OpenEmbedded
-
+= 0 =
+Directorio de trabajo
+{{{
+$ mkdir /home/user/oe
+$ echo export OEBASE=/home/user/oe >> /home/user/.bashrc
+$ mkdir -p $OEBASE/build/conf
+$ cd $OEBASE
+}}}
+Instalar bitbake y openembedded
+{{{
+$ wget http://download.berlios.de/bitbake/bitbake-1.8.12.tar.gz
+$ tar -xvzf bitbake-1.8.12.tar.gz
+$ mv bitbake-1.8.12 bitbake
+$ git clone git://git.openembedded.org/openembedded
+$ mv openembedded.org openembedded
+}}}
+Configuración de openembedded
+{{{
+$ echo export PATH=$OEBASE/bitbake/bin:$PATH >> /home/user/.bashrc
+$ echo export BBPATH=$OEBASE/build:$OEBASE/openembedded >> /home/user/.bashrc
+$ echo export BB_ENV_EXTRAWHITE="OEBASE" >> /home/user/.bashrc
+}}}
+Configuración local
+{{{
+$ cp openembedded/conf/local.conf.sample build/conf/local.conf
+}}}
+Leer y editar el archivo local.conf mínimo con las siguientes opciones
+{{{
+BBFILES = "${OEBASE}/openembedded/recipes/*/*.bb"
+DISTRO = "angstrom-2008.1"
+MACHINE = "om-gta01"
+}}}
+Construir Software
+{{{
+$ bitbake helloworld-image
+}}}
 = 1 =
 {{{
 # echo deb http://oss.leggewie.org/oe/deb ./ >> /etc/apt/sources.list
