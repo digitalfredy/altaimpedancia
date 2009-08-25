@@ -2,8 +2,9 @@
 = 0 =
 Directorio de trabajo
 {{{
-$ mkdir /home/user/oe
-$ echo export OEBASE=/home/user/oe >> /home/user/.bashrc
+$ mkdir ~/oe
+$ echo export OEBASE=~/oe >> ~/.bashrc
+$ read ~/.bashrc
 $ mkdir -p $OEBASE/build/conf
 $ cd $OEBASE
 }}}
@@ -17,20 +18,60 @@ $ mv openembedded.org openembedded
 }}}
 Configuración de openembedded
 {{{
-$ echo export PATH=$OEBASE/bitbake/bin:$PATH >> /home/user/.bashrc
-$ echo export BBPATH=$OEBASE/build:$OEBASE/openembedded >> /home/user/.bashrc
-$ echo export BB_ENV_EXTRAWHITE="OEBASE" >> /home/user/.bashrc
+$ echo export PATH=$OEBASE/bitbake/bin:$PATH >> ~/.bashrc
+$ echo export BBPATH=$OEBASE/build:$OEBASE/openembedded >> ~/.bashrc
+$ echo export BB_ENV_EXTRAWHITE="OEBASE" >> ~/.bashrc
+$ read ~/.bashrc
 }}}
 Configuración local
+
+
+Cree el archivo build/conf/local.conf con el siguiente contenido
 {{{
-$ cp openembedded/conf/local.conf.sample build/conf/local.conf
-}}}
-Leer y editar el archivo local.conf mínimo con las siguientes opciones
-{{{
-BBFILES = "${OEBASE}/openembedded/recipes/*/*.bb"
+DL_DIR = "${OEBASE}/sources"
+TMP_DIR = "${OEBASE}/tmp"
+BBFILES := "${OEBASE}/openembedded/recipes/*/*.bb"
+BBMASK = ""
+
+PREFERRED_PROVIDERS = " virtual/${TARGET_PREFIX}gcc-initial:gcc-cross-initial"
+PREFERRED_PROVIDERS += " virtual/${TARGET_PREFIX}gcc:gcc-cross"
+PREFERRED_PROVIDERS += " virtual/${TARGET_PREFIX}g++:gcc-cross"
+
+ASSUME_PROVIDED += " virtual/${TARGET_PREFIX}gcc-initial:gcc-cross-initial"
+ASSUME_PROVIDED += " virtual/${TARGET_PREFIX}gcc:gcc-cross"
+ASSUME_PROVIDED += " virtual/${TARGET_PREFIX}g++:gcc-cross"
+
+# We still need to build u-boot inside OE
+# in order to make a running kernel.
+# Let's build the kernel outside...
+#PREFERRED_PROVIDER_virtual/kernel = "linux-ecbat91"
+#ASSUME_PROVIDED += " linux-ecbat91-2.6.17-r1"
+#ASSUME_PROVIDED += " linux-ecbat91"
+#ASSUME_PROVIDED += " virtual/kernel"
+
+MACHINE = "ecbat91"
 DISTRO = "angstrom-2008.1"
-MACHINE = "om-gta01"
+
+# Add the required image file system types below. Valid are jffs2, tar, cramfs and ext2
+IMAGE_FSTYPES = "tar"
+
+# Uncomment this if you want BitBake to emit debugging output
+BBDEBUG = "yes"
+
+# DEBUG_BUILD = "1"
+# INHIBIT_PACKAGE_STRIP = "1"
+
+# PROFILE_OPTIMIZATION = "-pg"
+# SELECTED_OPTIMIZATION = "${PROFILE_OPTIMIZATION}"
+# LDFLAGS =+ "-pg"
+
+BB_NUMBER_THREADS = "4"
+PARALLEL_MAKE = "-j 4"
+
+# Uncomment this if you want BitBake to emit the log if a build fails.
+BBINCLUDELOGS = "yes"
 }}}
+
 Construir Software
 {{{
 $ bitbake helloworld-image
