@@ -3,7 +3,7 @@
 Directorio de trabajo
 {{{
 $ mkdir ~/oe
-$ echo export OEBASE=~/oe >> ~/.bashrc
+$ echo export OEBASE = ~/oe >> ~/.bashrc
 $ read ~/.bashrc
 $ mkdir -p $OEBASE/build/conf
 $ cd $OEBASE
@@ -18,15 +18,14 @@ $ mv openembedded.org openembedded
 }}}
 Configuración de openembedded
 {{{
-$ echo export PATH=$OEBASE/bitbake/bin:$PATH >> ~/.bashrc
-$ echo export BBPATH=$OEBASE/build:$OEBASE/openembedded >> ~/.bashrc
-$ echo export BB_ENV_EXTRAWHITE="OEBASE" >> ~/.bashrc
+$ echo export PATH = $OEBASE/bitbake/bin:$PATH >> ~/.bashrc
+$ echo export BBPATH = $OEBASE/build:$OEBASE/openembedded >> ~/.bashrc
+$ echo export BB_ENV_EXTRAWHITE = "OEBASE" >> ~/.bashrc
 $ read ~/.bashrc
 }}}
-Configuración local
+Configuración local.
 
-
-Cree el archivo build/conf/local.conf con el siguiente contenido
+Crear el archivo build/conf/local.conf con el siguiente contenido
 {{{
 DL_DIR = "${OEBASE}/sources"
 TMP_DIR = "${OEBASE}/tmp"
@@ -71,7 +70,26 @@ PARALLEL_MAKE = "-j 4"
 # Uncomment this if you want BitBake to emit the log if a build fails.
 BBINCLUDELOGS = "yes"
 }}}
+Cree el directorio build/conf/machine y dentro de este el archivo ecbat91.conf con el siguiente contenido
+{{{
+#@TYPE: Machine
+#@Name: emQbit ECB_AT91 Dev boards
+#@DESCRIPTION: Machine configuration for emQbit ECB_AT91 Dev boards
 
+TARGET_ARCH = "arm"
+#PACKAGE_EXTRA_ARCHS = "armv4t"
+
+# used by sysvinit_2
+SERIAL_CONSOLE = "115200 ttyS0"
+
+IMAGE_FSTYPES = "tar.gz"
+
+#MACHINE_FEATURES = "kernel26 usbhost"
+
+require conf/machine/include/tune-arm920t.inc
+
+PREFERRED_PROVIDER_virtual/kernel = "linux-ecbat91"
+}}}
 Construir Software
 {{{
 $ bitbake helloworld-image
