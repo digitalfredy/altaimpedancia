@@ -18,7 +18,13 @@ Poner a funcionar y usar las boards
  * Primer inteto: preparar FS en una SD y ponerselo a la board para ver si funciona
   * Listo Zea se conecto por minicom y arranco u-boot
  * Ahora yo voy a preparar el sistema de archivos siguiendo http://emqbit.com/deboostrap-debian
-  * el repositorio de la doc (http://ftp.at.debian.org/debian) no funciona, he usado este: http://ftp.uk.debian.org/debian
+  * el repositorio de la doc (http://ftp.at.debian.org/debian) no funciona, y ahora no hay arm, he puesto armel pero no estoy seguro que sea esa.
+ * config u-boot:
+  * cuando vemos uboot (conctados por minicom con la doc del wiki de emqbit) presionamos cualquier tecla 
+
+{{{
+# debootstrap --verbose --foreign --arch armel sid ./sid   http://ftp.uk.debian.org/debian
+}}}
 
 == Buscando Info ==
 * Página de la board
