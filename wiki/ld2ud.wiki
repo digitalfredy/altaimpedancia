@@ -6,18 +6,25 @@ Generar documentación libre (licencia CC-BYSA) y descripciones de hardware libr
 
 = Objetivos Especificos =
  * Incentivar el uso de Software Libre para Electrónica, !OpenSource Hardware y Free Hardware Desingn en la Universidad Distrital.
+NOTA: No medible
  * Desarrollar el contenido de la asignatura digitales II relacionado con lenguajes de descripción de hardware usando herramientas de Software Libre.
  * Desarrollar el contenido de la asignatura digitales II relacionado con lenguajes de descripción de hardware usando Verilog en vez de VHDL.
  * Desarrollar el contenido de la asignatura digitales II relacionado con microprocesadores describiendo el diseño del microprocesador CISC
+NOTA: no de interés para la asignatura
  * Liberar con licencia CC-BYSA el material acadéico (OVA's) usado como apoyo para enseñar la asignatura:
+NOTA: no hay claridad del tema legal
   * Diapositivas profesor Miguel Melgarejo
   * Diseño microprocesador CISC y RISC profesor Muñoz
   * Laboratorios profesor Gaona
  * Escribir en Verilog y publicar las descripciones VHDL existentes en las diapositivas de las sesiones teóricas 3,4 y 6
+NOTA: Descripciones alternativas acordadas
  * Usar como base las diapositivas liberadas por el profesor Miguel Melgarejo que estén relacionadas con VHDL para generar material similar con Verilog.
+NOTA: no liberación, yo hago mi propio material
  * Usar como base el diseño del procesador CISC liberado por el profesor Muñoz para describirlo y publicarlo en lenguaje Verilog.
+NOTA: hablar con profe
  * Generar documentación de instalación y uso de herramientas de Software Libre relacionadas con Verilog y FPGA's para sistema operativo Linux
  * Publicar notas y ejercicios de clase
+NOTA: NO
  * Publicar desarrollo laboratorios
  * Desarrollar este proyecto como alternativa de trabajo para la asignatura digitlaes II
  * Escribir un artículo relacionado con Verilog y Software Libre que sea publicado por IEEE
