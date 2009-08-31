@@ -26,5 +26,18 @@ Poner a funcionar y usar las boards
 # debootstrap --verbose --foreign --arch armel sid ./sid   http://ftp.uk.debian.org/debian
 }}}
 
+== u-boot ==
+Antes de iniciar la carga del sistema presionar cualquier tecla para entrar en la consola de u-boot y realizar cambios en las variables del sistema de booteo.
+
+=== Comandos basicos ===
+{{{
+print | printenv -> imprime el estado actual de las variables configuradas
+set [nombre variable] [valor]| setenv [nombre variable] [valor] -> asigana el valor a la variable indicada
+saveenv -> guarda la configuracion
+boot -> inicia la secuencia de booteo
+}}}
+
+=== Variables configuradas ===
+
 == Buscando Info ==
 * Página de la board
