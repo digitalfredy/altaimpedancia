@@ -1,33 +1,31 @@
 #summary Liberando digitales II UD
-#labels verilog,latex,linux
+#labels verilog,linux
 
 = Objetivo General =
 Generar documentación libre (licencia CC-BYSA) y descripciones de hardware libres (licencia GPL) que puedan ser usadas como Objetos Virtuales de Aprendizaje (OVA's) para facilitar el desarrollo de la asignatura digitales II en la Universidad Distrital que además puedan ser usados por cualquier institución educativa o persona interesada en el aprendizaje o enseñanza de sistemas digitales con el lenguaje de descripción de hardware Verilog y herramientas Software Libre (!OpenSource).
 
 = Objetivos Especificos =
- * Incentivar el uso de Software Libre para Electrónica, !OpenSource Hardware y Free Hardware Desingn en la Universidad Distrital.
+<wiki:comment>
+ * Incentivar el uso de Software Libre para Electrónica, !OpenSource Hardware y Free  Hardware Desingn en la Universidad Distrital.
 NOTA: No medible
+</wiki:comment>
  * Desarrollar el contenido de la asignatura digitales II relacionado con lenguajes de descripción de hardware usando herramientas de Software Libre.
  * Desarrollar el contenido de la asignatura digitales II relacionado con lenguajes de descripción de hardware usando Verilog en vez de VHDL.
- * Desarrollar el contenido de la asignatura digitales II relacionado con microprocesadores describiendo el diseño del microprocesador CISC
-NOTA: no de interés para la asignatura
+ * Desarrollar el proyecto de laboratorio  de la asignatura digitales II mediante la descripción en Verilog del diseño de un sencillo microprocesador CISC
+<wiki:comment>
+ nota: puede ser el del profe muñoz o tal vez el de gajski
  * Liberar con licencia CC-BYSA el material acadéico (OVA's) usado como apoyo para enseñar la asignatura:
-NOTA: no hay claridad del tema legal
+NOTA: no hay claridad del tema legal, de momento no se hace
   * Diapositivas profesor Miguel Melgarejo
   * Diseño microprocesador CISC y RISC profesor Muñoz
   * Laboratorios profesor Gaona
- * Escribir en Verilog y publicar las descripciones VHDL existentes en las diapositivas de las sesiones teóricas 3,4 y 6
-NOTA: Descripciones alternativas acordadas
- * Usar como base las diapositivas liberadas por el profesor Miguel Melgarejo que estén relacionadas con VHDL para generar material similar con Verilog.
-NOTA: no liberación, yo hago mi propio material
- * Usar como base el diseño del procesador CISC liberado por el profesor Muñoz para describirlo y publicarlo en lenguaje Verilog.
-NOTA: hablar con profe
+</wiki:comment>
+ * Acordar con el profesor Miguel Melgarejo ejemplos alternativos a las las descripciones VHDL existentes en las diapositivas de las sesiones teóricas 3,4 y 6, describirlos y publicarlos con licencia GPL.
+ * Generar material derivado de las diapositivas del profesor Miguel Melgarejo que estén relacionadas con VHDL usando ejemplos alternativos acordados, Verilog y haciendo diagramas e imágenes propias (no usar las del profesor pero si recrearlas).
  * Generar documentación de instalación y uso de herramientas de Software Libre relacionadas con Verilog y FPGA's para sistema operativo Linux
- * Publicar notas y ejercicios de clase
-NOTA: NO
- * Publicar desarrollo laboratorios
+ * Publicar desarrollo laboratorios con Software Libre y Verilog
  * Desarrollar este proyecto como alternativa de trabajo para la asignatura digitlaes II
- * Escribir un artículo relacionado con Verilog y Software Libre que sea publicado por IEEE
+ * Escribir un artículo relacionado con Verilog y Software Libre y lograr su publicación en una revista indexada.
 = Justificación General =
 La misisón de la Universidad Distrital Francisco Jose de Caldas y el objetivo general del SIG altaimpedancia.org
 
@@ -57,34 +55,42 @@ _Incentivar la creación y liberación de diseños de hardware que puedan conver
  * Propuesta de proyecto a capítulo CAS IEEE UD.
  * Investigación acerca de descripción de hardware con lenguaje Verilog.
  * Elección de herramientas de Software Libre para sistema operativo Linux relacionadas con lenguaje Verilog y FPGA's.
+<wiki:comment>
  * Inventario de OVA's digitales II 2009-1
+</wiki:comment>
  * Diseñar e implementar estructura del repositorio
+<wiki:comment>
  * Liberación lecciones profesor Miguel Melgarejo
  * Liberación diseños procesador CISC del profesor Muñoz
+</wiki:comment>
  * Estudio lecciones 3 y 4
  * Escritura en verilog de descripciones en VHDL de lecciones 3 y 4
  * Creación versión derivada de las diapositivas de lecciones 3 y 4 enfocada en Verilog
+<wiki:comment>
  * Estudio lección 6
  * Escritura en Verilog de descripciones en VHDL de lección 6
  * Creación versión derivada de las diapositivas de lección 6 enfocada en Verilog
+</wiki:comment>
  * Estudio Microprocesador CISC
  * Describir en Verilog procesador CISC
- * Tomar notas de clase y publicarlas (opcional)
 
 = Entregalbes =
 == Teoria ==
 Todos los entregables serán publicados en el repositorio de altaimpedancia.org con licencias GPL y CC-BYSA.
- * Descripciones en Verilog de lecciones 3, 4 y 6.
+ * Descripciones en Verilog de lecciones 3, 4.
  * Diapositivas lecciones 3 y 4 con enfasis en Verilog en vez de VHDL
- * Descripción en Verilog de microprocesador CISC del profesor Muños
  * Material liberado publicado organizadamente en el repositorio
+<wiki:comment>
  * Ejercicios de clase y tareas desarrollados usando Verilog (opcional)
+</wiki:comment>
 == Laboratorio ==
  * Tutoriales de uso de Software Libre (pendiente complementar esta sección)
+ * Descripción en Verilog de un microprocesador CISC sencillo
 == IEEE ==
  * Artículo sobre verilog y Software Libre escrito en Latex
 
 = Noticias =
+ * 20090827: Revisión por profesores Miguel y Andres, hay que hacer ajustes al documento
  * 20090824: RC de la propuesta del proyecto
  * 20090819: En esta página inicialmente se hará el borrador del documento del proyecto.
  * 20090819: Creada esta página wiki y carpeta del proyecto en el repositorio siguiendo [PropuestaGeneralTrabajo].
