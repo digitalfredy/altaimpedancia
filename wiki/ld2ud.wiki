@@ -59,7 +59,7 @@ _Incentivar la creación y liberación de diseños de hardware que puedan conver
  * Diseñar e implementar estructura del repositorio
  * Estudio lecciones 3 y 4
  * Escritura en verilog de descripciones en VHDL de lecciones 3 y 4
- * Creación versión derivada de las diapositivas de lecciones 3 y 4 enfocada en Verilog
+ * Creación OVAs derivados de las diapositivas de lecciones 3 y 4 enfocada en Verilog
  * Estudio Microprocesador CISC
  * Describir en Verilog procesador CISC
 
@@ -67,7 +67,7 @@ _Incentivar la creación y liberación de diseños de hardware que puedan conver
 == Teoria ==
 Todos los entregables serán publicados en el repositorio de altaimpedancia.org con licencias GPL y CC-BYSA.
  * Descripciones en Verilog de lecciones 3 y 4.
- * Diapositivas u otro tipo de OVA para las lecciones 3 y 4 con énfasis en Verilog en vez de VHDL
+ * OVA para las lecciones 3 y 4 con énfasis en Verilog en vez de VHDL
 == Laboratorio ==
  * Tutoriales de uso de Software Libre (Linux y Verilog)
  * Descripción en Verilog de un microprocesador CISC sencillo
