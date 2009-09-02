@@ -64,8 +64,8 @@ _Incentivar la creación y liberación de diseños de hardware que puedan conver
  * Describir en Verilog procesador CISC
 
 = Entregalbes =
-== Teoria ==
 Todos los entregables serán publicados en el repositorio de altaimpedancia.org con licencias GPL y CC-BYSA.
+== Teoria ==
  * Descripciones en Verilog de lecciones 3 y 4.
  * OVA para las lecciones 3 y 4 con énfasis en Verilog en vez de VHDL
 == Laboratorio ==
@@ -74,7 +74,7 @@ Todos los entregables serán publicados en el repositorio de altaimpedancia.org 
  * Laboratorios desarrollados con Verilog en vez de VHDL
 == IEEE ==
  * Artículo sobre verilog y Software Libre escrito en Latex
-
+NOTA: hay que revisar el tema de la licencia
 = Noticias =
  * 20090827: Revisión por profesores Miguel y Andres, hay que hacer ajustes al documento
  * 20090824: RC de la propuesta del proyecto
