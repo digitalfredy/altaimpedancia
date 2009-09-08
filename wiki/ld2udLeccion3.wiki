@@ -106,6 +106,10 @@ This level of abstraction allows designers to describe the circuit's functionali
 
 Note that the term RTL (Register Transfer Level) is commonly used for a combination of Data Flow and Behavioural modeling.
 }}}
+
+Comportamental: algoritmos usando funciones taks y always, tambien las tablas de verdad de los UDP
+Funcional: tengo confusión, creo que es RTL
+En el estructural hay switch (transistores) y compuertas y solo se define la conexión entre instancias
 === Notas ===
  * Creo que copié mal, en diapositiva 11 el ejemplo debería ser una nor
  * Un Test Bench es un buen ejemplo para lo estructural (me di cuenta en verilogref.pdf, 6.0 Structures and Hierarchy)
