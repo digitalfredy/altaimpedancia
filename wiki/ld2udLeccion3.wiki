@@ -116,4 +116,4 @@ En el estructural hay switch (transistores) y compuertas y solo se define la con
  * Nunca se habla de test bench en el material del profesor Melgarejo
 De lo anterior he revisado y creo que lo mejor es iniciar con un Laboratorio (Test Bench) para la compuerta nor
  * ya tengo una buena idea del ejemplo y el código que voy a usar para la primera parte, esta es la lista de archivos:
-  * CompuertasAndOr_Lab.v
+  * !CompuertasAndOr_Lab.v
