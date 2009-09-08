@@ -6,3 +6,13 @@
   * [http://www.see.ed.ac.uk/~gerard/Teach/Verilog/manual/ Verilog Manual] - Dr Gerard M Blair, University of Edinburgh, Scotland, UK
  * [http://www.eg.bucknell.edu/~cs320/2008-fall/verilog/verilog-manual.html Handbook on Verilog HDL] - Dr. Daniel C. Hyde, Bucknell University
   * [http://www.ncsu.edu/wcae/ISCA1998/hyde.pdf Using Verilog HDL to Teach Computer Architecture Concepts] -     Dr. Daniel C. Hyde, Bucknell University
+
+ * [http://staff.washington.edu/jon/verilog-prog.html Notes on Verilog programming] - Jonathan Jacky, University of Washington
+
+ * [http://www.hpcc.ecs.soton.ac.uk/hpci/tools/vlogref.pdf Verilog HDL QUICK REFERENCE CARD V2.1]
+ * [http://www.sutherland-hdl.com/online_verilog_ref_guide/vlog_ref_top.html online Verilog-1995 Quick Reference Guide] - Stuart Sutherland
+
+
+== FAQ's ==
+ * [http://www.angelfire.com/in/verilogfaq/ Alternative Verilog FAQ]
+ * [http://www.asic-world.com/verilog/verifaq1.html] asic-world
