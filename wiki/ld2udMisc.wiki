@@ -13,6 +13,7 @@
 
 == Tutoriales ==
  * [http://www.inf.ed.ac.uk/teaching/courses/cd/VerilogTutorial.pdf Verilog Tutorial] - Deepak Kumar Tala
+ * [http://electrosofts.com/verilog/index.html Verilog Tutorial] - Harsha Perla
  * [http://www.doulos.com/knowhow/verilog_designers_guide/ The Designer’s Guide to Verilog] - Doulos
  * [http://www.asic-world.com/verilog/veritut.html Verilog Tutorial] - asic-world
 
@@ -24,3 +25,7 @@
 == FAQ's ==
  * [http://www.angelfire.com/in/verilogfaq/ Alternative Verilog FAQ]
  * [http://www.asic-world.com/verilog/verifaq1.html] asic-world
+
+== En español ==
+ * [http://www.inf.ed.ac.uk/teaching/courses/cd/VerilogTutorial.pdf Tutorial de verilog]
+ * 
