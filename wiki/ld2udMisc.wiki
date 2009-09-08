@@ -1,5 +1,5 @@
 #summary Enlaces relacionados y más
-#labels verilog,linux
+#labels verilog,linux,ld2ud
 
 == Recursos de Universidades ==
  * [http://www.inf.ed.ac.uk/teaching/courses/cd/VerilogTutorial.pdf Verilog Tutorial] - Deepak Kumar Tala, University of Edinburgh
