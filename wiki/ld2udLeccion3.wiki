@@ -12,3 +12,21 @@ El formato usado es _Número de diapositiva: Ejemplo alternativo_
  * 16: en vez de mux un decoder 2 a 4
  * 18: nand en vez de mux
  * 21: nand de 4 entradas con nands de 2
+
+
+== Estudio/Revisión ==
+En esta sección revisaré las diapositivas con el ánimo de estudiarlas y revisar que trabajo derivado se generará
+|| diapositiva(s) || notas || trabajo derivado ||
+|| 1 || Presentación || presentación altaimpedancia con credito trabajo derivado ||
+|| 2 || Indice || Item 3 con Verilog ||
+|| 3 || Qué es un HDL || Agregar systemverilog, verilog ams ... ||
+|| 4 || Ventajas || Copiar texto sin cambios ||
+|| 5 || Lenguajes || Cambiar por verilog exclusivamente ||
+|| 6-8 || Base VHDL || Cambiar a Base Verilog ||
+|| 9 || Niveles descripción || copiar igual y revisar pag 5 Verilog Tutorial - Deepak Kumar Tala, University of Edinburgh  ||
+|| 10-14 || descripción en VHDL || cambiar a Descripción en Verilog ||
+|| 15-27 || Combinacionales con VHDL || Combinacionales con Verilog ||
+|| 28-30 || Concurrencia con VHDL || Concurrencia con Verilog ||
+|| 31 || Simulación conceptos || Copiar conceptos ||
+|| 32 || Simulación simulador || referencias con Software Libre ||
+|| 33 || Referencias || dejar estas como secundarias y primaria slides y otras que se usen ||
