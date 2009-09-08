@@ -1,0 +1,14 @@
+#summary Liberando lección 3
+#labels verilog
+
+= Introduction =
+La lección 3 del profesor Miguel Melgarejo para la asignatura digitales II de Ingeniería Electrónica de la Universidad Distrital Francisco José de Caldas se titula _"Especificación HDL y descripción de circuitos combinacionales"_, el OVA usado para esta lección son unas diapositivas preparadas por el profesor, al no tener explícitamente autorización para uso y copia este material tiene todos los derechos reservados, en reunión celebrada el 28 de agosto de 2009 en el LAMIC el profesor autorizó crear material derivado de estas diapositivas con licencia CC-BY-SA o GPL siempre que se usen ejemplos alternativos y las imágenes sean recreadas en vez de copiadas literalmente.
+
+
+
+== Ejemplos alternativos ==
+El formato usado es _Número de diapositiva: Ejemplo alternativo_
+ * 11: compuerta or en vez de nand
+ * 16: en vez de mux un decoder 2 a 4
+ * 18: nand en vez de mux
+ * 21: nand de 4 entradas con nands de 2
