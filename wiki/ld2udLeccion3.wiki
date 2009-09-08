@@ -33,7 +33,7 @@ En esta sección revisaré las diapositivas con el ánimo de estudiarlas y revis
 
 == Desarrollo ==
 === Notas ===
-* Creo que copié mal, en diapositiva 11 el ejemplo debería ser una nor
-* Un Test Bench es un buen ejemplo para lo estructural (me di cuenta en verilogref.pdf, 6.0 Structures and Hierarchy)
-* Nunca se habla de test bench en el material del profesor Melgarejo
+ * Creo que copié mal, en diapositiva 11 el ejemplo debería ser una nor
+ * Un Test Bench es un buen ejemplo para lo estructural (me di cuenta en verilogref.pdf, 6.0 Structures and Hierarchy)
+ * Nunca se habla de test bench en el material del profesor Melgarejo
 De lo anterior he revisado y creo que lo mejor es iniciar con un Laboratorio (Test Bench) para la compuerta nor
