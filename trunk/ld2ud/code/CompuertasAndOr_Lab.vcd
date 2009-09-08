@@ -1,0 +1,34 @@
+$date
+	Tue Sep  8 17:23:41 2009
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module CompuertasAndOr_Lab $end
+$var wire 1 ! ResultadoAnd $end
+$var wire 1 " ResultadoOr $end
+$var reg 2 # Estimulo[1:0] $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 #
+0"
+0!
+$end
+#1
+1"
+b1 #
+#2
+1"
+b10 #
+#3
+1!
+b11 #
+#4
+0"
+0!
+b0 #
