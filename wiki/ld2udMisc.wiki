@@ -2,6 +2,8 @@
 #labels verilog,linux
 
 == Recursos de Universidades ==
+ * [http://www.stanford.edu/class/ee183/ ee183] - Stanford.edu
+  * [http://www.stanford.edu/class/ee272/doc/faq/verilog.html Verilog FAQ]
  * [http://www.ee.ucla.edu/~herwin/ocdma/reference/ ]HERWIN CHAN, - University of California
  * [http://www.eecs.harvard.edu/cs141/resources/verilog-tutorial.pdf Computer Science 141] - Harvard University
   * [http://www.eecs.harvard.edu/cs141/resources/verilog-tutorial.pdf Verilog Tutorial] - Harvard University
