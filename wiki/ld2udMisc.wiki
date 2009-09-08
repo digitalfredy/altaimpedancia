@@ -10,12 +10,15 @@
   * [http://www.eecs.harvard.edu/cs141/resources/verilog-tutorial.pdf Verilog Tutorial] - Harvard University
  * [http://www.see.ed.ac.uk/~gerard/Teach/gateway.html GATEWAY to design excellence] - Dr Gerard M Blair, University of Edinburgh, Scotland, UK 
   * [http://www.see.ed.ac.uk/~gerard/Teach/Verilog/manual/ Verilog Manual] - Dr Gerard M Blair, University of Edinburgh, Scotland, UK
+ * http://www.ee.ed.ac.uk/~gerard/VLSI/verilog.ps
  * [http://www.eg.bucknell.edu/~cs320/2008-fall/verilog/verilog-manual.html Handbook on Verilog HDL] - Dr. Daniel C. Hyde, Bucknell University
   * [http://www.ncsu.edu/wcae/ISCA1998/hyde.pdf Using Verilog HDL to Teach Computer Architecture Concepts] -     Dr. Daniel C. Hyde, Bucknell University
 
  * [http://staff.washington.edu/jon/verilog-prog.html Notes on Verilog programming] - Jonathan Jacky, University of Washington
 
  * [http://labspace.open.ac.uk/course/view.php?id=4616 Verilog for FPGA's] The open university
+
+ * [http://people.csail.mit.edu/wentzlaf//faq/verilog.html Faq] mit
 
 == Tutoriales ==
  * [http://www.cpu-turkey.com/downloads/file.aspx?id=88 Verilog Tutorial VLSI II] - E. Özgür ATES
