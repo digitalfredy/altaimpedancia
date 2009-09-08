@@ -115,3 +115,5 @@ En el estructural hay switch (transistores) y compuertas y solo se define la con
  * Un Test Bench es un buen ejemplo para lo estructural (me di cuenta en verilogref.pdf, 6.0 Structures and Hierarchy)
  * Nunca se habla de test bench en el material del profesor Melgarejo
 De lo anterior he revisado y creo que lo mejor es iniciar con un Laboratorio (Test Bench) para la compuerta nor
+ * ya tengo una buena idea del ejemplo y el código que voy a usar para la primera parte, esta es la lista de archivos:
+  * CompuertasAndOr_Lab.v
