@@ -9,6 +9,10 @@
 
  * [http://staff.washington.edu/jon/verilog-prog.html Notes on Verilog programming] - Jonathan Jacky, University of Washington
 
+== Tutoriales ==
+ * [http://www.inf.ed.ac.uk/teaching/courses/cd/VerilogTutorial.pdf Verilog Tutorial] - Deepak Kumar Tala
+ * [http://www.asic-world.com/verilog/veritut.html Verilog Tutorial] - asic-world
+
  * [http://www.hpcc.ecs.soton.ac.uk/hpci/tools/vlogref.pdf Verilog HDL QUICK REFERENCE CARD V2.1]
  * [http://www.sutherland-hdl.com/online_verilog_ref_guide/vlog_ref_top.html online Verilog-1995 Quick Reference Guide] - Stuart Sutherland
 
