@@ -23,7 +23,7 @@ En esta sección revisaré las diapositivas con el ánimo de estudiarlas y revis
 || 4 || Ventajas || Copiar texto sin cambios ||
 || 5 || Lenguajes || Cambiar por verilog exclusivamente ||
 || 6-8 || Base VHDL || Cambiar a Base Verilog ||
-|| 9 || Niveles descripción || copiar igual y revisar pag 5 Verilog Tutorial - Deepak Kumar Tala, University of Edinburgh  ||
+|| 9 || Niveles descripción || copiar igual y revisar pag 5 Verilog Tutorial - Deepak Kumar Tala, University of Edinburgh  y Verilog Tutorial VLSI II - E. Özgür ATES ||
 || 10-14 || descripción en VHDL || cambiar a Descripción en Verilog ||
 || 15-27 || Combinacionales con VHDL || Combinacionales con Verilog ||
 || 28-30 || Concurrencia con VHDL || Concurrencia con Verilog ||
