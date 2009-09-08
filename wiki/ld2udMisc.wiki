@@ -2,8 +2,7 @@
 #labels verilog,linux
 
 == Aprender Verilog ==
- * [http://www.see.ed.ac.uk/~gerard/Teach/gateway.html GATEWAY to design excellence] - University of Edinburgh, Scotland, UK 
-  * [http://www.see.ed.ac.uk/~gerard/Teach/Verilog/manual/ Verilog Manual] - University of Edinburgh, Scotland, UK
+ * [http://www.see.ed.ac.uk/~gerard/Teach/gateway.html GATEWAY to design excellence] - Dr Gerard M Blair, University of Edinburgh, Scotland, UK 
+  * [http://www.see.ed.ac.uk/~gerard/Teach/Verilog/manual/ Verilog Manual] - Dr Gerard M Blair, University of Edinburgh, Scotland, UK
  * [http://www.eg.bucknell.edu/~cs320/2008-fall/verilog/verilog-manual.html Handbook on Verilog HDL] - Dr. Daniel C. Hyde, Bucknell University
-  * [http://www.ncsu.edu/wcae/ISCA1998/hyde.pdf Using Verilog HDL to Teach Computer Architecture Concepts]
-
+  * [http://www.ncsu.edu/wcae/ISCA1998/hyde.pdf Using Verilog HDL to Teach Computer Architecture Concepts] -     Dr. Daniel C. Hyde, Bucknell University
