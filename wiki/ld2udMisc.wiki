@@ -2,6 +2,7 @@
 #labels verilog,linux
 
 == Recursos de Universidades ==
+ * [http://www.inf.ed.ac.uk/teaching/courses/cd/VerilogTutorial.pdf Verilog Tutorial] - Deepak Kumar Tala, University of Edinburgh
  * [http://www.stanford.edu/class/ee183/ ee183] - Stanford.edu
   * [http://www.stanford.edu/class/ee272/doc/faq/verilog.html Verilog FAQ]
  * [http://www.ee.ucla.edu/~herwin/ocdma/reference/ ]HERWIN CHAN, - University of California
@@ -14,9 +15,10 @@
 
  * [http://staff.washington.edu/jon/verilog-prog.html Notes on Verilog programming] - Jonathan Jacky, University of Washington
 
+ * [http://labspace.open.ac.uk/course/view.php?id=4616 Verilog for FPGA's] The open university
+
 == Tutoriales ==
  * [http://www.cpu-turkey.com/downloads/file.aspx?id=88 Verilog Tutorial VLSI II] - E. Özgür ATES
- * [http://www.inf.ed.ac.uk/teaching/courses/cd/VerilogTutorial.pdf Verilog Tutorial] - Deepak Kumar Tala
  * [http://electrosofts.com/verilog/index.html Verilog Tutorial] - Harsha Perla, electrosofts
  * [http://www.doulos.com/knowhow/verilog_designers_guide/ The Designer’s Guide to Verilog] - Doulos
  * [http://www.asic-world.com/verilog/veritut.html Verilog Tutorial] - asic-world
