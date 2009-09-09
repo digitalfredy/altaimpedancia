@@ -1,5 +1,7 @@
-#summary Liberando digitales II UD -[http://code.google.com/p/altaimpedancia/source/browse/#svn/trunk/ld2ud/code codigo] - [http://code.google.com/p/altaimpedancia/w/list?q=label:ld2ud wiki]
+#summary Liberando digitales II UD
 #labels verilog,linux,ld2ud
+
+ [http://code.google.com/p/altaimpedancia/source/browse/#svn/trunk/ld2ud/code código] - [http://code.google.com/p/altaimpedancia/w/list?q=label:ld2ud wiki]
 = Objetivo General =
 Generar documentación libre (licencia CC-BYSA) y descripciones de hardware libres (licencia GPL) que puedan ser usadas como Objetos Virtuales de Aprendizaje (OVA's) para facilitar el desarrollo de la asignatura digitales II en la Universidad Distrital que además puedan ser usados por cualquier institución educativa o persona interesada en el aprendizaje o enseñanza de sistemas digitales con el lenguaje de descripción de hardware Verilog y herramientas Software Libre (!OpenSource).
 
