@@ -2,9 +2,8 @@
 #labels verilog,linux,ld2ud
 
 == Recursos de Universidades ==
- * [http://www.inf.ed.ac.uk/teaching/courses/cd/VerilogTutorial.pdf Verilog Tutorial] - Deepak Kumar Tala, University of Edinburgh
- * [http://www.stanford.edu/class/ee183/ ee183] - Stanford.edu
-  * [http://www.stanford.edu/class/ee272/doc/faq/verilog.html Verilog FAQ]
+
+ * [http://labspace.open.ac.uk/course/view.php?id=4616 Verilog for FPGA's] The open university
  * [http://www.ee.ucla.edu/~herwin/ocdma/reference/ ]HERWIN CHAN, - University of California
  * [http://www.eecs.harvard.edu/cs141/resources/verilog-tutorial.pdf Computer Science 141] - Harvard University
   * [http://www.eecs.harvard.edu/cs141/resources/verilog-tutorial.pdf Verilog Tutorial] - Harvard University
@@ -13,10 +12,11 @@
  * http://www.ee.ed.ac.uk/~gerard/VLSI/verilog.ps
  * [http://www.eg.bucknell.edu/~cs320/2008-fall/verilog/verilog-manual.html Handbook on Verilog HDL] - Dr. Daniel C. Hyde, Bucknell University
   * [http://www.ncsu.edu/wcae/ISCA1998/hyde.pdf Using Verilog HDL to Teach Computer Architecture Concepts] -     Dr. Daniel C. Hyde, Bucknell University
-
+ * [http://www.inf.ed.ac.uk/teaching/courses/cd/VerilogTutorial.pdf Verilog Tutorial] - Deepak Kumar Tala, University of Edinburgh
  * [http://staff.washington.edu/jon/verilog-prog.html Notes on Verilog programming] - Jonathan Jacky, University of Washington
+ * [http://www.stanford.edu/class/ee183/ ee183] - Stanford.edu
+  * [http://www.stanford.edu/class/ee272/doc/faq/verilog.html Verilog FAQ]
 
- * [http://labspace.open.ac.uk/course/view.php?id=4616 Verilog for FPGA's] The open university
 
  * [http://people.csail.mit.edu/wentzlaf//faq/verilog.html Faq] mit
 
