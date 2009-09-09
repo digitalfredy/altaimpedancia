@@ -73,7 +73,7 @@ endmodule // CompuertasAndOr_Lab
   * GNU Emacs 22.2.1 para escribir el texto
   * Icarus Verilog version 0.8.6 para compilar y simular
   * GTKWave Analyzer v3.1.10 para visualizar el resultado de las simulaciones
- * vcd = Value change dump y hace parte del estandar verilog
+ * vcd = Value Change Dump y hace parte del estandar verilog
  
  ---------- Información adicional ----------  */
 
