@@ -118,5 +118,7 @@ De lo anterior he revisado y creo que lo mejor es iniciar con un Laboratorio (Te
  * ya tengo una buena idea del ejemplo y el código que voy a usar para la primera parte, esta es la lista de archivos:
   * !CompuertasAndOr_Lab.v
   * !SumaProductos_Primitiva.v
-  * !SumaProductos_StrNivelCompuertas.v
+  * !SumaProductos_Estructural.v
   * !SumaProductos_Funcional.v
+  * !SumaProductos_Comportamental.v
+  * !SumaProductos_Lab.v
