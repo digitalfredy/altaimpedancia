@@ -1,0 +1,103 @@
+#! /usr/bin/vvp
+:vpi_time_precision + 0;
+:vpi_module "system";
+S_0x9dfb4f8 .scope module, "SumaProductos_Lab" "SumaProductos_Lab";
+ .timescale 0;
+UDP_SumaProductos_Primitiva .udp/comb "SumaProductos_Primitiva", 4
+ ,"00000"
+ ,"00010"
+ ,"00100"
+ ,"00111"
+ ,"01000"
+ ,"01010"
+ ,"01100"
+ ,"01111"
+ ,"10000"
+ ,"10010"
+ ,"10100"
+ ,"10111"
+ ,"11001"
+ ,"11011"
+ ,"11101"
+ ,"11111";
+L_0x9df7910 .udp UDP_SumaProductos_Primitiva, V_$0x9df8320[3], V_$0x9df8320[2], V_$0x9df8320[1], V_$0x9df8320[0];
+V_$0x9df8320 .var "Estimulo", 3, 0;
+V_$0x9df83d8 .net "RtaComportamental", 0, 0, V_$0x9df70a8[0];
+V_$0x9df8a08 .net "RtaEstructural", 0, 0, L_0x9e0cd60;
+V_$0x9df8a58 .net "RtaFuncional", 0, 0, L_0x9dfc770;
+V_$0x9dfb8b0 .net "RtaPrimitiva", 0, 0, L_0x9df7910;
+S_0x9df7840 .scope module, "U12" "SumaProductos_Estructural", S_0x9dfb4f8;
+ .timescale 0;
+L_0x9df7940 .functor AND, V_$0x9df8320[3], V_$0x9df8320[2], C<1>, C<1>;
+L_0x9dfc720 .functor AND, V_$0x9df8320[1], V_$0x9df8320[0], C<1>, C<1>;
+L_0x9e0cd60 .functor OR, L_0x9df7940, L_0x9dfc720, C<0>, C<0>;
+V_$0x9df78b0 .net "Entrada", 3, 0, V_$0x9df8320[0], V_$0x9df8320[1], V_$0x9df8320[2], V_$0x9df8320[3];
+V_$0x9df8cb0 .net "Productos", 1, 0, L_0x9dfc720, L_0x9df7940;
+V_$0x9df82d8 .net "SumaProductos", 0, 0, L_0x9e0cd60;
+S_0x9df6d80 .scope module, "U13" "SumaProductos_Funcional", S_0x9dfb4f8;
+ .timescale 0;
+L_0x9e0cde0 .functor AND, V_$0x9df8320[3], V_$0x9df8320[2], C<1>, C<1>;
+L_0x9dfc6d0 .functor AND, V_$0x9df8320[1], V_$0x9df8320[0], C<1>, C<1>;
+L_0x9dfc770 .functor OR, L_0x9e0cde0, L_0x9dfc6d0, C<0>, C<0>;
+V_$0x9df6df0 .net "Entrada", 3, 0, V_$0x9df8320[0], V_$0x9df8320[1], V_$0x9df8320[2], V_$0x9df8320[3];
+V_$0x9df8e40 .net "SumaProductos", 0, 0, L_0x9dfc770;
+S_0x9dfb590 .scope module, "U14" "SumaProductos_Comportamental", S_0x9dfb4f8;
+ .timescale 0;
+V_$0x9df7cf0 .net "Entrada", 3, 0, V_$0x9df8320[0], V_$0x9df8320[1], V_$0x9df8320[2], V_$0x9df8320[3];
+V_$0x9df70a8 .var "SumaProductos", 0, 0;
+E_0x9df82b8 .event edge, V_$0x9df8320[0], V_$0x9df8320[1], V_$0x9df8320[2], V_$0x9df8320[3];
+    .scope S_0x9dfb590;
+T_0 ;
+    %wait E_0x9df82b8;
+    %set V_$0x9df70a8[0], 0;
+    %load  8, V_$0x9df7cf0[0];
+    %load  9, V_$0x9df7cf0[1];
+    %load  10, V_$0x9df7cf0[2];
+    %load  11, V_$0x9df7cf0[3];
+    %mov 12, 1, 2;
+    %mov 14, 2, 2;
+    %cmp/x 8, 12, 4;
+    %jmp/1 T_0.0, 4;
+    %mov 12, 2, 2;
+    %mov 14, 1, 2;
+    %cmp/x 8, 12, 4;
+    %jmp/1 T_0.1, 4;
+    %assign V_$0x9df70a8[0], 0, 0;
+    %jmp T_0.3;
+T_0.0 ;
+    %assign V_$0x9df70a8[0], 0, 1;
+    %jmp T_0.3;
+T_0.1 ;
+    %assign V_$0x9df70a8[0], 0, 1;
+    %jmp T_0.3;
+T_0.3 ;
+    %jmp T_0;
+    .thread T_0, $push;
+    .scope S_0x9dfb4f8;
+T_1 ;
+    %set/v V_$0x9df8320[0], 0, 4;
+    %end;
+    .thread T_1;
+    .scope S_0x9dfb4f8;
+T_2 ;
+    %mov 8, 0, 4;
+    %mov 12, 1, 1;
+    %mov 13, 0, 1;
+T_2.0 %cmp/u 0, 8, 6;
+    %jmp/0xz T_2.1, 5;
+    %add 8, 1, 6;
+    %delay 1;
+    %load/v 14, V_$0x9df8320[0], 4;
+    %addi 14, 1, 4;
+    %ix/load 0, 4;
+    %assign/v0 V_$0x9df8320[0], 0, 14;
+    %jmp T_2.0;
+T_2.1 ;
+    %end;
+    .thread T_2;
+    .scope S_0x9dfb4f8;
+T_3 ;
+    %vpi_call "$dumpfile", "SumaProductos_Lab.vcd";
+    %vpi_call "$dumpvars";
+    %end;
+    .thread T_3;
