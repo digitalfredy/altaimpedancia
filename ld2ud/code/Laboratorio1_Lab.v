@@ -1,11 +1,14 @@
 module Laboratorio1 (/*AUTOARG*/) ;
 
    reg   [1:0] EstimuloCompuertas;
-   wire   RtaXorUsandoAssign_Funcional,RtaXorFn2,RtaXorUsandoNand_Estructural,RtaAndUsandoAssign_Funcional,RtaAndFn2,RtaAndUsandoNand_Estructural; // Salidas punto 1
-   
-   XorUsandoAssign_Funcional InstanciaXorUsandoAssign_Funcional(RtaXorUsandoAssign_Funcional,EstimuloCompuertas[1:0]);
-   AndUsandoAssign_Funcional InstanciaAndUsandoAssign_Funcional(RtaAndUsandoAssign_Funcional,EstimuloCompuertas[1:0]);
-   AndUsandoNand_Estructural InstanciaAndUsandoNand_Estructural (RtaAndUsandoNand_Estructural,EstimuloCompuertas);
+   wire        RtaAndOperadorBitABit_Funcional,RtaAndOperadorCondicional_Funcional,RtaAndUsandoNand_Estructural; 
+   wire        RtaXorOperadorBitABit_Funcional,RtaXorOperadorCondicional_Funcional,RtaXorUsandoNand_Estructural;
+
+   AndOperadorBitABit_Funcional InstanciaAndOperadorBitABit_Funcional(RtaAndOperadorBitABit_Funcional,EstimuloCompuertas[1:0]);   
+   AndOperadorCondicional_Funcional InstanciaAndOperadorCondicional_Funcional(RtaAndOperadorCondicional_Funcional,EstimuloCompuertas[1:0]);
+   AndUsandoNand_Estructural InstanciaAndUsandoNand_Estructural (RtaAndUsandoNand_Estructural,EstimuloCompuertas);   
+   XorOperadorBitABit_Funcional InstanciaXorOperadorBitABit_Funcional(RtaXorOperadorBitABit_Funcional,EstimuloCompuertas[1:0]);
+   XorOperadorCondicional_Funcional InstanciaXorOperadorCondicional_Funcional(RtaXorOperadorCondicional_Funcional,EstimuloCompuertas[1:0]);   
    XorUsandoNand_Estructural InstanciaXorUsandoNand_Estructural (RtaXorUsandoNand_Estructural,EstimuloCompuertas);
    
    initial begin
