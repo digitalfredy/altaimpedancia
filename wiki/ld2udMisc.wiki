@@ -42,3 +42,25 @@
 == misc ==
  * [http://books.google.com/books?id=-aI0VXNaPQUC&pg=PA37&lpg=PA37&dq=verilog+abstraction+levels&source=bl&ots=rr7U4HxoFZ&sig=zfCVBTH4khzJ1pPNni4jux5fq-I&hl=es&ei=oyumSrWaK9Xktgek_9zWDw&sa=X&oi=book_result&ct=result&resnum=7#v=onepage&q=verilog%20abstraction%20levels&f=false The complete Verilog book]
  * [http://liberty.princeton.edu/Research/Modeling/verilog.php Abstractions in Verilog] - Liberty Resarch Group
+
+= Reglas y notas para código ==
+ * Todo el código dentro de la carpeta code
+ * Archivos .v con mismo Header (//url altaimpedanca)
+ * Todos con footer base (/* base */)
+  * Marca de Entregable: en el footer (Laboratorio, Teoría)
+  * url alternativa (code.google...)
+ * Código autoexplicativo en vez de comentarios
+Los nombres de los archivos deben describir claramente la funcionalidad del módulo y su nombre debe coincidir con el del modulo que describe, se usa CamelCase, ejemplo:
+{{{
+NombreDeArchivo.v == NombreDeModulo
+}}
+Como muchas veces luego aparece un mejor nombre esta es la forma de cambiar el nombre:
+{{{
+$ svn mv NombreInicial.v NombreNuevo.v
+$ sed -i 's/NombreInicial/NombreNuevo/g' `grep -l NombreIncial *`
+}}}
+
+Como agregar el header a varios archivos?
+{{{
+sed -i '1i\//http://ld2ud.altaimpedancia.org - más información en el pié de página\n' *.v
+}}}
