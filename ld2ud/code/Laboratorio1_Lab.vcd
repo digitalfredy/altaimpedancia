@@ -8,16 +8,16 @@ $timescale
 	1s
 $end
 $scope module Laboratorio1 $end
-$var wire 1 ! RtaAndEst $end
-$var wire 1 " RtaAndFn1 $end
-$var wire 1 # RtaXorEst $end
-$var wire 1 $ RtaXorFn1 $end
+$var wire 1 ! RtaAndUsandoNand_Estructural $end
+$var wire 1 " RtaAndUsandoAssign_Funcional $end
+$var wire 1 # RtaXorUsandoNand_Estructural $end
+$var wire 1 $ RtaXorUsandoAssign_Funcional $end
 $var reg 2 % EstimuloCompuertas[1:0] $end
-$scope module InstanciaXorFn1 $end
+$scope module InstanciaXorUsandoAssign_Funcional $end
 $var wire 2 & Entrada[1:0] $end
 $var wire 1 $ Salida $end
 $upscope $end
-$scope module InstanciaAndFn1 $end
+$scope module InstanciaAndUsandoAssign_Funcional $end
 $var wire 2 ' Entrada[1:0] $end
 $var wire 1 " Salida $end
 $upscope $end

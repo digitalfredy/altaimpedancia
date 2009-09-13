@@ -1,4 +1,4 @@
-module XorFn1 (/*AUTOARG*/
+module XorUsandoAssign_Funcional (/*AUTOARG*/
    // El orden en que se ponen aqui es el mismo en el que las recibe
    // Outputs
    Salida,
@@ -8,4 +8,4 @@ module XorFn1 (/*AUTOARG*/
    input  [1:0] Entrada;
    output Salida;
    assign Salida = Entrada[1]^Entrada[0];
-endmodule // XorFn1
+endmodule // XorUsandoAssign_Funcional
