@@ -1,0 +1,102 @@
+$date
+	Sat Sep 12 19:30:17 2009
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module Laboratorio1 $end
+$var wire 1 ! RtaAndEst $end
+$var wire 1 " RtaAndFn1 $end
+$var wire 1 # RtaXorEst $end
+$var wire 1 $ RtaXorFn1 $end
+$var reg 2 % EstimuloCompuertas[1:0] $end
+$scope module InstanciaXorFn1 $end
+$var wire 2 & Entrada[1:0] $end
+$var wire 1 $ Salida $end
+$upscope $end
+$scope module InstanciaAndFn1 $end
+$var wire 2 ' Entrada[1:0] $end
+$var wire 1 " Salida $end
+$upscope $end
+$scope module InstanciaAndUsandoNand_Estructural $end
+$var wire 1 ( Cable $end
+$var wire 2 ) Entrada[1:0] $end
+$var wire 1 ! Salida $end
+$upscope $end
+$scope module InstanciaXorUsandoNand_Estructural $end
+$var wire 1 * CableA $end
+$var wire 1 + CableB $end
+$var wire 1 , CableC $end
+$var wire 1 - CableD $end
+$var wire 2 . Entrada[1:0] $end
+$var wire 1 # Salida $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 .
+1-
+1,
+1+
+1*
+b0 )
+1(
+b0 '
+b0 &
+b0 %
+0$
+0#
+0"
+0!
+$end
+#1
+1#
+1$
+0+
+0,
+b1 %
+b1 &
+b1 '
+b1 )
+b1 .
+#2
+0-
+1#
+0*
+1$
+1+
+1,
+b10 %
+b10 &
+b10 '
+b10 )
+b10 .
+#3
+0#
+1!
+1-
+0$
+1"
+0(
+0+
+b11 %
+b11 &
+b11 '
+b11 )
+b11 .
+#4
+0!
+1*
+0$
+0"
+1(
+1+
+b0 %
+b0 &
+b0 '
+b0 )
+b0 .
