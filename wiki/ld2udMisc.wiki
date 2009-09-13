@@ -53,7 +53,7 @@
 Los nombres de los archivos deben describir claramente la funcionalidad del módulo y su nombre debe coincidir con el del modulo que describe, se usa CamelCase, ejemplo:
 {{{
 NombreDeArchivo.v == NombreDeModulo
-}}
+}}}
 Como muchas veces luego aparece un mejor nombre esta es la forma de cambiar el nombre:
 {{{
 $ svn mv NombreInicial.v NombreNuevo.v
