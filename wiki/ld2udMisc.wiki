@@ -63,6 +63,7 @@ $ sed -i 's/NombreInicial/NombreNuevo/g' `grep -l NombreIncial *`
 Como agregar el header a varios archivos?
 {{{
 sed -i '1i\//http://ld2ud.altaimpedancia.org - más información en el pié de página\n' *.v
+sed -i '1i\//Electrónica con Software Libre, Free Hardware Design y Open Source Hardware' *.v
 }}}
 
 Pie de página:
