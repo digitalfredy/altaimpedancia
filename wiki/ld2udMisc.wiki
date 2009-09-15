@@ -7,6 +7,8 @@
  * [http://www.hpcc.ecs.soton.ac.uk/hpci/tools/vlogref.pdf Verilog HDL QUICK REFERENCE CARD V2.1]
 
 
+ * http://fpga.com.ar/notas/NotasCompletas.htm
+
 == Recursos de Universidades ==
 
  * [http://labspace.open.ac.uk/course/view.php?id=4616 Verilog for FPGA's] The open university
