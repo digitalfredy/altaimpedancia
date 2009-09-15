@@ -1,6 +1,12 @@
 #summary Enlaces relacionados y más
 #labels verilog,linux,ld2ud
 
+== Quick Reference ==
+ * [http://www.sutherland-hdl.com/online_verilog_ref_guide/vlog_ref_top.html online Verilog-1995 Quick Reference Guide] - Stuart Sutherland
+
+ * [http://www.hpcc.ecs.soton.ac.uk/hpci/tools/vlogref.pdf Verilog HDL QUICK REFERENCE CARD V2.1]
+
+
 == Recursos de Universidades ==
 
  * [http://labspace.open.ac.uk/course/view.php?id=4616 Verilog for FPGA's] The open university
@@ -25,11 +31,6 @@
  * [http://electrosofts.com/verilog/index.html Verilog Tutorial] - Harsha Perla, electrosofts
  * [http://www.doulos.com/knowhow/verilog_designers_guide/ The Designer’s Guide to Verilog] - Doulos
  * [http://www.asic-world.com/verilog/veritut.html Verilog Tutorial] - asic-world
-
-== Quick Reference ==
- * [http://www.hpcc.ecs.soton.ac.uk/hpci/tools/vlogref.pdf Verilog HDL QUICK REFERENCE CARD V2.1]
- * [http://www.sutherland-hdl.com/online_verilog_ref_guide/vlog_ref_top.html online Verilog-1995 Quick Reference Guide] - Stuart Sutherland
-
 
 == FAQ's ==
  * [http://www.angelfire.com/in/verilogfaq/ Alternative Verilog FAQ]
