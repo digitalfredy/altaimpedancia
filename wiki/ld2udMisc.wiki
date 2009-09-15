@@ -76,5 +76,6 @@ Pie de página:
   * GTKWave Analyzer v3.1.10 para visualizar el resultado de las simulaciones (.vcd)
  * Autor: Fredy Pulido López (digitalfredy)
  * Copyright: http://www.fsf.org/licensing/licenses/gpl.html
+ * Agradecimientos:
 */
 }}}
