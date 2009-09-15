@@ -24,7 +24,7 @@ En esta sección revisaré las diapositivas con el ánimo de estudiarlas y revis
 || 5 || Lenguajes || Cambiar por verilog exclusivamente ||
 || 6-8 || Base VHDL || Cambiar a Base Verilog ||
 || 9 || Niveles descripción || copiar igual y revisar pag 5 Verilog Tutorial - Deepak Kumar Tala, University of Edinburgh  y Verilog Tutorial VLSI II - E. Özgür ATES ||
-|| 10-14 || descripción en VHDL || cambiar a Descripción en Verilog ||
+|| 10-14 || descripción en VHDL || 1er acercamiento con CompuertasAndOr_Lab.v y explicar Primitivas propias, primtivas de usuario con SumaProductos_Primitiva.v, lo de paginas 10 a 14 con SumaProductos_Estructural.v, SumaProductos_Funcional.v y SumaProductos_Comportamental.v ||
 || 15-27 || Combinacionales con VHDL || Combinacionales con Verilog ||
 || 28-30 || Concurrencia con VHDL || Concurrencia con Verilog ||
 || 31 || Simulación conceptos || Copiar conceptos ||
