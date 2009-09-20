@@ -1,5 +1,5 @@
 $date
-	Sun Sep 13 11:20:28 2009
+	Thu Sep 17 12:59:27 2009
 $end
 $version
 	Icarus Verilog
@@ -11,119 +11,185 @@ $scope module Laboratorio1 $end
 $var wire 1 ! RtaAndOperadorBitABit_Funcional $end
 $var wire 1 " RtaAndOperadorCondicional_Funcional $end
 $var wire 1 # RtaAndUsandoNand_Estructural $end
-$var wire 1 $ RtaXorOperadorCondicional_Funcional $end
-$var wire 1 % RtaXorOperadorBitABit_Funcional $end
-$var wire 1 & RtaXorUsandoNand_Estructural $end
-$var reg 2 ' EstimuloCompuertas[1:0] $end
+$var wire 8 $ RtaDesplazaDerecha2Bits[7:0] $end
+$var wire 8 % RtaRotaIzquierda2Bits[7:0] $end
+$var wire 1 & RtaXorOperadorBitABit_Funcional $end
+$var wire 1 ' RtaXorOperadorCondicional_Funcional $end
+$var wire 1 ( RtaXorUsandoNand_Estructural $end
+$var reg 2 ) EstimuloCompuertas[1:0] $end
+$var reg 8 * Palabra[7:0] $end
 $scope module InstanciaAndOperadorBitABit_Funcional $end
-$var wire 2 ( Entrada[1:0] $end
+$var wire 2 + Entrada[1:0] $end
 $var wire 1 ! Salida $end
 $upscope $end
 $scope module InstanciaAndOperadorCondicional_Funcional $end
-$var wire 2 ) Entrada[1:0] $end
+$var wire 2 , Entrada[1:0] $end
 $var wire 1 " Salida $end
 $upscope $end
 $scope module InstanciaAndUsandoNand_Estructural $end
-$var wire 1 * Cable $end
-$var wire 2 + Entrada[1:0] $end
+$var wire 1 - Cable $end
+$var wire 2 . Entrada[1:0] $end
 $var wire 1 # Salida $end
 $upscope $end
 $scope module InstanciaXorOperadorBitABit_Funcional $end
-$var wire 2 , Entrada[1:0] $end
-$var wire 1 % Salida $end
+$var wire 2 / Entrada[1:0] $end
+$var wire 1 & Salida $end
 $upscope $end
 $scope module InstanciaXorOperadorCondicional_Funcional $end
-$var wire 2 - Entrada[1:0] $end
-$var wire 1 $ Salida $end
+$var wire 2 0 Entrada[1:0] $end
+$var wire 1 ' Salida $end
 $upscope $end
 $scope module InstanciaXorUsandoNand_Estructural $end
-$var wire 1 . CableA $end
-$var wire 1 / CableB $end
-$var wire 1 0 CableC $end
-$var wire 1 1 CableD $end
-$var wire 2 2 Entrada[1:0] $end
-$var wire 1 & Salida $end
+$var wire 1 1 CableA $end
+$var wire 1 2 CableB $end
+$var wire 1 3 CableC $end
+$var wire 1 4 CableD $end
+$var wire 2 5 Entrada[1:0] $end
+$var wire 1 ( Salida $end
+$upscope $end
+$scope module InstanciaRotaIzquierda2Bits $end
+$var wire 8 6 Entrada[7:0] $end
+$var wire 8 7 Salida[7:0] $end
+$upscope $end
+$scope module InstanciaDesplazaDerecha2Bits $end
+$var wire 8 8 Entrada[7:0] $end
+$var wire 8 9 Salida[7:0] $end
 $upscope $end
 $upscope $end
 $enddefinitions $end
 #0
 $dumpvars
-b0 2
+b0 9
+b0 8
+b0 7
+b0 6
+b0 5
+14
+13
+12
 11
-10
-1/
-1.
-b0 -
+b0 0
+b0 /
+b0 .
+1-
 b0 ,
 b0 +
-1*
+b0 *
 b0 )
-b0 (
-b0 '
+0(
+0'
 0&
-0%
-0$
+b0 %
+b0 $
 0#
 0"
 0!
 $end
 #1
-1$
+1'
+1(
 1&
-1%
-0/
-00
-b1 '
-b1 (
+02
+03
+b1000000 %
+b1 *
+b1 6
+b1000000 7
+b1 8
 b1 )
 b1 +
 b1 ,
-b1 -
-b1 2
+b1 .
+b1 /
+b1 0
+b1 5
 #2
-1$
+1'
+04
+1(
 01
 1&
-0.
-1%
-1/
-10
-b10 '
-b10 (
+12
+13
+b10000000 %
+b10 *
+b10 6
+b10000000 7
+b10 8
 b10 )
 b10 +
 b10 ,
-b10 -
-b10 2
+b10 .
+b10 /
+b10 0
+b10 5
 #3
-0$
-0&
+0'
+0(
 1#
-11
+14
 1!
 1"
-0*
-0%
-0/
-b11 '
-b11 (
+0-
+0&
+02
+b11000000 %
+b11 *
+b11 6
+b11000000 7
+b11 8
 b11 )
 b11 +
 b11 ,
-b11 -
-b11 2
+b11 .
+b11 /
+b11 0
+b11 5
 #4
 0#
-1.
+11
 0!
 0"
-1*
-0%
-1/
-b0 '
-b0 (
+1-
+0&
+12
+b1 $
+b1 9
+b1 %
+b100 *
+b100 6
+b1 7
+b100 8
 b0 )
 b0 +
 b0 ,
-b0 -
-b0 2
+b0 .
+b0 /
+b0 0
+b0 5
+#5
+b1000001 %
+b101 *
+b101 6
+b1000001 7
+b101 8
+#6
+b10000001 %
+b110 *
+b110 6
+b10000001 7
+b110 8
+#7
+b11000001 %
+b111 *
+b111 6
+b11000001 7
+b111 8
+#8
+b10 $
+b10 9
+b10 %
+b1000 *
+b1000 6
+b10 7
+b1000 8
