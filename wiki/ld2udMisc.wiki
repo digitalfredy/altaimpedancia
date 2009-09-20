@@ -46,6 +46,7 @@
  * [http://books.google.com/books?id=-aI0VXNaPQUC&pg=PA37&lpg=PA37&dq=verilog+abstraction+levels&source=bl&ots=rr7U4HxoFZ&sig=zfCVBTH4khzJ1pPNni4jux5fq-I&hl=es&ei=oyumSrWaK9Xktgek_9zWDw&sa=X&oi=book_result&ct=result&resnum=7#v=onepage&q=verilog%20abstraction%20levels&f=false The complete Verilog book]
  * [http://liberty.princeton.edu/Research/Modeling/verilog.php Abstractions in Verilog] - Liberty Resarch Group
 
+http://openbookproject.net/electricCircuits/Digital/DIGI_9.html
 FPGA OpenSPARC:
  * http://www.xilinx.com/support/documentation/virtex-5.htm#19294
  * http://www.opensparc.net/fpga/index.html
