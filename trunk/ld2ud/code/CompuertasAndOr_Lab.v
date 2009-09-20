@@ -69,3 +69,4 @@ endmodule // CompuertasAndOr_Lab
 
 
 
+//tags: teoria
