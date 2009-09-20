@@ -47,6 +47,9 @@
  * [http://liberty.princeton.edu/Research/Modeling/verilog.php Abstractions in Verilog] - Liberty Resarch Group
 
 http://openbookproject.net/electricCircuits/Digital/DIGI_9.html
+
+[http://www.cse.psu.edu/~smbrown/cse477_project/Prototype/Prototype.html Interesante formato para documento]
+
 FPGA OpenSPARC:
  * http://www.xilinx.com/support/documentation/virtex-5.htm#19294
  * http://www.opensparc.net/fpga/index.html
