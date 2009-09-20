@@ -1,3 +1,6 @@
+//Electrónica con Software Libre, Free Hardware Design y Open Source Hardware
+//http://ld2ud.altaimpedancia.org - más información en el pié de página
+
 module SumaProductos_Lab (/*AUTOARG*/ ) ;
    reg   [3:0] Estimulo;
    wire   RtaPrimitiva,RtaEstructural,RtaFuncional,RtaComportamental;   

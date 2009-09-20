@@ -1,3 +1,6 @@
+//Electrónica con Software Libre, Free Hardware Design y Open Source Hardware
+//http://ld2ud.altaimpedancia.org - más información en el pié de página
+
 //http://altaimpedancia.org/wiki/ld2ud
 
 //Las primitivas _Unicamente_ tienen una salida y es el primer terminal
