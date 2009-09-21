@@ -1,0 +1,8 @@
+#summary One-sentence summary of this page.
+= Introduction =
+Lo mismo pero:
+11: importante para el profesor hacer 9*X
+20: contador de pares
+21 Contador pares con la carga paralela del comportamiento a2
+25: importante, usado en proyecto real, pensar en algo diferente, pendiente
+
