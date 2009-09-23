@@ -1,5 +1,6 @@
-#summary One-sentence summary of this page.
-= Introduction =
+#summary Liberando lección 4
+#labels ld2ud,verilog
+= Lo acordado con profesor =
 Lo mismo pero:
  * 11: importante para el profesor hacer 9*X
  * 20: contador de pares
