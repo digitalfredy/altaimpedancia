@@ -7,4 +7,4 @@ module SumadorSigno (/*AUTOARG*/ ) ;
 endmodule // SumadorSigno
 
 
-//Sin carry como el del slide9
+//Sin carry como el del slide9//tags: teoria

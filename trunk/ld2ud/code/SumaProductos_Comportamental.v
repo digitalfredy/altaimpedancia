@@ -28,3 +28,4 @@ module SumaProductos_Comportamental (/*AUTOARG*/
    end   
 
 endmodule // SumaProductos_Comportamental
+//tags: teoria

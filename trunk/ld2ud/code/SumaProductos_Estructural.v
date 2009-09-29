@@ -16,3 +16,4 @@ module SumaProductos_Estructural (/*AUTOARG*/
    or  U3 (SumaProductos,Productos[1],Productos[0]);
    
 endmodule // SumaProductos_Estructural
+//tags: teoria

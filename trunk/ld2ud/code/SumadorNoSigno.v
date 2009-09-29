@@ -14,4 +14,4 @@ endmodule // SumadorNoSigno
 
 
 //sin acarreo como en slide7
-//eso de dibujar el acarreo y no implementarlo me confundió
+//eso de dibujar el acarreo y no implementarlo me confundió//tags: teoria

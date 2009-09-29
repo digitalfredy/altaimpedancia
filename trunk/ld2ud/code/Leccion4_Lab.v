@@ -30,3 +30,4 @@ module Leccion4 (/*AUTOARG*/ ) ;
    
    
 endmodule // Leccion4
+//tags: teoria
