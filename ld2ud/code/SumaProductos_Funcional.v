@@ -13,3 +13,4 @@ module SumaProductos_Funcional (/*AUTOARG*/
    assign SumaProductos = (Entrada[3] & Entrada[2]) | (Entrada[1] & Entrada[0]);
    
 endmodule // SumaProductos_Funcional
+//tags: teoria

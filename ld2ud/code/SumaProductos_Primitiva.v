@@ -30,4 +30,4 @@ primitive SumaProductos_Primitiva ( SumaProductos, Entrada1, Entrada2, Entrada3,
            1        1        1        1     :     1;
    endtable
 endprimitive // SumaProductos_Primitiva
-  
+  //tags: teoria

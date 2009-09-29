@@ -28,3 +28,4 @@ module SumaProductos_Lab (/*AUTOARG*/ ) ;
    
    
 endmodule // SumaProductos_Lab
+//tags: teoria

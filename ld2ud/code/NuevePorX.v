@@ -10,3 +10,4 @@ module NuevePorX (/*AUTOARG*/
 
    assign Y = {X,'b000}+X;
 endmodule // NuevePorX
+//tags: teoria
