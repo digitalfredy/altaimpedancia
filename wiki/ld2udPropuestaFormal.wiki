@@ -1,5 +1,5 @@
+#summary Liberando digitales II UD
 #labels verilog,ld2ud
-#Liberando digitales II UD
 
 = Objetivo General =
 Generar documentación libre (licencia CC-BYSA) y descripciones de hardware libres (licencia GPL) que puedan ser usadas como Objetos Virtuales de Aprendizaje (OVA's) para facilitar el desarrollo de la asignatura digitales II en la Universidad Distrital que además puedan ser usados por cualquier institución educativa o persona interesada en el aprendizaje o enseñanza de sistemas digitales con el lenguaje de descripción de hardware Verilog y herramientas Software Libre (!OpenSource).
