@@ -21,7 +21,7 @@ Se crea una página wiki temporal llamda BorradorProyectoNombreTemporal (cambiar
  * Plan de trabajo (en la medida de posible con horario de trabajo)
  * Entregables (lo que produce el proyecto, por ejemplo codigo, documentos, participar en un evento, publicar un artículo indexado, un dispositivo de hardware ...)
 
-### inicio proyecto (crear pag, pag propuesta, url, carpeta ...)
+### inicio proyecto (crear pag, pag propuesta, url, carpeta ... Poner proyecto en pág principal de altaimpedancia, poner nombre corto en labels de wiki (pestaña admin) ...)
 
 == Uso de los recursos ==
 Los recursos existentes de momento son el repositorio y el wiki de code.google.com
