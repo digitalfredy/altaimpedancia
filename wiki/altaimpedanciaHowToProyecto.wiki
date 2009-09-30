@@ -7,8 +7,6 @@ La dinámica de trabajo del SIG altaimpedancia es el desarrollo de proyectos, pr
 Esta página es una guia para el desarrollo de proyectos, la _letra inclinada_ debe reemplazarse por el valor correspondiente.
 
 == Definición del proyecto ==
-
-
 === Bosquejo ===
 Informalmente (en la cabeza, en una servilleta o charladito con cerveza) hacerse una idea del proyecto que responda *qué, cómo y por qué?* y pensar en un nombre para el proyecto
 
@@ -31,22 +29,22 @@ Se crea una página wiki temporal llamada _!BorradorProyectoNombreTemporal_  que
    * Borrar la plantilla
    * Se usará para indexar el proyecto (enlaces a codigo, páginas, documentación ...)
   * *Labels:* _nombrecorto_
-  * *Commit Log:* Iniciando, prometo indexar organizadamente l proyecto mientras lo desarrollo :)
+  * *Commit Log:* Iniciando, prometo indexar organizadamente el proyecto mientras lo desarrollo :)
  * URL: _http://nombrecorto.altaimpedancia.org_ --> _Página Principal_ (pedir a digitalfredy)
  * Index proyectos: en [http://altaimpedancia.org pág principal] de altaimpedancia agregar proyecto a la lista  (pedir a digitalfredy)
  * Página Propuesta Proyecto:[http://code.google.com/p/altaimpedancia/w/edit Crear página nueva]
   * *Page Name:* _nombrecortoPropuestaProyecto_
   * *Content:* #summary  _Nombre Largo del Proyecto_
    * Borrar la plantilla
-   * Copiar documento desarrollado en página borrador // se podrá hace svn mv???
+   * Copiar documento desarrollado en página borrador    // se podrá hace svn mv???
   * *Labels:* _nombrecorto_
-  * *Commit Log:* Propuesta del proyecto, documento inicialmente desarrollado como _BorradorProyecto_NombreTemporal_
+  * *Commit Log:* Propuesta del proyecto, documento inicialmente desarrollado como _BorradorProyectoNombreTemporal_
   * Guardar y verificar que quedó bien copiado
- * Borrar página borrador
- * Repositorio: Crear carpeta del proyecto //abajo en detalle
+ * Borrar página _BorradorProyectoNombreTemporal_
+ * Repositorio: Crear carpeta del proyecto    //abajo en detalle
 
 
-== Repositorio ===
+=== Repositorio ===
 TODO ESTO DEBERÍA HACERLO UN SCRIPT
 Por cada proyecto se crea una carpeta con el _nombrecorto_ del proyecto que debe  contener las siguientes carpetas:
  * ABOUT
@@ -56,7 +54,7 @@ Por cada proyecto se crea una carpeta con el _nombrecorto_ del proyecto que debe
  * doc
 En este directorio *no se permiten archivos* y al máximo se evitará la creación de carpetas adicionales, si el proyecto es muy complejo en las carpetas code y doc se pueden crear subcarpetas que contengan módulos del proyecto o subproyectos.
 
-=== wiki ===
+=== "Subpáginas" (googlecode no soporta subpáginas) ===
 
 Si es necesario se creará una página aparte para hablar del código, de la documentación, de un módulo o un subproyecto pero siempre colocando como prefijo el nombre corto del proyecto, ejemplo (si el nombre corto del proyecto fuera ld2ud):
  * ld2ud esta sería la página principal del proyecto
