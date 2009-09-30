@@ -22,7 +22,7 @@ Se crea una página wiki temporal llamada _!BorradorProyectoNombreTemporal_  que
 
 == Preparación Recursos ==
  * Agregar desarrolladores y colaboradores: en [http://code.google.com/p/altaimpedancia/adminMembers Project members] los que falten (pedir a digitalfredy)
- * Label para páginas wiki: en [http://code.google.com/p/altaimpedancia/adminWiki Predefined wiki page labels]: _nombrecorto_ = _Nombre Largo del Proyecto_
+ * Label para páginas wiki: en [http://code.google.com/p/altaimpedancia/adminWiki Predefined wiki page labels]: _nombrecorto_ = _Nombre Largo del Proyecto_  (pedir a digitalfredy)
  * Página Principal: [http://code.google.com/p/altaimpedancia/w/edit Crear página nueva]
   * *Page Name:* _nombrecorto_
   * *Content:* #summary  _Nombre Largo del Proyecto_
@@ -38,9 +38,9 @@ Se crea una página wiki temporal llamada _!BorradorProyectoNombreTemporal_  que
    * Borrar la plantilla
    * Copiar documento desarrollado en página borrador    // se podrá hace svn mv???
   * *Labels:* _nombrecorto_
-  * *Commit Log:* Propuesta del proyecto, documento inicialmente desarrollado como _BorradorProyectoNombreTemporal_
+  * *Commit Log:* Propuesta del proyecto, documento inicialmente desarrollado como _!BorradorProyectoNombreTemporal_
   * Guardar y verificar que quedó bien copiado
- * Borrar página _BorradorProyectoNombreTemporal_
+ * Borrar página _!BorradorProyectoNombreTemporal_
  * Repositorio: Crear carpeta del proyecto    //abajo en detalle
 
 
