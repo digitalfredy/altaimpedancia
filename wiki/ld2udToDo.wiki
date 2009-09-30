@@ -2,8 +2,7 @@
 #labels verilog,ld2ud
 
  * Exportar a png (DECENTE) los esquematicos
-
-
+ * CombinatoriaCodigo.v //mejorar el nombre, el hardware descrito no hace combinación
 
 = Reglas y notas para código ==
  * Todo el código dentro de la carpeta code
