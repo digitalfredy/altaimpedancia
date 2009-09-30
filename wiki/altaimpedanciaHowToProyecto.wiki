@@ -30,7 +30,7 @@ Se crea una página wiki temporal llamada _!BorradorProyectoNombreTemporal_  que
    * Se usará para indexar el proyecto (enlaces a codigo, páginas, documentación ...)
   * *Labels:* _nombrecorto_
   * *Commit Log:* Iniciando, prometo indexar organizadamente el proyecto mientras lo desarrollo :)
- * URL: _http://nombrecorto.altaimpedancia.org_ --> _Página Principal_ (pedir a digitalfredy)
+ * Redirección subdominio: _http://nombrecorto.altaimpedancia.org_ --> _Página Principal_ (pedir a digitalfredy)
  * Index proyectos: en [http://altaimpedancia.org pág principal] de altaimpedancia agregar proyecto a la lista  (pedir a digitalfredy)
  * Página Propuesta Proyecto:[http://code.google.com/p/altaimpedancia/w/edit Crear página nueva]
   * *Page Name:* _nombrecortoPropuestaProyecto_
