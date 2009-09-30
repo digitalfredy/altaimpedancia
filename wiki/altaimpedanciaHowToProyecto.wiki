@@ -43,3 +43,4 @@ Por cada proyecto que exista se creará una página wiki con el nombre corto del
  * muymuy-misc sería para cosas varias
  * muymuy-links una lista de enlaces de interés al proyecto
  * muymuy-subproyecto sería la página de un subproyecto
+*SUBPAGINAS deben estar en categoría con nombre corto del proyecto, ej ld2ud*
