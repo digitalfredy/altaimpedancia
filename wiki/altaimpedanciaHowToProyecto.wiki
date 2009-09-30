@@ -23,22 +23,24 @@ Se crea una página wiki temporal llamada _!BorradorProyectoNombreTemporal_  que
  * Entregables (lo que produce el proyecto, por ejemplo codigo, documentos, participar en un evento, publicar un artículo indexado, un dispositivo de hardware ...)
 
 == Preparación Recursos ==
- * Agregar desarrolladores y colaboradores: en [http://code.google.com/p/altaimpedancia/adminMembers Project members] los que falten
+ * Agregar desarrolladores y colaboradores: en [http://code.google.com/p/altaimpedancia/adminMembers Project members] los que falten (pedir a digitalfredy)
  * Label para páginas wiki: en [http://code.google.com/p/altaimpedancia/adminWiki Predefined wiki page labels]: _nombrecorto_ = _Nombre Largo del Proyecto_
  * Página Principal: [http://code.google.com/p/altaimpedancia/w/edit Crear página nueva]
-  * Page Name: _nombrecorto_
-  * Content: #summary  _Nombre Largo del Proyecto_
+  * *Page Name:* _nombrecorto_
+  * *Content:* #summary  _Nombre Largo del Proyecto_
    * Borrar la plantilla
    * Se usará para indexar el proyecto (enlaces a codigo, páginas, documentación ...)
+  * *Labels:* _nombrecorto_
+  * *Commit Log:* Iniciando, prometo indexar organizadamente l proyecto mientras lo desarrollo :)
  * URL: _http://nombrecorto.altaimpedancia.org_ --> _Página Principal_ (pedir a digitalfredy)
  * Index proyectos: en [http://altaimpedancia.org pág principal] de altaimpedancia agregar proyecto a la lista  (pedir a digitalfredy)
  * Página Propuesta Proyecto:[http://code.google.com/p/altaimpedancia/w/edit Crear página nueva]
-  *Page Name = _nombrecortoPropuestaProyecto_
-  * Content: #summary  _Nombre Largo del Proyecto_
+  * *Page Name:* _nombrecortoPropuestaProyecto_
+  * *Content:* #summary  _Nombre Largo del Proyecto_
    * Borrar la plantilla
    * Copiar documento desarrollado en página borrador // se podrá hace svn mv???
-  * Labels: _nombrecorto_
-  * Commit Log: Propuesta del proyecto, documento inicialmente desarrollado como _BorradorProyecto_NombreTemporal_
+  * *Labels:* _nombrecorto_
+  * *Commit Log:* Propuesta del proyecto, documento inicialmente desarrollado como _BorradorProyecto_NombreTemporal_
   * Guardar y verificar que quedó bien copiado
  * Borrar página borrador
  * Repositorio: Crear carpeta del proyecto //abajo en detalle
