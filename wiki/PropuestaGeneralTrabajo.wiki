@@ -8,8 +8,8 @@ Hasta el momento el SIG altaimpedancia.org son las personas y el proyecto en cod
 == Dinámica de trabajo ==
 
 Trabajar por proyectos,haciendo el ejercicio de en cada proyecto crear un documento que contenga:
- * Nombre del proyecto (Ejemplo:Nombre muy muy muy largo del proyecto)
- * Nombre corto del proyecto (sin espacios) (Ejeplo: muymuy)
+ * Nombre del proyecto (Ejemplo:Liberando digitales II UD)
+ * Nombre corto del proyecto (sin espacios) (Ejeplo: ld2ud)
   * Este es el que se usa para crear una carpeta y pág wiki para el proyecto
  * Objetivo general
  * Objetivos especificos
@@ -17,14 +17,16 @@ Trabajar por proyectos,haciendo el ejercicio de en cada proyecto crear un docume
  * Plan de trabajo (en la medida de posible con horario de trabajo)
  * Entregables (lo que produce el proyecto, por ejemplo codigo, documentos, participar en un evento, publicar un artículo indexado, un dispositivo de hardware ...)
 
+Nota: se debería crear una plantilla
+
 == Uso de los recursos ==
 Los recursos existentes de momento son el repositorio y el wiki de code.google.com
 
 == Repositorio ===
 Por cada proyecto se crea una carpeta con el nombre corto del proyecto que debe  contener las siguientes carpetas:
- * ABOUT
+ * ABOUT //[http://code.google.com/p/altaimpedancia/source/browse/#svn/trunk/ld2ud/ABOUT ejemplo]
   * README // archivo de texto que como mínimo contiene la url de la pág wiki del proyecto
- * misc
+ * misc 
  * code
  * doc
 En este directorio *no se permiten archivos* y al máximo se evitará la creación de carpetas adicionales, si el proyecto es muy complejo en las carpetas code y doc se pueden crear subcarpetas que contengan módulos del proyecto o subproyectos.
