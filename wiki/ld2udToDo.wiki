@@ -1,4 +1,5 @@
 #summary Cosas pendientes:
+#labels verilog,ld2ud
 
  * Renombrar Taller1 con prefijo ld2ud
 
