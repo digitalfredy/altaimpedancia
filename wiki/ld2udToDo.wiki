@@ -1,10 +1,6 @@
 #summary Cosas pendientes:
 #labels verilog,ld2ud
 
- * Renombrar Taller1 con prefijo ld2ud
-
-
-
 = Reglas y notas para código ==
  * Todo el código dentro de la carpeta code
  * Archivos .v con mismo Header (//url altaimpedanca)
