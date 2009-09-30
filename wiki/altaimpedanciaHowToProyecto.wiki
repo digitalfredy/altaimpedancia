@@ -11,7 +11,7 @@ La dinámica de trabajo del SIG altaimpedancia es el desarrollo de proyectos, pr
 Informalmente (en la cabeza, en una servilleta o charladito con cerveza) hacerse una idea del proyecto que responda *qué, cómo y por qué?* y pensar en un nombre para el proyecto
 
 === Borrador Documento de Propuesta ===
-Se crea una página wiki temporal llamda BorradorProyectoNombreTemporal (cambiar NombreTemporal por el nombre temporal para referir el proyecto) que contenga:
+Se crea una página wiki temporal llamda BorradorProyecto_NombreTemporal_ (cambiar NombreTemporal por el nombre temporal para referir el proyecto) que contenga:
  * Nombre del proyecto (Ejemplo:Nombre muy muy muy largo del proyecto)
  * Nombre corto del proyecto (sin espacios) (Ejeplo: muymuy)
   * Este es el que se usa para crear una carpeta y pág wiki para el proyecto
@@ -22,12 +22,22 @@ Se crea una página wiki temporal llamda BorradorProyectoNombreTemporal (cambiar
  * Entregables (lo que produce el proyecto, por ejemplo codigo, documentos, participar en un evento, publicar un artículo indexado, un dispositivo de hardware ...)
 
 == Preparación Recursos ==
- * Desarrolladores y colaboradores: Agregar en [http://code.google.com/p/altaimpedancia/adminMembers Project members] los que falten
- * label para páginas wiki: en [http://code.google.com/p/altaimpedancia/adminWiki Predefined wiki page labels]: `nombrecorto = Nombre Largo del Proyecto`
- * Página Principal: [http://code.google.com/p/altaimpedancia/w/edit Crear página nueva] `Page Name=nombrecorto`
- * URL: http://nombrecorto.altaimpedancia.org --> Página Principal
- * Index proyectos: en [http://altaimpedancia.org pág principal] de altaimpedancia agregar proyecto a la lista
- * Página Propuesta Proyecto:
+ * Agregar desarrolladores y colaboradores: en [http://code.google.com/p/altaimpedancia/adminMembers Project members] los que falten
+ * Label para páginas wiki: en [http://code.google.com/p/altaimpedancia/adminWiki Predefined wiki page labels]: _nombrecorto = Nombre Largo del Proyecto_
+ * Página Principal: [http://code.google.com/p/altaimpedancia/w/edit Crear página nueva]
+  * Page Name: _nombrecorto_
+  * Content: `#summary  Nombre Largo del Proyecto`
+   * Borrar la plantilla
+ * URL: http://nombrecorto.altaimpedancia.org --> Página Principal (pedir a digitalfredy)
+ * Index proyectos: en [http://altaimpedancia.org pág principal] de altaimpedancia agregar proyecto a la lista  (pedir a digitalfredy)
+ * Página Propuesta Proyecto:[http://code.google.com/p/altaimpedancia/w/edit Crear página nueva] _Page Name = _nombrecortoPropuestaProyecto_
+  * Content: `#summary  Nombre Largo del Proyecto`
+   * Borrar la plantilla
+   * Copiar documento desarrollado en página borrador
+  * Labels: _nombrecorto_
+  * Commit Log: Propuesta del proyecto, documento inicialmente desarrollado como BorradorProyecto_NombreTemporal_
+  * Guardar y verificar que quedó bien copiado
+ * Borrar página borrador
  * Repositorio: Crear carpeta del proyecto //abajo en detalle
 
 
