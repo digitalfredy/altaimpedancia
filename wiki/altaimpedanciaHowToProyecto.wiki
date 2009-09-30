@@ -1,13 +1,17 @@
-#summary trabajar por proyectos es organizarnos :)
+#summary Electrónica con Software Libre, Free Hardware Design y Open Source Hardware - guía para desarrollar proyectos
 #labels organización
 
 = Trabajo por proyectos =
+La dinámica de trabajo del SIG altaimpedancia es el desarrollo de proyectos, procuramos seguir el principio [http://es.wikipedia.org/wiki/Principio_KISS KISS] y usamos code.google.com para el desarrollo, gestión archivo y publicación.
 
-Hasta el momento el SIG altaimpedancia.org son las personas y el proyecto en code.google.com, muy pocas variables y sin embargo parece que no hemos logrado una dinámica de trabajo ni políticas que ordenen el uso de los sencillos recursos, esta propusta tiene el ánimo de proponer la dinámica de trabajo y orden que nos permita ser más productivos y sigue el prinipio KISS.
+== Definición del proyecto ==
+*Referencia:* Para el proyecto l2ud yo sabía que quería que me lo valieran como nota para la materia digitales, que necesitaba usar espacios físicos como la rama IEEE y el LAMIC para el desarrollo, y que la idea general era llegar a acuerdos con los profesores para realizar actividades alternativas trabajando sobre linux usando Software Libre y verilog, inicialmente pensé en liberar todos el material de apoyo de la materia (propiedad de los profesores) un profesor me dijo que no y el otro que un pedazo, pensaba hacer los mismos ejemplos de vhdl en verilog pero en teoría hice otros sugeridos por el profesor ... luego de haber charlado y hecho acuerdos verbales hice la primera propuesta formal del documento, se hicieron unos ajustes sobre los entregables y así quedó, al final no se hizo todo al pie de la letra pero charlar, acordar y hacer el documento estructuró muy bien el proyecto en la cabeza y evitó desviarme en el desarrollo.
 
-== Dinámica de trabajo ==
+=== Bosquejo ===
+Informalmente (en la cabeza, en una servilleta o charladito con cerveza) hacerse una idea del proyecto que responda *que, como y por qué?* y pensar en un nombre para el proyecto
 
-Trabajar por proyectos,haciendo el ejercicio de en cada proyecto crear un documento que contenga:
+=== Borrador Documento de Propuesta ===
+Se crea una página wiki temporal llamda BorradorProyectoNombreTemporal (cambiar NombreTemporal por el nombre temporal para referir el proyecto) que contenga:
  * Nombre del proyecto (Ejemplo:Nombre muy muy muy largo del proyecto)
  * Nombre corto del proyecto (sin espacios) (Ejeplo: muymuy)
   * Este es el que se usa para crear una carpeta y pág wiki para el proyecto
@@ -16,6 +20,8 @@ Trabajar por proyectos,haciendo el ejercicio de en cada proyecto crear un docume
  * Justificación (de los objetivos general y especificos)
  * Plan de trabajo (en la medida de posible con horario de trabajo)
  * Entregables (lo que produce el proyecto, por ejemplo codigo, documentos, participar en un evento, publicar un artículo indexado, un dispositivo de hardware ...)
+
+### inicio proyecto (crear pag, pag propuesta, url, carpeta ...)
 
 == Uso de los recursos ==
 Los recursos existentes de momento son el repositorio y el wiki de code.google.com
