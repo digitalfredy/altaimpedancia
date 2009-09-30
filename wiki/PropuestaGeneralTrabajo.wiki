@@ -24,8 +24,8 @@ Los recursos existentes de momento son el repositorio y el wiki de code.google.c
 
 == Repositorio ===
 Por cada proyecto se crea una carpeta con el nombre corto del proyecto que debe  contener las siguientes carpetas:
- * ABOUT //[http://code.google.com/p/altaimpedancia/source/browse/#svn/trunk/ld2ud/ABOUT ejemplo]
-  * README // archivo de texto que como mínimo contiene la url de la pág wiki del proyecto
+ * README // archivo de texto que como mínimo contiene la url de la pág wiki del proyecto
+  * [http://code.google.com/p/altaimpedancia/source/browse/trunk/ld2ud/README ejemplo]
  * misc 
  * code
  * doc
