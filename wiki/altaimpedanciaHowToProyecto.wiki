@@ -63,10 +63,10 @@ Si es necesario crear una [http://code.google.com/p/altaimpedancia/w/edit Crear 
   * *Commit Log:* Creada página _nombrecortoNombrePagina_ para ...
 
 Ejemplos:
- * ld2udDoc sería la página sobre doc del proyecto
- * ld2udNombreModulo sería para hablar de un módulo
- * [ld2udMisc] cosas varias del proyecto ld2ud
- * ld2udSubproyecto sería la página de un subproyecto
+ * ld2udDoc sería la página sobre doc del proyecto ld2ud
+ * ld2udNombreModulo sería para hablar de un módulo ld2ud
+ * [ld2udMisc] es una página con cosas varias del proyecto ld2ud
+ * ld2udSubproyecto sería la página de un subproyecto de  ld2ud
 
 
 
