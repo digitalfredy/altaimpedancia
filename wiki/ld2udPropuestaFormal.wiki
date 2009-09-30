@@ -1,0 +1,78 @@
+#labels verilog,ld2ud
+#Liberando digitales II UD
+
+= Objetivo General =
+Generar documentación libre (licencia CC-BYSA) y descripciones de hardware libres (licencia GPL) que puedan ser usadas como Objetos Virtuales de Aprendizaje (OVA's) para facilitar el desarrollo de la asignatura digitales II en la Universidad Distrital que además puedan ser usados por cualquier institución educativa o persona interesada en el aprendizaje o enseñanza de sistemas digitales con el lenguaje de descripción de hardware Verilog y herramientas Software Libre (!OpenSource).
+
+= Objetivos Especificos =
+<wiki:comment>
+ * Incentivar el uso de Software Libre para Electrónica, !OpenSource Hardware y Free  Hardware Desingn en la Universidad Distrital.
+NOTA: No medible
+</wiki:comment>
+ * Desarrollar el contenido de la asignatura digitales II relacionado con lenguajes de descripción de hardware usando herramientas de Software Libre.
+ * Desarrollar el contenido de la asignatura digitales II relacionado con lenguajes de descripción de hardware usando Verilog en vez de VHDL.
+ * Desarrollar el proyecto de laboratorio  de la asignatura digitales II mediante la descripción en Verilog del diseño de un sencillo microprocesador CISC
+<wiki:comment>
+ nota: puede ser el del profe muñoz o tal vez el de gajski
+ * Liberar con licencia CC-BYSA el material acadéico (OVA's) usado como apoyo para enseñar la asignatura:
+NOTA: no hay claridad del tema legal, de momento no se hace
+  * Diapositivas profesor Miguel Melgarejo
+  * Diseño microprocesador CISC y RISC profesor Muñoz
+  * Laboratorios profesor Gaona
+</wiki:comment>
+ * Acordar con el profesor Miguel Melgarejo ejemplos alternativos a las las descripciones VHDL existentes en las diapositivas de las sesiones teóricas 3 y 4, describirlos y publicarlos con licencia GPL.
+ * Generar OVAs derivados de las diapositivas de las sesiones teóricas 3 y 4 del profesor Miguel Melgarejo usando ejemplos alternativos acordados, con enfasis en Verilog en vez de VHDL y haciendo diagramas e imágenes propias (no usar las del profesor pero si recrearlas).
+ * Generar documentación de instalación y uso de herramientas de Software Libre relacionadas con Verilog y FPGA's para sistema operativo Linux
+ * Publicar con licencia GPL desarrollo laboratorios con Software Libre y Verilog
+ * Desarrollar este proyecto como alternativa de trabajo para la asignatura digitlaes II
+ * Escribir un artículo relacionado con Verilog y Software Libre y lograr su publicación en una revista indexada.
+
+= Justificación General =
+La misisón de la Universidad Distrital Francisco Jose de Caldas y el objetivo general del SIG altaimpedancia.org
+
+== Misión Universidad Distrital Francisco José de Caldas ==
+_"La democratización del conocimiento para garantizar, a nombre de la sociedad y con participación del Estado, el derecho social a una educación superior con criterios de excelencia, equidad y competitividad mediante la generación y difusión de saberes y conocimientos, con autonomía y vocación hacia el desarrollo sociocultural y contribuir al progreso de la ciudad región de Bogotá y el país. (Plan Estratégico de Desarrollo 2007 - 2016)"_
+
+== Objetivo General SIG altaimpedancia.org ==
+_Incentivar la creación y liberación de diseños de hardware que puedan convertirse o ser parte de dispositivos de hardware de fuente abierta._
+
+= Justificaciones Específicas =
+== Proyecto ==
+ * Convergencia de intereses en asignatura digitales II, capítulo circuits and systems IEEE UD y altaimpedancia.org
+ * No se conoce material libre en español con las características del que se espera generar y liberar.
+== Uso del lenguaje Verilog ==
+ * La asignatura digitales II se convertirá en Análisis y Diseño de Microprocesadores, SUN Microsistems ha liberado bajo licencia GPL (!OpenSource Hardware) la descripción de hardware escrita en lenguaje Verilog del microprocesador Ultra SPARC T2 ahora conocida con el nombre de OpenSPARC, el primer y único procesador RISC multihilo de 64bit con 8 nucleos que es totalmente !OpenSource Hardware y que está acompañado de documentación y herramientas que facilitan la investigación y desarrollo sobre el mismo, gracias a trabajo de voluntarios independientes y de acuerdos de colaboración como el existente entre SUN y Xilinix existen variables más sencillas de este procesador que son faciles de sintetizar en tecnología FPGA usando kits de desarrollo que ya son ofrecidos en el mercado y principalmente por las universidades parte de "OpenSPARC University Program"
+ * Hay grandes posibilidades para desarrollar trabajos de grado relacionados con el microprocesador OpenSPARC.
+ * Es el lenguaje de descripción de hardware que tiene mayor soporte y popularidad entre la comunidad Software Libre
+ * Su sintaxis es menos compleja que la de VHDL y facilita un aprendizaje rápido de la misma
+== Uso Software Libre ==
+ * El estudio y modificación del software en ambientes académicos es algo deseable
+ * Los estudiantes, profesores y grupos de investigación podrán modificar y mejorar el software o crear software nuevo a partir del existente
+ * No impone restricciones de uso permitiendo el desarrollo de las actividades académicas y futuro desarrollo de actividades empresariales sin incurrir en elevados costos
+
+= Plan de trabajo =
+ * Propuesta de proyecto a profesor de teoría de la asignatura digitales II
+ * Propuesta de proyecto a profesor de laboratorio de la asignatura digitales II
+ * Propuesta de proyecto a capítulo CAS IEEE UD.
+ * Investigación acerca de descripción de hardware con lenguaje Verilog.
+ * Elección de herramientas de Software Libre para sistema operativo Linux relacionadas con lenguaje Verilog y FPGA's.
+ * Diseñar e implementar estructura del repositorio
+ * Estudio lecciones 3 y 4
+ * Escritura en verilog de descripciones en VHDL de lecciones 3 y 4
+ * Creación OVAs derivados de las diapositivas de lecciones 3 y 4 enfocada en Verilog
+ * Estudio Microprocesador CISC
+ * Describir en Verilog procesador CISC
+
+= Entregalbes =
+Todos los entregables serán publicados en el repositorio de altaimpedancia.org con licencias GPL y CC-BYSA.
+== Teoria ==
+ * Descripciones en Verilog de lecciones 3 y 4.
+ * OVA para las lecciones 3 y 4 con énfasis en Verilog en vez de VHDL
+== Laboratorio ==
+ * Tutoriales de uso de Software Libre (Linux y Verilog)
+ * Descripción en Verilog de un microprocesador CISC sencillo
+ * Laboratorios desarrollados con Verilog en vez de VHDL
+== IEEE ==
+ * Artículo sobre verilog y Software Libre escrito en Latex
+
+Nota: Este documento antes estába en la página principal: http://code.google.com/p/altaimpedancia/wiki/ld2ud
