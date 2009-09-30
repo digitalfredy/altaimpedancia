@@ -29,7 +29,7 @@ Se crea una página wiki temporal llamada _!BorradorProyectoNombreTemporal_  que
   * Page Name: _nombrecorto_
   * Content: #summary  _Nombre Largo del Proyecto_
    * Borrar la plantilla
-   * Se usará para indexar (enlaces) el proyecto (codigo, páginas, documentación ...)
+   * Se usará para indexar el proyecto (enlaces a codigo, páginas, documentación ...)
  * URL: _http://nombrecorto.altaimpedancia.org_ --> _Página Principal_ (pedir a digitalfredy)
  * Index proyectos: en [http://altaimpedancia.org pág principal] de altaimpedancia agregar proyecto a la lista  (pedir a digitalfredy)
  * Página Propuesta Proyecto:[http://code.google.com/p/altaimpedancia/w/edit Crear página nueva]
