@@ -1,0 +1,39 @@
+#summary trabajar por proyectos es organizarnos :)
+#labels organización
+
+= Trabajo por proyectos =
+
+Hasta el momento el SIG altaimpedancia.org son las personas y el proyecto en code.google.com, muy pocas variables y sin embargo parece que no hemos logrado una dinámica de trabajo ni políticas que ordenen el uso de los sencillos recursos, esta propusta tiene el ánimo de proponer la dinámica de trabajo y orden que nos permita ser más productivos y sigue el prinipio KISS.
+
+== Dinámica de trabajo ==
+
+Trabajar por proyectos,haciendo el ejercicio de en cada proyecto crear un documento que contenga:
+ * Nombre del proyecto (Ejemplo:Nombre muy muy muy largo del proyecto)
+ * Nombre corto del proyecto (sin espacios) (Ejeplo: muymuy)
+  * Este es el que se usa para crear una carpeta y pág wiki para el proyecto
+ * Objetivo general
+ * Objetivos especificos
+ * Justificación (de los objetivos general y especificos)
+ * Plan de trabajo (en la medida de posible con horario de trabajo)
+ * Entregables (lo que produce el proyecto, por ejemplo codigo, documentos, participar en un evento, publicar un artículo indexado, un dispositivo de hardware ...)
+
+== Uso de los recursos ==
+Los recursos existentes de momento son el repositorio y el wiki de code.google.com
+
+== Repositorio ===
+Por cada proyecto se crea una carpeta con el nombre corto del proyecto que debe  contener las siguientes carpetas:
+ * ABOUT
+  * README // archivo de texto que como mínimo contiene la url de la pág wiki del proyecto
+ * misc
+ * code
+ * doc
+En este directorio *no se permiten archivos* y al máximo se evitará la creación de carpetas adicionales, si el proyecto es muy complejo en las carpetas code y doc se pueden crear subcarpetas que contengan módulos del proyecto o subproyectos.
+
+=== wiki ===
+Por cada proyecto que exista se creará una página wiki con el nombre corto del proyecto y en sumario (sumary) se colocará el nombre largo del proyecto y el objetivo general de la página, si es necesario se creará una página aparte para hablar del código, de la documentación, de un módulo o un subproyecto pero siempre colocando como prefijo el nombre corto del proyecto, ejemplo (si el nombre corto del proyecto fuera muymuy):
+ * muymuy esta sería la página principal del proyecto
+ * muymuy-doc sería la página sobre doc del proyecto
+ * muymuy-nombremodulo sería para hablar de un módulo
+ * muymuy-misc sería para cosas varias
+ * muymuy-links una lista de enlaces de interés al proyecto
+ * muymuy-subproyecto sería la página de un subproyecto
