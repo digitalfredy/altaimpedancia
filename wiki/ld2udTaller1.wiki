@@ -1,19 +1,5 @@
-#summary One-sentence summary of this page.
+#summary Informe desarrollo taller 1 digitales2-laboratorio
 #labels verilog,ld2ud
-
-= Introduction =
-
-Add your content here.
-
-
-= Details =
-
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
-
-#Informe desarrollo taller 1 digitales2-laboratorio
 == Desarrollo ==
  * Modele y simule el comportamiento de la compuerta que le corresponda a su grupo de trabajo según la Tabla 1. Los modelos propuestos para tal fin son:
   *  Dos modelos funcionales diferentes para cada una de las compuertas 1 y 2 asignadas.
