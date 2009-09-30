@@ -5,10 +5,10 @@
 La dinámica de trabajo del SIG altaimpedancia es el desarrollo de proyectos, procuramos seguir el principio [http://es.wikipedia.org/wiki/Principio_KISS KISS] y usamos code.google.com para el desarrollo, gestión archivo y publicación.
 
 == Definición del proyecto ==
-*Referencia:* Para el proyecto l2ud yo sabía que quería que me lo valieran como nota para la materia digitales, que necesitaba usar espacios físicos como la rama IEEE y el LAMIC para el desarrollo, y que la idea general era llegar a acuerdos con los profesores para realizar actividades alternativas trabajando sobre linux usando Software Libre y verilog, inicialmente pensé en liberar todos el material de apoyo de la materia (propiedad de los profesores) un profesor me dijo que no y el otro que un pedazo, pensaba hacer los mismos ejemplos de vhdl en verilog pero en teoría hice otros sugeridos por el profesor ... luego de haber charlado y hecho acuerdos verbales hice la primera propuesta formal del documento, se hicieron unos ajustes sobre los entregables y así quedó, al final no se hizo todo al pie de la letra pero charlar, acordar y hacer el documento estructuró muy bien el proyecto en la cabeza y evitó desviarme en el desarrollo.
+
 
 === Bosquejo ===
-Informalmente (en la cabeza, en una servilleta o charladito con cerveza) hacerse una idea del proyecto que responda *que, como y por qué?* y pensar en un nombre para el proyecto
+Informalmente (en la cabeza, en una servilleta o charladito con cerveza) hacerse una idea del proyecto que responda *qué, cómo y por qué?* y pensar en un nombre para el proyecto
 
 === Borrador Documento de Propuesta ===
 Se crea una página wiki temporal llamda BorradorProyectoNombreTemporal (cambiar NombreTemporal por el nombre temporal para referir el proyecto) que contenga:
@@ -21,7 +21,15 @@ Se crea una página wiki temporal llamda BorradorProyectoNombreTemporal (cambiar
  * Plan de trabajo (en la medida de posible con horario de trabajo)
  * Entregables (lo que produce el proyecto, por ejemplo codigo, documentos, participar en un evento, publicar un artículo indexado, un dispositivo de hardware ...)
 
-### inicio proyecto (crear pag, pag propuesta, url, carpeta ... Poner proyecto en pág principal de altaimpedancia, poner nombre corto en labels de wiki (pestaña admin) ...)
+== Preparación Recursos ==
+ * Desarrolladores y colaboradores: Agregar en [http://code.google.com/p/altaimpedancia/adminMembers Project members] los que falten
+ * label para páginas wiki: en [http://code.google.com/p/altaimpedancia/adminWiki Predefined wiki page labels]: `nombrecorto = Nombre Largo del Proyecto`
+ * Página Principal: [http://code.google.com/p/altaimpedancia/w/edit Crear página nueva] `Page Name=nombrecorto`
+ * URL: http://nombrecorto.altaimpedancia.org --> Página Principal
+ * Index proyectos: en [http://altaimpedancia.org pág principal] de altaimpedancia agregar proyecto a la lista
+ * Página Propuesta Proyecto:
+ * Repositorio: Crear carpeta del proyecto //abajo en detalle
+
 
 == Uso de los recursos ==
 Los recursos existentes de momento son el repositorio y el wiki de code.google.com
@@ -36,6 +44,8 @@ Por cada proyecto se crea una carpeta con el nombre corto del proyecto que debe 
 En este directorio *no se permiten archivos* y al máximo se evitará la creación de carpetas adicionales, si el proyecto es muy complejo en las carpetas code y doc se pueden crear subcarpetas que contengan módulos del proyecto o subproyectos.
 
 === wiki ===
+Indexa el proyecto (codigo, páginas, documentación ...)
+
 Por cada proyecto que exista se creará una página wiki con el nombre corto del proyecto y en sumario (sumary) se colocará el nombre largo del proyecto y el objetivo general de la página, si es necesario se creará una página aparte para hablar del código, de la documentación, de un módulo o un subproyecto pero siempre colocando como prefijo el nombre corto del proyecto, ejemplo (si el nombre corto del proyecto fuera muymuy):
  * muymuy esta sería la página principal del proyecto
  * muymuy-doc sería la página sobre doc del proyecto
@@ -44,3 +54,6 @@ Por cada proyecto que exista se creará una página wiki con el nombre corto del
  * muymuy-links una lista de enlaces de interés al proyecto
  * muymuy-subproyecto sería la página de un subproyecto
 *SUBPAGINAS deben estar en categoría con nombre corto del proyecto, ej ld2ud*
+
+
+*Referencia:* Para el proyecto l2ud yo sabía que quería que me lo valieran como nota para la materia digitales, que necesitaba usar espacios físicos como la rama IEEE y el LAMIC para el desarrollo, y que la idea general era llegar a acuerdos con los profesores para realizar actividades alternativas trabajando sobre linux usando Software Libre y verilog, inicialmente pensé en liberar todos el material de apoyo de la materia (propiedad de los profesores) un profesor me dijo que no y el otro que un pedazo, pensaba hacer los mismos ejemplos de vhdl en verilog pero en teoría hice otros sugeridos por el profesor ... luego de haber charlado y hecho acuerdos verbales hice la primera propuesta formal del documento, se hicieron unos ajustes sobre los entregables y así quedó, al final no se hizo todo al pie de la letra pero charlar, acordar y hacer el documento estructuró muy bien el proyecto en la cabeza y evitó desviarme en el desarrollo.
