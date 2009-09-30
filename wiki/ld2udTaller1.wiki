@@ -1,0 +1,34 @@
+#summary One-sentence summary of this page.
+#labels verilog,ld2ud
+
+= Introduction =
+
+Add your content here.
+
+
+= Details =
+
+Add your content here.  Format your content with:
+  * Text in *bold* or _italic_
+  * Headings, paragraphs, and lists
+  * Automatic links to other wiki pages
+
+#Informe desarrollo taller 1 digitales2-laboratorio
+== Desarrollo ==
+ * Modele y simule el comportamiento de la compuerta que le corresponda a su grupo de trabajo según la Tabla 1. Los modelos propuestos para tal fin son:
+  *  Dos modelos funcionales diferentes para cada una de las compuertas 1 y 2 asignadas.
+   * [http://code.google.com/p/altaimpedancia/source/browse/#svn/trunk/ld2ud/code Mirar en repositorio:] AndOperadorBitABit_Funcional.v XorOperadorBitABit_Funcional.v AndOperadorCondicional_Funcional.v XorOperadorCondicional_Funcional.v
+  *  Un modelo estructural para la compuerta 1 y 2 basado en la compuerta universal determinada por la tabla 1
+   * [http://code.google.com/p/altaimpedancia/source/browse/#svn/trunk/ld2ud/code Mirar en repositorio:] AndUsandoNand_Estructural.v XorUsandoNand_Estructural.v
+
+ * Realice el modelado funcional de un desplazador o rotador a izquierda o a derecha de una palabra de entrada de 8 bits. Para tal fin, le es asignada la dirección de desplazamiento y el número de bits a desplazar en la Tabla 2
+  * [http://code.google.com/p/altaimpedancia/source/browse/#svn/trunk/ld2ud/code Mirar en repositorio:] RotaIzquierda2Bits.v DesplazaDerecha2Bits.v (el último no funciona)
+== Simulación ==
+La simulación de puntos 1 y 2: [http://code.google.com/p/altaimpedancia/source/browse/#svn/trunk/ld2ud/code Mirar en repositorio:] Laboratorio1_Lab.v con su resultado en Laboratorio1_Lab.vcd
+
+== Conclusiones ==
+ * La práctica se puede hacer usando 100% software libre
+ * En verilog existe algo llamdo de bajo nivel llamado primitivas (entre ellas las compuertas) y uno puede hacer primitivas propias (UDP) que se pueden expresar en una tabla con una única salida y hata 10 entradas, pero recibe los datos bit a bit, no recibe por ejemplo Bus[3:0]
+ * Para reutilizar módulos solo hace falta pasar como parámetro la descripción.v al compilador.
+ * Para la simulación se crean Test Bench en el mismo lenguaje.
+ * El vector de estímulos para mirar todas las posibles entradas es un contador ascendente
