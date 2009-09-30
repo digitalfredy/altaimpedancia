@@ -45,24 +45,29 @@ Se crea una página wiki temporal llamada _!BorradorProyectoNombreTemporal_  que
 
 
 === Repositorio ===
-TODO ESTO DEBERÍA HACERLO UN SCRIPT
-Por cada proyecto se crea una carpeta con el _nombrecorto_ del proyecto que debe  contener las siguientes carpetas:
- * ABOUT
-  * README // archivo de texto que como mínimo contiene la url de la pág wiki del proyecto
- * misc
- * code
- * doc
-En este directorio *no se permiten archivos* y al máximo se evitará la creación de carpetas adicionales, si el proyecto es muy complejo en las carpetas code y doc se pueden crear subcarpetas que contengan módulos del proyecto o subproyectos.
+{{{
+svn mkdir nombrecorto
+cd nombrecorto
+svn mkdir misc code doc
+echo "http://nombrecorto.altaimpedancia.org" > README
+}}}
 
-=== "Subpáginas" (googlecode no soporta subpáginas) ===
+Cada proyecto tiene derecho a una *unica* carpeta en el nivel superior en la que *no se permiten archivos* (excepto el archivo README) y al máximo se evitará la creación de carpetas adicionales, si el proyecto es muy complejo en las carpetas code y doc se pueden crear subcarpetas que contengan módulos del proyecto o subproyectos.
 
-Si es necesario se creará una página aparte para hablar del código, de la documentación, de un módulo o un subproyecto pero siempre colocando como prefijo el nombre corto del proyecto, ejemplo (si el nombre corto del proyecto fuera ld2ud):
- * ld2ud esta sería la página principal del proyecto
+=== Wiki ===
+
+Si es necesario crear una [http://code.google.com/p/altaimpedancia/w/edit Crear página nueva] relacionada con el proyecto *use como prefijo el _nombrecorto_* del proyecto.
+  * *Page Name:* _nombrecortoNombrePagina_
+  * *Content:* #summary  _Nombre Largo del Proyecto_ - _descripción página (opcional)_
+  * *Labels:* _nombrecorto_ _orolabel_ ...      // *OBLIGATORIO* _nombrecorto_
+  * *Commit Log:* Creada página _nombrecortoNombrePagina_ para ...
+
+Ejemplos:
  * ld2udDoc sería la página sobre doc del proyecto
  * ld2udNombreModulo sería para hablar de un módulo
- * ld2udMisc sería para cosas varias
+ * [ld2udMisc] cosas varias del proyecto ld2ud
  * ld2udSubproyecto sería la página de un subproyecto
-*SUBPAGINAS deben estar en categoría con nombre corto del proyecto, ej ld2ud*
+
 
 
 *Referencia:* Para el proyecto l2ud yo sabía que quería que me lo valieran como nota para la materia digitales, que necesitaba usar espacios físicos como la rama IEEE y el LAMIC para el desarrollo, y que la idea general era llegar a acuerdos con los profesores para realizar actividades alternativas trabajando sobre linux usando Software Libre y verilog, inicialmente pensé en liberar todos el material de apoyo de la materia (propiedad de los profesores) un profesor me dijo que no y el otro que un pedazo, pensaba hacer los mismos ejemplos de vhdl en verilog pero en teoría hice otros sugeridos por el profesor ... luego de haber charlado y hecho acuerdos verbales hice la primera propuesta formal del documento, se hicieron unos ajustes sobre los entregables y así quedó, al final no se hizo todo al pie de la letra pero charlar, acordar y hacer el documento estructuró muy bien el proyecto en la cabeza y evitó desviarme en el desarrollo.
