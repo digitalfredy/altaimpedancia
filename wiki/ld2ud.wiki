@@ -4,9 +4,9 @@
 [ld2udPropuestaProyecto Propuesta] - [http://code.google.com/p/altaimpedancia/source/browse/#svn/trunk/ld2ud/code código] - [http://code.google.com/p/altaimpedancia/w/list?q=label:ld2ud wiki]
 
 === Noticias ===
- * 20090930: Cuadrandos detalles para cumplir con metodología de proyectos
+ * 20090930: Cuadrados detalles para cumplir con metodología de proyectos
  * 20090929: Se ha entregado al profesor Miguel lo referente a teoría
- * 20090827: Revisión por profesores Miguel y Andres, hay que hacer ajustes al documento
+ * 20090827: Revisión por profesores Miguel y Andrés, hay que hacer ajustes al documento
  * 20090824: RC de la propuesta del proyecto
  * 20090819: En esta página inicialmente se hará el borrador del documento del proyecto.
  * 20090819: Creada esta página wiki y carpeta del proyecto en el repositorio siguiendo [PropuestaGeneralTrabajo].
