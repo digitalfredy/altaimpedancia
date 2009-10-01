@@ -3,8 +3,7 @@
 
  * Exportar a png (DECENTE) los esquematicos
  * CombinatoriaCodigo.v //mejorar el nombre, el hardware descrito no hace combinación
- * Faltan archivos Laboratorio2_Lab.vvp Leccion3_Lab.vvp Leccion4_Lab.v
- * RotaIzquierda2Bits.v //creo que no se terminó :/ o era DesplazaDerecha2Bits.v ?
+ * DesplazaDerecha2Bits.v //Hacerlo funcionar :/ 
  * Tags teoria o practica, laboratorio o taller o como se llame el tag
 
 = Reglas y notas para código ==
