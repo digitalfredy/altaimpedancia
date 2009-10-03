@@ -12,30 +12,37 @@ En esta página es una referencia del desarrollo del [http://altaimpedancia.goog
  2. Diseñe, describa y simule circuitos (cada uno con una salida) que verifiquen si un número decimal de dos cifras es una de las combinaciones del puto 1 uno usando decodificador 3-8, otro usando multipexor 4-1 y otro usando únicamente compuertas.
 
 == Desarollo ==
-1. Mi código es 20022005133, sus dígitos son 0,1,2,3 y 5. y para desarrollar el taller usaré estas 22 combinaciones:
+Mi código es 20022005133, sus dígitos son 0,1,2,3 y 5. y para desarrollar el taller usaré estas 22 combinaciones:
 
 || *Decimal* || *Binario* ||
-||  ||  ||
-||  ||  ||
-||  ||  ||
-||  ||  ||
-||  ||  ||
-||  ||  ||
-||  ||  ||
-||  ||  ||
-||  ||  ||
-||  ||  ||
-||  ||  ||
-||  ||  ||
-||  ||  ||
-||  ||  ||
-||  ||  ||
-||  ||  ||
-||  ||  ||
-||  ||  ||
-||  ||  ||
-||  ||  ||
-||  ||  ||
-||  ||  ||
+|| 01 || 000_001 ||
+|| 02 || 000_010 ||
+|| 03 || 000_011 ||
+|| 05 || 000_101 ||
+|| 10 || 001_010 ||
+|| 12 || 001_100 ||
+|| 13 || 001_101 ||
+|| 15 || 001_111 ||
+|| 20 || 010_100 ||
+|| 21 || 010_101 ||
+|| 22 || 010_110 ||
+|| 23 || 010_111 ||
+|| 25 || 011_001 ||
+|| 30 || 011_110 ||
+|| 31 || 011_111 ||
+|| 32 || 100_000 ||
+|| 33 || 100_001 ||
+|| 35 || 100_011 ||
+|| 50 || 110_010 ||
+|| 51 || 110_011 ||
+|| 52 || 110_100 ||
+|| 53 || 110_101 ||
+
+ * Usando solo compuertas: 
+  * Un decodificador binario básico (Referencia:Fundamentos de Sistemas Digitales,edición 7,pág 350,Thomas L. Floyd) para cada combinación.
+  * Salida de los 22 decodificadores como entrada de una compuerta or.
+
+
+
 
 == Conclusiones ==
