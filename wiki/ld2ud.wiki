@@ -1,5 +1,6 @@
-#summary Liberando digitales II UD
+#summary Liberando digitales II UD [ld2udPropuestaProyecto Propuesta] - [http://code.google.com/p/altaimpedancia/source/browse/#svn/trunk/ld2ud/code código] - [http://code.google.com/p/altaimpedancia/w/list?q=label:ld2ud wiki]
 #labels verilog,linux,ld2ud
+
 
 [ld2udPropuestaProyecto Propuesta] - [http://code.google.com/p/altaimpedancia/source/browse/#svn/trunk/ld2ud/code código] - [http://code.google.com/p/altaimpedancia/w/list?q=label:ld2ud wiki]
 
