@@ -1,19 +1,28 @@
 #summary Verilog y lógica combinacional (Nivel Compuertas)
-#labels verilog,ld2ud
+#labels ld2ud,verilog
 === |-----------> [ld2ud Inicio] - [ld2udPropuestaProyecto Propuesta] - [http://code.google.com/p/altaimpedancia/source/browse/#svn/trunk/ld2ud/code Código] - [http://code.google.com/p/altaimpedancia/w/list?q=label:ld2ud Wiki] <-----------| ===
 
 == Presentación ==
 En esta página es una referencia del desarrollo del [http://altaimpedancia.googlecode.com/svn/trunk/ld2ud/doc/Taller1.pdf Taller1] (Profesor Andres Gaona, año 2009) del laboratorio de la asignatura digitales II de la Universidad Distrital Francisco José de Caldas usando Verilog y Software Libre.
 
 == Desarrollo ==
- * Modele y simule el comportamiento de la compuerta que le corresponda a su grupo de trabajo según la Tabla 1. Los modelos propuestos para tal fin son:
-  *  Dos modelos funcionales diferentes para cada una de las compuertas 1 y 2 asignadas.
-   * [http://code.google.com/p/altaimpedancia/source/browse/#svn/trunk/ld2ud/code Mirar en repositorio:] AndOperadorBitABit_Funcional.v XorOperadorBitABit_Funcional.v AndOperadorCondicional_Funcional.v XorOperadorCondicional_Funcional.v
-  *  Un modelo estructural para la compuerta 1 y 2 basado en la compuerta universal determinada por la tabla 1
-   * [http://code.google.com/p/altaimpedancia/source/browse/#svn/trunk/ld2ud/code Mirar en repositorio:] AndUsandoNand_Estructural.v XorUsandoNand_Estructural.v
+ 1. Modele y simule el comportamiento de las compuertas AND y XOR. Los modelos propuestos para tal fin son:
+  *  Dos modelos funcionales diferentes para cada una de las compuertas AND y XOR.
+  *  Un modelo estructural para las compuertas AND y XOR basado en la compuerta universal NAND.
+|| *Descripción* || *Archivo* || *Notas* ||
+|| Modelo Funcional AND || [http://code.google.com/p/altaimpedancia/source/browse/trunk/ld2ud/code/AndOperadorBitABit_Funcional.v AndOperadorBitABit_Funcional.v] || Usado operador and bit a bit ||
+|| Modelo Funcional AND || [http://code.google.com/p/altaimpedancia/source/browse/trunk/ld2ud/code/AndOperadorCondicional_Funcional.v AndOperadorCondicional_Funcional.v] || Usado operador condicional ||
+|| Modelo Funcional XOR || [http://code.google.com/p/altaimpedancia/source/browse/trunk/ld2ud/code/XorOperadorBitABit_Funcional.v XorOperadorBitABit_Funcional.v] || Usado operador xor bit a bit ||
+|| Modelo Funcional XOR || [http://code.google.com/p/altaimpedancia/source/browse/trunk/ld2ud/code/XorOperadorCondicional_Funcional.v XorOperadorCondicional_Funcional.v] || Usado operador condicional ||
+|| Modelo Estructural AND || [http://code.google.com/p/altaimpedancia/source/browse/trunk/ld2ud/code/AndUsandoNand_Estructural.v AndUsandoNand_Estructural.v] || Usada primitiva nand ||
+|| Modelo Estructural XOR || [http://code.google.com/p/altaimpedancia/source/browse/trunk/ld2ud/code/XorUsandoNand_Estructural.v XorUsandoNand_Estructural.v] || Usada primitiva nand ||
 
- * Realice el modelado funcional de un desplazador o rotador a izquierda o a derecha de una palabra de entrada de 8 bits. Para tal fin, le es asignada la dirección de desplazamiento y el número de bits a desplazar en la Tabla 2
-  * [http://code.google.com/p/altaimpedancia/source/browse/#svn/trunk/ld2ud/code Mirar en repositorio:] RotaIzquierda2Bits.v DesplazaDerecha2Bits.v (el último no funciona)
+
+ 1. Realice el modelado funcional de rotador de 2 bits a izquierda de una palabra de entrada de 8 bits.
+|| *Descripción* || *Archivo* || *Notas* ||
+|| Rotador de 2 bits a izquierda || [http://code.google.com/p/altaimpedancia/source/browse/trunk/ld2ud/code/RotaIzquierda2Bits.v RotaIzquierda2Bits.v] || Usada concatenación ||
+|| Desplazador de 2 bits a derecha || [http://code.google.com/p/altaimpedancia/source/browse/trunk/ld2ud/code/DesplazaDerecha2Bits.v DesplazaDerecha2Bits.v] || Intento de uso de operado que desplaza, no funciona simulación ||
+
 == Simulación ==
 La simulación de puntos 1 y 2: [http://code.google.com/p/altaimpedancia/source/browse/#svn/trunk/ld2ud/code Mirar en repositorio:] Laboratorio1_Lab.v con su resultado en Laboratorio1_Lab.vcd
 
