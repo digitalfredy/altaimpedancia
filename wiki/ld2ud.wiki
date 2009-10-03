@@ -11,15 +11,7 @@
 || [ld2udTaller3 Taller 3] || laboratorio digitales II UD || Basado en material del profesor Andrés Gaona ||
 || [ld2udTaller4 Taller 4] || laboratorio digitales II UD || Basado en material del profesor Andrés Gaona ||
 || [ld2udTaller5 Taller 5] || laboratorio digitales II UD || Basado en material del profesor Andrés Gaona ||
-|| [ld2udEscribirVerilog] || Software Libre || Emacs ||
-|| [ld2udCompilarVerilog] || Software Libre || Icrus Verilog ||
-|| [ld2udSimularVerilog] || Software Libre || gtk Wave ||
+|| [ld2udEscribirVerilog] || Software Libre || [http://www.gnu.org/software/emacs/ Emacs] ||
+|| [ld2udCompilarVerilog] || Software Libre || [http://www.icarus.com/eda/verilog/ Icrus Verilog] ||
+|| [ld2udSimularVerilog] || Software Libre || [http://gtkwave.sourceforge.net/ GTKWave] ||
 || [ld2udFPGAyLinux] || Software Libre ||  ||
-
-=== Noticias ===
- * 20090930: Cuadrados detalles para cumplir con metodología de proyectos
- * 20090929: Se ha entregado al profesor Miguel lo referente a teoría
- * 20090827: Revisión por profesores Miguel y Andrés, hay que hacer ajustes al documento
- * 20090824: RC de la propuesta del proyecto
- * 20090819: En esta página inicialmente se hará el borrador del documento del proyecto.
- * 20090819: Creada esta página wiki y carpeta del proyecto en el repositorio siguiendo [PropuestaGeneralTrabajo].
