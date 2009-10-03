@@ -1,6 +1,8 @@
 #summary Verilog y lógica combinacional (Nivel Compuertas)
 #labels ld2ud,verilog
- === || [ld2ud Inicio] || || [ld2udPropuestaProyecto Propuesta] || || [http://code.google.com/p/altaimpedancia/source/browse/#svn/trunk/ld2ud/code Código] || || [http://code.google.com/p/altaimpedancia/w/list?q=label:ld2ud Wiki] || ===
+----
+*Proyecto ld2ud:* [ld2ud Inicio] | [ld2udPropuestaProyecto Propuesta] | [http://code.google.com/p/altaimpedancia/source/browse/#svn/trunk/ld2ud/code Código] | [http://code.google.com/p/altaimpedancia/w/list?q=label:ld2ud Wiki]
+----
 
 == Presentación ==
 En esta página es una referencia del desarrollo del [http://altaimpedancia.googlecode.com/svn/trunk/ld2ud/doc/Taller1.pdf Taller1] (Profesor Andres Gaona, año 2009) del laboratorio de la asignatura digitales II de la Universidad Distrital Francisco José de Caldas usando Verilog y Software Libre.
@@ -21,10 +23,8 @@ En esta página es una referencia del desarrollo del [http://altaimpedancia.goog
 || Modelo Estructural XOR || [http://code.google.com/p/altaimpedancia/source/browse/trunk/ld2ud/code/XorUsandoNand_Estructural.v XorUsandoNand_Estructural.v] || Usada primitiva nand ||
 || Rotador de 2 bits a izquierda || [http://code.google.com/p/altaimpedancia/source/browse/trunk/ld2ud/code/RotaIzquierda2Bits.v RotaIzquierda2Bits.v] || Usada concatenación ||
 || Desplazador de 2 bits a derecha || [http://code.google.com/p/altaimpedancia/source/browse/trunk/ld2ud/code/DesplazaDerecha2Bits.v DesplazaDerecha2Bits.v] || Intento de uso de operado que desplaza, no funciona simulación ||
-
-
-== Simulación ==
-La simulación de puntos 1 y 2: [http://code.google.com/p/altaimpedancia/source/browse/#svn/trunk/ld2ud/code Mirar en repositorio:] Laboratorio1_Lab.v con su resultado en Laboratorio1_Lab.vcd
+|| Laboratorio (Test Bench) Taller1 || [http://code.google.com/p/altaimpedancia/source/browse/trunk/ld2ud/code/Laboratorio1_Lab.v Laboratorio1_Lab.v] || Referencia [ld2udSimularVerilog] ||
+|| Simulación Taller1 || [http://code.google.com/p/altaimpedancia/source/browse/trunk/ld2ud/code/Laboratorio1_Lab.vcd Laboratorio1_Lab.vcd] || Referencia [ld2udSimularVerilog] ||
 
 == Conclusiones ==
  * La práctica se puede hacer usando 100% software libre
