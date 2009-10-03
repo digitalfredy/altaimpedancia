@@ -1,8 +1,8 @@
-#summary Liberando digitales II UD <a href="http://code.google.com/p/altaimpedancia/source/browse/#svn/trunk/ld2ud/code código"</a>
+#summary Liberando digitales II UD
 #labels verilog,linux,ld2ud
 
+  === |--------------> [ld2udPropuestaProyecto Propuesta] - [http://code.google.com/p/altaimpedancia/source/browse/#svn/trunk/ld2ud/code código] - [http://code.google.com/p/altaimpedancia/w/list?q=label:ld2ud wiki] <--------------| ===
 
-[ld2udPropuestaProyecto Propuesta] - [http://code.google.com/p/altaimpedancia/source/browse/#svn/trunk/ld2ud/code código] - [http://code.google.com/p/altaimpedancia/w/list?q=label:ld2ud wiki]
 
 === Noticias ===
  * 20090930: Cuadrados detalles para cumplir con metodología de proyectos
