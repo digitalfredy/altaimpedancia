@@ -1,5 +1,6 @@
 #summary Enlaces relacionados y más
 #labels verilog,linux,ld2ud
+=== |-----------> [ld2ud Inicio] - [ld2udPropuestaProyecto Propuesta] - [http://code.google.com/p/altaimpedancia/source/browse/#svn/trunk/ld2ud/code Código] - [http://code.google.com/p/altaimpedancia/w/list?q=label:ld2ud Wiki] <-----------| ===
 
 == Quick Reference ==
  * [http://www.sutherland-hdl.com/online_verilog_ref_guide/vlog_ref_top.html online Verilog-1995 Quick Reference Guide] - Stuart Sutherland
