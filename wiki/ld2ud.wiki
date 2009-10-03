@@ -3,6 +3,18 @@
 
   === |--------------> [ld2udPropuestaProyecto Propuesta] - [http://code.google.com/p/altaimpedancia/source/browse/#svn/trunk/ld2ud/code Código] - [http://code.google.com/p/altaimpedancia/w/list?q=label:ld2ud Wiki] <--------------| ===
 
+|| *Productos* || *Referencia* || *Notas* || 
+|| [ld2udLeccion3 Lección 3] || teoría digitales II UD || Basado en material del profesor Miguel Melgarejo ||
+|| [ld2udLeccion4 Lección 4] || teoría digitales II UD || Basado en material del profesor Miguel Melgarejo ||
+|| [ld2udTaller1 Taller 1] || laboratorio digitales II UD || Basado en material del profesor Andrés Gaona ||
+|| [ld2udTaller2 Taller 2] || laboratorio digitales II UD || Basado en material del profesor Andrés Gaona ||
+|| [ld2udTaller3 Taller 3] || laboratorio digitales II UD || Basado en material del profesor Andrés Gaona ||
+|| [ld2udTaller4 Taller 4] || laboratorio digitales II UD || Basado en material del profesor Andrés Gaona ||
+|| [ld2udTaller5 Taller 5] || laboratorio digitales II UD || Basado en material del profesor Andrés Gaona ||
+|| [ld2udEscribirVerilog] || Software Libre || Emacs ||
+|| [ld2udCompilarVerilog] || Software Libre || Icrus Verilog ||
+|| [ld2udSimularVerilog] || Software Libre || gtk Wave ||
+|| [ld2udFPGAyLinux] || Software Libre ||  ||
 
 === Noticias ===
  * 20090930: Cuadrados detalles para cumplir con metodología de proyectos
