@@ -28,7 +28,7 @@ En esta página es una referencia del desarrollo del [http://altaimpedancia.goog
 
 == Conclusiones ==
  * La práctica se puede hacer usando 100% software libre
- * En verilog existe algo llamdo de bajo nivel llamado primitivas (entre ellas las compuertas) y uno puede hacer primitivas propias (UDP) que se pueden expresar en una tabla con una única salida y hata 10 entradas, pero recibe los datos bit a bit, no recibe por ejemplo Bus[3:0]
+ * En verilog existe algo llamdo de bajo nivel llamado primitivas (entre ellas las compuertas) y uno puede hacer primitivas propias (UDP) que se pueden expresar en una tabla con una única salida y hata 10 entradas, pero recibe los datos bit a bit, no recibe por ejemplo Bus`[3:0]`
  * Para reutilizar módulos solo hace falta pasar como parámetro la descripción.v al compilador.
  * Para la simulación se crean Test Bench en el mismo lenguaje.
  * El vector de estímulos para mirar todas las posibles entradas es un contador ascendente
