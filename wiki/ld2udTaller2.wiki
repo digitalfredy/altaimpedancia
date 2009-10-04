@@ -12,6 +12,10 @@ En esta página es una referencia del desarrollo del [http://altaimpedancia.goog
  2. Diseñe, describa y simule circuitos (cada uno con una salida) que verifiquen si un número decimal de dos cifras es una de las combinaciones del puto 1 uno usando decodificador 3-8, otro usando multipexor 4-1 y otro usando únicamente compuertas.
 
 == Desarollo ==
+|| *Descripción* || *Archivo* || *Notas* ||
+|| Modelo comparador 22 números de 6 bit || [http://code.google.com/p/altaimpedancia/source/browse/trunk/ld2ud/code/Comparador22Numeros6Bit.v Comparador22Numeros6Bit.v] || Referencia de la tabla en Apéndice de esta página ||
+
+== Apéndice ==
 Mi código es 20022005133, sus dígitos son 0,1,2,3 y 5. y para desarrollar el taller usaré estas 22 combinaciones:
 
 || *Decimal* || *Binario* ||
@@ -38,9 +42,8 @@ Mi código es 20022005133, sus dígitos son 0,1,2,3 y 5. y para desarrollar el t
 || 52 || 110_100 ||
 || 53 || 110_101 ||
 
- * Usando solo compuertas: 
-  * Un decodificador binario básico (Referencia:Fundamentos de Sistemas Digitales,edición 7,pág 350,Thomas L. Floyd) para cada combinación.
-  * Salida de los 22 decodificadores como entrada de una compuerta or.
+=== Comparador22Numeros6Bit.v ===
+  * Un decodificador binario básico (Referencia:Fundamentos de Sistemas Digitales,edición 7,pág 350,Thomas L. Floyd) para cada combinación y salida de los 22 decodificadores como entrada de una compuerta or.
 
 
 
