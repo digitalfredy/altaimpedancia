@@ -7,9 +7,8 @@ module SumadorNoSigno (/*AUTOARG*/
    output [4:0] Suma;
    input  [3:0] SumandoA, SumandoB;
 // Como SumandoX y Suma no son signados hace la extensión del 0
-   assign Suma = SumandoA + SumandoB
-
-   
+   assign Suma = SumandoA + SumandoB;
+      
 endmodule // SumadorNoSigno
 
 
