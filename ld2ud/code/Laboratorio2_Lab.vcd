@@ -1,5 +1,5 @@
 $date
-	Sat Oct  3 19:24:45 2009
+	Sat Oct  3 19:56:43 2009
 $end
 $version
 	Icarus Verilog
@@ -8,7 +8,7 @@ $timescale
 	1s
 $end
 $scope module Laboratorio2_Lab $end
-$var wire 1 ! RtaComparador22Numeros6Bit $end
+$var wire 1 ! RtaComparador22Numeros6Bit_Compuertas $end
 $var wire 8 " RtaDecodificador[7:0] $end
 $var reg 6 # Estimulo[5:0] $end
 $var reg 3 $ EstimuloDecodificador[2:0] $end
