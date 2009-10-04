@@ -1,4 +1,4 @@
-module CombinatoriaCodigo (/*AUTOARG*/
+module Comparador22Numeros6Bit (/*AUTOARG*/
    // Outputs
    Salida,
    // Inputs
@@ -35,4 +35,4 @@ module CombinatoriaCodigo (/*AUTOARG*/
    or (Salida,Nodo[0],Nodo[1],Nodo[2],Nodo[3],Nodo[4],Nodo[5],Nodo[6],Nodo[7],Nodo[8],Nodo[9],Nodo[10],Nodo[11],Nodo[12],Nodo[13],Nodo[14],Nodo[15],Nodo[16],Nodo[17],Nodo[18],Nodo[19],Nodo[20],Nodo[21]);
    
    
-endmodule // CombinatoriaCodigo
+endmodule // Comparador22Numeros6Bit
