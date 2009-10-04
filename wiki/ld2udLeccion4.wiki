@@ -1,6 +1,6 @@
 #summary Liberando lección 4
 #labels ld2ud,verilog
-=== |-----------> [ld2ud Inicio] - [ld2udPropuestaProyecto Propuesta] - [http://code.google.com/p/altaimpedancia/source/browse/#svn/trunk/ld2ud/code Código] - [http://code.google.com/p/altaimpedancia/w/list?q=label:ld2ud Wiki] <-----------| ===
+*Proyecto ld2ud:* [ld2ud Inicio] | [ld2udPropuestaProyecto Propuesta] | [http://code.google.com/p/altaimpedancia/source/browse/#svn/trunk/ld2ud/code Código] | [http://code.google.com/p/altaimpedancia/w/list?q=label:ld2ud Wiki]
 = Lo acordado con profesor =
 Lo mismo pero:
  * 11: importante para el profesor hacer 9*X
