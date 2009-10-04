@@ -1,11 +1,11 @@
 module Laboratorio2_Lab (/*AUTOARG*/ ) ;
-   wire   RtaComparador22Numeros6Bit;
+   wire   RtaComparador22Numeros6Bit_Compuertas;
    wire   [7:0] RtaDecodificador;
    
    reg [5:0]   Estimulo;
    reg   [2:0] EstimuloDecodificador;
    
-   Comparador22Numeros6Bit U2 (RtaComparador22Numeros6Bit,Estimulo[5:0]);
+   Comparador22Numeros6Bit_Compuertas U2 (RtaComparador22Numeros6Bit_Compuertas,Estimulo[5:0]);
 
    Decodificador3a8 U3 (RtaDecodificador,EstimuloDecodificador);
    
