@@ -7,6 +7,9 @@ Para saber rápidamente si los módulos o primitivas de hardware que hemos descr
  1. Ejecutar la simulación (no se ve nada, genera un archivo .vcd)
  1. Visualizar el archivo con los resultados de la simulación
 
+http://code.google.com/p/altaimpedancia/source/browse/trunk/ld2ud/code/CompuertasAndOr_Lab.v CompuertasAndOr_Lab.png
+
 [http://code.google.com/p/altaimpedancia/source/browse/trunk/ld2ud/code/CompuertasAndOr_Lab.v CompuertasAndOr_Lab.v]
 [http://code.google.com/p/altaimpedancia/source/browse/trunk/ld2ud/code/CompuertasAndOr_Lab.vcd CompuertasAndOr_Lab.vcd]
 [http://code.google.com/p/altaimpedancia/source/browse/trunk/ld2ud/code/CompuertasAndOr_Lab.sch CompuertasAndOr_Lab.sch]
+[http://code.google.com/p/altaimpedancia/source/browse/trunk/ld2ud/code/CompuertasAndOr_Lab.vvp CompuertasAndOr_Lab.vvp]
