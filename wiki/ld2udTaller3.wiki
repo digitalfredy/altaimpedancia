@@ -1,0 +1,20 @@
+#summary Verilog y lógica combinacional (Básico)
+----
+*Proyecto ld2ud:* [ld2ud Inicio] | [ld2udPropuestaProyecto Propuesta] | [http://code.google.com/p/altaimpedancia/source/browse/#svn/trunk/ld2ud/code Código] | [http://code.google.com/p/altaimpedancia/w/list?q=label:ld2ud Wiki]
+----
+== Presentación ==
+En esta página es una referencia del desarrollo del [http://altaimpedancia.googlecode.com/svn/trunk/ld2ud/doc/Taller2.pdf Taller2] (Profesor Andres Gaona, año 2009) del laboratorio de la asignatura digitales II de la Universidad Distrital Francisco José de Caldas usando Verilog y Software Libre.
+== Enunciados ==
+ 1. Tome los dígitos correspondientes a su código de estudiante de la Universidad y forme todas las combinaciones posibles y diferentes de números que se encuentren en el rango de 0–63. El total de combinaciones debe estar entre 22 y 35.
+ 1. Diseñe, describa y simule circuitos (cada uno con una salida) que verifiquen si un número decimal de dos cifras es una de las combinaciones del puto 1 uno usando decodificador 3-8, otro usando multipexor 4-1 y otro usando únicamente compuertas.
+
+== Desarollo ==
+|| *Descripción* || *Archivo* || *Notas* ||
+|| Comparador usando decodificadores || [http://code.google.com/p/altaimpedancia/source/browse/trunk/ld2ud/code/Comparador22Numeros6Bit_Decodificadores.v Comparador22Numeros6Bit_Decodificadores.v] ||  ||
+|| Comparador usando multiplexores || [http://code.google.com/p/altaimpedancia/source/browse/trunk/ld2ud/code/Comparador22Numeros6Bit_Multiplexores.v Comparador22Numeros6Bit_Multiplexores.v]||  ||
+|| Comparador usando compuertas || [http://code.google.com/p/altaimpedancia/source/browse/trunk/ld2ud/code/Comparador22Numeros6Bit_Compuertas.v Comparador22Numeros6Bit_Compuertas.v] || Leer APÉNDICE al final del archivo ||
+|| Laboratorio (Test Bench) Taller3 || [http://code.google.com/p/altaimpedancia/source/browse/trunk/ld2ud/code/Laboratorio2_Lab.v Laboratorio2_Lab.v] || Referencia [ld2udSimularVerilog] ||
+|| Simulación Taller3 || [http://code.google.com/p/altaimpedancia/source/browse/trunk/ld2ud/code/Laboratorio2_Lab.vcd Laboratorio2_Lab.vcd] || Referencia [ld2udSimularVerilog] ||
+
+
+== Conclusiones ==
