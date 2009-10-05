@@ -9,18 +9,17 @@ En esta página es una referencia del desarrollo del [http://altaimpedancia.goog
 
 == Enunciados ==
  1. Tome los dígitos correspondientes a su código de estudiante de la Universidad y forme todas las combinaciones posibles y diferentes de números que se encuentren en el rango de 0–63. El total de combinaciones debe estar entre 22 y 35.
- 2. Diseñe, describa y simule circuitos (cada uno con una salida) que verifiquen si un número decimal de dos cifras es una de las combinaciones del puto 1 uno usando decodificador 3-8, otro usando multipexor 4-1 y otro usando únicamente compuertas.
+ 1. Diseñe, describa y simule circuitos (cada uno con una salida) que verifiquen si un número decimal de dos cifras es una de las combinaciones del puto 1 uno usando decodificador 3-8, otro usando multipexor 4-1 y otro usando únicamente compuertas.
 
 == Desarollo ==
 || *Descripción* || *Archivo* || *Notas* ||
-||  ||  ||  ||
 || Comparador usando decodificadores || [http://code.google.com/p/altaimpedancia/source/browse/trunk/ld2ud/code/Comparador22Numeros6Bit_Decodificadores.v Comparador22Numeros6Bit_Decodificadores.v] ||  ||
 || Comparador usando multiplexores || [http://code.google.com/p/altaimpedancia/source/browse/trunk/ld2ud/code/Comparador22Numeros6Bit_Multiplexores.v Comparador22Numeros6Bit_Multiplexores.v]||  ||
 || Comparador usando compuertas || [http://code.google.com/p/altaimpedancia/source/browse/trunk/ld2ud/code/Comparador22Numeros6Bit_Compuertas.v Comparador22Numeros6Bit_Compuertas.v] || Leer APÉNDICE al final del archivo ||
 || Laboratorio (Test Bench) Taller2 || [http://code.google.com/p/altaimpedancia/source/browse/trunk/ld2ud/code/Laboratorio2_Lab.v Laboratorio2_Lab.v] || Referencia [ld2udSimularVerilog] ||
 || Simulación Taller2 || [http://code.google.com/p/altaimpedancia/source/browse/trunk/ld2ud/code/Laboratorio2_Lab.vcd Laboratorio2_Lab.vcd] || Referencia [ld2udSimularVerilog] ||
 
-== Apéndice ==
+== Misc ==
 Mi código es 20022005133, sus dígitos son 0,1,2,3 y 5. y para desarrollar el taller usaré estas 22 combinaciones:
 
 || *Decimal* || *Binario* ||
@@ -50,3 +49,7 @@ Mi código es 20022005133, sus dígitos son 0,1,2,3 y 5. y para desarrollar el t
 
 
 == Conclusiones ==
+ * Los decodificadores básicos se hacen con compuertas AND negando agunas de sus entradas
+ * Si evaluamos en paralelo varias posibilidades y queremos dar una sola salida cuando una ocurra ponemos todas las salidas como entrada de una compuerta OR.
+ * Las entradas de las primitivas pueden negarse directamente primitiva (~Negado, NoNegado)
+ * No se usa el mismo programa para pasar el .bit a la FPGA, depende de la board.
