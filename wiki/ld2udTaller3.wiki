@@ -1,4 +1,5 @@
 #summary Verilog y lógica combinacional (Básico)
+#labels ld2ud,verilog
 ----
 *Proyecto ld2ud:* [ld2ud Inicio] | [ld2udPropuestaProyecto Propuesta] | [http://code.google.com/p/altaimpedancia/source/browse/#svn/trunk/ld2ud/code Código] | [http://code.google.com/p/altaimpedancia/w/list?q=label:ld2ud Wiki]
 ----
@@ -8,7 +9,7 @@ En esta página es una referencia del desarrollo del [http://altaimpedancia.goog
  
 == Desarollo ==
 || *Descripción* || *Archivo* || *Notas* ||
-
-
+||  ||  ||  ||
+||  ||  ||  ||
 
 == Conclusiones ==
