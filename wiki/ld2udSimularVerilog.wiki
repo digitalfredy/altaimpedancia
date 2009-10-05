@@ -25,5 +25,5 @@ VCD info: dumpfile CompuertasAndOr_Lab.vcd opened for output.
 }}}
  1. Usando [http://gtkwave.sourceforge.net/ GTKWave] visualizamos el resultado:
 {{{
-gtkwave CompuertasAndOr_Lab.vcd&
+$ gtkwave CompuertasAndOr_Lab.vcd&
 }}}
