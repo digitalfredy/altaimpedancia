@@ -4,12 +4,14 @@
 Para saber rápidamente si los módulos o primitivas de hardware que hemos descrito funcionan es necesaria una simulación en el tiempo, el proceso para obtener dicha simulación es el siguiente:
 
  1. Escribir en Verilog un laboratorio de  prueba para el o los módulos o primitivas
+ 1. Compilar el laboratorio
  1. Ejecutar la simulación (no se ve nada, genera un archivo .vcd)
  1. Visualizar el archivo con los resultados de la simulación
 
-http://code.google.com/p/altaimpedancia/source/browse/trunk/ld2ud/code/CompuertasAndOr_Lab.png
+== Ejemplo1 - Laboratorio primitivas nativas AND y OR ==
+El lenguaje Verilog entre sus primitivas nativas incluye las compuertas, este ejemplo ilustra la creación de un Laboratorio de pruebas (Test Bench) para las primitivas and y or.
+ * Este esquema ilustra lo que haremos: [http://code.google.com/p/altaimpedancia/source/browse/trunk/ld2ud/doc/CompuertasAndOr_Lab.png .png] - [http://code.google.com/p/altaimpedancia/source/browse/trunk/ld2ud/code/CompuertasAndOr_Lab.sch .sch](hecho con [http://www.gpleda.org/tools/gschem/index.html gEDA/gschem
 
-[http://code.google.com/p/altaimpedancia/source/browse/trunk/ld2ud/code/CompuertasAndOr_Lab.v CompuertasAndOr_Lab.v]
-[http://code.google.com/p/altaimpedancia/source/browse/trunk/ld2ud/code/CompuertasAndOr_Lab.vcd CompuertasAndOr_Lab.vcd]
-[http://code.google.com/p/altaimpedancia/source/browse/trunk/ld2ud/code/CompuertasAndOr_Lab.sch CompuertasAndOr_Lab.sch]
-[http://code.google.com/p/altaimpedancia/source/browse/trunk/ld2ud/code/CompuertasAndOr_Lab.vvp CompuertasAndOr_Lab.vvp]
+ 1. Este es el Laboratorio: [http://code.google.com/p/altaimpedancia/source/browse/trunk/ld2ud/code/CompuertasAndOr_Lab.v CompuertasAndOr_Lab.v](Comentado y fácil de entender)
+ 1. Este es el resultado de la compilación [http://code.google.com/p/altaimpedancia/source/browse/trunk/ld2ud/code/CompuertasAndOr_Lab.vvp CompuertasAndOr_Lab.vvp]
+ 1. Este es el resultado de ejecutar la simulación [http://code.google.com/p/altaimpedancia/source/browse/trunk/ld2ud/code/CompuertasAndOr_Lab.vcd CompuertasAndOr_Lab.vcd]
