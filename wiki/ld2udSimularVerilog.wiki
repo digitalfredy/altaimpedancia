@@ -9,9 +9,21 @@ Para saber rápidamente si los módulos o primitivas de hardware que hemos descr
  1. Visualizar el archivo con los resultados de la simulación
 
 == Ejemplo1 - Laboratorio primitivas nativas AND y OR ==
-El lenguaje Verilog entre sus primitivas nativas incluye las compuertas, este ejemplo ilustra la creación de un Laboratorio de pruebas (Test Bench) para las primitivas and y or.
- * Este esquema ilustra lo que haremos: [http://code.google.com/p/altaimpedancia/source/browse/trunk/ld2ud/doc/CompuertasAndOr_Lab.png .png] - [http://code.google.com/p/altaimpedancia/source/browse/trunk/ld2ud/code/CompuertasAndOr_Lab.sch .sch](hecho con [http://www.gpleda.org/tools/gschem/index.html gEDA/gschem
+El lenguaje Verilog entre sus primitivas nativas incluye las compuertas, este ejemplo ilustra la creación de un Laboratorio de pruebas (Test Bench) para las primitivas AND y OR.
 
- 1. Este es el Laboratorio: [http://code.google.com/p/altaimpedancia/source/browse/trunk/ld2ud/code/CompuertasAndOr_Lab.v CompuertasAndOr_Lab.v](Comentado y fácil de entender)
- 1. Este es el resultado de la compilación [http://code.google.com/p/altaimpedancia/source/browse/trunk/ld2ud/code/CompuertasAndOr_Lab.vvp CompuertasAndOr_Lab.vvp]
- 1. Este es el resultado de ejecutar la simulación [http://code.google.com/p/altaimpedancia/source/browse/trunk/ld2ud/code/CompuertasAndOr_Lab.vcd CompuertasAndOr_Lab.vcd]
+ * Este esquema ilustra lo que haremos: [http://code.google.com/p/altaimpedancia/source/browse/trunk/ld2ud/doc/CompuertasAndOr_Lab.png .png] - [http://code.google.com/p/altaimpedancia/source/browse/trunk/ld2ud/code/CompuertasAndOr_Lab.sch .sch](hecho con [http://www.gpleda.org/tools/gschem/index.html gEDA/gschem])
+
+ 1. [ld2udEscribirVerilog Usando Emacs escribimos en Verilog] el Laboratorio de Pruebas: [http://code.google.com/p/altaimpedancia/source/browse/trunk/ld2ud/code/CompuertasAndOr_Lab.v CompuertasAndOr_Lab.v] (Los comentarios al código explican detalles)
+ 1. [ld2udCompilarVerilog Compilamos] el Laboratorio de Prueba para obtener el [http://code.google.com/p/altaimpedancia/source/browse/trunk/ld2ud/code/CompuertasAndOr_Lab.vvp .vvp]: 
+{{{
+$ iverilog -o CompuertasAndOr_Lab.vvp CompuertasAndOr_Lab.v
+}}}
+ 1. Ejecutamos la simulación para obtener el [http://code.google.com/p/altaimpedancia/source/browse/trunk/ld2ud/code/CompuertasAndOr_Lab.vcd .vcd]:
+{{{
+$ ./CompuertasAndOr_Lab.vvp
+VCD info: dumpfile CompuertasAndOr_Lab.vcd opened for output.
+}}}
+ 1. Usando [http://gtkwave.sourceforge.net/ GTKWave] visualizamos el resultado:
+{{{
+gtkwave CompuertasAndOr_Lab.vcd&
+}}}
