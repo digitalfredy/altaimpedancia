@@ -1,6 +1,8 @@
 #summary Laboratorios de prueba (Test Bench) y Simulación (.vcd)
 #labels ld2ud,verilog
-
+----
+*Proyecto ld2ud:* [ld2ud Inicio] | [ld2udPropuestaProyecto Propuesta] | [http://code.google.com/p/altaimpedancia/source/browse/#svn/trunk/ld2ud/code Código] | [http://code.google.com/p/altaimpedancia/w/list?q=label:ld2ud Wiki]
+----
 Para saber rápidamente si los módulos o primitivas de hardware que hemos descrito funcionan es necesaria una simulación en el tiempo, el proceso para obtener dicha simulación es el siguiente:
 
  1. Escribir en Verilog un laboratorio de  prueba para el o los módulos o primitivas
