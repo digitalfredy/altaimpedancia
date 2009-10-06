@@ -14,7 +14,7 @@ module Comparador22Numeros6Bit_Compuertas (/*AUTOARG*/
    and Dec02 (Nodo[20],~Entrada[5],~Entrada[4],~Entrada[3],~Entrada[2],Entrada[1],~Entrada[0]);
    and Dec03 (Nodo[19],~Entrada[5],~Entrada[4],~Entrada[3],~Entrada[2],Entrada[1],Entrada[0]);
    and Dec04 (Nodo[18],~Entrada[5],~Entrada[4],~Entrada[3],Entrada[2],~Entrada[1],Entrada[0]);
-   and Dec04 (Nodo[17],~Entrada[5],~Entrada[4],Entrada[3],~Entrada[2],Entrada[1],~Entrada[0]);
+   and Dec05 (Nodo[17],~Entrada[5],~Entrada[4],Entrada[3],~Entrada[2],Entrada[1],~Entrada[0]);
    and Dec06 (Nodo[16],~Entrada[5],~Entrada[4],Entrada[3],Entrada[2],~Entrada[1],~Entrada[0]);
    and Dec07 (Nodo[15],~Entrada[5],~Entrada[4],Entrada[3],Entrada[2],~Entrada[1],Entrada[0]);
    and Dec08 (Nodo[14],~Entrada[5],~Entrada[4],Entrada[3],Entrada[2],Entrada[1],Entrada[0]);
