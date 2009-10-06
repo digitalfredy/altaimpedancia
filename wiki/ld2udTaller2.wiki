@@ -78,3 +78,74 @@ Tabla de referencia para decodificador
  * Si evaluamos en paralelo varias posibilidades y queremos dar una sola salida cuando una ocurra ponemos todas las salidas como entrada de una compuerta OR.
  * Las entradas de las primitivas pueden negarse directamente primitiva (~Negado, NoNegado)
  * No se usa el mismo programa para pasar el .bit a la FPGA, depende de la board.
+
+== tips (algo desordenado pero puede ser útil) ==
+intentado generar multiples decoders
+{{{
+#!/bin/bash
+
+for i in $(seq -w 0 43);do
+    J=$i % 2
+    echo Jota es $J
+    if [ $J -eq 0 ]
+    then
+	echo "   Decodificador3a8 U$i (XXXX Entrada[5:3]);"
+    else
+	echo "   Decodificador3a8 U$i (XXXX Entrada[2:0]);"
+    fi
+done
+
+## no funcionó pero lo guardo por que la idea del modulo % me parece buena, seguro es algo de sintaxis pero me gusata % 2 para revisar si es o no par
+}}}
+Otro intento que si funciono
+{{{
+#!/bin/bash
+
+for par in $(seq  0 2 43); do
+    impar=`expr $par + 1`
+    salida=`expr $par / 2`
+    echo "   Decodificador3a8 U$par (X0,X1,X2,X3,X4,X5.X6,X7, Entrada[5:3]);"
+    echo "   Decodificador3a8 U$impar (X0,X1,X2,X3,X4,X5.X6,X7, Entrada[2:0]);"
+    echo "   assign Salida[$salida] = JJ & KK"
+}}}
+conectando las salidas de decoder a compuertas and:
+{{{
+#!/bin/sh
+ awk '{print "and (BusOr["NR"], BusPar["$3"], BusImpar["$4"]);"}' tablaDecodersSinLineaUno
+}}}
+
+este es el archivo tablaDecodersSinLineaUno
+{{{
+02 	000_010 	0	2
+03 	000_011 	0	3
+05 	000_101 	0	5
+10 	001_010 	1	2
+12 	001_100 	1	4
+13 	001_101 	1	5
+15 	001_111 	1	7
+20 	010_100 	2	4
+21 	010_101 	2	5
+22 	010_110 	2	6
+23 	010_111 	2	7
+25 	011_001 	3	1
+30 	011_110 	3	6
+31 	011_111 	3	7
+32 	100_000 	4	0
+33 	100_001 	4	1
+35 	100_011 	4	3
+50 	110_010 	6	2
+51 	110_011 	6	3
+52 	110_100 	6	4
+53 	110_101 	6	5
+}}}
+
+esta era la linea uno, no se usó por que NR de awk cuenta desde uno y no desde 0
+{{{
+01 	 000_001 	0	1
+}}}
+
+Generar una lista para conectar cada cable de un bus en una compuerta or para el decoder:
+{{{
+c$ for i in $(seq 0 21); do echo "BusOr[$i]" ; done | tr '\n' ','
+BusOr[0],BusOr[1],BusOr[2],BusOr[3],BusOr[4],BusOr[5],BusOr[6],BusOr[7],BusOr[8],BusOr[9],BusOr[10],BusOr[11],BusOr[12],BusOr[13],BusOr[14],BusOr[15],BusOr[16],BusOr[17],BusOr[18],BusOr[19],BusOr[20],BusOr[21],
+}}}
