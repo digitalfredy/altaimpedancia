@@ -48,7 +48,7 @@ Mi código es 20022005133, sus dígitos son 0,1,2,3 y 5. y para desarrollar el t
 
 Tabla de referencia para decodificador
 
-|| *Decimal* || *Binario* || *Pin1*|| *Pin0* ||
+|| *Decimal* || *Binario* || *Pin Número_1*|| *Pin Número_2* ||
 || 01 || 000_001 ||0||1||
 || 02 || 000_010 ||0||2||
 || 03 || 000_011 ||0||3||
