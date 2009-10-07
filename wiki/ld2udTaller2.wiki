@@ -13,8 +13,8 @@ En esta página es una referencia del desarrollo del [http://altaimpedancia.goog
 
 == Desarollo ==
 || *Descripción* || *Archivo* || *Notas* ||
-|| Comparador usando decodificadores || [http://code.google.com/p/altaimpedancia/source/browse/trunk/ld2ud/code/Comparador22Numeros6Bit_Decodificador.v Comparador22Numeros6Bit_Decodificador.v] ||  ||
-|| Comparador usando multiplexores || [http://code.google.com/p/altaimpedancia/source/browse/trunk/ld2ud/code/Comparador22Numeros6Bit_Multiplexores.v Comparador22Numeros6Bit_Multiplexores.v]||  ||
+|| Comparador usando decodificador || [http://code.google.com/p/altaimpedancia/source/browse/trunk/ld2ud/code/Comparador22Numeros6Bit_Decodificador.v Comparador22Numeros6Bit_Decodificador.v] ||  ||
+|| Comparador usando multiplexor || [http://code.google.com/p/altaimpedancia/source/browse/trunk/ld2ud/code/Comparador22Numeros6Bit_Multiplexor.v Comparador22Numeros6Bit_Multiplexor.v]||  ||
 || Comparador usando compuertas || [http://code.google.com/p/altaimpedancia/source/browse/trunk/ld2ud/code/Comparador22Numeros6Bit_Compuertas.v Comparador22Numeros6Bit_Compuertas.v] || Leer APÉNDICE al final del archivo ||
 || Laboratorio (Test Bench) Taller2 || [http://code.google.com/p/altaimpedancia/source/browse/trunk/ld2ud/code/Laboratorio2_Lab.v Laboratorio2_Lab.v] || Referencia [ld2udSimularVerilog] ||
 || Simulación Taller2 || [http://code.google.com/p/altaimpedancia/source/browse/trunk/ld2ud/code/Laboratorio2_Lab.vcd Laboratorio2_Lab.vcd] || Referencia [ld2udSimularVerilog] ||
@@ -148,4 +148,34 @@ Generar una lista para conectar cada cable de un bus en una compuerta or para el
 {{{
 c$ for i in $(seq 0 21); do echo "BusOr[$i]" ; done | tr '\n' ','
 BusOr[0],BusOr[1],BusOr[2],BusOr[3],BusOr[4],BusOr[5],BusOr[6],BusOr[7],BusOr[8],BusOr[9],BusOr[10],BusOr[11],BusOr[12],BusOr[13],BusOr[14],BusOr[15],BusOr[16],BusOr[17],BusOr[18],BusOr[19],BusOr[20],BusOr[21],
+}}}
+
+Tabla de conexiones Entrada `[0:3]` (ejercicio MUX) propuesta por Alejo:
+{{{
+0 0 0 1
+0 0 1 0
+0 0 1 1
+0 1 0 1
+1 0 1 0
+1 1 0 0
+1 1 0 1
+1 1 1 1
+
+0 1 0 0
+0 1 0 1
+0 1 1 0
+0 1 1 1
+1 0 0 1
+1 1 1 0
+1 1 1 1
+
+0 1 0 0
+0 0 0 1
+0 0 1 1
+
+0 0 1 0
+0 0 1 1
+0 1 0 0
+0 1 0 1
+
 }}}
