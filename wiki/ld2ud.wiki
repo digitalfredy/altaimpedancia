@@ -14,4 +14,5 @@
 || [ld2udEscribirVerilog] || Software Libre || [http://www.gnu.org/software/emacs/ Emacs] ||
 || [ld2udCompilarVerilog] || Software Libre || [http://www.icarus.com/eda/verilog/ Icrus Verilog] ||
 || [ld2udSimularVerilog Simular Verilog] || Software Libre || [http://gtkwave.sourceforge.net/ GTKWave] ||
+|| [ld2udSintetizarVerilog Sintesis] || Software Libre || [http://www.icarus.com/eda/verilog/ Icrus Verilog] ||
 || [ld2udFPGAyLinux] || Software Libre ||  ||
