@@ -181,5 +181,5 @@ Tabla de conexiones Entrada `[0:3]` (ejercicio MUX) propuesta por Alejo:
 }}}
 Negando y conectando las compuertas usando la tabla de arriba, Dejo vacio !BusMux para hacerlo a mano.
 {{{
- grep -v ^$ /tmp/taba | awk '{print "and (BusMux[], "$1"Entrada[3], "$2"Entrada[2], "$3"Entrada[1] "$4"Entrada[0]);" }' | sed 's/0E/~E/g' | sed 's/1E/E/g'
+ grep -v ^$ /tmp/taba | awk '{print "and (BusMux[], "$1"Entrada[3], "$2"Entrada[2], "$3"Entrada[1], "$4"Entrada[0]);" }' | sed 's/0E/~E/g' | sed 's/1E/E/g'
 }}}
