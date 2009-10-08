@@ -12,7 +12,7 @@ $ cd carpetaParaArchivo
 $ emas archivo.v&
 }}}
  1. Estructura para mótulo usamos atajos de teclado 
-  * C-c C-t m = control + c, control + t, m
+  * Explico el atajo de abajo: C-c C-t m = control + c, control + t, m
   * Responda las preguntas (*en la parte de abajo del editor*)
 {{{
 C-c C-t m
@@ -30,5 +30,20 @@ C-c C-t O
 C-c C-t I
 }}}
  1. Entradas y salidas como parámetro (esto toca hacerlo por que el editor de forma predeterminada escribe en Verilog95)
-
+ * Si luego cambias las entradas y salidas o escribes nuevas debes usar de nuevo el atajo de teclado.
+{{{
+C-c C-a
+}}}
+ 1. Cables
+{{{
+C-c C-t W
+}}}
+ 1. Registros
+{{{
+C-c C-t R
+}}}
+ 1. Asignaciones
+{{{
+C-c C-T A
+}}}
 http://el-directorio.org/ProyectoTale/Documentacion/Verilog
