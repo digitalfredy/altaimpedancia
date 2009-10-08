@@ -17,7 +17,7 @@ La board usada tenía:
  * Optional Hig-Res 128 x 64 LCD
  * All I/Os ESD & Short Circuit Protected
 Para programar esta y al parecer todas las board Nexys usamos [http://plausible.org/andy/nexys2prog.tar.gz nexys2prog]
- 1. Debes tener instalado ise (webpack sirve)
+ 1. Debes tener instalado ise ([http://www.xilinx.com/tools/webpack.htm webpack] sirve)
  1. Descargas nexys2prog
 {{{
 $ cd /tmp
