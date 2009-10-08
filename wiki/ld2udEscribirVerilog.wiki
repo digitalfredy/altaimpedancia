@@ -34,7 +34,7 @@ C-c C-t I
 {{{
 C-c C-a
 }}}
-  * La _a_ es e AUTO, y pone las salidas y entradas declaradas luego de /*AUTOARG*/ y antes del parentesis )
+  * La _a_ es e AUTO, y pone las salidas y entradas declaradas luego de `/*AUTOARG*/` y antes del parentesis )
  1. Cables
 {{{
 C-c C-t W
