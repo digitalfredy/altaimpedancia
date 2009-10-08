@@ -8,7 +8,7 @@ Desafortunadamente no hay una forma unificada de pasar el .bit a la FPGA por que
 
 == Digilent Nexys ==
 La board usada tenía:
- * Xilinx !Spartan3-200 FT256
+ * Xilinx Spartan3-200 FT256
  * 16Mb Micron CellularRAM
  * 4Mb Intel Strataflash
  * USB2 interface / USB Powered
