@@ -40,16 +40,16 @@ $ sudo chown root.root /usr/local/bin/nexys2prog
 }}}
  1. Instalas las dependencias, en debian o ubuntu:
 {{{
-apt-get install fxload libftdi1 urjtag
+# apt-get install fxload libftdi1 urjtag
 }}}
   * Si te dice que urjtag no está seguramente estas en debian 5.0, no te preocupes [http://packages.debian.org/search?keywords=urjtag&searchon=names&suite=all&section=all descarga la versión de pruebas] y tal vez te toque descargar una versión más nueva de alguna librería e instalarla a mano, yo lo hice así:
 {{{
-dpkg -i urjtag_0.0+r1476-1_i386.deb  libftdi1_0.16-2_i386.deb
+# dpkg -i urjtag_0.0+r1476-1_i386.deb  libftdi1_0.16-2_i386.deb
 }}}
  1. Si no tienes los binarios de ise en el PATH debes agregarlos
   1. Si no sabes donde estan los binarios de ise usa:
 {{{
-find / -name impact | grep lin
+# find / -name impact | grep lin
 /opt/Xilinx/ise/ISE/bin/lin/impact
 }}}
   1. Antes de ejecutar nexys2prog agrega ise al PATH. lo ideal es que configures tu shell pero al vuelo yo lo hice así (mira que *quito el /impact del final*):
