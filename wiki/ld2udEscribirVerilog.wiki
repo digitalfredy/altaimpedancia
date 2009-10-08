@@ -9,7 +9,7 @@
  1. Abrir Emacs desde una consola de comandos (si está en una TTY no use &):
 {{{
 $ cd carpetaParaArchivo
-$ emas archivo.v&
+$ emacs archivo.v&
 }}}
  1. Estructura para mótulo usamos atajos de teclado 
   * Explico el atajo de abajo: C-c C-t m = control + c, control + t, m
