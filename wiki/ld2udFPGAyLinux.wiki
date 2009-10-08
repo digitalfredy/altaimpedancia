@@ -1,0 +1,42 @@
+#summary Pasando el .bit a la FPGA desde Linux
+#labels ld2ud,verilog
+Desafortunadamente no hay una forma unificada de pasar el .bit a la FPGA por que los fabricantes de boards no tienen buenas prácticas y .... en esta página expondremos como hacerlos en las boards que tengamos acceso.
+
+== Digilent Nexys ==
+La board usada tenía:
+ * Xilinx !Spartan3-200 FT256
+ * 16Mb Micron CellularRAM
+ * 4Mb Intel Strataflash
+ * USB2 interface / USB Powered
+ * Onboard Buttons, Switches and LEDs
+ * 100Mhz + Expansion Connector
+ * Optional Hig-Res 128 x 64 LCD
+ * All I/Os ESD & Short Circuit Protected
+Para programar esta y al parecer todas las board Nexys usamos [http://plausible.org/andy/nexys2prog.tar.gz nexys2prog]
+ 1. Debes tener instalado ise (webpack sirve)
+ 1. Descargas nexys2prog
+{{{
+$ cd /tmp
+$ wget http://plausible.org/andy/nexys2prog.tar.gz
+}}}
+ 1. Descomprimes, realmente el autor se equivoco y no es un .tar.gz sino un .tar
+{{{
+$ tar -xf nexys2prog.tar.gz
+}}}
+ 1. Instalas el programa a mano:
+  * Para los que usan la cuenta de root (sin sudo)
+{{{
+$ su -c 'mv nexys2prog/nexys2prog /usr/local/bin/'
+$ su -c 'chown root.root /usr/local/bin/nexys2prog'
+}}}
+  * Para los que usan sudo (los de ubuntu generalmente)
+{{{
+$ sudo mv nexys2prog/nexys2prog /usr/local/bin/
+$ sudo chown root.root /usr/local/bin/nexys2prog
+}}}
+1. Si tienes los binarios de ise en el PATH ya funciona (usalo como root)
+{{{
+# nexys2prog ejemplo.bit
+}}}
+
+Para más información favor leer archivo README suministrado por el autor de nexys2prog
