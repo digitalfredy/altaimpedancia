@@ -1,4 +1,4 @@
-#labels svn,howto,developer
+#labels svn,howto,developer,altaz
 = Mini Tutorial de sbuversion =
 Si quiere saber que es subversion por favor revise los enlaces al final.
 
