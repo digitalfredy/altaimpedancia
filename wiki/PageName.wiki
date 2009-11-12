@@ -1,3 +1,4 @@
+#labels huerfana
 TUTORIAL VHDL CON EMACS:
 
 Pimero iniciamos desde una consola el editor de texto con el nombre de nuestro archivo.
