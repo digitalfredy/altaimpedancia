@@ -1,10 +1,11 @@
-#summary One-sentence summary of this page. El propÃsito de esta pÃgina es enumerar la lista de variables que afectan la libertad del hardware.
+#summary One-sentence summary of this page. El propï¿½sito de esta pï¿½gina es enumerar la lista de variables que afectan la libertad del hardware.
+#labels altaz
 
 = Introduction =
-* Herramientas usadas para su diseÃo
+* Herramientas usadas para su diseï¿½o
 * Portabilidad e ineteroperabilidad de los formatos
 * Formatos nativos de las herramientas
-* Formato de publicaciÃn de archivos
+* Formato de publicaciï¿½n de archivos
 * Herramientas para editar o visualizar archivos publicados
 * Disponibilidad de DocumentaciÃ³n
 * Cuestiones legales (licencias,patentes...)
