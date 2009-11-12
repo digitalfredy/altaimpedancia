@@ -1,5 +1,5 @@
 #summary Electrónica con Software Libre, Free Hardware Design y Open Source Hardware - guía para desarrollar proyectos
-#labels organización
+#labels altaz
 
 = Trabajo por proyectos =
 La dinámica de trabajo del SIG altaimpedancia es el desarrollo de proyectos, procuramos seguir el principio [http://es.wikipedia.org/wiki/Principio_KISS KISS] y usamos code.google.com para el desarrollo, gestión archivo y publicación.
