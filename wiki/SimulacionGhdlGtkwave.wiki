@@ -1,4 +1,4 @@
-#labels vhdl,simulación,ghdl,gtkwave
+#labels vhdl,simulación,ghdl,gtkwave,huerfana
 Enlaces:
 
  * http://web.madritel.es/personales4/raragon/vhdl/index.html
