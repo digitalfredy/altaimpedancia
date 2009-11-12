@@ -1,4 +1,4 @@
-#labels poket,reference,referencia,bolsillo,vhdl,ieee,1164
+#labels poket,reference,referencia,bolsillo,vhdl,ieee,1164,altaz
 Referencia de bolsillo vhdl
 
 
