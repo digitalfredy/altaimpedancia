@@ -46,11 +46,14 @@ Se crea una página wiki temporal llamada _!BorradorProyectoNombreTemporal_  que
 
 === Repositorio ===
 {{{
+cd CarpetaRepositorioAltaimpedancia
+svn update
 svn mkdir nombrecorto
 cd nombrecorto
 svn mkdir misc code doc
 echo "http://nombrecorto.altaimpedancia.org" > README
 svn add README
+svn commit
 }}}
 
 Cada proyecto tiene derecho a una *unica* carpeta en el nivel superior en la que *no se permiten archivos* (excepto el archivo README) y al máximo se evitará la creación de carpetas adicionales, si el proyecto es muy complejo en las carpetas code y doc se pueden crear subcarpetas que contengan módulos del proyecto o subproyectos.
