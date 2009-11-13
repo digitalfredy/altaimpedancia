@@ -59,7 +59,7 @@ Cada proyecto tiene derecho a una *unica* carpeta en el nivel superior en la que
 
 Si es necesario crear una [http://code.google.com/p/altaimpedancia/w/edit Crear página nueva] relacionada con el proyecto *use como prefijo el _nombrecorto_* del proyecto.
   * *Page Name:* _nombrecortoNombrePagina_
-  * *Content:* #summary  _Nombre Largo del Proyecto_ - _descripción página (opcional)_
+  * *Content:* #summary  _Nombre Largo del Proyecto_ - _descripción página (la descripción es opcional)_
   * *Labels:* _nombrecorto_ _orolabel_ ...      // *OBLIGATORIO* _nombrecorto_
   * *Commit Log:* Creada página _nombrecortoNombrePagina_ para ...
 
