@@ -1,0 +1,16 @@
+ * Nombre del proyecto: Robot Linux Inalámbrico
+ * Nombre corto del proyecto: rolin
+ * Objetivo general hacer una plataforma para robótica.
+ * Objetivos especificos
+  * Integrar las siguientes plataformas: !OpenWrt,SBC de Router !WiFi,Microcontrolador AVR, Chasis (incluye ruedas, engranajes y motores) de vehículo de radiocontrol para crear una plataforma de robótica.
+  * Desarrollar e Implementar en la plataforma un sistema de control remoto que la controle desde un dispositivo que tenga !WiFi, IP y un protocolo de aplicación (inicialmente ssh).
+ * Justificación: demostrar que el uso de software libre, plataformas preexistentes y protocolos estándar permite el desarrollo rápido de nuevas plataformas robustas y escalables, gusto personal y obtener calificación en la Universidad.
+ * Plan de trabajo 
+  * Comunicación Linux < --- > AVR: El micro debe recibir 1 señal por serial y al detectarla prender un led.
+  * Control AVR < --- > Motores: rutinas base para avanzar, retroceder, avanzar derecha, retroceder derecha, avanzar izquierda, retroceder izquierda.
+  * Comunicación !LinuxEmbebido < --- > AVR: La idea es enviar (con minicom o similar) una señal al AVR y que cuando la detecte prenda un Led
+  * !LinuxEmbebido < --- > Motores: Desde Linux (ssh, con minicom o similar) controlar motores.
+  * Integración del hardware: Todo bonito en el carro con la batería.
+  * Uso de flechas de teclado en vez de comandos seriales (si aplica)
+
+ * Entregable: Vehiculo (robot) controlado (avanzar, retroceder, avanzar derecha, retroceder derecha, avanzar izquierda, retroceder izquierda) remotamente por dispositivo !WiFi (ejemplo netbook, Internet tablet ...)
