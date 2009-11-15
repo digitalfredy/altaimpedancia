@@ -17,3 +17,8 @@ Recuerdo que tengo dos enlaces sobre avr y linux voy a revisar si hablan del pue
 
  * [http://pramode.net/articles/lfy/atmega8/pramode.html ESTE documento] hay que revisarlo con detalle, creo que es el que me va a dar luces 
  * [http://www.mightyohm.com/blog/2009/02/building-a-wifi-radio-part-8-adding-a-tuning-control/ aqui] usan el serial desde shell para enviar datos al avr usando echo :) creo que este proyecto es otra buena REFERENCIA
+  * Puede servir pero para el control de los motores :P mirar la sección de programar puerto serial
+
+Yo sigo empeñado que es por el lado de SPI (soy terco pero pienso por ejemplo que si uno programa el mircro con SPI entonces es el camino)
+
+ * [http://en.wikipedia.org/wiki/Serial_Peripheral_Interface_Bus Aprendiendo un poco sobre SPI en la wikipedia] sigo pensando que este es el camino
