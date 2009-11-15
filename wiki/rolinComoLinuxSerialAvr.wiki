@@ -16,3 +16,4 @@ Me pregunto si va a tocar usar USART o TWI, bueno sigo buscando ..
 Recuerdo que tengo dos enlaces sobre avr y linux voy a revisar si hablan del puerto serial, tal vez mi busqueda no la deba centrar en SPI sino en linux avr serial
 
  * [http://pramode.net/articles/lfy/atmega8/pramode.html ESTE documento] hay que revisarlo con detalle, creo que es el que me va a dar luces 
+ * [http://www.mightyohm.com/blog/2009/02/building-a-wifi-radio-part-8-adding-a-tuning-control/ aqui] usan el serial desde shell para enviar datos al avr usando echo :) creo que este proyecto es otra buena REFERENCIA
