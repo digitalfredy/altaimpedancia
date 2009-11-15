@@ -18,6 +18,7 @@ La board usada tenía:
  * All I/Os ESD & Short Circuit Protected
 Para programar esta y al parecer todas las board Nexys usamos [http://plausible.org/andy/nexys2prog.tar.gz nexys2prog]
  1. Debes tener instalado ise ([http://www.xilinx.com/tools/webpack.htm webpack] sirve)
+  * Hay que instalar los paquetes libmotif3 y libstc++5 para que funcione el programa de asignación de pines de ISE.
  1. Descargas nexys2prog
 {{{
 $ cd /tmp
