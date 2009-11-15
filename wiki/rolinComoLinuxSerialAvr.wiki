@@ -8,3 +8,11 @@
   * [http://www.nongnu.org/avr-libc/user-manual/group__avr__interrupts.html buscar en tabla SPI, USART y TWI
   * [http://www.nongnu.org/avr-libc/user-manual/group__util__twi.html info detallada de twi.h] según entendí es lo mismo que I2C
   * [http://www.nongnu.org/avr-libc/user-manual/group__twi__demo.html ejemplo con TWI]
+
+Me pregunto si va a tocar usar USART o TWI, bueno sigo buscando ..
+ * En [http://www.avrfreaks.net/index.php?name=PNphpBB2&file=viewtopic&t=84829este foro de avrfreaks] hablan de spi.h, yo he buscado por todo mi disco duro y encontré un spi.h en las cabeceras del kernel de linux por lo cual este no es el camino :(
+ * En [http://www.ermicro.com/blog/?p=1050 este blog] usan #include <avr/io.h> y #define SPI_ ... tocaría ver si con avr-libc en linux funciona, tiene pinta :)
+
+Recuerdo que tengo dos enlaces sobre avr y linux voy a revisar si hablan del puerto serial, tal vez mi busqueda no la deba centrar en SPI sino en linux avr serial
+
+ * [http://pramode.net/articles/lfy/atmega8/pramode.html ESTE documento] hay que revisarlo con detalle, creo que es el que me va a dar luces 
