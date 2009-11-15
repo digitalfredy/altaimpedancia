@@ -1,0 +1,12 @@
+Segunda reunión.
+
+Revisamos los slides de la clase de Melgarejo se hicieron algunos ejemplos básicos
+Emacs tiene modo para vhdl
+ * El modo se carga con M-x vhdl-mode o cargando un archivo con terminación en .vhdl
+ * La ayuda para el modo se accede con C-c C-h
+
+= Enlaces =
+
+http://www.iearobotics.com/personal/juan/publicaciones/art6/
+
+http://www.velocityreviews.com/forums/t55079-ghdl-or-freehdl.html
