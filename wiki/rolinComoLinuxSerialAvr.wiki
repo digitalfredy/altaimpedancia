@@ -60,3 +60,5 @@ opkg install avrdude
 Ahora que esta instalado viene el tema del miedo .... por lo que [http://wiki.openwrt.org/oldwiki/openwrtdocs/hardware/linksys/wrt54gl#serial.port he leído el puerto serial del router funciona a 3.3V TTL] y creo que el serial del AVR es a 5V TTL pero he leido [http://www.herbert-dingfelder.de/WRT54GL_add_on/WRT54GL_add_on.html The router runs internally on 3.3 volts, so I have simply used this voltage to run the AVR as well]
 
 Leo de nuevo y definitivamente estoy estancado, seguro a el le funcionó por que su AVR funcionaba desde 3.3 voltios, el mío no :( pues hice la prueba alimentandolo con una fuente de 3.3 y no funcionó por que tenía un programa que hacía prender unos leds y no prendieron :(, voy a revisar unos voltajes con el multimetro.
+
+Para avanzar un poco he probado el route usando la batería, funciona perfectamente :P
