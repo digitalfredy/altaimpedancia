@@ -62,3 +62,6 @@ Ahora que esta instalado viene el tema del miedo .... por lo que [http://wiki.op
 Leo de nuevo y definitivamente estoy estancado, seguro a el le funcionó por que su AVR funcionaba desde 3.3 voltios, el mío no :( pues hice la prueba alimentandolo con una fuente de 3.3 y no funcionó por que tenía un programa que hacía prender unos leds y no prendieron :(, voy a revisar unos voltajes con el multimetro.
 
 Para avanzar un poco he probado el route usando la batería, funciona perfectamente :P
+
+=== Sigo buscando ===
+He seguido navegando y [http://www.stevediraddo.com/blog/index.php?entry=entry081203-204744 he encontrado este blog] que tengo que REVISAR CON DETALLE
