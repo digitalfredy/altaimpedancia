@@ -38,7 +38,7 @@ Soldando DB9 de calbe2 soldo cables 9 y 10 al mismo pin, aunque en cable1 el pin
 
 Listo he probado el cable, bueno los cables :), tenía unos problemas de contactos que he solucionado entre otras haciendo aún más pequeño el jumper.
 
-=== Flasheando el router ===
+=== Alistando software del router ===
 El router estaba funcionando como switche y no hay forma de accederlo por lo que debo flashearlo via tftp:
 {{{
 echo -e "binary\nrexmt 1\ntimeout 60\ntrace\nput openwrt8_09_1-wrt54g-squashfs-2_4.bin\n" | tftp 192.168.1.1
@@ -46,3 +46,12 @@ echo -e "binary\nrexmt 1\ntimeout 60\ntrace\nput openwrt8_09_1-wrt54g-squashfs-2
 Usaré la img con kernel 2.4 que se que funciona para no tener problemas adicionales :P
 
 La idea es instalar avrdude para probar, en algún lado vi que estaba para OpenWRT, lo primero es actualizar la lista de paquetes del router para lo cual necesita estar conectado a Internet.
+{{{
+opkg update
+opkg list | grep -i avr
+}}}
+
+Siii!!! avrdude hace parte de OpenWRT y lo he instalado con un simple comando:
+{{{
+opkg install avrdude
+}}}
