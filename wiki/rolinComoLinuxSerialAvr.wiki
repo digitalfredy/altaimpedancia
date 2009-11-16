@@ -30,3 +30,19 @@ He leído [http://www.herbert-dingfelder.de/WRT54GL_add_on/WRT54GL_add_on.html e
 
 === Hack puerto serial WRT54GL ===
 En la board en JP1 y JP2 he soldado dos regletas, estoy siguiendo el libro !LinksysUltimateHacking, usaré un conector que tengo para el conector de 10 pines pero en el otro lado solo tiene 9 pines (es un DB9, como los seriales del PC), he solucionado colocando un Juper recortado entre los pines 9 y 10 que según el libro son la tierra. Me ha entrado la duda de si este puerto servirá para SPI primero por lo mencionado de los 3.3V y segundo veo los pines VCC RX TX y otro de 3.3 voltios, me pregunto si alli se pone el CLK
+
+Esta es la idea:
+WRT54GL(10pinesMachos)<--->Cable1(10pineshembra)<--->Cable1(DB9pinesMachos)<--->Cable2(DB9pinesHembras)<--->Cable2(alambresPelados)
+
+Soldando DB9 de calbe2 soldo cables 9 y 10 al mismo pin, aunque en cable1 el pin 10 está desconectado, esto creo no sirve de nada, solo lo hice para no dejar "suelto" un alambre.
+
+Listo he probado el cable, bueno los cables :), tenía unos problemas de contactos que he solucionado entre otras haciendo aún más pequeño el jumper.
+
+=== Flasheando el router ===
+El router estaba funcionando como switche y no hay forma de accederlo por lo que debo flashearlo via tftp:
+{{{
+echo -e "binary\nrexmt 1\ntimeout 60\ntrace\nput openwrt8_09_1-wrt54g-squashfs-2_4.bin\n" | tftp 192.168.1.1
+}}}
+Usaré la img con kernel 2.4 que se que funciona para no tener problemas adicionales :P
+
+La idea es instalar avrdude para probar, en algún lado vi que estaba para OpenWRT, lo primero es actualizar la lista de paquetes del router para lo cual necesita estar conectado a Internet.
