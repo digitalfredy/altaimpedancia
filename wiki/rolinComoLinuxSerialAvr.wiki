@@ -73,4 +73,11 @@ He pedido prestado a los nerdbots un atmega168p que si funciona a 3.3V pero no l
 
 LISTO, ese era el problema, lo solucioné con la configuración sugerida en la hoja de datos, usé un cristal de 10.000 y dos condensadores de 15.
 
+Lo primero que hago es programar el micro para prender un led y funciona :)
+
 Ahora he probado el micro con la fuente de 3.3V y funciona, paso a probarlo con la alimentación del router y .... FUNCIONA !!!!! :)
+
+=== atmega168p y puerto serial ===
+Finalmente he descartado SPI, voy a usar USART y como base usaré [http://www.herbert-dingfelder.de/WRT54GL_add_on/software/WRT54GL_add_on.c este código para atmega8] de [http://www.herbert-dingfelder.de/WRT54GL_add_on/WRT54GL_add_on.html este proyecto] mencionado anteriormente, primero he recortado el código y compila para atmega8 el paso siguiente es compilarlo para atmega168p.
+
+He modificado el [http://www.herbert-dingfelder.de/WRT54GL_add_on/software/makefile makefile] y no compila para atmega168p (si para atmega8), tengo que adaptar el código y voy al [http://www.mightyohm.com/blog/2009/02/building-a-wifi-radio-part-8-adding-a-tuning-control/ proyecto de radio] y uso su [http://mightyohm.com/files/wifiradio/AVR_wifiradio_interface.zip código para el atmega168p] como referencia para el debug
