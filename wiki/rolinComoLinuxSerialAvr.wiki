@@ -5,7 +5,7 @@
  * En la pág 136 de la [http://www.atmel.com/dyn/resources/prod_documents/doc2502.pdf hoja de datos del atmega8535] hablan de Peripherical Interface (SPI) Esto creo que es suficiente pues solo voy a enviar datos desd el router, también existe Universal Syncronous and Asincronous Serial Reciber and Transmiter (USART) y de Two-wire Serial Interface (TWI) que serán útiles en el futuro pero de momento SPI.
  * [http://winavr.scienceprog.com/avr-gcc-tutorial/serial-peripheral-interface-spi-of-avr-microcontrollers.html Este tutorial es el primero que encuentro]
  * En avr-libc encontré más de TWI que de SPI
-  * [http://www.nongnu.org/avr-libc/user-manual/group__avr__interrupts.html buscar en tabla SPI, USART y TWI
+  * [http://www.nongnu.org/avr-libc/user-manual/group__avr__interrupts.html buscar en tabla SPI, USART y TWI]
   * [http://www.nongnu.org/avr-libc/user-manual/group__util__twi.html info detallada de twi.h] según entendí es lo mismo que I2C
   * [http://www.nongnu.org/avr-libc/user-manual/group__twi__demo.html ejemplo con TWI]
 
