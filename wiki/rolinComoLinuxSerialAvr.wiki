@@ -67,3 +67,6 @@ Para avanzar un poco he probado el route usando la batería, funciona perfectame
 He seguido navegando y [http://www.stevediraddo.com/blog/index.php?entry=entry081203-204744 he encontrado este blog] que tengo que REVISAR CON DETALLE
 
 Pienso que si quiero usar SPI la vuelta es usar los GPIO y la referencia es el hack de la memoria MMC
+
+=== Probando atmega168p ===
+He pedido prestado a los nerdbots un atmega168p que si funciona a 3.3V pero no lo he logrado programar,  creo que hay que poner un cristal externo :/
