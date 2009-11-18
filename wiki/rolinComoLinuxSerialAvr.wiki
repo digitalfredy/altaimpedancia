@@ -70,3 +70,7 @@ Pienso que si quiero usar SPI la vuelta es usar los GPIO y la referencia es el h
 
 === Probando atmega168p ===
 He pedido prestado a los nerdbots un atmega168p que si funciona a 3.3V pero no lo he logrado programar,  creo que hay que poner un cristal externo :/
+
+LISTO, ese era el problema, lo solucioné con la configuración sugerida en la hoja de datos, usé un cristal de 10.000 y dos condensadores de 15.
+
+Ahora he probado el micro con la fuente de 3.3V y funciona, paso a probarlo con la alimentación del router y .... FUNCIONA !!!!! :)
