@@ -85,3 +85,5 @@ He modificado el [http://www.herbert-dingfelder.de/WRT54GL_add_on/software/makef
 Luego de mucho revisar las hojas de datos comparando los registros hice las modificaciones y el código compiló y tengo certeza de estar usando los registros adecuados, cuando pasé el .hex al micro y empezaron nuevos problemas:
 
 Parece que el código estaba mal documentado o mal hecho, decia que prendía un led por 3 segundos y luego lo apagaba pero hacia lo contrario y me di cuenta que al quitar la alimentación el led se quedaba prendido, luego de investigar y probar lo he solucionado, a mi parecer el código estaba o mal escrito o mal docuementado (respecto a lo de prender y apagar el led) y me di cuenta que cuando ejecutaba la orden de habilitaban las interrupciones se ejecutaba la siguiente instrucción y lo solucione colocando un pequeño retardo de tiempo.
+
+Luego de lo anterior y si estoy en lo correcto al conectar el cable paralelo del programador ocurre una interrupción y el programa la detecta y enciende el led por un tiempo y luego lo apaga, NO ENTIENDO por que una interrupción en el puerto SPI afecta USART y me falta cuadrar los tiempos para que pueda hacer la comunicación.
