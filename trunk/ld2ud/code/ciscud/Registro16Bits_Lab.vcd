@@ -1,0 +1,107 @@
+$date
+	Fri Nov 20 13:32:02 2009
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module Registro16Bits_Lab $end
+$var wire 16 ! RtaRegistro[15:0] $end
+$var reg 1 " Habilitar $end
+$var reg 1 # Reiniciar $end
+$var reg 1 $ Reloj $end
+$var reg 16 % Tupla[15:0] $end
+$scope module RegistroPrueba $end
+$var wire 16 & Entrada[15:0] $end
+$var wire 1 " Habilitar $end
+$var wire 1 # Reiniciar $end
+$var wire 1 $ Reloj $end
+$var reg 16 ' Salida[15:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx '
+b0 &
+b0 %
+0$
+0#
+0"
+bx !
+$end
+#1
+b1 %
+b1 &
+1$
+#2
+b10 %
+b10 &
+0$
+#3
+b11 %
+b11 &
+1$
+#4
+b100 %
+b100 &
+0$
+#5
+b101 %
+b101 &
+1$
+#6
+b110 %
+b110 &
+0$
+#7
+b111 %
+b111 &
+1$
+#8
+b1000 %
+b1000 &
+0$
+1"
+#9
+b1001 !
+b1001 '
+b1001 %
+b1001 &
+1$
+#10
+b1010 %
+b1010 &
+0$
+#11
+b1011 !
+b1011 '
+b1011 %
+b1011 &
+1$
+#12
+b1100 %
+b1100 &
+0$
+#13
+b1101 !
+b1101 '
+b1101 %
+b1101 &
+1$
+#14
+b1110 %
+b1110 &
+0$
+#15
+b1111 !
+b1111 '
+b1111 %
+b1111 &
+1$
+#16
+b10000 %
+b10000 &
+0$
