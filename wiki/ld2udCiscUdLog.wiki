@@ -1,0 +1,21 @@
+#summary Vitacora procesador
+#labels ld2ud
+
+Con el proyecto rolin me di cuenta de lo útil de la vitacora, en el desarrollo del subproyecto del procesador voy a usar esta vitacora para registrar la actividad y tener una referencia informal.
+
+=== El toro por los cachos pero no se los veo ===
+Realmente al principio estaba confundido y no sabía por donde empezar, realmente no tenía claridad del camino a seguir para pasar el ASM a HDL por lo cual revisé las diapositivas del profesor Miguel Melgarejo y en la lección 8 la diapositiva _Descripción de ASMs en VHDL_ me sacó de dudas, y además ahora soy consciente de que debo hacer la maquina de estados de la Unidad de Control.
+
+El plan inicial es el siguiente:
+ 1. Camino de datos
+  1. Describir registros
+  1. Describir multiplexores
+  1. Describir operaciones sueltas (=0, +1)
+  1. Describir ALSU
+ 1. Unidad de control
+  1. Hacer FSM
+  1. Describir FSM
+ 1. Buscar solución al tema de la memoria
+ 1. Implementar y probar
+  1. Ejecutar programa simple (una suma por ej)
+  1. Ejecutar programa complejo
