@@ -89,3 +89,12 @@ Parece que el código estaba mal documentado o mal hecho, decia que prendía un 
 Luego de lo anterior y si estoy en lo correcto al conectar el cable paralelo del programador ocurre una interrupción y el programa la detecta y enciende el led por un tiempo y luego lo apaga, NO ENTIENDO por que una interrupción en el puerto SPI afecta USART y me falta cuadrar los tiempos para que pueda hacer la comunicación.
 
 LO HE LOGRADO :) ya puedo enviar y recibir datos por el puerto serial, el problema que más me costó resolver fue recibir los datos pues el código base usaba la función SIGNAL(SIG_UART_RECV) y compilaba con un warning, como ya estaba recibiendo datos leí y busque hasta que di con el chiste (no sabía que era por ese warning) y usé ISR(USART_RX_vect) y funciona, si presiono cualquier tecla se prende un led por un tiempo determinado 
+
+=== Taladro y segueta al chasis del carro ===
+Hoy he dedicado el día a dejar listo el chasis del carro integrado con el router, con el ánimo de avanzar he dejado pendiente la tapa del baúl y los guardabarros pues sin ellos es funcional.
+
+Aunque este proyecto no es nuevo en mi cabeza y ya había adelantado parte como conseguir una batería adecuada y ya le había quitado pedazos al chasis con el animo de abrir espacio a la board del router tomo bastante tiempo decidir la ubicación exacta de la board, de hecho inicialmente había pensado dejarla hacia adelante y quedó hacia atrás y como consecuencia del cambio de plan adelante quedó una ranura innecesaria (rompí el chasis donde no era necesario), a pesar de tener trabajo adelantado me he gastado todo el Sábado y ha quedado *pendiente solucionar el tema de la alimentación pues el conector queda en un lugar inaccesible y debo hacer un hack en la board para alimentarla por POE o conectar unos cables desde los pindes NC (no conection) de los puertos seriales* como me comentaron los nerdbots habían hecho, también esta *pendiente conseguir algo para que la board no quede directamente sobre la batería y lograr que las antenas suban un poco y evitar rozamientos con las ruedas*.
+
+Estoy satisfecho con el trabajo, incluso me parece divertido poder mantener el conductor del vehiculo en su lugar y por ello la board con la regulación de corriente para los motores y con el avr y todo lo demás que se necesite la dejaré en la parte de abajo del carro, debajo de la batería en lo que quedó de la caja donde originalmente estaban las baterías tipo D y que tendré que seguir rompiendo para permitir que pasen los cables.
+
+
