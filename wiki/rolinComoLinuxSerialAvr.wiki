@@ -97,4 +97,4 @@ Aunque este proyecto no es nuevo en mi cabeza y ya había adelantado parte como 
 
 Estoy satisfecho con el trabajo, incluso me parece divertido poder mantener el conductor del vehiculo en su lugar y por ello la board con la regulación de corriente para los motores y con el avr y todo lo demás que se necesite la dejaré en la parte de abajo del carro, debajo de la batería en lo que quedó de la caja donde originalmente estaban las baterías tipo D y que tendré que seguir rompiendo para permitir que pasen los cables.
 
-He dejado temporalmente unas fotos del chasis con el router en torrecampo.digitalfredy.com/Public/rolin
+He dejado temporalmente unas fotos del chasis con el router en [ftp://torrecampo.digitalfredy.com/Public/rolin mi ftp]
