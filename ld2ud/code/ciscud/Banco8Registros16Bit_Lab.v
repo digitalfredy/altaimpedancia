@@ -1,19 +1,20 @@
 module Banco8Registros16Bit_Lab (/*AUTOARG*/
    // Outputs
-   Tupla, Reloj, Habilitar, DireccionEscritura, DireccionA,
+   Tupla, Reloj, Reiniciar, Habilitar, DireccionEscritura, DireccionA,
    DireccionB
    ) ;
    output reg [15:0] Tupla;
-   output reg Reloj, Habilitar;
+   output reg Reloj,Reiniciar,Habilitar;
    output reg [2:0] DireccionEscritura, DireccionA, DireccionB;
 
    wire   [15:0] RtaA,RtaB;
 
    Banco8Registros16Bit 
-     BancoPrueba (RtaA,RtaB,Tupla,Reloj,Habilitar,DireccionEscritura,DireccionA,DireccionB);
+     BancoPrueba (RtaA,RtaB,Tupla,Reloj,Reiniciar,Habilitar,DireccionEscritura,DireccionA,DireccionB);
    initial begin
       Tupla     = 16'h0;
       Reloj     = 1'b0;
+      Reiniciar     = 1'b0;      
       Habilitar = 1'b1;
       DireccionA = 3'b111;
       DireccionB = 3'b100;
@@ -40,9 +41,17 @@ module Banco8Registros16Bit_Lab (/*AUTOARG*/
    end
    
    initial begin
-      #9 Habilitar = 1'b0;      
+      #12 Habilitar = 1'b0;      
    end
 
+   initial begin
+      #9 Reiniciar = 1'b1;
+   end
+
+   initial begin
+      #10 Reiniciar = 1'b0;
+   end
+   
    initial begin
       $dumpfile ("Banco8Registros16Bit_Lab.vcd");
       $dumpvars;
