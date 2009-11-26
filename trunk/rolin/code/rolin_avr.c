@@ -11,11 +11,17 @@
 #include <stdio.h>
 
 // ----- Defines for better code readability -----
-	#define LF	        	10	// ASCII(10) = LF
-	#define UART_BUF_LENGTH		128	// max. 128 characters for command line entrys
-	#define LED_DIR			DDRC
-	#define LED_PORT		PORTC			 
-	#define LED_RED			_BV(0)
+#define LF	        	10	// ASCII(10) = LF
+#define UART_BUF_LENGTH		128	// max. 128 characters for command line entrys
+#define LED_DIR			DDRC
+#define LED_PORT		PORTC			 
+#define LED_RED			_BV(0)
+#define MOTORES_DIR             DDRD
+#define MOTORES_PORT		PORTD		 
+#define M_ADELANTE		_BV(2)
+#define M_ATRAS		        _BV(3)
+#define M_DERECHA 		_BV(6)
+#define M_IZQUIERDA		_BV(7)
 
 // ----- Global variables -----
 	char uart_buffer[UART_BUF_LENGTH];
@@ -45,6 +51,7 @@ void reset_handler(void)
 {
 	//------------------- configure GPIOs and set to their default settings -----------------------
 	LED_DIR  |=  LED_RED;								// configure LED GPIO as output
+	MOTORES_DIR |= M_ADELANTE | M_ATRAS | M_IZQUIERDA | M_DERECHA;
 	//	LED_PORT &=  ~LED_RED;								// switch off LEDs and switch outputs (output is active low)
 	
 	//--------------------------- configure UART (RS232-Interfache) -------------------------------
@@ -97,6 +104,35 @@ ISR(USART_RX_vect)
 	      pause(9000);
 	      LED_PORT &=  ~LED_RED;		 // switch off LED
 	    }
+	  if( strncmp( uart_buffer, "ADELANTE", 4 ) == 0 )          // if the help command was received
+	    {
+	      send_help_text();
+	      MOTORES_PORT |= M_ADELANTE;		 // switch on LED for 9 seconds 
+	      pause(8000);
+	      MOTORES_PORT &=  ~M_ADELANTE;		 // switch off LED
+	    }
+	  if( strncmp( uart_buffer, "ATRAS", 4 ) == 0 )          // if the help command was received
+	    {
+	      send_help_text();
+	      MOTORES_PORT |= M_ATRAS;		 // switch on LED for 9 seconds 
+	      pause(9000);
+	      MOTORES_PORT &=  ~M_ATRAS;		 // switch off LED
+	    }
+	  if( strncmp( uart_buffer, "DERECHA", 4 ) == 0 )          // if the help command was received
+	    {
+	      send_help_text();
+	      MOTORES_PORT |= M_DERECHA;		 // switch on LED for 9 seconds 
+	      pause(300);
+	      MOTORES_PORT &=  ~M_DERECHA;		 // switch off LED
+	    }
+	  if( strncmp( uart_buffer, "IZQUIERDA", 4 ) == 0 )          // if the help command was received
+	    {
+	      send_help_text();
+	      MOTORES_PORT |= M_IZQUIERDA;		 // switch on LED for 9 seconds 
+	      pause(300);
+	      MOTORES_PORT &=  ~M_IZQUIERDA;		 // switch off LED
+	    }
+
 	  // after a LF we start with a new (empty) buffer at the first postion
 	  memset( uart_buffer, ' ', UART_BUF_LENGTH );         // overwrite the uart buffer with all spaces
 	  uart_pos = 0;                                        // reset the postion pointer for the uart buffer
