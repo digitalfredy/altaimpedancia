@@ -5,14 +5,14 @@ C 40400 47400 1 0 0 connector10-1.sym
 T 42300 50400 5 10 0 0 0 0 1
 device=CONNECTOR_10
 T 40500 50600 5 10 1 1 0 0 1
-refdes=CONN?
+refdes=CONN1
 }
 C 51100 45600 1 0 0 ATmega168P-1.sym
 {
 T 51200 50400 5 10 0 0 0 0 1
-footprint=DIL28
+footprint=DIL 28
 T 53400 50000 5 10 1 1 0 6 1
-refdes=U?
+refdes=U3
 T 51200 51000 5 10 0 0 0 0 1
 device=ATmega168P
 }
@@ -41,7 +41,7 @@ C 49000 46900 1 0 0 crystal-1.sym
 T 49200 47400 5 10 0 0 0 0 1
 device=CRYSTAL
 T 49600 47100 5 10 1 1 0 0 1
-refdes=U?
+refdes=U2
 T 49200 47600 5 10 0 0 0 0 1
 symversion=0.1
 }
@@ -50,7 +50,7 @@ C 49600 46900 1 270 0 capacitor-1.sym
 T 50300 46700 5 10 0 0 270 0 1
 device=CAPACITOR
 T 50000 46600 5 10 1 1 0 0 1
-refdes=C?
+refdes=C3
 T 50500 46700 5 10 0 0 270 0 1
 symversion=0.1
 T 50000 46200 5 10 1 1 0 0 1
@@ -61,28 +61,28 @@ C 56500 45300 1 0 1 connector6-1.sym
 T 54700 47100 5 10 0 0 0 6 1
 device=CONNECTOR_6
 T 56400 47300 5 10 1 1 0 6 1
-refdes=CONN?
+refdes=CONN3
 }
 C 40400 45800 1 0 0 connector2-1.sym
 {
 T 40600 46800 5 10 0 0 0 0 1
 device=CONNECTOR_2
 T 40400 46600 5 10 1 1 0 0 1
-refdes=CONN?
+refdes=CONN2
 }
 C 56500 44500 1 180 0 connector2-1.sym
 {
 T 56300 43500 5 10 0 0 180 0 1
 device=CONNECTOR_2
 T 56500 43700 5 10 1 1 180 0 1
-refdes=CONN?
+refdes=CONN4
 }
 C 48700 46900 1 270 0 capacitor-1.sym
 {
 T 49400 46700 5 10 0 0 270 0 1
 device=CAPACITOR
 T 49100 46600 5 10 1 1 0 0 1
-refdes=C?
+refdes=C2
 T 49600 46700 5 10 0 0 270 0 1
 symversion=0.1
 T 49100 46200 5 10 1 1 0 0 1
@@ -96,7 +96,7 @@ C 43700 41900 1 90 1 capacitor-1.sym
 T 43000 41700 5 10 0 0 270 2 1
 device=CAPACITOR
 T 43300 41600 5 10 1 1 0 6 1
-refdes=C?
+refdes=C1
 T 42800 41700 5 10 0 0 270 2 1
 symversion=0.1
 T 43300 41200 5 10 1 1 0 6 1
@@ -149,14 +149,14 @@ C 41100 44600 1 0 0 diode-1.sym
 T 41500 45200 5 10 0 0 0 0 1
 device=DIODE
 T 41400 45100 5 10 1 1 0 0 1
-refdes=D?
+refdes=D1
 }
 C 42400 44600 1 0 0 diode-1.sym
 {
 T 42800 45200 5 10 0 0 0 0 1
 device=DIODE
 T 42700 45100 5 10 1 1 0 0 1
-refdes=D?
+refdes=D2
 }
 N 42000 44800 42400 44800 4
 N 41000 44800 41100 44800 4
@@ -164,7 +164,7 @@ N 43300 44800 43500 44800 4
 C 41100 42600 1 0 0 diode-1.sym
 {
 T 41400 43100 5 10 1 1 0 0 1
-refdes=D?
+refdes=D3
 T 41500 43200 5 10 0 0 0 0 1
 device=DIODE
 }
@@ -173,7 +173,7 @@ C 42400 42600 1 0 0 diode-1.sym
 T 42800 43200 5 10 0 0 0 0 1
 device=DIODE
 T 42700 43100 5 10 1 1 0 0 1
-refdes=D?
+refdes=D4
 }
 N 42000 42800 42400 42800 4
 N 41000 42800 41100 42800 4
@@ -188,14 +188,14 @@ C 49700 43500 1 0 1 diode-1.sym
 T 49300 44100 5 10 0 0 0 6 1
 device=DIODE
 T 49400 44000 5 10 1 1 0 6 1
-refdes=D?
+refdes=D6
 }
 C 48600 43500 1 0 1 diode-1.sym
 {
 T 48200 44100 5 10 0 0 0 6 1
 device=DIODE
 T 48300 44000 5 10 1 1 0 6 1
-refdes=D?
+refdes=D5
 }
 N 48800 43700 48600 43700 4
 N 49800 43700 49700 43700 4
@@ -203,7 +203,7 @@ N 47700 43700 47500 43700 4
 C 49700 41900 1 0 1 diode-1.sym
 {
 T 49400 42400 5 10 1 1 0 6 1
-refdes=D?
+refdes=D8
 T 49300 42500 5 10 0 0 0 6 1
 device=DIODE
 }
@@ -212,7 +212,7 @@ C 48600 41900 1 0 1 diode-1.sym
 T 48200 42500 5 10 0 0 0 6 1
 device=DIODE
 T 48300 42400 5 10 1 1 0 6 1
-refdes=D?
+refdes=D7
 }
 N 48800 42100 48600 42100 4
 N 49800 42100 49700 42100 4
@@ -259,7 +259,7 @@ C 44200 42500 1 0 0 L293B-1.sym
 T 44500 46375 5 10 0 0 0 0 1
 device=L293B
 T 46600 45300 5 10 1 1 0 6 1
-refdes=U?
+refdes=U1
 T 44500 45800 5 10 0 0 0 0 1
-footprint=DIL16
+footprint=DIL 16
 }
