@@ -10,7 +10,7 @@ El plan inicial es el siguiente:
  1. Camino de datos
   1. Describir registros
   1. Describir multiplexores
-  1. Describir operaciones sueltas (=0, +1)
+  1. Describir operaciones sueltas (=0, +1 xor, Buffers con selector, negadores)
   1. Describir ALSU
  1. Unidad de control
   1. Hacer FSM
