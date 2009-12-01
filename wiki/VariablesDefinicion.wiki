@@ -1,11 +1,10 @@
 #labels altaz
 #El propósito de esta página es enumerar la lista de variables que afectan la libertad del hardware.
 
-= Introduction =
-* Herramientas usadas para su diseño
-* Portabilidad e ineteroperabilidad de los formatos
-* Formatos nativos de las herramientas
-* Formato de publicación de archivos
-* Herramientas para editar o visualizar archivos publicados
-* Disponibilidad de Documentación
-* Cuestiones legales (licencias,patentes...)
+ * Herramientas usadas para su diseño
+ * Portabilidad e ineteroperabilidad de los formatos
+ * Formatos nativos de las herramientas
+ * Formato de publicación de archivos
+ * Herramientas para editar o visualizar archivos publicados
+ * Disponibilidad de Documentación
+ * Cuestiones legales (licencias,patentes...)
