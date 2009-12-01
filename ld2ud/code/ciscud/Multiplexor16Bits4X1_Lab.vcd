@@ -1,0 +1,66 @@
+$date
+	Tue Dec  1 16:42:07 2009
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module Multiplexor16Bits2X1_Lab $end
+$var wire 16 ! Mux_Rta[15:0] $end
+$var reg 2 " Seleccion[1:0] $end
+$var reg 16 # TuplaA[15:0] $end
+$var reg 16 $ TuplaB[15:0] $end
+$var reg 16 % TuplaC[15:0] $end
+$var reg 16 & TuplaD[15:0] $end
+$scope module Mux $end
+$var wire 16 ' Entrada0[15:0] $end
+$var wire 16 ( Entrada1[15:0] $end
+$var wire 16 ) Entrada2[15:0] $end
+$var wire 16 * Entrada3[15:0] $end
+$var wire 2 + Selector[1:0] $end
+$var reg 16 , Salida[15:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b1 ,
+b0 +
+b1111 *
+b1010 )
+b101 (
+b1 '
+b1111 &
+b1010 %
+b101 $
+b1 #
+b0 "
+b1 !
+$end
+#1
+b101 !
+b101 ,
+b1 "
+b1 +
+#2
+b1010 !
+b1010 ,
+b10 "
+b10 +
+#3
+b1111 !
+b1111 ,
+b11 "
+b11 +
+#4
+b1 !
+b1 ,
+b0 "
+b0 +
+#5
+b101 !
+b101 ,
+b1 "
+b1 +
