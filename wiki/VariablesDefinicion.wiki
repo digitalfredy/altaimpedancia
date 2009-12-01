@@ -1,20 +1,11 @@
-#summary One-sentence summary of this page. El prop�sito de esta p�gina es enumerar la lista de variables que afectan la libertad del hardware.
 #labels altaz
+#El propósito de esta página es enumerar la lista de variables que afectan la libertad del hardware.
 
 = Introduction =
-* Herramientas usadas para su dise�o
+* Herramientas usadas para su diseño
 * Portabilidad e ineteroperabilidad de los formatos
 * Formatos nativos de las herramientas
-* Formato de publicaci�n de archivos
+* Formato de publicación de archivos
 * Herramientas para editar o visualizar archivos publicados
 * Disponibilidad de Documentación
 * Cuestiones legales (licencias,patentes...)
-Add your content here.
-
-
-= Details =
-
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
