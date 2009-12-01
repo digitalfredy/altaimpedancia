@@ -320,10 +320,8 @@ pinlabel=GND
 T 2100 2300 5 8 0 1 0 0 1
 pintype=pwr
 }
-T 3100 3200 5 10 0 0 0 0 1
-author=Jorge Ernesto Guevara Cuenca
 T 3100 3500 5 10 0 0 0 0 1
-email=guevara.ernesto@gmail.com
+author=Jorge Ernesto Guevara Cuenca
 T 3100 3800 5 10 0 0 0 0 1
 dist-license=GPL
 T 3100 4100 5 10 0 0 0 0 1

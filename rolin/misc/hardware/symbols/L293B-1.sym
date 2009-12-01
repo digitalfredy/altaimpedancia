@@ -112,7 +112,7 @@ P 2400 2100 2700 2100 1 0 1
 T 2495 2145 5 8 1 1 0 0 1
 pinnumber=15
 T 2604 2150 5 8 0 1 0 6 1
-pinseq=14
+pinseq=15
 T 2400 2100 5 10 0 1 0 6 1
 pintype=in
 T 2345 2095 9 9 1 1 0 7 1
@@ -134,7 +134,7 @@ P 2400 1500 2700 1500 1 0 1
 T 2495 1545 5 8 1 1 0 0 1
 pinnumber=13
 T 2604 1550 5 8 0 1 0 6 1
-pinseq=12
+pinseq=13
 T 2400 1500 5 10 0 1 0 6 1
 pintype=pwr
 T 2345 1495 9 9 1 1 0 7 1
@@ -190,10 +190,8 @@ T 300 3300 8 10 0 0 0 0 1
 footprint=DIL16
 T 300 3100 8 10 0 0 0 0 1
 numslots=0
-T 2900 1500 5 10 0 0 0 0 1
-author=Jorge Ernesto Guevara Cuenca
 T 2900 1800 5 10 0 0 0 0 1
-email=guevara.ernesto@gmail.com
+author=Jorge Ernesto Guevara Cuenca
 T 2900 2100 5 10 0 0 0 0 1
 dist-license=GPL
 T 2900 2400 5 10 0 0 0 0 1
