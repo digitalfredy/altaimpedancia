@@ -1,0 +1,57 @@
+$date
+	Tue Dec  1 21:13:56 2009
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module IgualCero_Lab $end
+$var wire 1 ! Respuesta $end
+$var reg 16 " Tupla[15:0] $end
+$scope module IgualCero $end
+$var wire 16 # Entrada[15:0] $end
+$var wire 1 ! Salida $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 #
+b0 "
+1!
+$end
+#1
+0!
+b1 "
+b1 #
+#2
+b10 "
+b10 #
+#3
+b11 "
+b11 #
+#4
+b100 "
+b100 #
+#5
+b101 "
+b101 #
+#6
+b110 "
+b110 #
+#7
+b111 "
+b111 #
+#8
+b1000 "
+b1000 #
+#9
+1!
+b0 "
+b0 #
+#12
+0!
+b111 "
+b111 #
