@@ -26,5 +26,4 @@ module Buffer3Estados16Bit_Lab (/*AUTOARG*/
       $dumpfile("Buffer3Estados16Bit_Lab.vcd");
       $dumpvars;
    end
-   
 endmodule // Buffer3Estados16Bit_Lab
