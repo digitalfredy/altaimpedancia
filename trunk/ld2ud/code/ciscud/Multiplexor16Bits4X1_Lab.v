@@ -1,4 +1,4 @@
-module Multiplexor16Bits2X1_Lab (/*AUTOARG*/
+module Multiplexor16Bits4X1_Lab (/*AUTOARG*/
    // Outputs
    TuplaA, TuplaB, TuplaC, TuplaD, Seleccion
    ) ;
@@ -30,4 +30,4 @@ module Multiplexor16Bits2X1_Lab (/*AUTOARG*/
    end  
 
    
-endmodule // Multiplexor16Bits2X1_Lab
+endmodule // Multiplexor16Bits4X1_Lab
