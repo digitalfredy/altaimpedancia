@@ -1,5 +1,5 @@
 $date
-	Tue Dec  1 16:42:07 2009
+	Tue Dec  1 22:07:13 2009
 $end
 $version
 	Icarus Verilog
@@ -7,7 +7,7 @@ $end
 $timescale
 	1s
 $end
-$scope module Multiplexor16Bits2X1_Lab $end
+$scope module Multiplexor16Bits4X1_Lab $end
 $var wire 16 ! Mux_Rta[15:0] $end
 $var reg 2 " Seleccion[1:0] $end
 $var reg 16 # TuplaA[15:0] $end
