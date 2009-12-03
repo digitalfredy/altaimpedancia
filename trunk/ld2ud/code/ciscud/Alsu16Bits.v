@@ -11,7 +11,7 @@ module Alsu16Bits (/*AUTOARG*/
 
    //Falta implementar Desbordamiento :(
 
-   always @ ( /*AUTOSENSE*/EntradaA or EntradaB or EntrdaA or Selector) begin
+   always @ ( /*AUTOSENSE*/EntradaA or EntradaB or Selector) begin
       case (Selector) 
 	4'b0000: begin //Lógica/NOT
 	   assign Salida = ~EntradaA;
@@ -20,7 +20,7 @@ module Alsu16Bits (/*AUTOARG*/
 	   assign Salida = EntradaA&EntradaB;
 	end
 	4'b0010: begin //Lógica/XOR
-	   assign Salida = EntrdaA^EntradaB;
+	   assign Salida = EntradaA^EntradaB;
 	end
 	4'b0011: begin //Lógica/OR
 	   assign Salida = EntradaA|EntradaB;
