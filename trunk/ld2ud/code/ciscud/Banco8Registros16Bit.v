@@ -11,10 +11,9 @@ module Banco8Registros16Bit (/*AUTOARG*/
    //Entradas de control:
    input 	 Reloj,Reiniciar,HabilitarEscritura;
    input [2:0] 	 DireccionEscritura,DireccionA,DireccionB;
-
+   //"matriz" de 8 registros de 16bits c/u
    reg   [15:0] BancoRegistros [7:0];
 
-   //Escritura registro en posición N:   //pendiente Reiniciar
    always @ (posedge Reloj, posedge Reiniciar)
      if (Reiniciar) begin
 	BancoRegistros[0] <= 1'h0;

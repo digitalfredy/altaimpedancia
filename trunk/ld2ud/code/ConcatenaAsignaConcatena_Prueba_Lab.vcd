@@ -1,0 +1,46 @@
+$date
+	Wed Dec  2 23:27:31 2009
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module ConcatenaAsignaConcatena_Prueba_Lab $end
+$var wire 1 ! Cy_Rta $end
+$var wire 3 " Respuesta[2:0] $end
+$var reg 1 # Reloj $end
+$var reg 3 $ Tupla[2:0] $end
+$scope module Prueba $end
+$var wire 1 ! Cy $end
+$var wire 3 % Entrada[2:0] $end
+$var wire 3 & Salida[2:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b110 &
+b111 %
+b111 $
+0#
+b110 "
+1!
+$end
+#1
+1#
+#2
+0#
+#3
+1#
+#4
+0#
+#5
+1#
+#6
+0#
+#7
+1#
+#8
+0#
