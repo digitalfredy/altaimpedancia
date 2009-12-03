@@ -14,15 +14,19 @@ module Alsu16Bits (/*AUTOARG*/
    always @ ( /*AUTOSENSE*/EntradaA or EntradaB or Selector) begin
       case (Selector) 
 	4'b0000: begin //Lógica/NOT
+	   assign {Acarreo,Desbordamiento} = 2'bz;
 	   assign Salida = ~EntradaA;
 	end
 	4'b0001: begin //Lógica/AND
+	   assign {Acarreo,Desbordamiento} = 2'bz;
 	   assign Salida = EntradaA&EntradaB;
 	end
 	4'b0010: begin //Lógica/XOR
+	   assign {Acarreo,Desbordamiento} = 2'bz;
 	   assign Salida = EntradaA^EntradaB;
 	end
 	4'b0011: begin //Lógica/OR
+	   assign {Acarreo,Desbordamiento} = 2'bz;
 	   assign Salida = EntradaA|EntradaB;
 	end
 	4'b0100: begin //Aritmetica/DEC (decremento en uno)
@@ -38,6 +42,7 @@ module Alsu16Bits (/*AUTOARG*/
 	   assign {Acarreo,Salida} = EntradaA+1'b1;
 	end
 	4'b1000: begin //Movimiento/MOV (copiar, realmente no opera nada)
+	   assign {Acarreo,Desbordamiento} = 2'bz;
 	   assign Salida = EntradaA; //Esta salida retorna y se escribe en el Banco de Registros 
 	end
 /* -----\/----- EXCLUDED -----\/-----
@@ -56,15 +61,19 @@ module Alsu16Bits (/*AUTOARG*/
 	end
  -----/\----- EXCLUDED -----/\----- */
 	4'b1100: begin //Desplaza Izq/SL (el cy con el msb de EntradaA)
+	   assign {Desbordamiento} = 1'bz;
 	   assign {Acarreo,Salida} = {EntradaA[15],EntradaA[14:0],1'b0};
 	end
 	4'b1101: begin //Rota sin Cy Izq/RL (el cy con el msb de EntradaA)
+	   assign {Desbordamiento} = 1'bz;
 	   assign {Acarreo,Salida} = {EntradaA[15],EntradaA[14:0],EntradaA[15]};
 	end
 	4'b1110: begin //Dezplaza Der/SR (el cy con el lsb de EntradaA)
+	   assign {Desbordamiento} = 1'bz;
 	   assign {Salida,Acarreo} = {1'b0,EntradaA[15:1],EntradaA[0]};
 	end
 	4'b1111: begin //Rota sin Cy Der/RR (el cy con el lsb de EntradaA)
+	   assign {Desbordamiento} = 1'bz;
 	   assign {Salida,Acarreo} = {EntradaA[0],EntradaA[15:1],EntradaA[0]};
 	end
       endcase // case (Selector)
