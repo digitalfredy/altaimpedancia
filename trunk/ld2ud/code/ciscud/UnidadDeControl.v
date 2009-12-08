@@ -90,297 +90,299 @@ module UnidadDeControl (/*AUTOARG*/ ) ;
      case (EstadoPresente)
        SF1: begin
 	  EstadoFuturo <= SF2;
-	  Control      <=  6'b;
-	  LoadSelect   <= 15'b;
-	  WriteAddress <= 16'h;
-	  ReadAddressA <= 16'h;
-	  ReadaddressB <= 16'h;
-	  Fun          <=  4'b;
+	  Control      <= 6'b100_100;
+	  LoadSelect   <= 15'b0000_0000_000_0100;  //ojo, sacar status aparte
+	  WriteAddress <= 3'bzzz;
+	  ReadAddressA <= 3'bzzz;
+	  ReadaddressB <= 3'bzzz;
+	  Fun          <= 4'bzzzz;
        end
        SF2: begin
-	  EstadoFuturo <= S;
-	  Control      <=  6'b;
+	  EstadoFuturo <= SF3;
+	  Control      <= 6'bzzz_zzz;
 	  LoadSelect   <= 15'b;
-	  WriteAddress <= 16'h;
-	  ReadAddressA <= 16'h;
-	  ReadaddressB <= 16'h;
-	  Fun          <=  4'b;
+	  WriteAddress <= 3'bzzz;
+	  ReadAddressA <= 3'bzzz;
+	  ReadaddressB <= 3'bzzz;
+	  Fun          <= 4'bzzzz;
        end
        SF3: begin
 //	  EstadoFuturo <= S;
-	  
+//  pendiente	  
        end
        S01: begin
-	  EstadoFuturo <= S;
-	  Control      <=  6'b;
+	  EstadoFuturo <= SF1;
+	  Control      <= 6'bzzz_zzz;
 	  LoadSelect   <= 15'b;
-	  WriteAddress <= 16'h;
-	  ReadAddressA <= 16'h;
-	  ReadaddressB <= 16'h;
-	  Fun          <=  4'b;
+	  WriteAddress <= Instruccion[8:6];
+	  ReadAddressA <= Instruccion[5:3];
+	  ReadaddressB <= Instruccion[2:0];
+	  Fun          <= Instruccion[12:9];
        end
        S02: begin
-	  EstadoFuturo <= S;
-	  Control      <=  6'b;
+	  EstadoFuturo <= SF1;
+	  Control      <= 6'bzzz_zzz;
 	  LoadSelect   <= 15'b;
-	  WriteAddress <= 16'h;
-	  ReadAddressA <= 16'h;
-	  ReadaddressB <= 16'h;
-	  Fun          <=  4'b;
+	  WriteAddress <= Instruccion[8:6];
+	  ReadAddressA <= Instruccion[5:3];
+	  ReadaddressB <= Instruccion[2:0];
+	  Fun          <= Instruccion[12:9];
        end
+/* -----\/----- EXCLUDED -----\/-----
        S031: begin
-	  EstadoFuturo <= S;
-	  Control      <=  6'b;
+	  EstadoFuturo <= SF1;
+	  Control      <= 6'bzzz_zzz;
 	  LoadSelect   <= 15'b;
-	  WriteAddress <= 16'h;
-	  ReadAddressA <= 16'h;
-	  ReadaddressB <= 16'h;
-	  Fun          <=  4'b;
+	  WriteAddress <= 3'bzzz;
+	  ReadAddressA <= 3'bzzz;
+	  ReadaddressB <= 3'bzzz;
+	  Fun          <= 4'bzzzz;
        end
        S032: begin
-	  EstadoFuturo <= S;
-	  Control      <=  6'b;
+	  EstadoFuturo <= SF1;
+	  Control      <= 6'bzzz_zzz;
 	  LoadSelect   <= 15'b;
-	  WriteAddress <= 16'h;
-	  ReadAddressA <= 16'h;
-	  ReadaddressB <= 16'h;
-	  Fun          <=  4'b;
+	  WriteAddress <= 3'bzzz;
+	  ReadAddressA <= 3'bzzz;
+	  ReadaddressB <= 3'bzzz;
+	  Fun          <= 4'bzzzz;
        end
+ -----/\----- EXCLUDED -----/\----- */
        S04: begin
-	  EstadoFuturo <= S;
-	  Control      <=  6'b;
+	  EstadoFuturo <= SF1;
+	  Control      <= 6'bzzz_zzz;
 	  LoadSelect   <= 15'b;
-	  WriteAddress <= 16'h;
-	  ReadAddressA <= 16'h;
-	  ReadaddressB <= 16'h;
-	  Fun          <=  4'b;
+	  WriteAddress <= Instruccion[8:6];
+	  ReadAddressA <= Instruccion[5:3];
+	  ReadaddressB <= 3'bzzz;
+	  Fun          <= Instruccion[12:9];
        end
        S1R01: begin
-	  EstadoFuturo <= S;
-	  Control      <=  6'b;
+	  EstadoFuturo <= SF1;
+	  Control      <= 6'bzzz_zzz;
 	  LoadSelect   <= 15'b;
-	  WriteAddress <= 16'h;
-	  ReadAddressA <= 16'h;
-	  ReadaddressB <= 16'h;
-	  Fun          <=  4'b;
+	  WriteAddress <= Instruccion[8:6];
+	  ReadAddressA <= 3'bzzz;
+	  ReadaddressB <= 3'bzzz;
+	  Fun          <= 4'bzzzz;
        end
        S1R11: begin
-	  EstadoFuturo <= S;
-	  Control      <=  6'b;
+	  EstadoFuturo <= S1R12;
+	  Control      <= 6'b100010;
 	  LoadSelect   <= 15'b;
-	  WriteAddress <= 16'h;
-	  ReadAddressA <= 16'h;
-	  ReadaddressB <= 16'h;
-	  Fun          <=  4'b;
+	  WriteAddress <= 3'bzzz;
+	  ReadAddressA <= 3'bzzz;
+	  ReadaddressB <= 3'bzzz;
+	  Fun          <= 4'bzzzz;
        end
        S1R12: begin
-	  EstadoFuturo <= S;
-	  Control      <=  6'b;
+	  EstadoFuturo <= SF1;
+	  Control      <= 6'bzzz_zzz;
 	  LoadSelect   <= 15'b;
-	  WriteAddress <= 16'h;
-	  ReadAddressA <= 16'h;
-	  ReadaddressB <= 16'h;
-	  Fun          <=  4'b;
+	  WriteAddress <= Instruccion[8:6];
+	  ReadAddressA <= 3'bzzz;
+	  ReadaddressB <= 3'bzzz;
+	  Fun          <= 4'bzzzz;
        end
        S1W10: begin
-	  EstadoFuturo <= S;
-	  Control      <=  6'b;
+	  EstadoFuturo <= S1W11;
+	  Control      <= 6'b001011;
 	  LoadSelect   <= 15'b;
-	  WriteAddress <= 16'h;
-	  ReadAddressA <= 16'h;
-	  ReadaddressB <= 16'h;
-	  Fun          <=  4'b;
+	  WriteAddress <= 3'bzzz;
+	  ReadAddressA <= Instruccion[5:3];
+	  ReadaddressB <= 3'bzzz;
+	  Fun          <= 4'b1000;
        end
        S1W11: begin
-	  EstadoFuturo <= S;
-	  Control      <=  6'b;
+	  EstadoFuturo <= SF1;
+	  Control      <= 6'b001010;
 	  LoadSelect   <= 15'b;
-	  WriteAddress <= 16'h;
-	  ReadAddressA <= 16'h;
-	  ReadaddressB <= 16'h;
-	  Fun          <=  4'b;
+	  WriteAddress <= 3'bzzz;
+	  ReadAddressA <= 3'bzzz;
+	  ReadaddressB <= 3'bzzz;
+	  Fun          <= 4'bzzzz;
        end
        S1R21: begin
-	  EstadoFuturo <= S;
-	  Control      <=  6'b;
+	  EstadoFuturo <= S1R22;
+	  Control      <= 6'bzzz_zzz;
 	  LoadSelect   <= 15'b;
-	  WriteAddress <= 16'h;
-	  ReadAddressA <= 16'h;
-	  ReadaddressB <= 16'h;
-	  Fun          <=  4'b;
+	  WriteAddress <= Instruccion[8:6];
+	  ReadAddressA <= 3'bzzz;
+	  ReadaddressB <= 3'bzzz;
+	  Fun          <= 4'bzzzz;
        end
        S1R22: begin
-	  EstadoFuturo <= S;
-	  Control      <=  6'b;
+	  EstadoFuturo <= S1R23;
+	  Control      <= 6'b100010;
 	  LoadSelect   <= 15'b;
-	  WriteAddress <= 16'h;
-	  ReadAddressA <= 16'h;
-	  ReadaddressB <= 16'h;
-	  Fun          <=  4'b;
+	  WriteAddress <= 3'bzzz;
+	  ReadAddressA <= Instruccion[8:6];
+	  ReadaddressB <= Instruccion[2:0];
+	  Fun          <= 4'b0101;
        end
        S1R23: begin
-	  EstadoFuturo <= S;
-	  Control      <=  6'b;
+	  EstadoFuturo <= SF1;
+	  Control      <= 6'bzzz_zzz;
 	  LoadSelect   <= 15'b;
-	  WriteAddress <= 16'h;
-	  ReadAddressA <= 16'h;
-	  ReadaddressB <= 16'h;
-	  Fun          <=  4'b;
+	  WriteAddress <= Instruccion[8:6];
+	  ReadAddressA <= 3'bzzz;
+	  ReadaddressB <= 3'bzzz;
+	  Fun          <= 4'bzzzz;
        end
        S1W20: begin
-	  EstadoFuturo <= S;
-	  Control      <=  6'b;
+	  EstadoFuturo <= S1W21;
+	  Control      <= 6'bzzz_zzz;
 	  LoadSelect   <= 15'b;
-	  WriteAddress <= 16'h;
-	  ReadAddressA <= 16'h;
-	  ReadaddressB <= 16'h;
-	  Fun          <=  4'b;
+	  WriteAddress <= Instruccion[5:3];
+	  ReadAddressA <= Instruccion[5:3];
+	  ReadaddressB <= 3'bzzz;
+	  Fun          <= 4'b1000;
        end
        S1W21: begin
-	  EstadoFuturo <= S;
-	  Control      <=  6'b;
+	  EstadoFuturo <= S1W22;
+	  Control      <= 6'b001011;
 	  LoadSelect   <= 15'b;
-	  WriteAddress <= 16'h;
-	  ReadAddressA <= 16'h;
-	  ReadaddressB <= 16'h;
-	  Fun          <=  4'b;
+	  WriteAddress <= 3'bzzz;
+	  ReadAddressA <= Instruccion[5:3];
+	  ReadaddressB <= Instruccion[2:0];
+	  Fun          <= 4'b0101;
        end
        S1W22: begin
-	  EstadoFuturo <= S;
-	  Control      <=  6'b;
+	  EstadoFuturo <= SF1;
+	  Control      <= 6'b001010;
 	  LoadSelect   <= 15'b;
-	  WriteAddress <= 16'h;
-	  ReadAddressA <= 16'h;
-	  ReadaddressB <= 16'h;
-	  Fun          <=  4'b;
+	  WriteAddress <= Instruccion[5:3];
+	  ReadAddressA <= 3'bzzz;
+	  ReadaddressB <= 3'bzzz;
+	  Fun          <= 4'bzzzz;
        end
        S1R31: begin
-	  EstadoFuturo <= S;
-	  Control      <=  6'b;
+	  EstadoFuturo <= S1R32;
+	  Control      <= 6'b100010;
 	  LoadSelect   <= 15'b;
-	  WriteAddress <= 16'h;
-	  ReadAddressA <= 16'h;
-	  ReadaddressB <= 16'h;
-	  Fun          <=  4'b;
+	  WriteAddress <= 3'bzzz;
+	  ReadAddressA <= 3'bzzz;
+	  ReadaddressB <= 3'bzzz;
+	  Fun          <= 4'bzzzz;
        end
        S1R32: begin
-	  EstadoFuturo <= S;
-	  Control      <=  6'b;
+	  EstadoFuturo <= S1R33;
+	  Control      <= 6'bzzz_zzz;
 	  LoadSelect   <= 15'b;
-	  WriteAddress <= 16'h;
-	  ReadAddressA <= 16'h;
-	  ReadaddressB <= 16'h;
-	  Fun          <=  4'b;
+	  WriteAddress <= 3'bzzz;
+	  ReadAddressA <= 3'bzzz;
+	  ReadaddressB <= 3'bzzz;
+	  Fun          <= 4'bzzzz;
        end
        S1R33: begin
-	  EstadoFuturo <= S;
-	  Control      <=  6'b;
+	  EstadoFuturo <= SF1;
+	  Control      <= 6'bzzz_zzz;
 	  LoadSelect   <= 15'b;
-	  WriteAddress <= 16'h;
-	  ReadAddressA <= 16'h;
-	  ReadaddressB <= 16'h;
-	  Fun          <=  4'b;
+	  WriteAddress <= Instruccion[8:6];
+	  ReadAddressA <= 3'bzzz;
+	  ReadaddressB <= 3'bzzz;
+	  Fun          <= 4'bzzzz;
        end
        S1W30: begin
-	  EstadoFuturo <= S;
-	  Control      <=  6'b;
+	  EstadoFuturo <= S1W31;
+	  Control      <= 6'b100010;
 	  LoadSelect   <= 15'b;
-	  WriteAddress <= 16'h;
-	  ReadAddressA <= 16'h;
-	  ReadaddressB <= 16'h;
-	  Fun          <=  4'b;
+	  WriteAddress <= 3'bzzz;
+	  ReadAddressA <= 3'bzzz;
+	  ReadaddressB <= 3'bzzz;
+	  Fun          <= 4'bzzzz;
        end
        S1W31: begin
-	  EstadoFuturo <= S;
-	  Control      <=  6'b;
+	  EstadoFuturo <= S1W32;
+	  Control      <= 6'b001011;
 	  LoadSelect   <= 15'b;
-	  WriteAddress <= 16'h;
-	  ReadAddressA <= 16'h;
-	  ReadaddressB <= 16'h;
-	  Fun          <=  4'b;
+	  WriteAddress <= 3'bzzz;
+	  ReadAddressA <= Instruccion[5:3];
+	  ReadaddressB <= 3'bzzz;
+	  Fun          <= 4'b1000;
        end
        S1W32: begin
-	  EstadoFuturo <= S;
-	  Control      <=  6'b;
+	  EstadoFuturo <= SF1;
+	  Control      <= 6'b001010;
 	  LoadSelect   <= 15'b;
-	  WriteAddress <= 16'h;
-	  ReadAddressA <= 16'h;
-	  ReadaddressB <= 16'h;
-	  Fun          <=  4'b;
+	  WriteAddress <= 3'bzzz;
+	  ReadAddressA <= 3'bzzz;
+	  ReadaddressB <= 3'bzzz;
+	  Fun          <= 4'bzzzz;
        end
        S21: begin
-	  EstadoFuturo <= S;
-	  Control      <=  6'b;
+	  EstadoFuturo <= SF1;
+	  Control      <= 6'bzzz_zzz;
 	  LoadSelect   <= 15'b;
-	  WriteAddress <= 16'h;
-	  ReadAddressA <= 16'h;
-	  ReadaddressB <= 16'h;
-	  Fun          <=  4'b;
+	  WriteAddress <= 3'bzzz;
+	  ReadAddressA <= 3'bzzz;
+	  ReadaddressB <= 3'bzzz;
+	  Fun          <= 4'bzzzz;
        end
        S22: begin
-	  EstadoFuturo <= S;
-	  Control      <=  6'b;
+	  EstadoFuturo <= SF1;
+	  Control      <= 6'bzzz_zzz;
 	  LoadSelect   <= 15'b;
-	  WriteAddress <= 16'h;
-	  ReadAddressA <= 16'h;
-	  ReadaddressB <= 16'h;
-	  Fun          <=  4'b;
+	  WriteAddress <= 3'bzzz;
+	  ReadAddressA <= 3'bzzz;
+	  ReadaddressB <= 3'bzzz;
+	  Fun          <= 4'bzzzz;
        end
        S23: begin
-	  EstadoFuturo <= S;
-	  Control      <=  6'b;
+	  EstadoFuturo <= S24;
+	  Control      <= 6'b010011;
 	  LoadSelect   <= 15'b;
-	  WriteAddress <= 16'h;
-	  ReadAddressA <= 16'h;
-	  ReadaddressB <= 16'h;
-	  Fun          <=  4'b;
+	  WriteAddress <= 3'bzzz;
+	  ReadAddressA <= Instruccion[5:3];
+	  ReadaddressB <= 3'bzzz;
+	  Fun          <= 4'b1000;
        end
        S24: begin
-	  EstadoFuturo <= S;
-	  Control      <=  6'b;
+	  EstadoFuturo <= S25;
+	  Control      <= 6'b010010;
 	  LoadSelect   <= 15'b;
-	  WriteAddress <= 16'h;
-	  ReadAddressA <= 16'h;
-	  ReadaddressB <= 16'h;
-	  Fun          <=  4'b;
+	  WriteAddress <= Instruccion[5:3];
+	  ReadAddressA <= Instruccion[5:3];
+	  ReadaddressB <= 3'bzzz;
+	  Fun          <= 4'b0111;
        end
        S25: begin
-	  EstadoFuturo <= S;
-	  Control      <=  6'b;
+	  EstadoFuturo <= S26;
+	  Control      <= 6'bb001000;
 	  LoadSelect   <= 15'b;
-	  WriteAddress <= 16'h;
-	  ReadAddressA <= 16'h;
-	  ReadaddressB <= 16'h;
-	  Fun          <=  4'b;
+	  WriteAddress <= 3'bzzz;
+	  ReadAddressA <= 3'bzzz;
+	  ReadaddressB <= 3'bzzz;
+	  Fun          <= 4'bzzzz;
        end
        S26: begin
-	  EstadoFuturo <= S;
-	  Control      <=  6'b;
+	  EstadoFuturo <= SF1;
+	  Control      <= 6'bzzz_zzz;
 	  LoadSelect   <= 15'b;
-	  WriteAddress <= 16'h;
-	  ReadAddressA <= 16'h;
-	  ReadaddressB <= 16'h;
-	  Fun          <=  4'b;
+	  WriteAddress <= 3'bzzz;
+	  ReadAddressA <= 3'bzzz;
+	  ReadaddressB <= 3'bzzz;
+	  Fun          <= 4'bzzzz;
        end
        S27: begin
-	  EstadoFuturo <= S;
-	  Control      <=  6'b;
+	  EstadoFuturo <= S28;
+	  Control      <= 6'b100010;
 	  LoadSelect   <= 15'b;
-	  WriteAddress <= 16'h;
-	  ReadAddressA <= 16'h;
-	  ReadaddressB <= 16'h;
-	  Fun          <=  4'b;
+	  WriteAddress <= Instruccion[5:3];
+	  ReadAddressA <= Instruccion[5:3];
+	  ReadaddressB <= 3'bzzz;
+	  Fun          <= 4'b0100;
        end
        S28: begin
-	  EstadoFuturo <= S;
-	  Control      <=  6'b;
+	  EstadoFuturo <= SF1;
+	  Control      <= 6'bzzz_zzz;
 	  LoadSelect   <= 15'b;
-	  WriteAddress <= 16'h;
-	  ReadAddressA <= 16'h;
-	  ReadaddressB <= 16'h;
-	  Fun          <=  4'b;
+	  WriteAddress <= 3'bzzz;
+	  ReadAddressA <= 3'bzzz;
+	  ReadaddressB <= 3'bzzz;
+	  Fun          <= 4'bzzzz;
        end
-     endcase // case (SF1)
+     endcase // case (EstadoPresente)
    
 
    
