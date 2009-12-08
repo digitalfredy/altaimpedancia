@@ -121,8 +121,82 @@ module UnidadDeControl (/*AUTOARG*/
 	  Fun          <= 4'bzzzz;
        end
        SF3: begin
-//	  EstadoFuturo <= S;
-//  pendiente	  
+	  if (Instruccion[15])  begin
+	     if (Instruccion[14]) begin
+		EstadoFuturo <= SF1;
+	     end
+	     else begin
+		if (Instruccion[13]) begin
+		   if (Instruccion[12]) begin
+		      EstadoFuturo <= S27;
+		   end
+		   else begin
+		      EstadoFuturo <= S23;
+		   end
+		end
+		else begin
+		   if (Instruccion[12]) begin
+//pendiente, es aqui cuando se revisa status		      
+		   end
+		   else begin
+		      EstadoFuturo <= S21;
+		   end
+		end
+	     end
+	  end
+	  else begin
+	     if (Instruccion[14]) begin
+		if (Instruccion[10]) begin
+		   if (Instruccion[9]) begin
+		      if (Instruccion[11]) begin
+			 EstadoFuturo <= S1W30;
+		      end
+		      else begin
+			 EstadoFuturo <= S1R31;
+		      end
+		   end
+		   else begin
+		      if (Instruccion[11]) begin
+			 EstadoFuturo <= S1W20;
+		      end
+		      else begin
+			 EstadoFuturo <= S1R21;
+		      end
+		   end
+		end
+		else begin
+		   if (Instruccion[9]) begin
+		      if (Instruccion[11]) begin
+			 EstadoFuturo <= S1W10;
+		      end
+		      else begin
+			 EstadoFuturo <= S1R11;
+		      end
+		   end
+		   else begin
+		      EstadoFuturo <= S1R01;
+		   end
+		end
+	     end
+	     else begin
+		if (Instruccion[12]) begin
+		   if (Instruccion[11]) begin
+		      EstadoFuturo <= S04;
+		   end
+		   else begin
+		      //estado desconocido pendiente
+		   end
+		end
+		else begin
+		   if (Instruccion[11]) begin
+		      EstadoFuturo <= S02;
+		   end
+		   else begin
+		      EstadoFuturo <= S01;
+		   end
+		end
+	     end
+	  end
        end
        S01: begin
 	  EstadoFuturo <= SF1;
