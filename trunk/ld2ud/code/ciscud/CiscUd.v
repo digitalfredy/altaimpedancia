@@ -32,7 +32,7 @@ module CiscUd (/*AUTOARG*/ ) ;
 
    //Registros de Control e Instrucciones
    Registro16Bits IR(IR2CU,Datos,LoadIR);
-   Registro16Bits CR(Control,CU2IR,LoadCR);
+   Registro6Bits CR(Control,CU2IR,LoadCR); //ojo que es de 6 bits, corregir
 
 
    //Unidad de Control con su registro de estado Pendiente

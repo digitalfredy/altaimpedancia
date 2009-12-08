@@ -1,4 +1,4 @@
-module Registro14Bits_Lab (/*AUTOARG*/
+module Registro4Bits_Lab (/*AUTOARG*/
    // Outputs
    Tupla, Reloj, Reiniciar, Habilitar
    ) ;
