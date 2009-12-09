@@ -1,0 +1,12 @@
+MO Cero NULL Cero.v vlg3D/_cero.bin 1260357346
+MO Registro6Bits NULL Registro6Bits.v vlg3B/_registro6_bits.bin 1260357346
+MO UnidadDeControl NULL UnidadDeControl.v vlg03/_unidad_de_control.bin 1260357346
+MO Buffer3Estados16Bit NULL Buffer3Estados16Bit.v vlg26/_buffer3_estados16_bit.bin 1260357346
+MO Registro16Bits NULL Registro16Bits.v vlg2C/_registro16_bits.bin 1260357346
+MO SumaUno NULL SumaUno.v vlg00/_suma_uno.bin 1260357346
+MO Multiplexor16Bits2X1 NULL Multiplexor16Bits2X1.v vlg79/_multiplexor16_bits2_x1.bin 1260357346
+MO Memoria16X16Bits NULL Memoria16X16Bits.v vlg0A/_memoria16_x16_bits.bin 1260357346
+MO Multiplexor16Bits4X1 NULL Multiplexor16Bits4X1.v vlg2B/_multiplexor16_bits4_x1.bin 1260357346
+MO Alsu16Bits NULL Alsu16Bits.v vlg12/_alsu16_bits.bin 1260357346
+MO Banco8Registros16Bit NULL Banco8Registros16Bit.v vlg17/_banco8_registros16_bit.bin 1260357346
+MO CiscUd NULL CiscUd.v vlg17/_cisc_ud.bin 1260357346

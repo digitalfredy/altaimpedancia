@@ -1,0 +1,92 @@
+Release 10.1.03 Map K.39 (lin64)
+Xilinx Mapping Report File for Design 'CiscUd'
+
+Design Information
+------------------
+Command Line   : map -ise
+/home/jegc/AltaImpedancia/svn/altaimpedancia/trunk/ld2ud/code/ciscud/ciscud/cisc
+ud.ise -intstyle ise -p xa3s200-ftg256-4 -cm area -pr off -k 4 -c 100 -o
+CiscUd_map.ncd CiscUd.ngd CiscUd.pcf 
+Target Device  : xa3s200
+Target Package : ftg256
+Target Speed   : -4
+Mapper Version : aspartan3 -- $Revision: 1.46.12.2 $
+Mapped Date    : Wed Dec  9 06:23:47 2009
+
+Design Summary
+--------------
+Number of errors   :   1
+Number of warnings :   4
+
+Section 1 - Errors
+------------------
+ERROR:Pack:198 - NCD was not produced.  All logic was removed from the design. 
+   This is usually due to having no input or output PAD connections in the
+   design and no nets or symbols marked as 'SAVE'.  You can either add PADs or
+   'SAVE' attributes to the design, or run 'map -u' to disable logic trimming in
+   the mapper.  For more information on trimming issues search the Xilinx
+   Answers database for "ERROR:Pack:198" and read the Master Answer Record for
+   MAP Trimming Issues.
+
+Section 2 - Warnings
+--------------------
+WARNING:LIT:243 - Logical network UC/Mtridata_Control<2> has no load.
+WARNING:LIT:395 - The above warning message base_net_load_rule is repeated 2
+   more times for the following (max. 5 shown):
+   UC/Mtridata_LoadSelect<0>,
+   UC/Mtridata_LoadSelect<5>
+   To see the details of these warning messages, please use the -detail switch.
+WARNING:MapLib:701 - Signal Reiniciar connected to top level port Reiniciar has
+   been removed.
+WARNING:MapLib:701 - Signal Reloj connected to top level port Reloj has been
+   removed.
+
+Section 3 - Informational
+-------------------------
+
+Section 4 - Removed Logic Summary
+---------------------------------
+  14 block(s) removed
+  14 signal(s) removed
+
+Section 5 - Removed Logic
+-------------------------
+
+The trimmed logic report below shows the logic removed from your design due to
+sourceless or loadless signals, and VCC or ground connections.  If the removal
+of a signal or symbol results in the subsequent removal of an additional signal
+or symbol, the message explaining that second removal will be indented.  This
+indentation will be repeated as a chain of related logic is removed.
+
+To quickly locate the original cause for the removal of a chain of logic, look
+above the place where that logic is listed in the trimming report, then locate
+the lines that are least indented (begin at the leftmost edge).
+
+The signal "UC/Mtridata_Control<2>" is loadless and has been removed.
+ Loadless block "UC/Mtridata_Control_5" (LATCH) removed.
+  The signal "ALSU/Mtridata_Acarreo" is loadless and has been removed.
+   Loadless block "XST_GND" (ZERO) removed.
+  The signal "BuffAR/Habilitar_inv" is loadless and has been removed.
+   Loadless block "XST_VCC" (ONE) removed.
+  The signal "UC/EstadoPresente<0>" is loadless and has been removed.
+   Loadless block "UC/EstadoPresente_0" (FF) removed.
+    The signal "Reloj_BUFGP" is loadless and has been removed.
+     Loadless block "Reloj_BUFGP/BUFG" (CKBUF) removed.
+      The signal "Reloj_BUFGP/IBUFG" is loadless and has been removed.
+       Loadless block "Reloj_BUFGP/IBUFG" (CKBUF) removed.
+        The signal "Reloj" is loadless and has been removed.
+         Loadless block "Reloj" (PAD) removed.
+    The signal "UC/EstadoPresente<3>" is loadless and has been removed.
+     Loadless block "UC/EstadoPresente_3" (FF) removed.
+      The signal "Reiniciar_IBUF" is loadless and has been removed.
+       Loadless block "Reiniciar_IBUF" (BUF) removed.
+        The signal "Reiniciar" is loadless and has been removed.
+         Loadless block "Reiniciar" (PAD) removed.
+      The signal "UC/EstadoPresente<2>" is loadless and has been removed.
+       Loadless block "UC/EstadoPresente_2" (FF) removed.
+        The signal "UC/EstadoPresente<1>" is loadless and has been removed.
+         Loadless block "UC/EstadoPresente_1" (FF) removed.
+The signal "UC/Mtridata_LoadSelect<0>" is loadless and has been removed.
+ Loadless block "UC/Mtridata_LoadSelect<0>" (LATCH) removed.
+The signal "UC/Mtridata_LoadSelect<5>" is loadless and has been removed.
+ Loadless block "UC/Mtridata_LoadSelect<6>" (LATCH) removed.
