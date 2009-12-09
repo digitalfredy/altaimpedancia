@@ -1,4 +1,4 @@
-module Registro16Bit (/*AUTOARG*/
+module Registro16Bits (/*AUTOARG*/
    // Outputs
    Salida,
    // Inputs
@@ -14,4 +14,4 @@ module Registro16Bit (/*AUTOARG*/
       else if (Habilitar)
 	Salida <= Entrada;
 
-endmodule // Registro16Bit
+endmodule // Registro16Bits

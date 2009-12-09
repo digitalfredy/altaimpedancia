@@ -1,0 +1,60 @@
+$date
+	Wed Dec  9 02:01:49 2009
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module Memoria16X16Bits_Lab $end
+$var wire 16 ! Rta[15:0] $end
+$var reg 16 " Dato2M[15:0] $end
+$var reg 16 # Direccion[15:0] $end
+$var reg 1 $ Escribir $end
+$var reg 1 % Leer $end
+$var reg 1 & Reloj $end
+$scope module Mem $end
+$var wire 16 ' Direccion[15:0] $end
+$var wire 16 ( Entrada[15:0] $end
+$var wire 1 $ HabilitarEscritura $end
+$var wire 1 % HabilitarSalida $end
+$var wire 1 & Reloj $end
+$var reg 16 ) Salida[15:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx )
+bx (
+b0 '
+0&
+z%
+z$
+b0 #
+bx "
+bx !
+$end
+#1
+b100000000000000 !
+b100000000000000 )
+1%
+1&
+#2
+0%
+0&
+#3
+bz !
+bz )
+1&
+#4
+0&
+#5
+1&
+#6
+0&
+#7
+1&
+#8
+0&
