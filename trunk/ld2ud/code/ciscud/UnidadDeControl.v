@@ -1,8 +1,6 @@
 module UnidadDeControl (/*AUTOARG*/
    // Outputs
-   Control, SelectDR, LoadDR, SelectAR, LoadAR, SelectPC, LoadPC,
-   LoadIR, LoadCR, WriteSelect, WriteEnable, WriteAddress,
-   ReadAddressA, ReadAddressB, Fun,
+   Control, LoadSelect, WriteAddress, ReadAddressA, ReadAddressB, Fun,
    // Inputs
    Instruccion, Reloj, Reiniciar
    ) ;
@@ -14,7 +12,13 @@ module UnidadDeControl (/*AUTOARG*/
    output reg [1:0] SelectS;
    output reg 	    NegS;
  -----/\----- EXCLUDED -----/\----- */
+
+/* -----\/----- EXCLUDED -----\/-----
    
+   //se dejará LoadSelect directamente, no logré
+   //partir la tupla en salidas diferentes
+   //por que es un reg y la asignación procedular
+   //no funcionó como esperaba y no tengo tiempo
    output reg 	    SelectDR, LoadDR;
    output reg 	    SelectAR, LoadAR;
    
@@ -22,11 +26,14 @@ module UnidadDeControl (/*AUTOARG*/
    output reg 	    LoadPC;
    
    output reg 	    LoadIR, LoadCR;
+   output reg 	     WriteSelect, WriteEnable;
+ -----/\----- EXCLUDED -----/\----- */
+   //La siguiente linea reemplaza el codigo comentareado arriba
+   output reg [10:0] LoadSelect;
    
-   output reg 	    WriteSelect, WriteEnable;
-   output reg [2:0] WriteAddress, ReadAddressA, ReadAddressB;
+   output reg [2:0]  WriteAddress, ReadAddressA, ReadAddressB;
    
-   output reg [3:0] Fun;
+   output reg [3:0]  Fun;
    
 
 
@@ -72,7 +79,10 @@ module UnidadDeControl (/*AUTOARG*/
      S26   = 6'b011110,
      S27   = 6'b011111,
      S28   = 6'b100000;
+/* -----\/----- EXCLUDED -----\/-----
 
+//arriba esto quedo directo como salida por que no funciono el "desensamble" de LoadSelect
+ // en varias tuplas
    reg [10:0] LoadSelect;  //habilitadores en una palabra (excepto los de Satus)
                               //(referencia en hoja de calculo UnidadDeControl_Operaciones.ods)
    always @* begin
@@ -82,6 +92,9 @@ module UnidadDeControl (/*AUTOARG*/
 			LoadIR,LoadCR,
 			WriteSelect,WriteEnable};
    end
+ -----/\----- EXCLUDED -----/\----- */
+
+   
 /* -----\/----- EXCLUDED -----\/-----
    
    reg [3:0]  ControlStatus;
