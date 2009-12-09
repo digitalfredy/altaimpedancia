@@ -1,0 +1,680 @@
+$date
+	Tue Dec  8 20:21:25 2009
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module UnidadDeControl_Lab $end
+$var wire 6 ! Rta_Control[5:0] $end
+$var wire 4 " Rta_Fun[3:0] $end
+$var wire 1 # Rta_LoadAR $end
+$var wire 1 $ Rta_LoadCR $end
+$var wire 1 % Rta_LoadDR $end
+$var wire 1 & Rta_LoadIR $end
+$var wire 1 ' Rta_LoadPC $end
+$var wire 3 ( Rta_ReadAddressA[2:0] $end
+$var wire 3 ) Rta_ReadAddressB[2:0] $end
+$var wire 1 * Rta_SelectAR $end
+$var wire 1 + Rta_SelectDR $end
+$var wire 2 , Rta_SelectPC[1:0] $end
+$var wire 3 - Rta_WriteAddress[2:0] $end
+$var wire 1 . Rta_WriteEnable $end
+$var wire 1 / Rta_WriteSelect $end
+$var reg 16 0 Instruccion[15:0] $end
+$var reg 3 1 Rd[2:0] $end
+$var reg 1 2 Reiniciar $end
+$var reg 1 3 Reloj $end
+$var reg 3 4 Rf1[2:0] $end
+$var reg 3 5 Rf2[2:0] $end
+$scope module UC $end
+$var wire 16 6 Instruccion[15:0] $end
+$var wire 1 2 Reiniciar $end
+$var wire 1 3 Reloj $end
+$var reg 6 7 Control[5:0] $end
+$var reg 7 8 EstadoFuturo[6:0] $end
+$var reg 7 9 EstadoPresente[6:0] $end
+$var reg 4 : Fun[3:0] $end
+$var reg 1 # LoadAR $end
+$var reg 1 $ LoadCR $end
+$var reg 1 % LoadDR $end
+$var reg 1 & LoadIR $end
+$var reg 1 ' LoadPC $end
+$var reg 11 ; LoadSelect[10:0] $end
+$var reg 3 < ReadAddressA[2:0] $end
+$var reg 3 = ReadAddressB[2:0] $end
+$var reg 1 * SelectAR $end
+$var reg 1 + SelectDR $end
+$var reg 2 > SelectPC[1:0] $end
+$var reg 3 ? WriteAddress[2:0] $end
+$var reg 1 . WriteEnable $end
+$var reg 1 / WriteSelect $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx ?
+bx >
+bx =
+bx <
+bx ;
+bx :
+bx 9
+b0 8
+bx 7
+b0 6
+b10 5
+b1 4
+03
+12
+b0 1
+b0 0
+x/
+x.
+bx -
+bx ,
+x+
+x*
+bx )
+bx (
+x'
+x&
+x%
+x$
+x#
+bx "
+bx !
+$end
+#1
+bz "
+bz :
+bz )
+bz =
+bz (
+bz <
+bz -
+bz ?
+bz1zz ;
+b100100 !
+b100100 7
+b1 8
+b0 9
+02
+13
+#2
+03
+#3
+bz1111zzz ;
+bz !
+bz 7
+b10 8
+b1 9
+13
+#4
+03
+#5
+b11 8
+b10 9
+13
+#6
+03
+#7
+b0 "
+b0 :
+b0 )
+b0 =
+b0 (
+b0 <
+b0 -
+b0 ?
+bz01 ;
+b0 8
+b11 9
+13
+#8
+03
+#9
+bz "
+bz :
+bz )
+bz =
+bz (
+bz <
+bz -
+bz ?
+bz1zz ;
+b100100 !
+b100100 7
+b1 8
+b0 9
+13
+#10
+03
+#11
+bz1111zzz ;
+bz !
+bz 7
+b10 8
+b1 9
+13
+#12
+b0 8
+03
+12
+b11000001010 0
+b11000001010 6
+b101 5
+b100 4
+b11 1
+#13
+bz1zz ;
+b100100 !
+b100100 7
+b1 8
+b0 9
+13
+02
+#14
+03
+#15
+bz1111zzz ;
+bz !
+bz 7
+b10 8
+b1 9
+13
+#16
+03
+#17
+b11 8
+b10 9
+13
+#18
+03
+#19
+b11 "
+b11 :
+b10 )
+b10 =
+b1 (
+b1 <
+b0 -
+b0 ?
+bz01 ;
+b0 8
+b11 9
+13
+#20
+03
+#21
+bz "
+bz :
+bz )
+bz =
+bz (
+bz <
+bz -
+bz ?
+bz1zz ;
+b100100 !
+b100100 7
+b1 8
+b0 9
+13
+#22
+03
+#23
+bz1111zzz ;
+bz !
+bz 7
+b10 8
+b1 9
+13
+#24
+b0 8
+03
+12
+b101011100101 0
+b101011100101 6
+b0 5
+b111 4
+b110 1
+#25
+bz1zz ;
+b100100 !
+b100100 7
+b1 8
+b0 9
+13
+02
+#26
+03
+#27
+bz1111zzz ;
+bz !
+bz 7
+b10 8
+b1 9
+13
+#28
+03
+#29
+b100 8
+b10 9
+13
+#30
+03
+#31
+b101 "
+b101 :
+b101 )
+b101 =
+b100 (
+b100 <
+b11 -
+b11 ?
+bz01 ;
+b0 8
+b100 9
+13
+#32
+03
+#33
+bz "
+bz :
+bz )
+bz =
+bz (
+bz <
+bz -
+bz ?
+bz1zz ;
+b100100 !
+b100100 7
+b1 8
+b0 9
+13
+#34
+03
+#35
+bz1111zzz ;
+bz !
+bz 7
+b10 8
+b1 9
+13
+#36
+b0 8
+03
+12
+b111110111000 0
+b111110111000 6
+b11 5
+b10 4
+b1 1
+#37
+bz1zz ;
+b100100 !
+b100100 7
+b1 8
+b0 9
+13
+02
+#38
+03
+#39
+bz1111zzz ;
+bz !
+bz 7
+b10 8
+b1 9
+13
+#40
+03
+#41
+b100 8
+b10 9
+13
+#42
+03
+#43
+b111 "
+b111 :
+b0 )
+b0 =
+b111 (
+b111 <
+b110 -
+b110 ?
+bz01 ;
+b0 8
+b100 9
+13
+#44
+03
+#45
+bz "
+bz :
+bz )
+bz =
+bz (
+bz <
+bz -
+bz ?
+bz1zz ;
+b100100 !
+b100100 7
+b1 8
+b0 9
+13
+#46
+03
+#47
+bz1111zzz ;
+bz !
+bz 7
+b10 8
+b1 9
+13
+#48
+b0 8
+03
+12
+b110 5
+b101 4
+b100 1
+#49
+bz1zz ;
+b100100 !
+b100100 7
+b1 8
+b0 9
+13
+02
+#50
+03
+#51
+bz1111zzz ;
+bz !
+bz 7
+b10 8
+b1 9
+13
+#52
+03
+#53
+b100 8
+b10 9
+13
+#54
+03
+#55
+b111 "
+b111 :
+b0 )
+b0 =
+b111 (
+b111 <
+b110 -
+b110 ?
+bz01 ;
+b0 8
+b100 9
+13
+#56
+03
+#57
+bz "
+bz :
+bz )
+bz =
+bz (
+bz <
+bz -
+bz ?
+bz1zz ;
+b100100 !
+b100100 7
+b1 8
+b0 9
+13
+#58
+03
+#59
+bz1111zzz ;
+bz !
+bz 7
+b10 8
+b1 9
+13
+#60
+b0 8
+03
+12
+b1 5
+b0 4
+b111 1
+#61
+bz1zz ;
+b100100 !
+b100100 7
+b1 8
+b0 9
+13
+02
+#62
+03
+#63
+bz1111zzz ;
+bz !
+bz 7
+b10 8
+b1 9
+13
+#64
+03
+#72
+b0 8
+12
+b100 5
+b11 4
+b10 1
+#73
+02
+#84
+12
+b111 5
+b110 4
+b101 1
+#85
+02
+#96
+12
+b10 5
+b1 4
+b0 1
+#97
+02
+#108
+12
+b101 5
+b100 4
+b11 1
+#109
+02
+#120
+12
+b0 5
+b111 4
+b110 1
+#121
+02
+#132
+12
+b11 5
+b10 4
+b1 1
+#133
+02
+#144
+12
+b110 5
+b101 4
+b100 1
+#145
+02
+#156
+12
+b1 5
+b0 4
+b111 1
+#157
+02
+#168
+12
+b100 5
+b11 4
+b10 1
+#169
+02
+#180
+12
+b111 5
+b110 4
+b101 1
+#181
+02
+#192
+12
+b10 5
+b1 4
+b0 1
+#193
+02
+#204
+12
+b101 5
+b100 4
+b11 1
+#205
+02
+#216
+12
+b0 5
+b111 4
+b110 1
+#217
+02
+#228
+12
+b11 5
+b10 4
+b1 1
+#229
+02
+#240
+12
+b110 5
+b101 4
+b100 1
+#241
+02
+#252
+12
+b1 5
+b0 4
+b111 1
+#253
+02
+#264
+12
+b100 5
+b11 4
+b10 1
+#265
+02
+#276
+12
+b111 5
+b110 4
+b101 1
+#277
+02
+#288
+12
+b10 5
+b1 4
+b0 1
+#289
+02
+#300
+12
+b101 5
+b100 4
+b11 1
+#301
+02
+#312
+12
+b0 5
+b111 4
+b110 1
+#313
+02
+#324
+12
+b11 5
+b10 4
+b1 1
+#325
+02
+#336
+12
+b110 5
+b101 4
+b100 1
+#337
+02
+#348
+12
+b1 5
+b0 4
+b111 1
+#349
+02
+#360
+12
+b100 5
+b11 4
+b10 1
+#361
+02
+#372
+12
+b111 5
+b110 4
+b101 1
+#373
+02
+#384
+12
+b10 5
+b1 4
+b0 1
+#385
+02
+#396
+12
+b101 5
+b100 4
+b11 1
+#397
+02
+#408
+12
+b0 5
+b111 4
+b110 1
