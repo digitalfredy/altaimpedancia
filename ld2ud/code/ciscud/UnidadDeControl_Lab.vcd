@@ -1,5 +1,5 @@
 $date
-	Tue Dec  8 20:21:25 2009
+	Tue Dec  8 21:21:27 2009
 $end
 $version
 	Icarus Verilog
@@ -15,42 +15,33 @@ $var wire 1 $ Rta_LoadCR $end
 $var wire 1 % Rta_LoadDR $end
 $var wire 1 & Rta_LoadIR $end
 $var wire 1 ' Rta_LoadPC $end
-$var wire 3 ( Rta_ReadAddressA[2:0] $end
-$var wire 3 ) Rta_ReadAddressB[2:0] $end
-$var wire 1 * Rta_SelectAR $end
-$var wire 1 + Rta_SelectDR $end
-$var wire 2 , Rta_SelectPC[1:0] $end
-$var wire 3 - Rta_WriteAddress[2:0] $end
-$var wire 1 . Rta_WriteEnable $end
-$var wire 1 / Rta_WriteSelect $end
-$var reg 16 0 Instruccion[15:0] $end
-$var reg 3 1 Rd[2:0] $end
-$var reg 1 2 Reiniciar $end
-$var reg 1 3 Reloj $end
-$var reg 3 4 Rf1[2:0] $end
-$var reg 3 5 Rf2[2:0] $end
+$var wire 11 ( Rta_LoadSelect[10:0] $end
+$var wire 3 ) Rta_ReadAddressA[2:0] $end
+$var wire 3 * Rta_ReadAddressB[2:0] $end
+$var wire 1 + Rta_SelectAR $end
+$var wire 1 , Rta_SelectDR $end
+$var wire 2 - Rta_SelectPC[1:0] $end
+$var wire 3 . Rta_WriteAddress[2:0] $end
+$var wire 1 / Rta_WriteEnable $end
+$var wire 1 0 Rta_WriteSelect $end
+$var reg 16 1 Instruccion[15:0] $end
+$var reg 3 2 Rd[2:0] $end
+$var reg 1 3 Reiniciar $end
+$var reg 1 4 Reloj $end
+$var reg 3 5 Rf1[2:0] $end
+$var reg 3 6 Rf2[2:0] $end
 $scope module UC $end
-$var wire 16 6 Instruccion[15:0] $end
-$var wire 1 2 Reiniciar $end
-$var wire 1 3 Reloj $end
-$var reg 6 7 Control[5:0] $end
-$var reg 7 8 EstadoFuturo[6:0] $end
-$var reg 7 9 EstadoPresente[6:0] $end
-$var reg 4 : Fun[3:0] $end
-$var reg 1 # LoadAR $end
-$var reg 1 $ LoadCR $end
-$var reg 1 % LoadDR $end
-$var reg 1 & LoadIR $end
-$var reg 1 ' LoadPC $end
-$var reg 11 ; LoadSelect[10:0] $end
-$var reg 3 < ReadAddressA[2:0] $end
-$var reg 3 = ReadAddressB[2:0] $end
-$var reg 1 * SelectAR $end
-$var reg 1 + SelectDR $end
-$var reg 2 > SelectPC[1:0] $end
+$var wire 16 7 Instruccion[15:0] $end
+$var wire 1 3 Reiniciar $end
+$var wire 1 4 Reloj $end
+$var reg 6 8 Control[5:0] $end
+$var reg 7 9 EstadoFuturo[6:0] $end
+$var reg 7 : EstadoPresente[6:0] $end
+$var reg 4 ; Fun[3:0] $end
+$var reg 11 < LoadSelect[10:0] $end
+$var reg 3 = ReadAddressA[2:0] $end
+$var reg 3 > ReadAddressB[2:0] $end
 $var reg 3 ? WriteAddress[2:0] $end
-$var reg 1 . WriteEnable $end
-$var reg 1 / WriteSelect $end
 $upscope $end
 $upscope $end
 $enddefinitions $end
@@ -62,22 +53,22 @@ bx =
 bx <
 bx ;
 bx :
-bx 9
-b0 8
-bx 7
-b0 6
-b10 5
-b1 4
-03
-12
+b0 9
+bx 8
+b0 7
+b10 6
+b1 5
+04
+13
+b0 2
 b0 1
-b0 0
+x0
 x/
-x.
+bx .
 bx -
-bx ,
+x,
 x+
-x*
+bx *
 bx )
 bx (
 x'
@@ -90,591 +81,732 @@ bx !
 $end
 #1
 bz "
-bz :
+bz ;
+bz *
+bz >
 bz )
 bz =
-bz (
-bz <
-bz -
+bz .
 bz ?
-bz1zz ;
+z,
+z%
+z+
+z#
+bz -
+z'
+z&
+1$
+z0
+bz1zz (
+z/
+bz1zz <
 b100100 !
-b100100 7
-b1 8
-b0 9
-02
-13
-#2
-03
-#3
-bz1111zzz ;
-bz !
-bz 7
-b10 8
+b100100 8
 b1 9
-13
-#4
+b0 :
 03
-#5
-b11 8
+14
+#2
+04
+#3
+b11 -
+1'
+1&
+z$
+bz1111zzz (
+bz1111zzz <
+bz !
+bz 8
 b10 9
-13
+b1 :
+14
+#4
+04
+#5
+b11 9
+b10 :
+14
 #6
-03
+04
 #7
 b0 "
-b0 :
+b0 ;
+b0 *
+b0 >
 b0 )
 b0 =
-b0 (
-b0 <
-b0 -
+b0 .
 b0 ?
-bz01 ;
-b0 8
-b11 9
-13
+bz -
+z'
+z&
+00
+bz01 (
+1/
+bz01 <
+b0 9
+b11 :
+14
 #8
-03
+04
 #9
 bz "
-bz :
+bz ;
+bz *
+bz >
 bz )
 bz =
-bz (
-bz <
-bz -
+bz .
 bz ?
-bz1zz ;
+1$
+z0
+bz1zz (
+z/
+bz1zz <
 b100100 !
-b100100 7
-b1 8
-b0 9
-13
+b100100 8
+b1 9
+b0 :
+14
 #10
-03
+04
 #11
-bz1111zzz ;
+b11 -
+1'
+1&
+z$
+bz1111zzz (
+bz1111zzz <
 bz !
-bz 7
-b10 8
-b1 9
-13
-#12
-b0 8
-03
-12
-b11000001010 0
-b11000001010 6
-b101 5
-b100 4
-b11 1
-#13
-bz1zz ;
-b100100 !
-b100100 7
-b1 8
-b0 9
-13
-02
-#14
-03
-#15
-bz1111zzz ;
-bz !
-bz 7
-b10 8
-b1 9
-13
-#16
-03
-#17
-b11 8
+bz 8
 b10 9
+b1 :
+14
+#12
+b0 9
+04
 13
-#18
+b11000001010 1
+b11000001010 7
+b101 6
+b100 5
+b11 2
+#13
+bz -
+z'
+z&
+1$
+bz1zz (
+bz1zz <
+b100100 !
+b100100 8
+b1 9
+b0 :
+14
 03
+#14
+04
+#15
+b11 -
+1'
+1&
+z$
+bz1111zzz (
+bz1111zzz <
+bz !
+bz 8
+b10 9
+b1 :
+14
+#16
+04
+#17
+b11 9
+b10 :
+14
+#18
+04
 #19
 b11 "
-b11 :
-b10 )
-b10 =
-b1 (
-b1 <
-b0 -
+b11 ;
+b10 *
+b10 >
+b1 )
+b1 =
+b0 .
 b0 ?
-bz01 ;
-b0 8
-b11 9
-13
+bz -
+z'
+z&
+00
+bz01 (
+1/
+bz01 <
+b0 9
+b11 :
+14
 #20
-03
+04
 #21
 bz "
-bz :
+bz ;
+bz *
+bz >
 bz )
 bz =
-bz (
-bz <
-bz -
+bz .
 bz ?
-bz1zz ;
+1$
+z0
+bz1zz (
+z/
+bz1zz <
 b100100 !
-b100100 7
-b1 8
-b0 9
-13
+b100100 8
+b1 9
+b0 :
+14
 #22
-03
+04
 #23
-bz1111zzz ;
+b11 -
+1'
+1&
+z$
+bz1111zzz (
+bz1111zzz <
 bz !
-bz 7
-b10 8
-b1 9
-13
-#24
-b0 8
-03
-12
-b101011100101 0
-b101011100101 6
-b0 5
-b111 4
-b110 1
-#25
-bz1zz ;
-b100100 !
-b100100 7
-b1 8
-b0 9
-13
-02
-#26
-03
-#27
-bz1111zzz ;
-bz !
-bz 7
-b10 8
-b1 9
-13
-#28
-03
-#29
-b100 8
+bz 8
 b10 9
+b1 :
+14
+#24
+b0 9
+04
 13
-#30
+b101011100101 1
+b101011100101 7
+b0 6
+b111 5
+b110 2
+#25
+bz -
+z'
+z&
+1$
+bz1zz (
+bz1zz <
+b100100 !
+b100100 8
+b1 9
+b0 :
+14
 03
+#26
+04
+#27
+b11 -
+1'
+1&
+z$
+bz1111zzz (
+bz1111zzz <
+bz !
+bz 8
+b10 9
+b1 :
+14
+#28
+04
+#29
+b100 9
+b10 :
+14
+#30
+04
 #31
 b101 "
-b101 :
-b101 )
-b101 =
-b100 (
-b100 <
-b11 -
+b101 ;
+b101 *
+b101 >
+b100 )
+b100 =
+b11 .
 b11 ?
-bz01 ;
-b0 8
-b100 9
-13
+bz -
+z'
+z&
+00
+bz01 (
+1/
+bz01 <
+b0 9
+b100 :
+14
 #32
-03
+04
 #33
 bz "
-bz :
+bz ;
+bz *
+bz >
 bz )
 bz =
-bz (
-bz <
-bz -
+bz .
 bz ?
-bz1zz ;
+1$
+z0
+bz1zz (
+z/
+bz1zz <
 b100100 !
-b100100 7
-b1 8
-b0 9
-13
+b100100 8
+b1 9
+b0 :
+14
 #34
-03
+04
 #35
-bz1111zzz ;
+b11 -
+1'
+1&
+z$
+bz1111zzz (
+bz1111zzz <
 bz !
-bz 7
-b10 8
-b1 9
-13
-#36
-b0 8
-03
-12
-b111110111000 0
-b111110111000 6
-b11 5
-b10 4
-b1 1
-#37
-bz1zz ;
-b100100 !
-b100100 7
-b1 8
-b0 9
-13
-02
-#38
-03
-#39
-bz1111zzz ;
-bz !
-bz 7
-b10 8
-b1 9
-13
-#40
-03
-#41
-b100 8
+bz 8
 b10 9
+b1 :
+14
+#36
+b0 9
+04
 13
-#42
+b111110111000 1
+b111110111000 7
+b11 6
+b10 5
+b1 2
+#37
+bz -
+z'
+z&
+1$
+bz1zz (
+bz1zz <
+b100100 !
+b100100 8
+b1 9
+b0 :
+14
 03
+#38
+04
+#39
+b11 -
+1'
+1&
+z$
+bz1111zzz (
+bz1111zzz <
+bz !
+bz 8
+b10 9
+b1 :
+14
+#40
+04
+#41
+b100 9
+b10 :
+14
+#42
+04
 #43
 b111 "
-b111 :
-b0 )
-b0 =
-b111 (
-b111 <
-b110 -
+b111 ;
+b0 *
+b0 >
+b111 )
+b111 =
+b110 .
 b110 ?
-bz01 ;
-b0 8
-b100 9
-13
+bz -
+z'
+z&
+00
+bz01 (
+1/
+bz01 <
+b0 9
+b100 :
+14
 #44
-03
+04
 #45
 bz "
-bz :
+bz ;
+bz *
+bz >
 bz )
 bz =
-bz (
-bz <
-bz -
+bz .
 bz ?
-bz1zz ;
+1$
+z0
+bz1zz (
+z/
+bz1zz <
 b100100 !
-b100100 7
-b1 8
-b0 9
-13
+b100100 8
+b1 9
+b0 :
+14
 #46
-03
+04
 #47
-bz1111zzz ;
+b11 -
+1'
+1&
+z$
+bz1111zzz (
+bz1111zzz <
 bz !
-bz 7
-b10 8
-b1 9
-13
-#48
-b0 8
-03
-12
-b110 5
-b101 4
-b100 1
-#49
-bz1zz ;
-b100100 !
-b100100 7
-b1 8
-b0 9
-13
-02
-#50
-03
-#51
-bz1111zzz ;
-bz !
-bz 7
-b10 8
-b1 9
-13
-#52
-03
-#53
-b100 8
+bz 8
 b10 9
+b1 :
+14
+#48
+b0 9
+04
 13
-#54
+b110 6
+b101 5
+b100 2
+#49
+bz -
+z'
+z&
+1$
+bz1zz (
+bz1zz <
+b100100 !
+b100100 8
+b1 9
+b0 :
+14
 03
+#50
+04
+#51
+b11 -
+1'
+1&
+z$
+bz1111zzz (
+bz1111zzz <
+bz !
+bz 8
+b10 9
+b1 :
+14
+#52
+04
+#53
+b100 9
+b10 :
+14
+#54
+04
 #55
 b111 "
-b111 :
-b0 )
-b0 =
-b111 (
-b111 <
-b110 -
+b111 ;
+b0 *
+b0 >
+b111 )
+b111 =
+b110 .
 b110 ?
-bz01 ;
-b0 8
-b100 9
-13
+bz -
+z'
+z&
+00
+bz01 (
+1/
+bz01 <
+b0 9
+b100 :
+14
 #56
-03
+04
 #57
 bz "
-bz :
+bz ;
+bz *
+bz >
 bz )
 bz =
-bz (
-bz <
-bz -
+bz .
 bz ?
-bz1zz ;
+1$
+z0
+bz1zz (
+z/
+bz1zz <
 b100100 !
-b100100 7
-b1 8
-b0 9
-13
+b100100 8
+b1 9
+b0 :
+14
 #58
-03
+04
 #59
-bz1111zzz ;
+b11 -
+1'
+1&
+z$
+bz1111zzz (
+bz1111zzz <
 bz !
-bz 7
-b10 8
-b1 9
-13
+bz 8
+b10 9
+b1 :
+14
 #60
-b0 8
-03
-12
-b1 5
-b0 4
-b111 1
+b0 9
+04
+13
+b1 6
+b0 5
+b111 2
 #61
-bz1zz ;
+bz -
+z'
+z&
+1$
+bz1zz (
+bz1zz <
 b100100 !
-b100100 7
-b1 8
+b100100 8
+b1 9
+b0 :
+14
+03
+#62
+04
+#63
+b11 -
+1'
+1&
+z$
+bz1111zzz (
+bz1111zzz <
+bz !
+bz 8
+b10 9
+b1 :
+14
+#64
+04
+#72
 b0 9
 13
-02
-#62
-03
-#63
-bz1111zzz ;
-bz !
-bz 7
-b10 8
-b1 9
-13
-#64
-03
-#72
-b0 8
-12
-b100 5
-b11 4
-b10 1
+b100 6
+b11 5
+b10 2
 #73
-02
+03
 #84
-12
-b111 5
-b110 4
-b101 1
+13
+b111 6
+b110 5
+b101 2
 #85
-02
+03
 #96
-12
-b10 5
-b1 4
-b0 1
+13
+b10 6
+b1 5
+b0 2
 #97
-02
+03
 #108
-12
-b101 5
-b100 4
-b11 1
+13
+b101 6
+b100 5
+b11 2
 #109
-02
+03
 #120
-12
-b0 5
-b111 4
-b110 1
+13
+b0 6
+b111 5
+b110 2
 #121
-02
+03
 #132
-12
-b11 5
-b10 4
-b1 1
+13
+b11 6
+b10 5
+b1 2
 #133
-02
+03
 #144
-12
-b110 5
-b101 4
-b100 1
+13
+b110 6
+b101 5
+b100 2
 #145
-02
+03
 #156
-12
-b1 5
-b0 4
-b111 1
+13
+b1 6
+b0 5
+b111 2
 #157
-02
+03
 #168
-12
-b100 5
-b11 4
-b10 1
+13
+b100 6
+b11 5
+b10 2
 #169
-02
+03
 #180
-12
-b111 5
-b110 4
-b101 1
+13
+b111 6
+b110 5
+b101 2
 #181
-02
+03
 #192
-12
-b10 5
-b1 4
-b0 1
+13
+b10 6
+b1 5
+b0 2
 #193
-02
+03
 #204
-12
-b101 5
-b100 4
-b11 1
+13
+b101 6
+b100 5
+b11 2
 #205
-02
+03
 #216
-12
-b0 5
-b111 4
-b110 1
+13
+b0 6
+b111 5
+b110 2
 #217
-02
+03
 #228
-12
-b11 5
-b10 4
-b1 1
+13
+b11 6
+b10 5
+b1 2
 #229
-02
+03
 #240
-12
-b110 5
-b101 4
-b100 1
+13
+b110 6
+b101 5
+b100 2
 #241
-02
+03
 #252
-12
-b1 5
-b0 4
-b111 1
+13
+b1 6
+b0 5
+b111 2
 #253
-02
+03
 #264
-12
-b100 5
-b11 4
-b10 1
-#265
-02
-#276
-12
-b111 5
-b110 4
-b101 1
-#277
-02
-#288
-12
-b10 5
-b1 4
-b0 1
-#289
-02
-#300
-12
-b101 5
-b100 4
-b11 1
-#301
-02
-#312
-12
-b0 5
-b111 4
-b110 1
-#313
-02
-#324
-12
+13
+b100 6
 b11 5
-b10 4
-b1 1
-#325
-02
-#336
-12
+b10 2
+#265
+03
+#276
+13
+b111 6
 b110 5
-b101 4
-b100 1
-#337
-02
-#348
-12
+b101 2
+#277
+03
+#288
+13
+b10 6
 b1 5
-b0 4
-b111 1
-#349
-02
-#360
-12
+b0 2
+#289
+03
+#300
+13
+b101 6
 b100 5
-b11 4
-b10 1
-#361
-02
-#372
-12
+b11 2
+#301
+03
+#312
+13
+b0 6
 b111 5
-b110 4
-b101 1
-#373
-02
-#384
-12
+b110 2
+#313
+03
+#324
+13
+b11 6
 b10 5
-b1 4
-b0 1
-#385
-02
-#396
-12
+b1 2
+#325
+03
+#336
+13
+b110 6
 b101 5
-b100 4
-b11 1
-#397
-02
-#408
-12
+b100 2
+#337
+03
+#348
+13
+b1 6
 b0 5
-b111 4
-b110 1
+b111 2
+#349
+03
+#360
+13
+b100 6
+b11 5
+b10 2
+#361
+03
+#372
+13
+b111 6
+b110 5
+b101 2
+#373
+03
+#384
+13
+b10 6
+b1 5
+b0 2
+#385
+03
+#396
+13
+b101 6
+b100 5
+b11 2
+#397
+03
+#408
+13
+b0 6
+b111 5
+b110 2

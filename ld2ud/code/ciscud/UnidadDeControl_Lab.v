@@ -13,6 +13,8 @@ module UnidadDeControl_Lab (/*AUTOARG*/
     wire 	    NegS;
     -----/\----- EXCLUDED -----/\----- */
    
+
+//intentando lo que con tipo reg no
    wire       Rta_SelectDR, Rta_LoadDR;
    wire       Rta_SelectAR, Rta_LoadAR;
    
@@ -22,6 +24,10 @@ module UnidadDeControl_Lab (/*AUTOARG*/
    wire       Rta_LoadIR, Rta_LoadCR;
    
    wire       Rta_WriteSelect, Rta_WriteEnable;
+//hasta aqui lo que compone LoadSelect
+
+   wire   [10:0] Rta_LoadSelect;
+   
    wire [2:0] Rta_WriteAddress, Rta_ReadAddressA, Rta_ReadAddressB;
    
    wire [3:0] Rta_Fun;
@@ -30,15 +36,19 @@ module UnidadDeControl_Lab (/*AUTOARG*/
    
    
    UnidadDeControl UC (Rta_Control,
-		       Rta_SelectDR, Rta_LoadDR,
-		       Rta_SelectAR, Rta_LoadAR,
-		       Rta_SelectPC,Rta_LoadPC,
-		       Rta_LoadIR, Rta_LoadCR,
-		       Rta_WriteSelect, Rta_WriteEnable,
-		       Rta_WriteAddress,Rta_ReadAddressA,Rta_ReadAddressB,
+		       Rta_LoadSelect,
+		       Rta_WriteAddress,
+		       Rta_ReadAddressA,
+		       Rta_ReadAddressB,
 		       Rta_Fun,
 		       //Los estimulos de prueba:
 		       Instruccion,Reloj,Reiniciar);
+
+   assign Rta_LoadSelect = {Rta_SelectDR,Rta_LoadDR,
+                        Rta_SelectAR,Rta_LoadAR,
+                        Rta_SelectPC,Rta_LoadPC,
+                        Rta_LoadIR,Rta_LoadCR,
+                        Rta_WriteSelect,Rta_WriteEnable};
 
    initial begin
       Reloj = 1'b0;
@@ -65,7 +75,7 @@ module UnidadDeControl_Lab (/*AUTOARG*/
    initial begin
       repeat (34) begin
 	 #12 Rd <= Rd+3;
-	 Rf1 <= Rf1+3;
+         Rf1 <= Rf1+3;
 	 Rf2 <= Rf2+3;
       end
    end
