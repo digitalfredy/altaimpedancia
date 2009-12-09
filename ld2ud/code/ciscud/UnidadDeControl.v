@@ -1,17 +1,19 @@
 module UnidadDeControl (/*AUTOARG*/
    // Outputs
-   Control, LoadS, SelectS, NegS, SelectDR, LoadDR, SelectAR, LoadAR,
-   SelectPC, LoadPC, LoadIR, LoadCR, WriteSelect, WriteEnable,
-   WriteAddress, ReadAddressA, ReadAddressB, Fun,
+   Control, SelectDR, LoadDR, SelectAR, LoadAR, SelectPC, LoadPC,
+   LoadIR, LoadCR, WriteSelect, WriteEnable, WriteAddress,
+   ReadAddressA, ReadAddressB, Fun,
    // Inputs
-   EntraEstado, Instruccion, StatusFlag, Reloj, Reiniciar
+   Instruccion, Reloj, Reiniciar
    ) ;
    
    output reg [5:0] Control;
+/* -----\/----- EXCLUDED -----\/-----
    
    output reg 	    LoadS;
    output reg [1:0] SelectS;
    output reg 	    NegS;
+ -----/\----- EXCLUDED -----/\----- */
    
    output reg 	    SelectDR, LoadDR;
    output reg 	    SelectAR, LoadAR;
@@ -28,9 +30,8 @@ module UnidadDeControl (/*AUTOARG*/
    
 
 
-   input [5:0] EntraEstado;
    input  [15:0] Instruccion;
-   input  StatusFlag;
+//   input  StatusFlag;
    input  Reloj, Reiniciar;
    
 
@@ -81,20 +82,21 @@ module UnidadDeControl (/*AUTOARG*/
 			LoadIR,LoadCR,
 			WriteSelect,WriteEnable};
    end
+/* -----\/----- EXCLUDED -----\/-----
    
    reg [3:0]  ControlStatus;
    always @* begin
       ControlStatus <= {LoadS,SelectS,NegS};
    end
+ -----/\----- EXCLUDED -----/\----- */
    
    
    reg   [6:0] EstadoPresente, EstadoFuturo;
 
    always @ (posedge Reloj, posedge Reiniciar) //Registro de estado
-     if (Reiniciar) begin
-
+     if (Reiniciar) begin // es el mismo reset del camino de datos que reinicializa
+	                  // todos los registros y garantiza CR <= (--) && PC<=0
 	EstadoFuturo <= SF1;
-// pendiente cr <= (--)	 && PC<=PC+1
      end 
      else
        EstadoPresente <= EstadoFuturo;
