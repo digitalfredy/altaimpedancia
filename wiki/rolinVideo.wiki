@@ -1,0 +1,45 @@
+#summary Video de presentación para rolin
+#labels rolin
+
+== Cuadro 1 - Imagen ==
+Foto de rolin con emblema de la Universidad y de la carrera, logos de digitalfredy y altaimpedancia.
+Este primer cuadro debe ser muy bien hecho por que es la imagen que aparecerá en youtube (tengo entendido que aparece el primer cuadro)
+
+== Cuadro 2 - Presentación digitalfredy ==
+Aparezco yo diciendo lo siguiente:
+_Hola soy digitalfredy desde Bogotá Colombia, estoy aquí para presentarles a rolin._
+
+== Cuadro 3 - URL rolin ==
+Imagen logo_altaimpedancia http://rolin.altaimpedancia.org logo_altaimpedancia
+
+== Cuadro 4 - Presentación formal ==
+Salgo yo diciendo:
+_Mi nombre real es Fredy Pulido López, soy estudiante de ingeniería electrónica de la Universidad Distrital Francisco José de Caldas
+el nombre real de rolin es Robot Linux Inalámbrico y es una plataforma de Robótica fácil de construir y centrada en Software Libre_
+
+== Cuadro 5 - alma rolin ==
+Mientras se visualizan imágenes de Tux, OpenWRT y del enrrutador (router) se escucha:
+_El alma de rolin es la distribución Linux OpenWRT para sistemas embebidos, en la primera implementación de rolin hemos usado un enrrutador Linksys WRT54GL con procesador ARM y puerto serial que se alimenta con una batería 12V/2A pero funciona internamente a 3.3V_
+
+== Cuadro 6 - el microconrolador ==
+_rolin se completa conectando un microcontrolador AVR al enrrutador por medio del puerto serial, se ha elegido AVR por que la idea es lograr programar el microcontrolador desde el enrrutador y AVR es el micro más amigable con entornos Linux.
+
+El AVR usado en la primera implementación es un atmega168p que funciona desde 3.3V y que es alimentado directamente por el enrrutador._
+
+== Cuadro 6 - el chasis ==
+_Un robot sin cuerpo no es robot, y en la primera encarnación rolin está en el chasis de un viejo carro de radio control que conservaba su sistema mecánico y sus motores que han sido conectados a un puente H._
+
+== Cuadro 7 - el control ==
+_Este cuerpo se puede controlar enviando señales por el puerto serial desde el enrrutador al AVR que las decodifica y convierte en señales de control para el puente H que controla los motores, ¡un momento! ¿como hago para que el router envíe esas señales? R= inicias sesión remota usando SSH desde un dispositivo Wi-Fi que conectado al enrrutador y ejecutas comandos de shell o programas en C previamente compilados._
+
+== Cuadro 8 - como construyo mi rolin? ==
+El primer rolín se construyó así:
+ 1. Conseguir una Batería que se adapte al chasis y alimente el enrrutador.
+ 1. Instalar OpenWRT en el enrrutador
+ 1. Soldar el conector para el puerto serial y alimentación motores y micro
+ 1. Soldar Cable 12V (para motores) a los pines NC del puerto soldado previamente
+ 1. Microcontrolador y puente H en protoboard o PCB 
+ 1. Conectar protoboard y enrrutador mediante un único cable (dos puertos seriales, 3.3V para el AVR y 12V para motores)
+ 1. Programar micro, programar/usar Linux embebido y divertirse.
+
+Si estas usando otro enrrutador tal vez varíe un poco, información más detallada en http://rolin.altaimpedancia.org
