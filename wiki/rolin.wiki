@@ -1,5 +1,28 @@
 #summary Robot Linux Inalámbrico
 #labels rolin
 
+Diagrama de bloques
+http://altaimpedancia.googlecode.com/svn/trunk/rolin/doc/DiagramaBloques.vue
+http://altaimpedancia.googlecode.com/svn/trunk/rolin/doc/DiagramaBloques.png
 
-[rolinComoLinuxSerialAvr]
+Esquematico
+http://altaimpedancia.googlecode.com/svn/trunk/rolin/doc/esquema/rolin.sch
+http://altaimpedancia.googlecode.com/svn/trunk/rolin/doc/esquema/rolin.png
+http://altaimpedancia.googlecode.com/svn/trunk/rolin/doc/esquema/rolin.ps
+simbolos
+http://code.google.com/p/altaimpedancia/source/browse/#svn/trunk/rolin/doc/esquema/symbols
+
+PCB en desarrollo
+http://code.google.com/p/altaimpedancia/source/browse/#svn/trunk/rolin/doc/pcb
+
+Programa microcontrolador
+http://altaimpedancia.googlecode.com/svn/trunk/rolin/code/rolin_avr.c
+http://altaimpedancia.googlecode.com/svn/trunk/rolin/code/makefile
+http://altaimpedancia.googlecode.com/svn/trunk/rolin/code/rolin_avr.hex
+
+Script shell para enrrutador
+PENDIENTE SUBIRLO AL SVN
+
+rolinPropuestaProyecto
+
+Otras referencias: [rolinComoLinuxSerialAvr Vitacora], [rolinVideo Preparación video]
