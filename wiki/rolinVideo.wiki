@@ -19,18 +19,21 @@ el nombre real de rolin es Robot Linux Inalámbrico y es una plataforma de Robó
 
 == Cuadro 5 - alma rolin ==
 Mientras se visualizan imágenes de Tux, OpenWRT y del enrrutador (router) se escucha:
-_El alma de rolin es la distribución Linux OpenWRT para sistemas embebidos, en la primera implementación de rolin hemos usado un enrrutador Linksys WRT54GL con procesador ARM y puerto serial que se alimenta con una batería 12V/2A pero funciona internamente a 3.3V_
+_El alma de rolin es la distribución Linux OpenWRT para sistemas embebidos, en la primera implementación de rolin se ha usado un enrrutador Linksys WRT54GL con procesador ARM y puerto serial, este enrrutador funciona internamente a 3.3V pero alimentado a 12V con una batería que puede entregar hasta 2 amperios de corriente._
 
 == Cuadro 6 - el microconrolador ==
 _rolin se completa conectando un microcontrolador AVR al enrrutador por medio del puerto serial, se ha elegido AVR por que la idea es lograr programar el microcontrolador desde el enrrutador y AVR es el micro más amigable con entornos Linux.
 
-El AVR usado en la primera implementación es un atmega168p que funciona desde 3.3V y que es alimentado directamente por el enrrutador._
+El AVR usado en la primera implementación es un atmega168p que funciona desde 3.3V y es alimentado directamente por el enrrutador._
 
 == Cuadro 6 - el chasis ==
-_Un robot sin cuerpo no es robot, y en la primera encarnación rolin está en el chasis de un viejo carro de radio control que conservaba su sistema mecánico y sus motores que han sido conectados a un puente H._
+_Un robot sin cuerpo no es robot, y la primera encarnación rolin se hizo en el chasis de un viejo carro de radio control que conservaba su sistema mecánico y motores._
 
 == Cuadro 7 - el control ==
-_Este cuerpo se puede controlar enviando señales por el puerto serial desde el enrrutador al AVR que las decodifica y convierte en señales de control para el puente H que controla los motores, ¡un momento! ¿como hago para que el router envíe esas señales? R= inicias sesión remota usando SSH desde un dispositivo Wi-Fi que conectado al enrrutador y ejecutas comandos de shell o programas en C previamente compilados._
+_En esta demostración el cuerpo de rolin se controla desde el enrrutador enviando señales a travez del puerto serial hasta el microcontrolador que las recibe y envia señales al puente H que controla los motores._
+
+== Cuadro 8 - Control remoto para el router ==
+¿como hago para que el router envíe señales por el puerto serial? R= inicias sesión remota usando SSH desde un dispositivo Wi-Fi que conectado al enrrutador y ejecutas comandos de shell o programas en C previamente compilados._
 
 == Cuadro 8 - como construyo mi rolin? ==
 El primer rolín se construyó así:
