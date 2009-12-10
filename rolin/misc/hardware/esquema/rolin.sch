@@ -202,10 +202,8 @@ N 52600 44000 54800 44000 4
 N 42300 44800 42300 46300 4
 N 42300 46300 42100 46300 4
 N 42100 42800 42100 46000 4
-T 50000 40700 9 10 1 0 0 0 1
-Rolin - http://rolin.altaimpedancia.org
-T 54100 40100 9 10 1 0 0 0 1
-http://www.altaimpedancia.org
+T 50700 40900 9 10 1 0 0 0 1
+Robot Linux Inalámbrico - http://rolin.altaimpedancia.org
 T 50100 40400 9 10 1 0 0 0 1
 rolin.sch
 T 50100 40100 9 10 1 0 0 0 1
@@ -314,3 +312,6 @@ value=1N4148
 T 48800 41900 5 10 0 0 180 0 1
 footprint=ALF300
 }
+C 53700 41700 1 0 0 logo.sym
+T 54200 40100 9 10 1 0 0 0 1
+http://altaimpedancia.org
