@@ -9,7 +9,6 @@
 || Make File ||[http://altaimpedancia.googlecode.com/svn/trunk/rolin/code/makefile makefile] || Automatiza compilar codigo y programar micro usando make all, make clean y make program ||
 || Hexa AVR || [http://altaimpedancia.googlecode.com/svn/trunk/rolin/code/rolin_avr.hex .hex] || archivo con instrucciones del programa en hexa para el atmega168p ||
 || Script shell || [http://altaimpedancia.googlecode.com/svn/trunk/rolin/code/rolin.sh .sh (shell script)] || Script para bash que se ejecuta en el enrrutador ||
-PENDIENTE SUBIRLO AL SVN
 
 
 Otras referencias: [rolinPropuestaProyecto Documento con propuesta Inicial],[rolinComoLinuxSerialAvr Vitacora], [rolinVideo Preparación video]
