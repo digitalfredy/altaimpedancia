@@ -13,4 +13,4 @@
 || Script shell || [http://altaimpedancia.googlecode.com/svn/trunk/rolin/code/rolin.sh .sh (shell script)] || Script para bash que se ejecuta en el enrrutador ||
 
 
-Otras referencias: [rolinPropuestaProyecto Documento con propuesta Inicial],[rolinComoLinuxSerialAvr Vitacora], [rolinVideo Preparación video]
+Otras referencias: [rolinPropuestaProyecto Documento con propuesta Inicial],[rolinComoLinuxSerialAvr Bitacora], [rolinVideo Preparación video]
