@@ -1,0 +1,17 @@
+#summary Reseña sobre como se construyó el primer rolin
+#labels rolin
+
+Esto documento tiene como propósito que las personas interesadas en crear un rolin sepan como hicios el primero con el ánimo que esta referencia les sirva de guía, no es un documento para seguir al pié de la letra pues seguramente el chasis no será el mismo e incluso el router puede ser diferente.
+
+== El chasis ==
+Como chasis se eligió el chasis de un viejo carro de radiocontrol, por qué?
+ * Este chasis brindaba lo suficiente para hacer la primera implementación, no se necesitaba un rolin escalador, ni explorador con orugas la intención solo era mover el carro a modo de demostración para que otros vieran el potencial y se animaran a usar la plataforma para solucionar problemas más complejos.
+ * Costo $0 por que era el típico "jugete" dañado y olvidado en el armario.
+ * La circuitería del carro estaba dañada y previamente la había retirado pero sus motores y componentes mecánicos estaban en perfecto estado. 
+ * No perder tiempo y dinero haciendo estructuras con "palitos de balso y llanticas de acrilico" que al final son un problema y no una solución.
+
+== La SBC ==
+La [[http://en.wikipedia.org/wiki/Single-board_computer SBC]] elegida fué la Board de un router WRT54GL, Por qué?
+
+== La batería ==
+Una vez elegido el chasis me fuí con el al mercado electrónico (a la 19 con 9 en Bogotá/Colombia) en busca
