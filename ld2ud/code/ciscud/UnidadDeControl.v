@@ -43,7 +43,7 @@ module UnidadDeControl (/*AUTOARG*/
    
 
    localparam [6:0]
-     SF1   = 6'd000000,
+     SF1   = 6'b000000,
      SF2   = 6'b000001,
      SF3   = 6'b000010,
      
@@ -120,7 +120,7 @@ module UnidadDeControl (/*AUTOARG*/
        SF1: begin
 	  EstadoFuturo <= SF2;
 	  Control      <= 6'b100_100;
-	  LoadSelect   <= 11'bzzzz_zzz_z1zz;
+	  LoadSe lect   <= 11'bzzzz_zzz_z1zz;
 	  WriteAddress <= 3'bzzz;
 	  ReadAddressA <= 3'bzzz;
 	  ReadAddressB <= 3'bzzz;

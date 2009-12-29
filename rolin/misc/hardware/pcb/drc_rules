@@ -1,1 +1,0 @@
-(define dont-check-unconnected-pins 1) ;; Disable the unconnected pins check

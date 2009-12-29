@@ -5,12 +5,6 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="HDLCompilers" num="298" delta="unknown" ><arg fmt="%s" index="1">&quot;UnidadDeControl.v&quot; line 46 </arg>Too many digits specified in decimal constant
-</msg>
-
-<msg type="warning" file="HDLCompilers" num="299" delta="unknown" ><arg fmt="%s" index="1">&quot;UnidadDeControl.v&quot; line 410 </arg>Too many digits specified in binary constant
-</msg>
-
 <msg type="info" file="Xst" num="2679" delta="unknown" >Register &lt;<arg fmt="%s" index="1">Desbordamiento</arg>&gt; in unit &lt;<arg fmt="%s" index="2">Alsu16Bits</arg>&gt; has a constant value of <arg fmt="%s" index="3">Z</arg> during circuit operation. The register is replaced by logic.
 </msg>
 

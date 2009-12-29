@@ -2,7 +2,7 @@ CommandLine-Map
 
 s
 CommandLine-Ngdbuild
-/home/Xilinx/10.1/ISE/bin/lin64/unwrapped/ngdbuild -ise /home/jegc/AltaImpedancia/svn/altaimpedancia/trunk/ld2ud/code/ciscud/ciscud/ciscud.ise -intstyle ise -dd _ngo -nt timestamp -i -p xa3s200-ftg256-4 CiscUd.ngc CiscUd.ngd
+/mnt/ise/ISE/bin/lin/unwrapped/ngdbuild -ise /home/digitalfredy/altaimpedancia/repositorio/trunk/ld2ud/code/ciscud/ciscud/ciscud.ise -intstyle ise -dd _ngo -nt timestamp -i -p xa3s200-ftg256-4 CiscUd.ngc CiscUd.ngd
 s
 CommandLine-Par
 
