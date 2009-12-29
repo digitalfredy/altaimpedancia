@@ -12,7 +12,7 @@ Se eligió el chasis de un viejo carro de radiocontrol, por qué?
 
 == La SBC ==
 La [http://en.wikipedia.org/wiki/Single-board_computer SBC] elegida fué la Board de un router WRT54GL, Por qué?
- * Costo $0 por que se uso el router inalámbrico de la casa, en todo caso si hubiese compraado una SBC similar me hubiera costado el doble o más que el router nuevo y esto ocurre por que el router es mercado masivo.
+ * Costo $0 por que se uso el router inalámbrico de la casa, en todo caso si hubiese compraado una SBC similar hubiera costado el doble o más que el router nuevo y esto ocurre por que el router es mercado masivo.
  * Compatible con OpenWRT, distribución Linux para sistemas embebidos que aparte de tener ”drivers para todo” (IP,Ethernet,wi-fi,serial,...) tiene cientos de programas listos para instalar (por ejemplo avrdude para programar un microcontrolador avr) y soporta diferentes lenguajes de programación (c, shell scripting ...)
  * Comunicación wi-fi, ethernet, serial y jtag.
  * Hackeable con por lo menos una docena de hacks conocidos.
