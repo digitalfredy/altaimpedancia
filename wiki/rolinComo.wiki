@@ -6,7 +6,7 @@ Esto documento tiene como propósito que las personas interesadas en crear un ro
 == El chasis ==
 Se eligió el chasis de un viejo carro de radiocontrol, por qué?
  * Este chasis brindaba lo suficiente para hacer la primera implementación, no se necesitaba un rolin escalador, ni explorador ”militar” con orugas tipo tanque de guerra, la intención solo era mover el carro a modo de demostración para que otros vieran el potencial y se animaran a usar la plataforma para solucionar problemas más complejos.
- * Costo $0 por que era el típico "jugete" dañado y olvidado en el armario.
+ * Costo $0 por que era un "jugete" dañado olvidado en el armario.
  * La circuitería del carro estaba dañada y previamente la había retirado pero sus motores y componentes mecánicos estaban en perfecto estado. 
  * No perder tiempo y dinero haciendo estructuras con "palitos de balso y llanticas de acrilico" que al final son un problema y no una solución.
 
