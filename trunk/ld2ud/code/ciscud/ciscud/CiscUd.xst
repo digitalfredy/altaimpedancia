@@ -1,5 +1,5 @@
-set -tmpdir "/home/jegc/AltaImpedancia/svn/altaimpedancia/trunk/ld2ud/code/ciscud/ciscud/xst/projnav.tmp"
-set -xsthdpdir "/home/jegc/AltaImpedancia/svn/altaimpedancia/trunk/ld2ud/code/ciscud/ciscud/xst"
+set -tmpdir "/home/digitalfredy/altaimpedancia/repositorio/trunk/ld2ud/code/ciscud/ciscud/xst/projnav.tmp"
+set -xsthdpdir "/home/digitalfredy/altaimpedancia/repositorio/trunk/ld2ud/code/ciscud/ciscud/xst"
 run
 -ifn CiscUd.prj
 -ifmt mixed

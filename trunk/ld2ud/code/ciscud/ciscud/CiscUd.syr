@@ -1,18 +1,18 @@
-Release 10.1.03 - xst K.39 (lin64)
+Release 10.1 - xst K.31 (lin)
 Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
 --> 
-Parameter TMPDIR set to /home/jegc/AltaImpedancia/svn/altaimpedancia/trunk/ld2ud/code/ciscud/ciscud/xst/projnav.tmp
+Parameter TMPDIR set to /home/digitalfredy/altaimpedancia/repositorio/trunk/ld2ud/code/ciscud/ciscud/xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.09 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.23 secs
  
 --> 
-Parameter xsthdpdir set to /home/jegc/AltaImpedancia/svn/altaimpedancia/trunk/ld2ud/code/ciscud/ciscud/xst
+Parameter xsthdpdir set to /home/digitalfredy/altaimpedancia/repositorio/trunk/ld2ud/code/ciscud/ciscud/xst
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.09 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.23 secs
  
 --> 
 Reading design: CiscUd.prj
@@ -109,8 +109,6 @@ Slice Utilization Ratio Delta      : 5
 *                          HDL Compilation                              *
 =========================================================================
 Compiling verilog file "UnidadDeControl.v" in library work
-WARNING:HDLCompilers:298 - "UnidadDeControl.v" line 46 Too many digits specified in decimal constant
-WARNING:HDLCompilers:299 - "UnidadDeControl.v" line 410 Too many digits specified in binary constant
 Compiling verilog file "SumaUno.v" in library work
 Module <UnidadDeControl> compiled
 Compiling verilog file "Registro6Bits.v" in library work
@@ -514,7 +512,7 @@ Macro Statistics
 *                       Advanced HDL Synthesis                          *
 =========================================================================
 
-Loading device for application Rf_Device from file '3s200.nph' in environment /home/Xilinx/10.1/ISE.
+Loading device for application Rf_Device from file '3s200.nph' in environment /mnt/ise/ISE.
 WARNING:Xst:1710 - FF/Latch <Memoria_8_9> (without init value) has a constant value of 0 in block <Mem>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <Memoria_8_8> (without init value) has a constant value of 0 in block <Mem>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <Memoria_8_7> (without init value) has a constant value of 0 in block <Mem>. This FF/Latch will be trimmed during the optimization process.
@@ -1893,15 +1891,15 @@ Delay:               1.800ns (Levels of Logic = 0)
 =========================================================================
 
 
-Total REAL time to Xst completion: 14.00 secs
-Total CPU time to Xst completion: 13.20 secs
+Total REAL time to Xst completion: 37.00 secs
+Total CPU time to Xst completion: 33.81 secs
  
 --> 
 
 
-Total memory usage is 349312 kilobytes
+Total memory usage is 147680 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings : 1230 (   0 filtered)
+Number of warnings : 1228 (   0 filtered)
 Number of infos    :   48 (   0 filtered)
 

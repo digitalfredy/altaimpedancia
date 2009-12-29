@@ -13,7 +13,7 @@ module Memoria16X16Bits (/*AUTOARG*/
 
    //LoadInmediato del numero 23 en registro 0
 
-   always @ (posedge Reloj) begin
+   always @ (posedge Reloj, HabilitarSalida) begin
       Memoria[16'h0] = 16'h4000;
       Memoria[16'h1] = 16'h0017;
 

@@ -1,14 +1,14 @@
-Release 10.1.03 ngdbuild K.39 (lin64)
+Release 10.1 ngdbuild K.31 (lin)
 Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
 
-Command Line: /home/Xilinx/10.1/ISE/bin/lin64/unwrapped/ngdbuild -ise
-/home/jegc/AltaImpedancia/svn/altaimpedancia/trunk/ld2ud/code/ciscud/ciscud/cisc
-ud.ise -intstyle ise -dd _ngo -nt timestamp -i -p xa3s200-ftg256-4 CiscUd.ngc
+Command Line: /mnt/ise/ISE/bin/lin/unwrapped/ngdbuild -ise
+/home/digitalfredy/altaimpedancia/repositorio/trunk/ld2ud/code/ciscud/ciscud/cis
+cud.ise -intstyle ise -dd _ngo -nt timestamp -i -p xa3s200-ftg256-4 CiscUd.ngc
 CiscUd.ngd
 
 Reading NGO file
-"/home/jegc/AltaImpedancia/svn/altaimpedancia/trunk/ld2ud/code/ciscud/ciscud/Cis
-cUd.ngc" ...
+"/home/digitalfredy/altaimpedancia/repositorio/trunk/ld2ud/code/ciscud/ciscud/Ci
+scUd.ngc" ...
 Reading in constraint information from 'CiscUd.ucf'...
 Gathering constraint information from source properties...
 Done.
@@ -31,7 +31,7 @@ NGDBUILD Design Results Summary:
   Number of errors:     0
   Number of warnings:   0
 
-Total memory usage is 209592 kilobytes
+Total memory usage is 66620 kilobytes
 
 Writing NGD file "CiscUd.ngd" ...
 
