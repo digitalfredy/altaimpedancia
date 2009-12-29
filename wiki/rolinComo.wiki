@@ -1,7 +1,7 @@
 #summary Reseña sobre como se construyó el primer rolin
 #labels rolin
 
-Esto documento tiene como propósito que las personas interesadas en crear un rolin sepan como hicios el primero con el ánimo que esta referencia les sirva de guía, no es un documento para seguir al pié de la letra pues seguramente el chasis no será el mismo e incluso el router puede ser diferente.
+Este documento tiene como propósito que las personas interesadas en crear un rolin sepan como hicios el primero. El documento es una guía, no es necesario seguirlo al pié de la letra pues seguramente el chasis no será el mismo e incluso el router puede ser diferente.
 
 == El chasis ==
 Se eligió el chasis de un viejo carro de radiocontrol, por qué?
