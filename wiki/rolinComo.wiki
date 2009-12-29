@@ -19,4 +19,8 @@ La [http://en.wikipedia.org/wiki/Single-board_computer SBC] elegida fué la Boar
  * Buena información disponible gratis en internet
 
 == La batería ==
-Una vez elegido el chasis me fuí con el al mercado electrónico (a la 19 con 9 en Bogotá/Colombia) en busca
+Una vez elegido el chasis  y la SBC me fuí con el al mercado electrónico (a la 19 con 9 en Bogotá/Colombia) en busca de una batería adecuada, pero qué es adecuada?
+ * 12 Voltios (requeridos por la SBC)
+ * Mínimo 1 Amperio (requerido por la SBC) pero preferiblemente superior pues además de la SBC hay que alimentar los motores y el microcontrolador.
+ * Que brinde un nivel alto de autonomía pero que su peso pueda ser soportado y movilizado por el chasis del carro de radiocontrol.
+ * Que su forma facilite el montaje en el chasis del carro de radiocontrol
