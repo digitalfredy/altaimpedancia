@@ -1,0 +1,13 @@
+#summary Robot Linux Inalámbrico - MICRO HOW TO para README
+#labels rolin,doc
+
+
+MICRO HOW TO
+1- Consiga un router compatible con OpenWrt, recomendamos uno con características similares o superiores al [http://wiki.openwrt.org/oldwiki/openwrtdocs/hardware/linksys/wrt54gl#info WRT54GL], puede ver [http://wiki.openwrt.org/toh/start esta tabla] y [http://wiki.openwrt.org/oldwiki/tableofhardware esta otra].
+2- Instale OpenWRT en el router, configure y habilite la wireless, el servidor ssh, instale bash y usando scp ponga rolin.sh en el home de root y agregele permiso de ejecución.
+4- Programe microcontrolador con rolin_avr.hex si usa linux le recomendamos avrdude, si usa un programador paralelo, creo que nosotros usamos [http://www.qsl.net/ba1fb/avrisp.gif este] o [http://my.opera.com/CrazyTerabyte/blog/2007/10/26/first-contact-with-atmega8-microcontroller-part-2 este], o mire en [http://digitalfredy.blogspot.com/2009_09_01_archive.html este post]
+{{{
+make program
+}}}
+5- Haga el circuito del esquemático y conectelo al puerto serial del enrrutador, y a la alimentación (La alimentación la sacamos de los 12 voltios del router) verifique que todo esté adecuadamente conectado.
+6- Alimente a rolin y pongalo a funcionar.
