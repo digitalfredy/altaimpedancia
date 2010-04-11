@@ -1,0 +1,16 @@
+#summary Electrónica con Software Libre, Free Hardware Design y Open Source Hardware - guía para publicar proyectos
+#labels altaz
+= Definición =
+Publicar un proyecto es:
+ * Poner un nombre de versión 
+ * Crear una versión binaria para descarga con archivos README e INSTALL
+ * Crear una versión de fuentes para descarga con archivo README
+ * Revisar que las páginas wiki cumplan unos requisitos mínimos
+ * Revisar que se cumpla con lo especificado en [altazComoIniciarUnProyecto cómo iniciar un proyecto]
+
+== Sumario ==
+Esta página es un borrador, el primer proyecto publicado es rolin y dejaré algunas notas para luego mejorar la página
+
+ * Hacer el README en el wiki y luego copiarlo al archivo, mirar [rolinReadmeBin]
+ * Hacer el archivo INSTALL en el wiki y copiarlo archivo, mirar [rolinInstallBin]
+ * Revisar que todas las páginas tengan incluido el menú y tengan la etiqueta con el nombre corto del proyecto y e la descripción tengan el nombre largo del proyecto y la descripción de la página.
