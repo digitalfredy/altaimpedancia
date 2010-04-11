@@ -1,0 +1,16 @@
+#summary Robot Linux Inalámbrico
+#labels rolin
+#sidebar rolinMenuWiki
+http://rolin.altaimpedancia.org/
+
+Esta es la primera publicación de rolín y aún no tenemos un elaborado archivo INSTALL, recomendamos revisar http://code.google.com/p/altaimpedancia/wiki/rolinComo
+
+De forma resumida usted debería:
+ # Tener un chasis con motores, un enrrutador compatible con OpenWRT para montar en ese chasis, una o dos baterías para alimentar los motores, el enrrutador y asumimos que se puede defender en Linux y que sabe suficiente de circuitos como para implementar rolin.pdf/rolin.png.
+ # Instalar Linux OpenWRT en el enrrutador e instalar bash, configurar la wireless y ssh y subir el programa rolin.sh al home del root usando scp.
+ # Programar el microcontrolador atmega168p con rolin_avr.hex, si usa Linux avrdude tal vez sea el camino.
+ # Implementar el circuito del esquema rolin.pdf/rolin.png y conectarlo al enrrutador, en caso de ser necesario ser crativo y modificar el circuito para acomodarlo a sus necesidades
+ # Una vez tenga todo conectado y funcionando debe conectarse por ssh al enrrutador y ejecutar el programa rolin.sh asi:
+{{{
+# bash rolin.sh
+}}}
