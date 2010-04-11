@@ -1,5 +1,6 @@
 #summary Robot Linux Inalámbrico
 #labels rolin
+#sidebar rolinMenuWiki
 
 <wiki:video url="http://www.youtube.com/watch?v=f5zX4TaSn8I"/>
 
