@@ -7,9 +7,10 @@ Este directorio contiene una distribución "binaria" de rolin(Robot Linux Inalá
 
 Descripción de los archivos en el directorio:
 DiagramaBloques.png : Diagrama que documenta el funcionamiento general
-rolin.pdf  : Esquemático del circuito en blanco y negro (formato pdf)
-rolin.png  : Esquemático del circuito en color (formato png)
-rolin_avr.hex : Programa para el microcontrolador atmega168p
-rolin.sh  : Programa para el enrrutador con OpenWrt
+
+ * rolin.pdf  : Esquemático del circuito en blanco y negro (formato pdf)
+ * rolin.png  : Esquemático del circuito en color (formato png)
+ * rolin_avr.hex : Programa para el microcontrolador atmega168p
+ * rolin.sh  : Programa para el enrrutador con OpenWrt
 
 Para poner en marcha a rolin por favor lea el archivo INSTALL
