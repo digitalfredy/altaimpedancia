@@ -7,7 +7,7 @@ Lista de materiales (para referencia ver video en página web):
  * Enrrutador Linksys WRT54GL
  * Chasis carro radiocontrol con motores que puedan funcionar a 12V
  * Batería de 12V/1A que no sea muy pesada
- * Materiales electrónicos referenciados en esquema rolin.pdf
+ * Materiales electrónicos referenciados en el esquema rolin.pdf
  * Protoboard, cables y conectores. (pcb sin probar y por eso no incluido)
 
 Construcción:
