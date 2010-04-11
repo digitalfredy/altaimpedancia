@@ -1,0 +1,7 @@
+#summary Robot Linux Inalámbrico - Menú
+#labels rolin
+  * [rolin Inicio]
+  * [rolinPropuestaProyecto Propuesta]
+  * [http://code.google.com/p/altaimpedancia/source/browse/#svn/trunk/rolin/code Código Fuente]
+  * [http://code.google.com/p/altaimpedancia/w/list?q=label:rolin Páginas Wiki]
+  * [http://code.google.com/p/altaimpedancia/source/browse/#svn/trunk/rolin/doc Documentación]
