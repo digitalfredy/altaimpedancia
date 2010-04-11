@@ -1,5 +1,5 @@
 #summary Robot Linux Inalámbrico - README para distribución binaria
-#labels rolin
+#labels rolin,doc
 #sidebar rolinMenuWiki
 http://rolin.altaimpedancia.org/
 
