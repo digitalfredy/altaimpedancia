@@ -1,9 +1,9 @@
-#summary Robot Linux Inalámbrico - README para distribución binaria
+#summary Robot Linux Inalámbrico - README distribución para usuarios
 #labels rolin,doc
 #sidebar rolinMenuWiki
 http://rolin.altaimpedancia.org/
 
-Este directorio contiene una distribución "binaria" de rolin(Robot Linux Inalámbrico), si busca codigo fuente, diagramas esquemáticos editables y otra información para desarrolladores por favor consultar el sitio web principal.
+Este directorio contiene una distribución lista para ser usada de rolin (Robot Linux Inalámbrico), si busca codigo fuente, diagramas esquemáticos editables y otra información para desarrolladores por favor consultar el sitio web principal.
 
 Descripción de los archivos en el directorio:
  * !DiagramaBloques.png : Diagrama que documenta el funcionamiento general
