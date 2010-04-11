@@ -1,5 +1,5 @@
-#summary Reseña sobre como se construyó el primer rolin
-#labels rolin
+#summary Robot Linux Inalámbrico - Reseña construcción primer rolin
+#labels rolin,doc
 #sidebar rolinMenuWiki
 
 Este documento tiene como propósito que las personas interesadas en crear un rolin sepan como hicios el primero, el documento es una guía, no es necesario seguirlo al pié de la letra pues seguramente el chasis no será el mismo e incluso el router puede ser diferente.
