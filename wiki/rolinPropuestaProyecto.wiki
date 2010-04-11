@@ -1,5 +1,5 @@
-#summary Robot Linux Inalámbrico
-#labels rolin
+#summary Robot Linux Inalámbrico - Propuesta
+#labels rolin,doc
 #sidebar rolinMenuWiki
  * Nombre del proyecto: Robot Linux Inalámbrico
  * Nombre corto del proyecto: rolin
