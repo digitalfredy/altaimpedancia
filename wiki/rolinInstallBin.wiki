@@ -19,9 +19,9 @@ Construcción:
  # Instale bash en OpenWRT
  # Suba rolin.sh al home del root (en el enrrutador) usando scp
  # Programe el microcontrolador atmega168p con rolin_avr.hex (use avrdude si usa linux)
- # Destape el enrrutador y solde conectores para puerto serial FOTO-PENDIENTE
- # Agregue alimentación de 12V al conector según FOTO-PENDIENTE
- # Implemente el circuito en un protoboard
+ # Destape el enrrutador y solde conectores para puerto serial según foto serial.jpg
+ # Agregue alimentación de 12V al conector según foto agregar12V.jpg
+ # Implemente el circuito en un protoboard (hay un pcb sin probar en versión desarrollo)
  # Conecte el circuito al enrrutador y a los motores
  # Revise que las conexiones sean correctas
  # Alimente el enrrutador con la batería y espere que termine de arrancar
