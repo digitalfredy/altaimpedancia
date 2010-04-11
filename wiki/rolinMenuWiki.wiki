@@ -1,4 +1,4 @@
-#summary Robot Linux Inalámbrico - Menú
+#summary Robot Linux Inalámbrico - Menú para páginas Wiki
 #labels rolin
   * [rolin Inicio]
   * [rolinPropuestaProyecto Propuesta]
