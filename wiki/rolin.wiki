@@ -1,4 +1,4 @@
-#summary Robot Linux Inalámbrico
+#summary Robot Linux Inalámbrico - Página de Inicio
 #labels rolin
 #sidebar rolinMenuWiki
 
