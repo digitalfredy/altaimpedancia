@@ -1,0 +1,13 @@
+#summary Robot Linux Inalambrico - README para distribución código fuente
+#labels rolin,doc
+#sidebar rolinMenuWiki
+http://rolin.altaimpedancia.org/
+
+DiagramaBloques.vue : Editable con http://sourceforge.net/projects/tuftsvue/
+esquema : esquema y simbolos editables con http://www.gpleda.org/tools/gschem/
+makefile : para compilar rolin_avr.c y programar micro por serial, tal vez deba modificarlo
+pcb : pcb editable con http://www.gpleda.org/tools/pcb/index.html
+rolin_avr.c : compilable con gcc/avr-gcc, avrdude para programar el micro
+rolin.sh : script para bash
+
+Para mayor información visite el sitio web
