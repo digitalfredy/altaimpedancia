@@ -1,6 +1,6 @@
 #summary Video de presentación para rolin
 #labels rolin
-
+#sidebar rolinMenuWiki
 == Cuadro 1 - Imagen ==
 Foto de rolin con emblema de la Universidad y de la carrera, logos de digitalfredy y altaimpedancia.
 Este primer cuadro debe ser muy bien hecho por que es la imagen que aparecerá en youtube (tengo entendido que aparece el primer cuadro)
