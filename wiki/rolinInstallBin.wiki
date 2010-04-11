@@ -1,5 +1,5 @@
-#summary Robot Linux Inalámbrico
-#labels rolin
+#summary Robot Linux Inalámbrico - INSTALL para distribución binaria
+#labels rolin,doc
 #sidebar rolinMenuWiki
 http://rolin.altaimpedancia.org/
 
