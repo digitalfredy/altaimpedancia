@@ -1,4 +1,4 @@
-#summary Robot Linux Inalambrico - README para distribución código fuente
+#summary Robot Linux Inalambrico - README distribución para investigación y desarrollo
 #labels rolin,doc
 #sidebar rolinMenuWiki
 http://rolin.altaimpedancia.org/
