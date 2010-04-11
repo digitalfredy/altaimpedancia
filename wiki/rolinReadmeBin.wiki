@@ -11,5 +11,7 @@ Descripción de los archivos en el directorio:
  * rolin.png  : Esquemático del circuito en color (formato png)
  * rolin_avr.hex : Programa para el microcontrolador atmega168p
  * rolin.sh  : Programa para el enrrutador con !OpenWrt
+ * serial.jpg : Foto puerto serial soldado
+ * agregar12V.jpg : Foto agregar 12V a conector en puerto serial
 
 Para poner en marcha a rolin por favor lea el archivo INSTALL
