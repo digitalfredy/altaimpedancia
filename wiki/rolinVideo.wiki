@@ -1,4 +1,4 @@
-#summary Video de presentación para rolin
+#summary Robot Linux Inalámbrico - Prototipo Video de presentación
 #labels rolin
 #sidebar rolinMenuWiki
 == Cuadro 1 - Imagen ==
