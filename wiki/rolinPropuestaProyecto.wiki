@@ -1,5 +1,6 @@
 #summary Robot Linux Inalámbrico
 #labels rolin
+#sidebar rolinMenuWiki
  * Nombre del proyecto: Robot Linux Inalámbrico
  * Nombre corto del proyecto: rolin
  * Objetivo general hacer una plataforma para robótica.
