@@ -3,14 +3,32 @@
 #sidebar rolinMenuWiki
 http://rolin.altaimpedancia.org/
 
-Esta es la primera publicación de rolín y aún no tenemos un elaborado archivo INSTALL, recomendamos revisar http://code.google.com/p/altaimpedancia/wiki/rolinComo
+Lista de materiales (para referencia ver video en página web):
+ * Enrrutador Linksys WRT54GL
+ * Chasis carro radiocontrol con motores que puedan funcionar a 12V
+ * Batería de 12V/1A que no sea muy pesada
+ * Materiales electrónicos referenciados en esquema rolin.pdf
+ * Protoboard, cables y conectores. (pcb sin probar y por eso no incluido)
 
-De forma resumida usted debería:
- # Tener un chasis con motores, un enrrutador compatible con OpenWRT para montar en ese chasis, una o dos baterías para alimentar los motores, el enrrutador y asumimos que se puede defender en Linux y que sabe suficiente de circuitos como para implementar rolin.pdf/rolin.png.
- # Instalar Linux OpenWRT en el enrrutador e instalar bash, configurar la wireless y ssh y subir el programa rolin.sh al home del root usando scp.
- # Programar el microcontrolador atmega168p con rolin_avr.hex, si usa Linux avrdude tal vez sea el camino.
- # Implementar el circuito del esquema rolin.pdf/rolin.png y conectarlo al enrrutador, en caso de ser necesario ser crativo y modificar el circuito para acomodarlo a sus necesidades
- # Una vez tenga todo conectado y funcionando debe conectarse por ssh al enrrutador y ejecutar el programa rolin.sh asi:
+Construcción:
+ # Mire http://www.youtube.com/watch?v=f5zX4TaSn8I para hacerse una idea
+ # Revise !DiagramaBloques.png para entender la generalidad
+ # Lea http://code.google.com/p/altaimpedancia/wiki/rolinComo
+ # Instale http://openwrt.org/ en el Linksys WRT54GL
+ # Habilite la wireless y ssh en OpenWRT
+ # Instale bash en OpenWRT
+ # Suba rolin.sh al home del root (en el enrrutador) usando scp
+ # Programe el microcontrolador atmega168p con rolin_avr.hex (use avrdude si usa linux)
+ # Destape el enrrutador y solde conectores para puerto serial FOTO-PENDIENTE
+ # Agregue alimentación de 12V al conector según FOTO-PENDIENTE
+ # Implemente el circuito en un protoboard
+ # Conecte el circuito al enrrutador y a los motores
+ # Revise que las conexiones sean correctas
+ # Alimente el enrrutador con la batería y espere que termine de arrancar
+ # Conectese por ssh al enrrutador y ejecute 
 {{{
 # bash rolin.sh
 }}}
+ # Pruebe si funciona correctamente
+ # Ensamble el enrrutador, el protoboard y la batería en el chasis
+ # Diviertase y si quiere modificar el proyecto baje la versión para desarrolo
