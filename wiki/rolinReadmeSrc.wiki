@@ -3,7 +3,7 @@
 #sidebar rolinMenuWiki
 http://rolin.altaimpedancia.org/
 
-DiagramaBloques.vue : Editable con http://sourceforge.net/projects/tuftsvue/
+!DiagramaBloques.vue : Editable con http://sourceforge.net/projects/tuftsvue/
 esquema : esquema y simbolos editables con http://www.gpleda.org/tools/gschem/
 makefile : para compilar rolin_avr.c y programar micro por serial, tal vez deba modificarlo
 pcb : pcb editable con http://www.gpleda.org/tools/pcb/index.html
