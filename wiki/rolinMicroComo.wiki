@@ -1,6 +1,6 @@
 #summary Robot Linux Inalámbrico - MICRO HOW TO para README
-#labels rolin,doc
-
+#labels rolin,doc,Deprecated
+#sidebar rolinMenuWiki
 
 MICRO HOW TO
 1- Consiga un router compatible con OpenWrt, recomendamos uno con características similares o superiores al [http://wiki.openwrt.org/oldwiki/openwrtdocs/hardware/linksys/wrt54gl#info WRT54GL], puede ver [http://wiki.openwrt.org/toh/start esta tabla] y [http://wiki.openwrt.org/oldwiki/tableofhardware esta otra].
