@@ -13,5 +13,6 @@ Descripción de los archivos en el directorio:
  * rolin.sh  : Programa para el enrrutador con !OpenWrt
  * serial.jpg : Foto puerto serial soldado
  * agregar12V.jpg : Foto agregar 12V a conector en puerto serial
+ * alimentacion12V.jpg : Foto detalle conector +12V del router
 
 Para poner en marcha a rolin por favor lea el archivo INSTALL
