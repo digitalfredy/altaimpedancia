@@ -14,6 +14,7 @@ Construcción:
  # Mire http://www.youtube.com/watch?v=f5zX4TaSn8I para hacerse una idea
  # Revise !DiagramaBloques.png para entender la generalidad
  # Lea http://code.google.com/p/altaimpedancia/wiki/rolinComo
+ # Lea http://oldwiki.openwrt.org/OpenWrtDocs(2f)Hardware(2f)Linksys(2f)WRT54GL.html
  # Instale http://openwrt.org/ en el Linksys WRT54GL
  # Habilite la wireless y ssh en OpenWRT
  # Instale bash en OpenWRT
