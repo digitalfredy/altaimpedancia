@@ -1,5 +1,5 @@
 #summary Indice de eventos en los que altaimpedancia ha estado presente.
 *Eventos*
- * [eventCampusPartyColombia2009|Cparty 2009]
- * [eventSLEduDuitama|Duitama]
- * [eventSLUD8|SLUD 8]
+ * [eventCampusPartyColombia2009 Cparty 2009]
+ * [eventSLEduDuitama Duitama]
+ * [eventSLUD8 SLUD 8]
