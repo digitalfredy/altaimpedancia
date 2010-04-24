@@ -1,0 +1,15 @@
+#summary participación de altaimpedancia en 1er congreso departamental de software libre en la educación
+#labels conferencia,software
+
+*altaimpedancia* participó en el primer congreso departamental de software libre en la educación llevado a cabo en Duitama - Boyaca los días 12, 13 y 14 de agosto de 2009 con la conferencia [http://code.google.com/p/altaimpedancia/wiki/confSLAlternativaElectronica Software Libre una alternativa para soluciones en el campo de la electrónica].
+
+||[http://altaimpedancia.googlecode.com/svn/trunk/misc/conferencias/SLAE/Duitama2009/alternativa.pdf Descargar la presentación]||
+
+= Fotos de la conferencia =
+
+||http://farm5.static.flickr.com/4059/4547418632_82e6caf6e1.jpg||http://farm5.static.flickr.com/4007/4547418626_af8ddee4a5.jpg||
+||http://farm5.static.flickr.com/4030/4547418624_a43d2bf139.jpg||http://farm5.static.flickr.com/4011/4547418620_1b9e25cbfb.jpg||
+||http://farm5.static.flickr.com/4014/4547418596_2d375a3d2f.jpg||http://farm5.static.flickr.com/4030/4547418594_8efd82a1b0.jpg||
+||http://farm5.static.flickr.com/4019/4547408252_6655e604e2.jpg||http://farm5.static.flickr.com/4008/4547408250_9c74a06590.jpg||
+||http://farm5.static.flickr.com/4014/4547408246_f2c5e35c36.jpg||http://farm5.static.flickr.com/4067/4547408242_c4117de596.jpg||
+||http://farm5.static.flickr.com/4019/4547408240_595687e96b.jpg||http://farm5.static.flickr.com/4001/4547408234_a51fb6f4f4.jpg||
