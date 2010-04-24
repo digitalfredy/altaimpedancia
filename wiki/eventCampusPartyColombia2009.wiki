@@ -1,0 +1,17 @@
+#summary Participación de altaimpedancia en Campus Party Colombia 2009
+#labels conferencia,taller
+
+<wiki:toc max_depth="1" />
+
+*altaimpedancia* participó de manera informal en Campus Party Colombia 2009 con la conferencia [confOpenSourceHardware Extendiendo el modelo del software libre al hardware - Open Source Hardware] y un taller de programación de fpga's y tarjetas de desarollo [http://arduino.cc arduino].
+
+El taller fue desarrollado junto con el colectivo [http://nerdbots.info nerdbots] ([http://decolector.net Camilo Martinez] y [http://zea.randomlab.net Gabriel Zea]) 
+
+||[http://code.google.com/p/altaimpedancia/source/browse/trunk/misc/conferencias/OSH/CPartyCo2009/OpenSourceHardware.pdf Descargar la presentación]||
+
+= Videos de la conferencia =
+<wiki:video url="http://www.youtube.com/watch?v=BkgirUJzOkY"/>
+
+= Videos del taller =
+
+
