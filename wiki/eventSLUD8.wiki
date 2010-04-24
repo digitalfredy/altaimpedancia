@@ -10,6 +10,5 @@
 = Extendiendo el modelo del software libre al hardware - Open Source Hardware  =
 ||[http://altaimpedancia.googlecode.com/svn/trunk/misc/conferencias/OSH/SLUD8/OpenSourceHardware.pdf Descargar la presentación]||
 
-||http://farm5.static.flickr.com/4002/4546565671_03b5d4d2e4.jpg||
+||http://farm5.static.flickr.com/4002/4546565671_03b5d4d2e4.jpg http://farm5.static.flickr.com/4070/4546586477_ec054f25a1.jpg||
 ||http://farm5.static.flickr.com/4021/4546565541_4b5e37f681.jpg||
-||http://farm5.static.flickr.com/4070/4546586477_98ed592880.jpg||
