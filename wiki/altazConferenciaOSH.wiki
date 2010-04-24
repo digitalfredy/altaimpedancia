@@ -1,0 +1,6 @@
+#summary Conferencia Extendiendo el modelo del software libre al hardware - Open Source Hardware
+#labels conferencia,osh,fhd
+
+= Extendiendo el modelo del software libre al hardware - Open Source Hardware =
+
+Esta conferencia muestra como a partir del modelo del Software Libre el diseño de hardware también puede ser compartido. Se hace una explicación rápida de como se hace el hardware para luego definir y contextualizar el término Open Source Hardware y otros necesarios para comprenderlo y finalmente se muestran algunos de los proyectos de Open Source Hardware más representativos del mundo.
