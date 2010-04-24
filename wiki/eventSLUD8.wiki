@@ -1,0 +1,18 @@
+#summary Participación de altaimpedancia en la SLUD 8
+#labels conferencia,osh,fhd,software
+
+*altaimpedancia* participó en la [http://code.google.com/p/altaimpedancia/wiki/confOpenSourceHardware  VIII Semana Linux de la Universidad Distrital (SLUD)] con las conferencias [http://code.google.com/p/altaimpedancia/wiki/confOpenSourceHardware Extendiendo el modelo del software libre al hardware - Open Source Hardware] y [http://code.google.com/p/altaimpedancia/wiki/confSLAlternativaElectronica Software Libre una alternativa para soluciones en el campo de la electrónica]
+
+= Software Libre una alternativa para soluciones en el campo de la electrónica =
+
+||[http://altaimpedancia.googlecode.com/svn/trunk/misc/conferencias/SLAE/SLUD8/alternativa.pdf Descargar la presentación]||
+
+= Extendiendo el modelo del software libre al hardware - Open Source Hardware  =
+||[http://altaimpedancia.googlecode.com/svn/trunk/misc/conferencias/OSH/SLUD8/OpenSourceHardware.pdf Descargar la presentación]||
+
+||http://farm5.static.flickr.com/4002/4546565671_03b5d4d2e4.jpg||
+||http://farm5.static.flickr.com/4021/4546565541_4b5e37f681.jpg||
+||http://farm5.static.flickr.com/4070/4546586477_98ed592880.jpg||
+
+
+
