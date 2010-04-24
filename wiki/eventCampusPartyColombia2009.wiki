@@ -14,3 +14,4 @@ El taller fue desarrollado junto con el colectivo [http://nerdbots.info nerdbots
 <wiki:video url="http://www.youtube.com/watch?v=DRXKFsNOjBs"/>
 
 = Videos del taller =
+<wiki:video url="http://www.youtube.com/watch?v=9IllPRGR3LM"/>
