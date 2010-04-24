@@ -1,7 +1,7 @@
 #summary Barra lateral para todas las páginas del wiki
 #labels altaz
 
- * *Proyectos*
-  * [rolin Robot Linux Inalámbrico]
-  * [ld2ud Liberando Digitales II UD]
- * [http://code.google.com/p/altaimpedancia/w/list?q=label:conferencia Conferencias y talleres]
+*Proyectos*
+ * [rolin Robot Linux Inalámbrico]
+ * [ld2ud Liberando Digitales II UD]
+*[http://code.google.com/p/altaimpedancia/w/list?q=label:conferencia Conferencias]*
