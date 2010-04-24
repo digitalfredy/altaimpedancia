@@ -1,7 +1,7 @@
 #summary participación de altaimpedancia en 1er congreso departamental de software libre en la educación
 #labels conferencia,software
 
-*altaimpedancia* participó en el primer congreso departamental de software libre en la educación llevado a cabo en Duitama - Boyaca los días 12, 13 y 14 de agosto de 2009 con la conferencia [http://code.google.com/p/altaimpedancia/wiki/confSLAlternativaElectronica Software Libre una alternativa para soluciones en el campo de la electrónica].
+*altaimpedancia* participó en el primer congreso departamental de software libre en la educación llevado a cabo en Duitama - Boyaca los días 12, 13 y 14 de agosto de 2009 con la conferencia [confSLAlternativaElectronica Software Libre una alternativa para soluciones en el campo de la electrónica].
 
 ||[http://altaimpedancia.googlecode.com/svn/trunk/misc/conferencias/SLAE/Duitama2009/alternativa.pdf Descargar la presentación]||
 
