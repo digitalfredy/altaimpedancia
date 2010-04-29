@@ -1,0 +1,16 @@
+#summary Participación de altaimpedancia en el FLISoL Buga 2010
+#labels conferencia,osh,fhd
+
+*altaimpedancia* participo en el [http://flisol.info/FLISOL2010/Colombia/Buga FLISoL Buga 2010] con la conferencia 
+[confOpenSourceHardware Extendiendo el modelo del software libre al hardware - Open Source Hardware].
+
+||[http://altaimpedancia.googlecode.com/svn/trunk/misc/conferencias/OSH/FLISoL2010Buga/OpenSourceHardware.pdf Descargar la presentación]||
+
+= Videos =
+<wiki:video url="http://www.youtube.com/watch?v=EqV8j6mFL1o"/>
+<wiki:video url="http://www.youtube.com/watch?v=wNHiv19Ms-U"/>
+<wiki:video url=""/>
+
+= Fotos =
+
+http://www.flickr.com/photos/altaimpedancia/sets/72157623958950252/show/
