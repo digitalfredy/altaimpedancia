@@ -1,0 +1,26 @@
+#summary Guia para difusion
+#labels altaz
+
+Inicio esta pag como un borrador y solo tendre en cuenta las conferencias
+
+Se difunde para incentivar (objetivo de altaimpedancia)
+
+Lo que puede pasar es:
+ * Tenemos una conferencia nos invitan a presentarla
+ * Nos invitan a un evento y hacemos una nueva conferencia
+
+
+Una conferencia es un acto social por lo cual hay que tener en cuenta el lugar y los actores:
+
+= Actividad, Evento, lugar, fecha y hora =
+
+Ejemplo de anuncio con toda la info y que puede usarse antes de la conferencia para anunciarla y luego en las descripcione de las galerias ...
+
+altaimpedancia presenta la conferencia "Open Source Hardware" (OSH) en el evento "Octava Semana Linux Univesidad Distrital" (SLUD8) en el auditorio Sabio Caldas de la sede central de la Universidad Distrital (Cr 8 No 40-62 Bog,Co) el 3 diciembre de 2009 a las 4:30 pm. Entrada Libre.
+
+= Personas involucradas =
+ * Los que nos invitan: Deberiamos agregarlos a una DB en el nas y ellos deberian darnos el certificado de asistencia a la conferencia.
+ * Los los asistentes: Reciben conocimento y referencias como URLs
+ * Nosotros: 
+  * Antes de la conferencia anunciarla por microblog, youtube y flikr
+  * Despues: Deberiamos publicar Videos (youtube), fotos (flikr) y diapositivas (googlecode) y agregar la entrada en pagina principal con los enlaces.
