@@ -8,3 +8,14 @@
  * Herramientas para editar o visualizar archivos publicados
  * Disponibilidad de Documentación
  * Cuestiones legales (licencias,patentes...)
+
+
+
+Otras notas relacionadas que tenia en un papel:
+
+ * Formato
+  * Obra (ej un diagrama)
+  * Información (ej metadata)
+
+|| *Logica* || Diseño, Software, Protocolos, Formatos ||
+|| *Fisica* || Herramientas, Maquinas, Materiales/Insumos, Dispositivos ||
