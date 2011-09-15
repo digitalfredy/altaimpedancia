@@ -1,0 +1,294 @@
+\documentclass{beamer}
+
+\mode<presentation>
+{
+  \usetheme[secheader]{Madrid}
+  \setbeamercovered{transparent}
+}
+
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage{times}
+\usepackage[T1]{fontenc}
+\usepackage{hyperref}
+\hypersetup{pdfkeywords=open free source colombia Software Libre abierto simulación circuitos circuit simulation Freedom Day 2011 CIDCA AltaImpedancia alta impedancia electrónica gEDA gnucap qucs scilab}
+
+\title[Simulación de circuitos con Software Libre]{Simulación de circuitos con Software Libre}
+
+\author[JEGC]{Jorge~Ernesto~Guevara~Cuenca}
+
+\institute[\url{www.altaimpedancia.org}]
+{ \inst{1}
+  Colibri - Comunidad de Usuarios de Software Libre en Colombia\\
+  \url{http://www.slcolombia.org}
+  \and
+  \inst{2}
+  Alta Impedancia\\
+  \url{http://www.altaimpedancia.org}
+  \and
+  \inst{3}
+  Hackbo - Hackerspace Bogotá\\
+  \url{http://www.hackbo.co}
+  \and
+  \inst{4}
+  Universidad Autónoma de Colombia\\
+  \url{http://www.fuac.edu.co}
+}
+
+\date[SFD Bogotá 2011]
+{Software Freedom Day Bogotá\\CIDCA\\17 de septiembre de 2011}
+
+\subject{Simulación de circuitos con Sofware Libre, Software Freedom Day Bogotá, CIDCA, 17 de septiembre de 2011}
+
+\logo{\includegraphics[height=1cm]{img/altaimpedancia}}
+
+\AtBeginSection[]
+{ \begin{frame}<beamer>{Agenda}
+    \tableofcontents[currentsection,currentsubsection]
+  \end{frame}}
+
+\beamerdefaultoverlayspecification{<+->}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}
+  \frametitle{Agenda}
+  \tableofcontents
+\end{frame}
+
+\section<presentation>*{Simulación de circuitos con Software Libre}
+
+\begin{frame}{Objetivos}
+  \begin{block}{Principal}
+    Mostrar como simular circuitos electricos mediante ejemplos con los programas qucs, scilab y gEDA con gnucap.
+  \end{block}
+  \begin{block}{Especificos}
+    \begin{itemize}
+    \item Mostrar como usar los programas para hacer análisis transitorio y de frecuencia de algunos circuitos con dispositivos activos y pasivos.
+    \item Hacer una comparación entre los programas mostrados durante la charla.
+    \end{itemize}
+  \end{block}
+\end{frame}
+
+\section{Terminología}
+
+\begin{frame}
+  \frametitle{Glosario}
+  \begin{itemize}
+  \item HDL acrónimo de Hardware Description Language (Lenguaje de descripción de hardware).
+  \item PCB acrónimo de Printed Circuit Board (Tarjeta de circuito impreso).
+  \item VLSI acrónimo de Very Large Scale Integration.
+  \item FPGA acrónimo de Field Programable Gate Array.
+  \item Netlist, lista de conexiones.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{¿Qué es CAD?}
+  \begin{itemize}
+  \item CAD es el acrónimo de Computer Aided Design (Diseño asistido por computador).
+  \item En principio se refiere a aplicaciones para hacer dibujos.
+  \item Se usa en general para cualquier campo del conocimiento en el que se pueda diseñar por medio de un computador.
+  \item ECAD es el acrónimo de Electronic Computer Aided Design (Diseño electrónico asistido por computador).
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{¿Qué es EDA?}
+  \begin{itemize}
+  \item EDA es el acrónimo de Electronic Design Automation (Automatización de diseño electrónico).
+  \item Se refiere a todas las herramientas involucradas en el desarrollo de hardware.
+  \item Es todo el software ECAD y hardware requeridos para el desarrollo de hardware.
+  \item Hardware requerido
+    \begin{itemize}
+    \item HDK (Hardware Development Kits)
+    \item HPP (Hardware Prototyping Plataforms).
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Herramientas EDA}
+  \begin{itemize}
+  \item Lenguajes de descripción de circuitos.
+    \begin{itemize}
+    \item netlist, ejemplo spice.
+    \item HDL, ejemplo verilog.
+    \end{itemize}
+    \vspace{9pt}
+  \item Captura esquemática y modelado gráfico.
+    \begin{itemize}
+    \item Diagramas de flujo.
+    \item ASM.
+    \item etc\dots{}
+    \end{itemize}
+
+    \vspace{9pt}
+  \item Simuladores y visualizadores.
+    \vspace{9pt}
+  \item Fabricación de tarjetas de cirtuitos impresos (PCB).
+  \item Fabricación de circuitos integrados (VLSI).
+  \item Programación de dispositivos lógicos (FPGA, PAL, PLD).
+  \end{itemize}
+\end{frame}
+
+\section{Presentación del software y primer ejemplo básico}
+
+\subsection{qucs}
+
+\begin{frame}
+  
+\end{frame}
+
+\subsection{scilab}
+
+\begin{frame}
+  
+\end{frame}
+
+\subsection{gEDA}
+
+\begin{frame}{gschem}{Capturador esquemático}
+  \includegraphics[scale=0.5]{img/gschem.png}
+\end{frame}
+
+%Para configurar el fondo blanco en gschem se debe crear el archivo gschemrc en el directorio .gEDA dentro del home del usuario con el siguiente contenido:
+% (load (build-path geda-rc-path "gschem-colormap-lightbg"))
+
+\begin{frame}{gschem}{Instertar componentes}
+  SPICE\\
+  vdc-1\\
+  gnucap-npn-1\\
+\end{frame}
+
+\begin{frame}[fragile]
+  \framtitle{Ejecutar gschem}
+  \begin{block}{}
+\begin{verbatim}
+gschem
+\end{verbatim}
+  \end{block}
+\end{frame}
+
+\begin{frame}
+  gnetlist -s -g spice-sdb -o colpitts.ckt colpitts.sch
+  gnucap -b colpitts.ckt
+  gwave colpitts.dat
+\end{frame}
+
+\section{A donde ir por más...}
+
+\begin{frame}{Otros programas}
+  \begin{itemize}
+  \item ktechlab...
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Debian GNU/Linux}{¿Que tiene que ver el proyecto debian con esta charla?}
+  \begin{itemize}
+  \item Todo el software mencionado se encuentra empaquetado listo para usar
+  \item También existe FEL
+  \end{itemize}
+\end{frame}
+
+\section<presentation>*{Simulación de circuitos con Software Libre}
+
+\begin{frame}{Conclusiones}
+  \begin{block}{}
+    \begin{itemize}
+    \item El Diseño de hardware es un proceso que esta al alcance de todos, tiene grandes alcances y es importante buscar modelos que lleven el diseño a la producción en masa.
+    \item Ya existen varios proyectos de gran envergadura que son Open Source Hardware.
+    \item Hay un grave problema de interoperabilidad entre formatos y herramientas.
+    \end{itemize}
+  \end{block}
+\end{frame}
+
+\begin{frame}{Agradecimientos}
+  \begin{itemize}
+  \item Organización del Software Freedom Day.
+  \item CIDCA
+  \end{itemize}
+\end{frame}
+
+\appendix
+
+\section<presentation>*{Referencias}
+
+\begin{frame}
+  \frametitle<presentation>{Bibliografía I}
+  \begin{thebibliography}{99}
+    \beamertemplatebookbibitems
+  \bibitem[1]{PardoBoluda}Fernando Pardo Carpio y José A. Boluda Grau
+    \newblock \emph{VHDL, Lenguaje para síntesis y modelado de circuitos, 2a. edición}
+    \newblock Alfaomega, 2004
+  \bibitem<1->[Bercelli 2006]{Bercelli}Ariel Bercelli
+    \newblock \emph{Aprender la Libertad}
+    \newblock 2006
+    \newblock \url{http://www.aprenderlalibertad.org/libro-all}
+  \end{thebibliography}
+\end{frame}
+
+\begin{frame}
+  \frametitle<presentation>{Bibliografía II}
+  \begin{thebibliography}{99}
+    \beamertemplatearticlebibitems
+  \bibitem<1->[Güichal 2005]{Guillermo}Guillermo Güichal
+    \newblock \emph{Diseño Digital Utilizando Lógicas Programables}
+    \newblock Junio 29, 2005
+    \newblock \url{http://fpga.com.ar/notas/NotasCompletas.pdf}
+  \bibitem<1->[4]{clasificacion}Ivan González, Juan González y Francisco Gómez-Arribas
+    \newblock \emph{Hardware libre: clasificación y desarrollo de hardware reconfigurable en entornos GNU/Linux}
+    \newblock 6 de Septiembre de 2003
+    \newblock \url{http://www.iearobotics.com/personal/juan/publicaciones/art4/hardware-libre.pdf}
+  \end{thebibliography}
+\end{frame}
+
+\begin{frame}[allowframebreaks]
+  \frametitle<presentation>{Infografía}
+  \begin{thebibliography}{99}
+    \beamertemplatearticlebibitems
+  \bibitem[5]{Ales}\emph{gEDA - GPL Electronic Design Automation}, \url{http://www.geda.seul.org/talks/deluge_ales.pdf}
+  \bibitem[Oscilador colpitts]{colpitts}, \url{http://qucs.sourceforge.net/examples/colpitts_base.sch}
+  \end{thebibliography}
+\end{frame}
+
+\section<presentation>*{Comunidades}
+
+\begin{frame}{Como unirse}
+  \begin{figure}
+    \includegraphics{img/altaimpedancia-acerca-de}
+  \end{figure}
+  \begin{block}{}
+    \begin{itemize}
+    \item Linux en Caja - \url{http://linuxencaja.net}
+    \item HackBo - \url{http://hackbo.co}
+    \end{itemize}
+  \end{block}
+  \begin{block}{Contacto}
+    \centering
+    Jorge Ernesto Guevara Cuenca\\
+    \href{mailto:ernesto@altaimpedancia.org}{ernesto@altaimpedancia.org}\\
+  \end{block}
+\end{frame}
+
+\section<presentation>*{Sobre este documento}
+
+\begin{frame}
+  \begin{block}{Licencia}
+    \begin{figure}
+      \includegraphics[scale=0.9]{img/by-sa}
+    \end{figure}
+    \centering
+    \small Creative Commons\\
+    \small Atribución-Compartir Obras Derivadas Igual 2.5 Colombia\\
+    \small \url{http://creativecommons.org/licenses/by-sa/2.5/co}
+\end{block}
+\begin{block}{}
+  Creado con \LaTeX / Beamer
+\end{block}
+\end{frame}
+
+\end{document}
