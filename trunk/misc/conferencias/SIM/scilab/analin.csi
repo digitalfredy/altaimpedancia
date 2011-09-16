@@ -1,0 +1,45 @@
+function [risetime, peaktime, overshoot, settlingtime] = analin(time, gs, settling_amp)
+// analin - analysis of a simulation (time response) of linear system
+//
+// Calling Sequence
+// [risetime, peaktime, maxshoot, settlingtime] = analin(gs, time, settling_amp) // 
+// Parameters
+// gs: 
+// time: 
+// settling_amp: 
+// risetime: 
+// peaktime: 
+// maxshoot: 
+// settlingtime: 
+// 
+// Description
+// Return the rise time, peak time, maximus overshoot an the settling time of a simulation (time response) of linear system
+// Derivated work from
+//  http://lacaja.zxq.net/eng/control/TransientResponse/TransientResponse-4_Program_5_6_Ogata_4editio.php
+// 
+// Examples
+// 
+// 
+// See Also
+// csim
+// 
+// Authors
+// Jorge Ernesto Guevara Cuenca jorge.guevara@fuac.edu.co
+
+    funcprot(0)
+    r=1
+    while gs(r)<settling_amp+time(2)
+        r=r+1
+    end
+    risetime=(r-1)*time(2)
+    [gsmax,rp]=max(gs)
+    peaktime=(rp-1)*time(2)
+    overshoot=((gsmax-settling_amp)*100)/settling_amp
+    rmax=time($)/time(2)
+    k=rmax+1
+    two_percent=(settling_amp/100)*2
+    while gs(k)>settling_amp-two_percent & gs(k)<settling_amp+two_percent;
+        k=k-1
+    end
+    settlingtime=(k-1)*time(2);
+endfunction
