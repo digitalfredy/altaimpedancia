@@ -115,3 +115,8 @@ T 38700 50000 5 10 1 1 0 0 1
 value=.tran 0 3u 10n trace all > colpitts.dat
 }
 N 36100 48100 35900 48100 4
+T 38600 49000 9 10 1 0 0 0 4
+Para ejecutar la simulación:
+gnetlist -s -g spice-sdb -o colpitts.ckt colpitts.sch
+gnucap -b colpitts.ckt
+gwave colpitts.dat
