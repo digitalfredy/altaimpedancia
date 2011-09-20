@@ -96,27 +96,4 @@ netname=Vout
 }
 N 37400 50200 38300 50200 4
 N 38300 50200 38300 47000 4
-C 38600 50700 1 0 0 gnucap-directive-1.sym
-{
-T 38700 50900 5 10 0 1 0 0 1
-device=directive
-T 38700 51000 5 10 1 1 0 0 1
-refdes=A1
-T 38700 50700 5 10 1 1 0 0 1
-value=.print tran v(Vout)
-}
-C 38600 50000 1 0 0 gnucap-directive-1.sym
-{
-T 38700 50200 5 10 0 1 0 0 1
-device=directive
-T 38700 50300 5 10 1 1 0 0 1
-refdes=A2
-T 38700 50000 5 10 1 1 0 0 1
-value=.tran 0 3u 10n trace all > colpitts.dat
-}
 N 36100 48100 35900 48100 4
-T 38600 49000 9 10 1 0 0 0 4
-Para ejecutar la simulación:
-gnetlist -s -g spice-sdb -o colpitts.ckt colpitts.sch
-gnucap -b colpitts.ckt
-gwave colpitts.dat
