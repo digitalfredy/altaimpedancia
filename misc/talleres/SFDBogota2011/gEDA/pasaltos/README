@@ -1,0 +1,46 @@
+Para ejecutar esta simulación:
+1. Descargue el modelo de Spice del amplificador operacional de
+   http://www.national.com/mpf/LM/LM741.html#Tools
+2. El archivo se debe llamar LM741.MOD. Ahora editelo y en la linea que empieza con .SUBCKT reemplace LM741/NS por LM741
+3. Genere un netlist adecuado para el simulador con el siguiente comando:
+   $ gnetlist -s -g spice-sdb -o pasaltos.net pasaltos.sch
+4. Ejecute el simulador con el comando gnucap
+   $ gnucap
+   Cuando ejecuta el simulador vera algo como lo siguiente:
+Gnucap 2009.12.07 RCS 26.136
+The Gnu Circuit Analysis Package
+Never trust any version less than 1.0
+Copyright 1982-2009, Albert Davis
+Gnucap comes with ABSOLUTELY NO WARRANTY
+This is free software, and you are welcome
+to redistribute it under the terms of 
+the GNU General Public License, version 3 or later.
+See the file "COPYING" for details.
+gnucap>
+
+5. Ahora cargue el netlist generado con anterioridad desde el simulador con el comando get, vera algo como lo siguiente:
+gnucap> get colpitts.net 
+* gnetlist -s -g spice-sdb -o pasaltos.net pasaltos.sch 
+gnucap>
+
+6. Ahora seleccione para simular el voltaje del nodo llamado vout definido previamente en el esquemático con el siguiente comando:
+gnucap> probe ac v(vout)
+gnucap>
+
+7. "Polarice" el amplificador operacional "prendiendo" las fuentes de voltaje.
+gnucap> dc V1 12
+gnucap> dc V2 12
+gnucap>
+
+8. Genere la simulación en frecuencia con el siguiente comando:
+gnucap> ac 0 10k 10 > pasaltos.dat
+gnucap>
+
+9. Listo ya ha logrado la simulación ahora debe ejecutar el programa gwave para visualizar la simulación con el siguiente comando desde el simulador:
+gnucap> !gwave pasaltos.dat
+
+
+10. Para poder ver la simulación seleccoione la señal v(vout) de la ventana en la que aparece esta y arrastrela hasta uno de los paneles de la ventana principal.
+
+Jorge Ernesto Guevara Cuenca
+ernesto@altaimpedancia.org
