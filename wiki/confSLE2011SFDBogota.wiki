@@ -1,8 +1,5 @@
-#summary Fotos
+#summary Conferencia Software Libre para Electrónica (Fotos)
 #labels conferencia
-
-= Fotos de la conferencia =
-
 
 https://lh6.googleusercontent.com/-rhHPgmENi24/ToCoa0W-RNI/AAAAAAAAAog/K18X_0vvndI/s720/093_297577_10150291628631695_106878006694_8198676_714043454_n.jpg
 
