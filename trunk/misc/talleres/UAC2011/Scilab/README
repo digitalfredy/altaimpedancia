@@ -1,0 +1,9 @@
+Ejecute scilab y luego xcos.
+1. Abra el archivo sistema.xcos
+2. Añada desde la sección sinks de la paleta de xcos el bloque TOWS
+3. Conecte el la flecha roja del bloque añadido al reloj del esquema
+4. Conecte la entrada del bloque a la señal del sistema realimentado, es decir antes del multiplexor
+5. Ejecute la simulación
+6. Desde scilab ejecute el editor scinotes.
+7. Desde este abra el archivo rutina.sce y ejecutelo.
+8. En scilab verá los parametros del sistema realimentado.

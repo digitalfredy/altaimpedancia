@@ -1,0 +1,38 @@
+Para lograr la simulación:
+1. Genere un netlist adecuado para el simulador con el siguiente comando:
+   $ gnetlist -s -g spice-sdb -o colpitts.net colpitts.sch
+2. Ejecute el simulador con el comando gnucap
+   $ gnucap
+   Cuando ejecuta el simulador vera algo como lo siguiente:
+Gnucap 2009.12.07 RCS 26.136
+The Gnu Circuit Analysis Package
+Never trust any version less than 1.0
+Copyright 1982-2009, Albert Davis
+Gnucap comes with ABSOLUTELY NO WARRANTY
+This is free software, and you are welcome
+to redistribute it under the terms of 
+the GNU General Public License, version 3 or later.
+See the file "COPYING" for details.
+gnucap>
+
+3. Ahora cargue el netlist generado con anterioridad desde el simulador con el comando get, vera algo como lo siguiente:
+gnucap> get colpitts.net 
+* gnetlist -s -g spice-sdb -o colpitts.net colpitts.sch 
+gnucap>
+
+4. Ahora seleccione para simular el voltaje del nodo llamado vout definido previamente en el esquemático con el siguiente comando:
+gnucap> probe tr v(vout)
+gnucap>
+
+5. Genere la simulación en el tiempo con el siguiente comando:
+gnucap> tr 0 30u 10n > colpitts.dat
+gnucap>
+
+6. Listo ya ha logrado la simulación ahora debe ejecutar el programa gwave para visualizar la simulación con el siguiente comando desde el simulador:
+gnucap> !gwave colpitts.dat
+
+
+7. Para poder ver la simulación seleccoione la señal v(vout) de la ventana en la que aparece esta y arrastrela hasta uno de los paneles de la ventana principal.
+
+Jorge Ernesto Guevara Cuenca
+ernesto@altaimpedancia.org
