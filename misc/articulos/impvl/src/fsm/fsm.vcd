@@ -1,0 +1,33 @@
+$date
+	Tue Oct 26 12:08:45 2004
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module mealy $end
+$var wire 1 ! clock $end
+$var wire 2 " data_in[1:0] $end
+$var wire 1 # reset $end
+$var reg 1 $ data_out $end
+$var reg 3 % next_state[2:0] $end
+$var reg 3 & pres_state[2:0] $end
+$scope begin statereg $end
+$upscope $end
+$scope begin fsm $end
+$upscope $end
+$scope begin outputs $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx &
+bx %
+x$
+z#
+bz "
+z!
+$end

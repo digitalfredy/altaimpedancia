@@ -1,0 +1,1064 @@
+<?xml version='1.0' encoding="utf-8"?>
+<!DOCTYPE book SYSTEM
+"/usr/share/xml/docbook/schema/dtd/4.4/docbookx.dtd">
+<book lang="es">
+  <bookinfo>
+    <title>Introducci&oacute;n a la implementaci&oacute;n de sistemas
+    digitales usando Verilog HDL</title>
+    <subtitle>Verilog HDL con herramientas de Software Libre</subtitle>
+    <authorgroup>
+      <author>
+	<firstname>Jorge</firstname>
+	<othername>Ernesto</othername>
+	<surname>Guevara Cuenca</surname>
+	<affiliation>
+	  <orgname>
+	    <ulink url="http://glud.udistrital.edu.co">
+	      Grupo Linux Universidad Distrital
+            </ulink>
+	  </orgname>
+	  <address>
+	    <email>jguevara@glud.udistrital.edu.co</email>
+	  </address>
+	</affiliation>
+      </author>
+      <author>
+	<firstname>Mauricio</firstname>
+	<surname>Velasquez</surname>
+	<affiliation>
+	  <orgname>
+	    <ulink url="http://glud.udistrital.edu.co">
+             Grupo Linux Universidad Distrital
+            </ulink>
+	  </orgname>
+	  <address>
+	    <email>mauricio.velasquez@gmail.com</email>
+	  </address>
+	</affiliation>
+      </author>
+    </authorgroup>
+    
+    <legalnotice>
+      <para><!--Creative Commons License-->
+	<emphasis>
+	  This work is licensed under a <ulink
+	    url="http://creativecommons.org/licenses/by-sa/2.5/">Creative
+	    Commons Attribution-ShareAlike 2.5 License</ulink>
+	</emphasis>
+      </para>
+      <para>
+	<informalfigure>
+	  <mediaobject>
+	    <imageobject role="html">
+	      <imagedata fileref="images/somerights20.png"
+		format="PNG"/>
+	    </imageobject>
+	    <imageobject role="fo">
+	      <imagedata fileref="images/somerights20.svg"
+		format="SVG"/>
+	    </imageobject>
+	  </mediaobject>
+	</informalfigure>
+      </para>
+      <para>
+	<emphasis>
+	  Todas las marcas comerciales, marcas de servicio y nombres
+	  de marcas en este documento son propiedad de sus respectivos
+	  due&ntilde;os.
+	</emphasis>
+      </para>
+    </legalnotice>
+    <copyright>
+      <year>2004, 2005, 2006</year>
+      <holder>electronix</holder>
+    </copyright>
+    <revhistory>
+      <revision>
+        <revnumber>0.01</revnumber>
+        <date>Noviembre 2 de 2004</date>
+	<authorinitials>MVV</authorinitials>
+        <revdescription>
+          <para>La primera versi&oacute;n.</para>
+        </revdescription>
+      </revision>
+      <revision>
+        <revnumber>0.02</revnumber>
+        <date>Noviembre 17 de 2004</date>
+	<authorinitials>JEGC</authorinitials>
+        <revdescription>
+          <para>
+	    Una descripci&oacute;n m&aacute;s completa acerca de como usar
+	    herramientas libres para dise&ntilde;ar con Verilog HDL.
+	  </para>
+        </revdescription>
+      </revision>
+      <revision>
+	<revnumber>0.03</revnumber>
+	<date>Diciembre 3 de 2004</date>
+	<authorinitials>JEGC</authorinitials>
+	<revdescription>
+	  <para>Tags apropiados para tablas y selecci&oacute;n de men&uacute;s</para>
+	</revdescription>
+      </revision>
+      <revision>
+	<revnumber>0.04</revnumber>
+	<date>Diciembre 16 de 2004</date>
+	<authorinitials>JEGC</authorinitials>
+	<revdescription>
+	  <para>Se arreglan unos enlaces en las referencias</para>
+	</revdescription>
+      </revision>
+      <revision>
+	<revnumber>0.05</revnumber>
+	<date>Marzo 29 de 2005</date>
+	<authorinitials>JEGC</authorinitials>
+	<revdescription>
+	  <para>Se cambia el enlace del proyecto electronix</para>
+	</revdescription>
+      </revision>
+      <revision>
+	<revnumber>0.06</revnumber>
+	<date>27 de agosto de 2005</date>
+	<authorinitials>JEGC</authorinitials>
+	<revdescription>
+	  <para>Se actualiza la DTD del documento a la versi&oacute;n
+	  4.3, se usan entidades pra listar el c&oacute;digo.</para>
+	</revdescription>
+      </revision>
+      <revision>
+	<revnumber>0.07</revnumber>
+	<date>26 de Octubre de 2005</date>
+	<authorinitials>JEGC</authorinitials>
+	<revdescription>
+	  <para>Se actualiza la licencia a la versi&oacute;n 2.5</para>
+	</revdescription>
+      </revision>
+      <revision>
+	<revnumber>0.08</revnumber>
+	<date>14 de Diciembre de 2005</date>
+	<authorinitials>JEGC</authorinitials>
+	<revdescription>
+	  <para>Se cambia la introducci&oacute;n</para>
+	</revdescription>
+      </revision>
+      <revision>
+	<revnumber>0.09</revnumber>
+	<date>15 de Diciembre de 2005</date>
+	<authorinitials>JEGC</authorinitials>
+	<revdescription>
+	  <para>Se cambia el t&iacute;tulo Implementaci&oacute;n de sistemas
+	  digitales usando Verilog HDL a Introducci&oacute;n a la
+	  implementaci&oacute;n de sistemas digitales usando Verilog
+	  HDL.</para>
+	</revdescription>
+      </revision>
+      <revision>
+	<revnumber>0.10</revnumber>
+	<date>2006/03/10</date>
+	<authorinitials>JEGC</authorinitials>
+	<revdescription>
+	  <para>Actualizada DTD a versi&oacute;n 4.4, a&ntilde;adido
+	  subtitulo y se mejora etiquetamiento para soporte de im&aacute;genes
+	  en las salidas de pdf y html para el procesador XSLT fop.</para>
+	</revdescription>
+      </revision>
+    </revhistory>
+  </bookinfo>
+  <preface id="intro">
+    <title>Introducci&oacute;n</title>
+    <para>Verilog es un lenguaje de descripci&oacute;n de hardware
+      (HDL<footnote>
+	<para>Hardware Description Language.</para>
+      </footnote>). Un lenguaje de descripci&oacute;n de hardware es usado
+      para describir sistemas digitales, con verilog podemos hacerlo en
+      dos niveles de abstracci&oacute;n:
+    </para>
+    <para>
+      <itemizedlist>
+	<listitem>
+	  <para>Comportamiento, (RTL - Register Transfer Level) se
+	  describe la transferencia de informaci&oacute;n entre
+	  registros. Puede ser usado para modelar el funcionamiento de
+	  un sistema a un alto nivel.</para>
+	</listitem>
+	<listitem>
+	  <para>Estructura, se usan funciones estoc&aacute;sticas
+	  desde librer&iacute;as o por medio de la
+	  interconexi&oacute;n de puertas (compuertas l&oacute;gicas,
+	  flip-flops, etc) o conmutadores (transistores MOS que
+	  implementan las puertas l&oacute;gicas).</para>
+	</listitem>
+      </itemizedlist>
+    </para>
+    <para>Verilog HDL fue dise&ntilde;ado en 1985 por Phil Moorby y en 1989
+    fue adquirido por Cadence Design Systems. En 1990 Cadence Design
+    Systems decide liberar el lenguaje y es cedido a OVI (Open Verilog
+    International) que es formada en 1991.</para>
+    <para>En 1993 bajo el sub-comite de dise&ntilde;o atomatizado de la IEEE
+    se establece un grupo de trabajo para producir el estandar IEEE
+    Verilog 1364. En 1995 es establecido el estandar IEEE 1364. El
+    estandar es revisado en el 2001 y es actualizado a IEEE 1364-2001.</para>
+    <para>Debido a la evoluci&oacute;n de los lenguajes de descripci&oacute;n de
+      hardware nace <ulink
+    url="http://www.accellera.org/home">Accelera</ulink> en el 2000
+    con la uni&oacute;n de OVI y VHDL International, y es esta la que propone
+    las &uacute;ltimas extensiones de Verilog.</para>
+    <para>Este documento no pretende ser un manual de Verilog HDL solo
+    es una muestra de como usar este lenguaje de descripci&oacute;n de
+    hardware para simular algunos sistemas digitales con herramientas
+    especificas de software libre.</para>
+  </preface>
+
+
+  <chapter id="modelado">
+    
+    <title>Modelando en Verilog HDL con ayuda de software libre</title>
+
+    <para>
+      Los modelos de sistemas digitales que se muestran en el
+      siguiente
+      <link linkend="implementacion">
+        cap&iacute;tulo
+      </link>
+      se implementaron con Verilog HDL y en el orden de los siguientes
+      pasos:
+    </para>
+
+    <orderedlist>
+      <listitem>
+	<para>Identificar el problema</para>
+      </listitem>
+      <listitem>
+	<para>Escribir el c&oacute;digo</para>
+      </listitem>
+      <listitem>
+	<para>Hacer la simulaci&oacute;n</para>
+      </listitem>
+    </orderedlist>
+
+    <para>
+      A modo de que este proceso de dise&ntilde;o se pueda explicar en
+      forma did&aacute;ctica se modelar&aacute; una compuerta
+      l&oacute;gica AND de tres entradas como un ejemplo sencillo.
+    </para>
+    
+    <sect1>
+      
+      <title>Identificar el problema</title>
+      
+      <para>
+        Este primer paso es imprescindible para la soluci&oacute;n de
+        culaquier problema en general, para el modelado de Hardware
+        con culaquier HDL este no es la excepci&oacute;n.
+      </para>
+    
+      <para>
+        El modelo a implementar es una compuerta l&oacute;gica AND de tres
+        entradas.
+      </para>
+
+      <para>
+	<informalfigure>
+	  <mediaobject>
+	    <imageobject role="html">
+	      <imagedata fileref="images/and.png"
+		format="PNG"/>
+	    </imageobject>
+	    <imageobject role="fo">
+	      <imagedata fileref="images/and.svg"
+		format="SVG"/>
+	    </imageobject>
+	  </mediaobject>
+	</informalfigure>
+      </para>
+
+      <para>
+        Entonces debemos primero identificar las variables
+        de entrada y salida del sistema.
+      </para>
+
+      <table>
+	<title>Entradas y salidas para una compuerta AND de tres entradas</title>
+	<tgroup cols="2">
+	  <thead>
+	    <row>
+	      <entry>Entradas</entry>
+	      <entry>Salidas</entry>
+	    </row>
+	  </thead>
+	  <tbody>
+	    <row>
+	      <entry>a, b, c</entry>
+	      <entry>y</entry>
+	    </row>
+	  </tbody>
+	</tgroup>
+      </table>
+
+      <para>
+        Ahora debemos identificar el comportamiento de la compuerta y
+        esto lo podemos lograr analizando la tabla de verdad para una
+        AND de tres entradas.
+      </para>
+
+      <table>
+	<title>Tabla de verdad de una compuerta AND de 3 entradas</title>
+	<tgroup cols="4">
+	  <thead>
+	    <row>
+	      <entry>a</entry>
+	      <entry>b</entry>
+	      <entry>c</entry>
+	      <entry>y</entry>
+	    </row>
+	  </thead>
+	  <tbody>
+	    <row>
+	      <entry>0</entry>
+	      <entry>0</entry>
+	      <entry>0</entry>
+	      <entry>0</entry>
+	    </row>
+	    <row>
+	      <entry>0</entry>
+	      <entry>0</entry>
+	      <entry>1</entry>
+	      <entry>0</entry>
+	    </row>
+	    <row>
+	      <entry>0</entry>
+	      <entry>1</entry>
+	      <entry>0</entry>
+	      <entry>0</entry>
+	    </row>
+	    <row>
+	      <entry>0</entry>
+	      <entry>1</entry>
+	      <entry>1</entry>
+	      <entry>0</entry>
+	    </row>
+	    <row>
+	      <entry>1</entry>
+	      <entry>0</entry>
+	      <entry>0</entry>
+	      <entry>0</entry>
+	    </row>
+	    <row>
+	      <entry>1</entry>
+	      <entry>0</entry>
+	      <entry>1</entry>
+	      <entry>0</entry>
+	    </row>
+	    <row>
+	      <entry>1</entry>
+	      <entry>1</entry>
+	      <entry>0</entry>
+	      <entry>0</entry>
+	    </row>
+	    <row>
+	      <entry>1</entry>
+	      <entry>1</entry>
+	      <entry>1</entry>
+	      <entry>1</entry>
+	    </row>
+	  </tbody>
+	</tgroup>
+      </table>
+
+      <para>
+        Luego de analizar la tabla de verdad podemos darnos cuenta que
+        una caracter&iacute;stica particular para la compuerta AND de tres
+        entradas es que siempre que tenemos variaciones en las
+        entradas de modo tal que en todas ellas exista un valor l&oacute;gico
+        verdadero (uno) la salida es asi mismo un valor l&oacute;gico
+        verdadero (uno), y que para el resto de variaciones en las
+        entradas la salida es un valor l&oacute;gico falso (cero).
+      </para>
+    </sect1>
+    
+    <sect1>
+      <title>Escribir el c&oacute;digo</title>
+
+      <para>
+        Una vez identificado el problema procedemos a escribir el
+        c&oacute;digo en un HDL teniendo en cuenta los par&aacute;metros que define
+        el estandar para ese lenguaje, para este caso en particular se
+        usar&aacute; Verilog HDL que esta definido por el estandar IEEE-1364.
+      </para>
+
+      <para>
+        El c&oacute;digo para la implementaci&oacute;n de una compuerta AND de tres
+        entradas con Verilog HDL se muestra a continuaci&oacute;n (los
+        n&uacute;meros al principio de cada linea no son parte del c&oacute;digo,
+        se usan para poder explicarlo m&aacute;s adelante):
+      </para>
+
+      <programlisting>
+<![CDATA[
+1                                     -*- Mode: Verilog -*-
+2  // Filename        : and_tres.v
+3  // Description     : Implementacion de una compuerta AND de 3 entradas usando Verilog HDL
+4  // Author          : Electronix electronica@glud.udistrital.edu.co
+5  // Created On      : 02.11.2004
+6  // Last Modified By: Mauricio Velasquez
+7  // Last Modified On: 18.11.2004
+8  // Update Count    : 0
+9  // Status          : Unknown, Use with caution!
+10
+11 module and_tres(a, b, c, y);          // DefiniciOn del modulo and_uno
+12
+13   input a, b, c;                     // DeclaraciOn de variables de entrada
+14   output y;                          // DeclaraciOn de variables de salida
+15   reg 	  y;                         
+16   
+17   always @ (a or b or c ) begin      // ImplementaciOn de la funciOn and para 3 entradas 
+18      y = a && b && c;
+19      
+20   end
+21      
+22 endmodule // and_uno
+]]>
+</programlisting>
+
+      <para>
+        En Verilog los sistemas digitales se describen por medio de
+        modulos y dependiendo del tipo de descripci&oacute;n que se
+        este haciendo se pueden interconectar entre si.
+      </para>
+
+      <para>
+        En el c&oacute;digo anterior el m&oacute;dulo and_tres esta
+        descrito desde la l&iacute;nea 11 hasta la linea 22 donde
+        respectivamente cada l&iacute;nea es el inicio y fin del
+        m&oacute;dulo.
+      </para>
+      
+      <para>
+        De la l&iacute;nea 1 hasta la 9 observamos un comentario que se
+        puede insertar con un atajo de teclado que provee el modo
+        verilog para el poderosisimo editor de texto
+        <application>emacs</application> (es una herramienta muy
+        robusta pues se puede usar como "IDE"<footnote>
+        <para>Integrate Development Environment</para></footnote> para
+        muchos lenguajes brindando que el c&oacute;digo se pueda
+        observar en colores para una mayor comprensi&oacute;n,
+        indentaciOn, ect ..), los comentarios en Verilog se utilizan
+        igual que en el lenguaje de programaci&oacute;n C.
+      </para>
+      
+      <para>
+        En la definici&oacute;n del m&oacute;dulo and_tres se deben
+        instanciar entre parentesis separadas por comas todas las
+        variables usadas por el sistema digital (linea 11).
+      </para>
+
+      <para>
+        Lo siguiente a realizar es declarar que variables son de
+        entrada y cuales de salida con el fin de que el m&oacute;dulo
+        se pueda comunicar con el exterior, para este caso las
+        variables de entrada (input) son a, b y c (l&iacute;nea 13) y
+        las variable de salida (output) y (l&iacute;nea 14).
+      </para>
+
+      <para>
+        Ahora definimos que tipo de variables son las entradas y
+        salidas del sistema (variables internas), en Verilog hay dos
+        tipos de variable wire y reg, una red que permite
+        conexi&oacute;n y un registro que permite almacenar un valor
+        respectivamente; para este ejemplo basta con definir y que es
+        la salida como tipo wire esto se hace en la l&iacute;nea 15.
+      </para>
+
+      <para>
+        Y por ultimo se implementa el comportamiento que deseamos que
+        tenga el m&oacute;dulo, para este caso se utiliza un proceso
+        <footnote><para>Los procesos en Verilog pueden ser de dos
+        tipos initial que cuando se ejecuta la ultima l&iacute;nea no
+        se ejcuta m&aacute;s y always que cuando se ejectuta la ultima
+        linea se ejecuta de nuevo; estos procesos son los que le dan
+        una caracter&iacute;stica fundamental al lenguaje pues a
+        diferencia de muchos lenguajes procedurales comunes como el C
+        que es uno de los inspiradores de este los procesos se pueden
+        ejecutar en paralelo.</para></footnote> tipo always con una @
+        seguido y las variables de entrada entre parentesis con
+        separadas por la palabra or, lo que indica que siempre que
+        cambie el valor de por lo menos una de las variables indicadas
+        entre el parentesis ejecute las oredenes especificadas para el
+        always (l&iacute;nea 17).
+      </para>
+
+      <para>
+        En la l&iacute;nea 18 se indica que y tome el valor de
+        l&oacute;gico verdadero (uno) si las variables de entrada a,
+        b, y c tienen un valor l&oacute;gico verdadero (uno). Y en la
+        l&iacute;nea 31 se finaliza el always son la palabrea
+        reservada end.
+      </para>
+
+    </sect1>
+
+    <sect1>
+      <title>Hacer la simulaci&oacute;n</title>
+
+      <para>
+        Es importante saber que para simular un modelo se necesita
+        escribir un modulo de prueba (Test Bench) que permitira hacer
+        la simulaci&oacute;n.
+      </para>
+      
+      <para>
+        Para llegar hasta la simulaci&oacute;n se siguieron los
+        siguientes pasos.
+      </para>
+      
+      <orderedlist>
+	<listitem>
+	  <para>
+            Escribir un m&oacute;dulo de prueba que genere un archivo
+            tipo VCD (Verilog Change Dump) que almacena el valor de un
+            conjunto de variables cada vez que se produce un cambio en
+            ellas.
+          </para>
+	</listitem>
+	<listitem>
+	  <para>
+            Con un analizador de formas de onda leer el archivo VCD
+            para visualizar el comportamiento del modelo.
+          </para>
+	</listitem>
+      </orderedlist>
+
+      <sect2>
+	
+	<title>El modulo de prueba</title>
+
+	<para>
+          En el m&oacute;dulo de prueba se especifican los
+          par&aacute;metros de simulaci&oacute;n como tiempo de
+          duraci&oacute;n, variaci&oacute;n de las variables, etc ...
+        </para>
+
+	<para>
+          El c&oacute;digo del m&oacute;dulo de prueba para la
+          compuerta l&oacute;gica AND de tres entradas se muestra a
+          continuaci&oacute;n (los n&uacute;meros al principio de cada
+          linea no son parte del c&oacute;digo, se usan para poder
+          explicarlo m&aacute;s adelante):
+        </para>
+
+	<programlisting>
+1  module and_tres_tb () ;
+2     reg a, b, c;
+3     wire y;
+4
+5     initial  begin
+6        a=0;
+7        b=0; 
+8        c=0;
+9     end
+10  
+11    always begin
+12       #1 a=~a;
+13    end
+14   
+15    always begin
+16       #2 b=~b;
+17    end
+18   
+19    always begin
+20       #4 c=~c;
+21    end
+22   
+23    initial begin
+24      #600 $finish;
+25      
+26    end
+27   
+28    and_tres Uand_tres_tb(a,b, c, y);    // Generar la funci&oacute;n para el test bench
+29   
+30
+31    initial begin
+32       $dumpfile ("and_tres.vcd");      // Generar el archivo de tipo VCD
+33       $dumpvars;
+34
+35    end
+36         
+37      
+38 endmodule // and_tres_tb
+      </programlisting>
+
+	<para>
+          Como siempre en Verilog definimos el modulo a trabajar, en
+          este caso es un modulo de prueba entonces lo definomos
+          (l&iacute;nea 1).
+        </para>
+
+	<para>
+           Ahora las variables de entrada las definimos de tipo reg y
+           las variables de salida wire (l&iacute;neas 2 y 3).
+        </para>
+	
+	<para>
+          Dentro de un proceso initial inicializamos las variables con
+          el valor que necesitemos (l&iacute;neas 5 a 9).
+        </para>
+
+	<para>
+          De las lineas 11 a 21 definimos los valores que toman las
+          variables a travez del tiempo, indicando respectivamente que
+          a tiene un cambio de pulso cada unidad de tiempo, b cada 2 y
+          c cada 3.
+        </para>
+
+	<para>
+          En el proceso indicado de la l&iacute;nea 23 a la 26 se
+          indica que el tiempo de la simulaci&oacute;n es de 600
+          unidades (por defecto un segundo).
+        </para>
+	
+	<para>
+          En la l&iacute;nea 28 se genera una funci&oacute;n con
+          parametros a,b,c,y previemente definidos para el test bench.
+        </para>
+
+	<para>
+          Por ultimo se genera el archivo tipo VCD con la
+          funci&oacute;n del sistema <function>$dumpfile</function>
+          (l&iacute;nea 32) y se indica con la funci&oacute;n del
+          sistema <function>$dumpvars</function>que lleve todas las
+          variabes al archivo .vcd que se generar&aacute;
+          (l&iacute;nea 33), lo anterior dentro de un proceso initial.
+        </para>
+
+      </sect2>
+      
+      <sect2>
+	<title>Compilar el c&oacute;digo</title>
+		
+	<para>
+           Ahora debemos compilar el c&oacute;digo de la siguiente
+           manera. El compilador usado es <application><ulink
+           url="http://www.icarus.com/eda/verilog">Icarus
+           Verilog</ulink></application>.
+        </para>
+
+	<screen>
+           <prompt>$ </prompt><userinput>iverilog and_tres.v -o and_tres</userinput>
+        </screen>
+
+	<para>
+          Esto genera un archivo (script) llamado and_tres el cual
+          debera ser ejecutado:
+        </para>
+
+	<screen>
+          <prompt>$ </prompt><userinput>./and_tres</userinput>
+          <computeroutput>VCD info: dumpfile and_tres.vcd opened for output.</computeroutput>
+        </screen>
+	
+	<para>
+          Esto genera el archivo and.vcd que lo usaremos con
+          <application><ulink
+          url="http://home.nc.rr.com/gtkwave">gtkwave</ulink></application>,
+          un analizador de formas de onda digitales.
+        </para>
+
+      </sect2>
+      
+      <sect2>
+	<title>Visualizar la simulaci&oacute;n</title>
+	<para>
+          Una vez que se obtiene el archivo tipo VCD, en nuestro caso
+          and_tres.vcd, se procede a visualizar en un na lizador de
+          ondas digitales y para este ejemplo y todos los mostrados en
+          este documento se uso <application>gtkwave</application>.
+        </para>
+
+	<para>
+          Ahora tipeamos lo siguiente en la linea de comandos:
+        </para>
+
+	<screen>
+          <prompt>$ </prompt><userinput>gtkwave and_tres.vcd</userinput>
+          <computeroutput>
+           GTKWave Analyzer v1.3.34 (w)1999-2003 BSI
+
+           [0] start time.
+           [599] end time.
+          </computeroutput>
+        </screen>
+
+	<simpara>Ahora vemos
+	<application>gtkwave</application>
+	</simpara>
+	
+	<para>
+          <figure>
+	    <title><application>gtwave</application></title>
+	    <mediaobject>
+	      <imageobject role="html">
+		<imagedata fileref="images/gtkwave.png" format="PNG"/>
+	      </imageobject>
+	      <imageobject role="fo">
+		<imagedata fileref="images/gtkwave.svg" format="SVG" width="100%" scalefit="1"/>
+	      </imageobject>
+	      <textobject>
+		<phrase>Screenshot de <application>gtkwave</application></phrase>
+	      </textobject>
+	    </mediaobject>
+	  </figure>
+        </para>
+	
+	<para>
+          Seleccionamos del men&uacute;
+          <menuchoice>
+	    <guimenu>Search</guimenu>
+	    <guimenuitem>Signal Search Tree</guimenuitem>
+	  </menuchoice>
+	  y veremos una ventana con el nombre de las se&ntilde;ales que hemos
+	  descrito, de donde seleccionaremos el conjunto que tiene el
+	  nombre de la funcion que generamos en el modulo de prueba
+	  test bench que para este caso es Uand_tres_tb y hacemos
+	  click en el boton Append o Insert.
+        </para>
+	
+	<para>
+	  <informalfigure>
+	    <mediaobject>
+	      <imageobject role="html">
+		<imagedata fileref="images/tree.png" format="PNG"/>
+	      </imageobject>
+	      <imageobject role="fo">
+		<imagedata fileref="images/tree.svg" format="SVG" width="100%" scalefit="1"/>
+	      </imageobject>
+	    </mediaobject>
+	  </informalfigure>
+        </para>
+
+	<para>Ahora obtenemos la visualizaci&oacute;n de las se&ntilde;ales que
+	hemos descrito a, b, c, y y donde y tiene un pulso alto solo
+	cuando a y b y c estan en pulso alto.</para>
+
+	<para>
+          <informalfigure>
+	    <mediaobject>
+	      <imageobject role="html">
+		<imagedata fileref="images/simand.png" format="PNG"/>
+	      </imageobject>
+	      <imageobject role="fo">
+		<imagedata fileref="images/simand.svg" format="SVG" width="100%" scalefit="1"/>
+	      </imageobject>
+	    </mediaobject>
+	  </informalfigure>
+        </para>
+
+	<para>Con esto hemos concluido con un procedimiento muy
+	general para hacer simulaci&oacute;n de descripci&oacute;n de hardware con
+	Verilog HDL, vale la pena recordar que este no es el &uacute;nico
+	camino para hacer esto y que tanto las herramientas como el
+	lenguaje mostrado en este ejemplo no se quedan solo en lo que
+	se ha visto.</para>
+
+      </sect2>
+
+    </sect1>
+    
+  </chapter>
+
+
+
+<chapter id="implementacion">
+
+    <title>Ejemplos de implementaci&oacute;n de modelos</title>
+    
+    <sect1>
+      <title>Implementaci&oacute;n de una funci&oacute;n de l&oacute;gica
+      combinacional</title>
+
+      <para>La funci&oacute;n implementada a continuaci&oacute;n es:
+      a'*b+b*c'+a*c'</para>
+      <para>La tabla de verdad para esta funci&oacute;n:</para>
+      <para>
+        <informalfigure>
+	  <mediaobject>
+	    <imageobject role="html">
+	      <imagedata fileref="images/tabla.png" format="PNG"/>
+	    </imageobject>
+	    <imageobject role="fo">
+	      <imagedata fileref="images/tabla.svg" format="SVG" width="100%" scalefit="1"/>
+	    </imageobject>
+	  </mediaobject>
+	</informalfigure>
+      </para>
+
+      <para>
+	Esta tabla de verdad fue generada con <application><ulink
+	url="http://qmc.pollaknet.at">qmc</ulink></application> una
+	aplicaci&oacute;n para reducci&oacute;n de funciones
+	l&oacute;gicas por medio del metodo de Quine McClusky.
+      </para>
+
+      <sect2>
+	<title>El c&oacute;digo</title>
+	<programlisting><xi:include  href="src/funcion/funcion.v"  parse="text"  
+      xmlns:xi="http://www.w3.org/2001/XInclude"/></programlisting>
+      </sect2>
+
+      <sect2>
+
+	<title>Simulaci&oacute;n</title>
+
+	
+	<para>
+	  <informalfigure>
+	    <mediaobject>
+	      <imageobject role="html">
+		<imagedata fileref="images/funcion.png" format="PNG"/>
+	      </imageobject>
+	      <imageobject role="fo">
+		<imagedata fileref="images/funcion.svg" format="SVG" width="100%" scalefit="1"/>
+	      </imageobject>
+	    </mediaobject>
+	  </informalfigure>
+	</para>
+
+      </sect2>
+    </sect1>
+    <sect1>
+      <title>Conversor BCD 2421 a BCD exceso 3</title>
+
+      <para>Tabla de verdad:</para>
+
+      <table>
+	<title>
+          Tabla de verdad para el conversor de BCD 2421 a BCD exceso 3
+        </title>
+	<tgroup cols="3">
+	  <colspec colname="digito"/>
+	  <colspec colname="2421"/>
+	  <colspec colname="exceso3"/>
+	  <thead>
+	    <row>
+	      <entry morerows="1" valign="middle">D&iacute;gito</entry>
+	      <entry namest="2421" nameend="exceso3">BCD</entry>
+	    </row>
+	    <row>
+	      <entry>2421</entry>
+	      <entry>Exceso 3</entry>
+	    </row>
+	  </thead>
+	  <tbody>
+	    <row>
+	      <entry>0</entry>
+	      <entry>0000</entry>
+	      <entry>0011</entry>
+	    </row>
+	    <row>
+	      <entry>1</entry>
+	      <entry>0001</entry>
+	      <entry>0100</entry>
+	    </row>
+	    <row>
+	      <entry>2</entry>
+	      <entry>0010</entry>
+	      <entry>0101</entry>
+	    </row>
+	    <row>
+	      <entry>3</entry>
+	      <entry>0011</entry>
+	      <entry>0110</entry>
+	    </row>
+	    <row>
+	      <entry>4</entry>
+	      <entry>0100</entry>
+	      <entry>0111</entry>
+	    </row>
+	    <row>
+	      <entry>5</entry>
+	      <entry>1011</entry>
+	      <entry>1000</entry>
+	    </row>
+	    <row>
+	      <entry>6</entry>
+	      <entry>1100</entry>
+	      <entry>1001</entry>
+	    </row>
+	    <row>
+	      <entry>7</entry>
+	      <entry>1101</entry>
+	      <entry>1010</entry>
+	    </row>
+	    <row>
+	      <entry>8</entry>
+	      <entry>1110</entry>
+	      <entry>1011</entry>
+	    </row>
+	    <row>
+	      <entry>9</entry>
+	      <entry>1111</entry>
+	      <entry>1100</entry>
+	    </row>
+	  </tbody>
+	</tgroup>
+      </table>
+      <sect2>
+	<title>C&oacute;digo</title>
+	<programlisting><xi:include  href="src/converter/converter.v"  parse="text"  
+      xmlns:xi="http://www.w3.org/2001/XInclude"/></programlisting>
+
+      </sect2>
+      <sect2>
+	<title>Simulaci&oacute;n</title>
+
+	<para>
+	  <informalfigure>
+	    <mediaobject>
+	      <imageobject role="html">
+		<imagedata fileref="images/converter.png" format="PNG"/>
+	      </imageobject>
+	      <imageobject role="fo">
+		<imagedata fileref="images/converter.svg" format="SVG" width="100%" scalefit="1"/>
+	      </imageobject>
+	    </mediaobject>
+	  </informalfigure>
+	  </para>
+      </sect2>
+    </sect1>
+    <sect1>
+      <title>Multiplexor de 8 a 1</title>
+      
+      <para>El selector de 3 bits de el multiplexor indica cual de las
+      entradas se ve en la salida.</para>
+
+      <sect2>
+	<title>El c&oacute;digo</title>
+
+	<programlisting><xi:include  href="src/mux/mux.v"  parse="text"  
+      xmlns:xi="http://www.w3.org/2001/XInclude"/></programlisting>
+      </sect2>
+
+      <sect2>
+
+	<title>La simulaci&oacute;n</title>
+
+	<para>
+	  <informalfigure>
+	    <mediaobject>
+	      <imageobject role="html">
+		<imagedata fileref="images/mux.png" format="PNG"/>
+	      </imageobject>
+	      <imageobject role="fo">
+		<imagedata fileref="images/mux.svg" format="SVG" width="100%" scalefit="1"/>
+	      </imageobject>
+	  </mediaobject>
+	  </informalfigure>
+        </para>
+      </sect2>
+    </sect1>
+
+    <sect1>
+      <title>Demultiplexor de 1 a 8</title>
+      
+      <para>El selector de 3 bits de el demultiplexor indica cual de las
+      salidas mostrar&aacute; la entrada.</para>
+
+      <sect2>
+	<title>El c&oacute;digo</title>
+
+	<programlisting><xi:include  href="src/dmux/dmux.v"  parse="text"  
+      xmlns:xi="http://www.w3.org/2001/XInclude"/></programlisting>
+      </sect2>
+
+      <sect2>
+
+	<title>La simulaci&oacute;n</title>
+
+	<para>
+	  <informalfigure>
+	    <mediaobject>
+	      <imageobject role="html">
+		<imagedata fileref="images/dmux.png" format="PNG"/>
+	      </imageobject>
+	      <imageobject role="fo">
+		<imagedata fileref="images/dmux.svg" format="SVG" width="100%" scalefit="1"/>
+	      </imageobject>
+	    </mediaobject>
+	  </informalfigure>
+        </para>
+      </sect2>
+    </sect1>
+
+    <sect1>
+      <title>Solucion al problema de los semaforos</title>
+      
+      <para>Mediante el uso de un control de reloj se implementa la maquina 
+      de estados para la solucion al problema del semaforo .</para>
+
+      <sect2>
+	<title>El c&oacute;digo</title>
+
+	<programlisting><xi:include  href="src/counter/semaforo.v"  parse="text"  
+      xmlns:xi="http://www.w3.org/2001/XInclude"/></programlisting>
+      </sect2>
+
+      <sect2>
+
+	<title>La simulaci&oacute;n</title>
+
+	<para>
+	  <informalfigure>
+	    <mediaobject>
+	      <imageobject role="html">
+		<imagedata fileref="images/semaforo.png" format="PNG"/>
+	      </imageobject>
+	      <imageobject role="fo">
+		<imagedata fileref="images/semaforo.svg" format="SVG" width="100%" scalefit="1"/>
+	      </imageobject>
+	    </mediaobject>
+	  </informalfigure>
+        </para>
+      </sect2>
+    </sect1>
+
+    <sect1>
+      <title>M&aacute;quina de estados finitos</title>
+      
+      <para>Implementaci&oacute;n de una m&aacute;quina de estados finitos.</para>
+
+      <sect2>
+	<title>El c&oacute;digo</title>
+
+	<programlisting><xi:include  href="src/fsm/fsm.v"  parse="text"  
+      xmlns:xi="http://www.w3.org/2001/XInclude"/></programlisting>
+      </sect2>
+
+    </sect1>
+  </chapter>
+
+  <chapter>
+    <title>Referencias</title>
+    <para>
+      <ulink url="http://www.asic-world.com/verilog/veritut.html">
+        Tutorial de Verilog
+      </ulink>
+    </para>
+    <para>
+      <ulink url="http://www.doulos.com/knowhow/verilog_designers_guide/">
+        The Designer's Guide to Verilog
+      </ulink>
+    </para>
+    <para>
+      <ulink url="http://www.gte.us.es/~chavez/pub_academ.html">
+        Manual de Verilog HDL
+      </ulink>
+    </para>
+    <para>
+      <ulink
+	url="http://www.eg.bucknell.edu/~cs320/1995-fall/verilog-manual.html">
+	CSCI 320 Computer Architecture
+	Handbook on Verilog HDL
+      </ulink>
+    </para>
+    <para><ulink url="http://bawankule.com/verilogfaq">Verilog FAQ</ulink></para>
+  </chapter>
+</book>
