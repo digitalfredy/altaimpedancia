@@ -3,10 +3,10 @@
 # To read pcb files, the pcb version (or the git source date) must be >= the file version
 FileVersion[20070407]
 
-PCB["genval" 629921 866142]
+PCB["Generador de valores" 629921 866142]
 
 Grid[1.0 0 0 1]
-Cursor[587269 322753 0.000000]
+Cursor[629921 765523 0.000000]
 PolyArea[3100.006200]
 Thermal[0.500000]
 DRC[1000 1000 1000 1000 1500 1000]
@@ -3408,6 +3408,8 @@ Layer(3 "silk")
 )
 Layer(4 "silk")
 (
+	Text[24734 749855 3 100 "Desingned by Ernesto Guevara" "clearline"]
+	Text[314522 274373 3 175 "Generador de valores - http://martinez-zea.info" "clearline"]
 )
 NetList()
 (
