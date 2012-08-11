@@ -1,0 +1,8 @@
+= Encabezado =
+Un __párrafo__ con fuentes en **negrita** e //italicas//.
+
+Hoy es %%date(%c).
+Una imagen: [img/colabore.jpg].
+
+  | Ernesto |  XX  | Hombre |
+  | Angie |  XX  |  Mujer hermosa |
