@@ -1,0 +1,13 @@
+\frametitle {HTML}\framesubtitle {Etiquetas (tags)}
+\begin{verbatim}
+<!DOCTYPE html>
+<html>
+ <body>
+
+  <h1>Encabezado</h1>
+
+  <p>Esto es un párrafo.</p>
+
+ </body>
+</html>
+\end{verbatim}
