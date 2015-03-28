@@ -6,7 +6,7 @@ Electrónica con Software Libre, Free Hardware Design y Open Source Hardware
 **Historia:** altaimpedancia surgió como una reacción a la falta de documentación relacionada con el uso de Software Libre para electrónica, en la red se encontraba buena información (generalmente en ingles) acerca de cuales programas usar para determinadas tareas pero no era común encontrar ejemplos de uso documentados libres y en español. En el proceso de definición y conformación del SIG se hizo una revisión general del estado del arte y se decidió ampliar el área de interés incluyendo el FHD y el OSH. Los grupos de interés que antecedieron a este fueron el proyecto electronix dentro del [Grupo Linux de la Universidad Distrital](http://glud.udistrital.edu.co) y [Proyecto TALE](http://slcolombia.org/ProyectoTale) en ese orden cronológico.
 
 ## Proyectos
-|| **Proyecto** || **Nombre Largo** || **Notas** ||
+| **Proyecto** | **Nombre Largo** | **Notas** |
 || [ld2ud] || Liberando digitales II UD || Aprendiendo descripción de hardware con Software Libre (Linux, Verilog, FPGA) ||
 || [rolin] || Robot Linux Inalámbrico || Plataforma de robótica usando OpenWRT Embedded Linux, WRT54GL, microcontrolador AVR atmega8 y el chasis de un carro de radiocontrol ||
 
