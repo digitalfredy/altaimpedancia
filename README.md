@@ -32,3 +32,15 @@ Electrónica con Software Libre, Free Hardware Design y Open Source Hardware
  * [Introducción a la implementación de sistemas digitales usando Verilog HDL - Verilog HDL con herramientas de Software Libre](http://altaimpedancia.googlecode.com/files/impvl.tar.gz)
  * [Tutorial de gEDA](http://slcolombia.org/ProyectoTale/Tutoriales/geda)
  * [Tutorial de gnucap](http://slcolombia.org/ProyectoTale/Tutoriales/gnucap)
+ 
+## Enlaces externos
+ * [YouTube (videos)](http://www.youtube.com/altaimpedancia)
+ * [Flickr (fotos)](http://www.flickr.com/photos/altaimpedancia)
+ * [Identi.ca (microblog)](http://identi.ca/group/altaimpedancia)
+ * [FHD & OSH](http://opencollector.org/Whyfree/definitions.html)
+ * [Software Libre](http://www.gnu.org/philosophy/free-sw.es.html)
+ * [EDA](http://en.wikipedia.org/wiki/Electronic_design_automation)
+ * [gEDA](http://www.gpleda.org/)
+ * [Open Collector](http://opencollector.org/)
+ * [dmoz / Open HW](http://www.dmoz.org/Computers/Hardware/Open_Source/)
+ * [OSH Licences?](http://www.ifosslr.org/ifosslr/article/view/69)
