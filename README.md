@@ -12,17 +12,15 @@ Electrónica con Software Libre, Free Hardware Design y Open Source Hardware
 | [rolin] | Robot Linux Inalámbrico | Plataforma de robótica usando OpenWRT Embedded Linux, WRT54GL, microcontrolador AVR atmega8 y el chasis de un carro de radiocontrol |
 
 ## Difusión
-|| **Fecha** || **Evento / Lugar** || **Enlaces** || **Asistencia** ||
-<wiki:comment>--------------------------------------------------------</wiki:comment>
-|| 2011, octubre 26 || III Muestra Tecnológica Universidad Autónoma de Colombia / Bogotá ||[Diapositivas](http://altaimpedancia.googlecode.com/files/confSIM_UAC_Bogota2011.pdf) || 25 personas (aprox)||
-<wiki:comment>--------------------------------------------------------</wiki:comment>
-|| 2011, septiembre 30 || Semana de Ingeniería Fundacion de Educacion Superior San José / Bogotá || [Diapositivas1](http://altaimpedancia.googlecode.com/files/confSLE_SIFESSJBogota2011.pdf) y [Diapositivas2](http://altaimpedancia.googlecode.com/files/confSIM_SIFESSJBogota2011.pdf) || 50 personas (aprox)||
-<wiki:comment>--------------------------------------------------------</wiki:comment>
-|| 2011, septiembre 17 || [Software Freedom Day Bogotá 2011](http://wiki.softwarefreedomday.org/2011/Colombia/Bogot%C3%A1/SFDBogota) || [Diapositivas](http://altaimpedancia.googlecode.com/files/confSIM_SFD_Bogota2011.pdf), [Archivos taller](http://altaimpedancia.googlecode.com/files/tallSIM_SFD_Bogota2011.tar.gz) y [Fotos](http://code.google.com/p/altaimpedancia/wiki/confSLE2011SFDBogota)|| 40 personas (aprox) ||
-<wiki:comment>--------------------------------------------------------</wiki:comment>
-|| 2010, abril 24 || [FLISoL Buga 2010](http://flisol.info/FLISOL2010/Colombia/Buga) || [Video](http://www.youtube.com/altaimpedancia#g/c/D0EA4F9E3B29B7AD), [Fotos](http://www.flickr.com/photos/altaimpedancia/sets/72157623958950252/show), [Diapositivas](http://altaimpedancia.googlecode.com/files/confOSH_FLISoL_Buga2010.pdf) || 100 personas (aprox) ||
-<wiki:comment>--------------------------------------------------------</wiki:comment>
-|| 2009, diciembre 3 y 4 || [http://glud.udistrital.edu.co/website/slud8 Semana Linux Universida Dsitrital VIII (SLUD)] || [Fotos](http://www.flickr.com/photos/altaimpedancia/sets/72157623919563886/show/), [Diapositivas 1](http://altaimpedancia.googlecode.com/files/confOSH_SLUD8_Bogota2009.pdf), [Diapositivas 2](http://altaimpedancia.googlecode.com/files/confSLE_SLUD8_Bogota2009.pdf) || 10 personas (aprox) ||
+| **Fecha** | **Evento / Lugar** | **Enlaces** | **Asistencia** |
+|-----------|--------------------|-------------|----------------|
+| 2011, octubre 26 | III Muestra Tecnológica Universidad Autónoma de Colombia / Bogotá |[Diapositivas](http://altaimpedancia.googlecode.com/files/confSIM_UAC_Bogota2011.pdf) | 25 personas (aprox)|
+| 2011, septiembre 30 | Semana de Ingeniería Fundacion de Educacion Superior San José / Bogotá | [Diapositivas1](http://altaimpedancia.googlecode.com/files/confSLE_SIFESSJBogota2011.pdf) y [Diapositivas2](http://altaimpedancia.googlecode.com/files/confSIM_SIFESSJBogota2011.pdf) | 50 personas (aprox)|
+| 2011, septiembre 17 | [Software Freedom Day Bogotá 2011](http://wiki.softwarefreedomday.org/2011/Colombia/Bogot%C3%A1/SFDBogota) | [Diapositivas](http://altaimpedancia.googlecode.com/files/confSIM_SFD_Bogota2011.pdf), [Archivos taller](http://altaimpedancia.googlecode.com/files/tallSIM_SFD_Bogota2011.tar.gz) y [Fotos](http://code.google.com/p/altaimpedancia/wiki/confSLE2011SFDBogota)|| 40 personas (aprox) |
+| 2010, abril 24 || [FLISoL Buga 2010](http://flisol.info/FLISOL2010/Colombia/Buga) | [Video](http://www.youtube.com/altaimpedancia#g/c/D0EA4F9E3B29B7AD), [Fotos](http://www.flickr.com/photos/altaimpedancia/sets/72157623958950252/show), [Diapositivas](http://altaimpedancia.googlecode.com/files/confOSH_FLISoL_Buga2010.pdf) | 100 personas (aprox) |
+| 2009, diciembre 3 y 4 | [http://glud.udistrital.edu.co/website/slud8 Semana Linux Universida Dsitrital VIII (SLUD)] | [Fotos](http://www.flickr.com/photos/altaimpedancia/sets/72157623919563886/show/), [Diapositivas 1](http://altaimpedancia.googlecode.com/files/confOSH_SLUD8_Bogota2009.pdf), [Diapositivas 2](http://altaimpedancia.googlecode.com/files/confSLE_SLUD8_Bogota2009.pdf) | 10 personas (aprox) |
+
+
 <wiki:comment>--------------------------------------------------------</wiki:comment>
 || 2009, octubre 24 || UNAL / Duitama || [Diapositivas](http://altaimpedancia.googlecode.com/files/confOSH_UNAD_Duitama2009.pdf) || 50 personas (aprox) ||
 <wiki:comment>--------------------------------------------------------</wiki:comment>
