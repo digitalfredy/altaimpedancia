@@ -1,0 +1,35 @@
+
+---
+
+**Proyecto ld2ud:** [Inicio](ld2ud.md) | [Propuesta](ld2udPropuestaProyecto.md) | [Código](http://code.google.com/p/altaimpedancia/source/browse/#svn/trunk/ld2ud/code) | [Wiki](http://code.google.com/p/altaimpedancia/w/list?q=label:ld2ud)
+
+---
+
+Hemos averiguado sobre la síntesis de código Verilog para FPGAs Spartan de Xilinix y la respuesta del desarrollador principal de [Icarus Verilog](http://www.icarus.com/eda/verilog/) es en parte desalentadora pero por otro lado creo que podría ser un excelente proyecto de grado (y casi de vida) para algún estudiante de la Universidad, en resumen solo podríamos sintetizar para FPGAs Virtex y el soporte para síntesis será detenido en favor del soporte para Verilog-AMS.
+
+Correo de Stephen Williams:
+```
+Icarus Verilog v0.8 supports synthesis, and the -tfpga target is
+the code generator to use. Mostly, it supports Virtex series parts.
+It is relatively easy (C coding) to add support for other FPGA
+families, even from other vendors, so long as the P&R for the target
+takes EDIF.
+
+Unfortunately, the synthesis support in Icarus Verilog has been
+waning due to lack of interest, and the upcoming 0.9 release will
+have almost no usable synthesis. There has been a slight resurgence
+in interest in synthesis in Icarus Verilog, so we might revisit
+synthesis after the 0.9 release is branched off, but we have to weigh
+other priorities.
+
+Our primary focus of late has been Verilog-AMS support instead, and
+that is where my personal interest lies. We don't have enough core
+developers to keep up and work on all the interesting possibilities,
+so given that most FPGA vendors have free synthesizers (even when
+they still charge for simulation tools) we've opted to give synthesis
+a lower priority. Analog support is given a high priority due to the
+lack of available open mixed signal software.
+
+The place to follow Icarus Verilog development is the iverilog-devel
+mailing list on lists.sourceforge.net.
+```

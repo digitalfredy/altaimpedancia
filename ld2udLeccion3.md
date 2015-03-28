@@ -1,0 +1,129 @@
+
+---
+
+**Proyecto ld2ud:** [Inicio](ld2ud.md) | [Propuesta](ld2udPropuestaProyecto.md) | [Código](http://code.google.com/p/altaimpedancia/source/browse/#svn/trunk/ld2ud/code) | [Wiki](http://code.google.com/p/altaimpedancia/w/list?q=label:ld2ud)
+
+---
+
+# Introduction #
+La lección 3 del profesor Miguel Melgarejo para la asignatura digitales II de Ingeniería Electrónica de la Universidad Distrital Francisco José de Caldas se titula _"Especificación HDL y descripción de circuitos combinacionales"_, el OVA usado para esta lección son unas diapositivas preparadas por el profesor, al no tener explícitamente autorización para uso y copia este material tiene todos los derechos reservados, en reunión celebrada el 28 de agosto de 2009 en el LAMIC el profesor autorizó crear material derivado de estas diapositivas con licencia CC-BY-SA o GPL siempre que se usen ejemplos alternativos y las imágenes sean recreadas en vez de copiadas literalmente.
+
+
+
+## Ejemplos alternativos ##
+El formato usado es _Número de diapositiva: Ejemplo alternativo_
+  * 11: compuerta or en vez de nand
+  * 16: en vez de mux un decoder 2 a 4
+  * 18: nand en vez de mux
+  * 21: nand de 4 entradas con nands de 2
+
+
+## Estudio/Revisión ##
+En esta sección revisaré las diapositivas con el ánimo de estudiarlas y revisar que trabajo derivado se generará
+| diapositiva(s) | notas | trabajo derivado |
+|:---------------|:------|:-----------------|
+| 1 | Presentación | presentación altaimpedancia con credito trabajo derivado |
+| 2 | Indice | Item 3 con Verilog |
+| 3 | Qué es un HDL | Agregar systemverilog, verilog ams ... |
+| 4 | Ventajas | Copiar texto sin cambios |
+| 5 | Lenguajes | Cambiar por verilog exclusivamente |
+| 6-8 | Base VHDL | Cambiar a Base Verilog |
+| 9 | Niveles descripción | copiar igual y revisar pag 5 Verilog Tutorial - Deepak Kumar Tala, University of Edinburgh  y Verilog Tutorial VLSI II - E. Özgür ATES |
+| 10-14 | descripción en VHDL | 1er acercamiento con CompuertasAndOr\_Lab.v y explicar Primitivas propias, primtivas de usuario con SumaProductos\_Primitiva.v, lo de paginas 10 a 14 con SumaProductos\_Estructural.v, SumaProductos\_Funcional.v y SumaProductos\_Comportamental.v |
+| 15-27 | Combinacionales con VHDL | Combinacionales con Verilog |
+| 28-30 | Concurrencia con VHDL | Concurrencia con Verilog |
+| 31 | Simulación conceptos | Copiar conceptos |
+| 32 | Simulación simulador | referencias con Software Libre |
+| 33 | Referencias | dejar estas como secundarias y primaria slides y otras que se usen |
+
+## Desarrollo ##
+### Niveles de descripción ###
+E. Özgür ATES en http://www.cpu-turkey.com/downloads/file.aspx?id=88 propone:
+```
+      A design’s abstraction levels
+– Behavioral
+Algorithmic: A model that implements a design algorithm in
+high-level language constructs
+RTL: A model that describes the flow of data between register
+ and how a design processes that data
+– Gate-level: A model that describes the logic gates and the
+connections between logic gates in a design
+– Switch-level: A model that describes the transistors and
+storage nodes in a device and the connections between them
+```
+
+En http://www.doulos.com/knowhow/verilog_designers_guide/levels_of_abstraction/ proponen
+```
+Levels of Abstraction
+
+Verilog descriptions can span multiple levels of abstraction i.e. levels of detail, and can be used for different purposes at various stages in the design process.
+```
+![http://www.doulos.com/knowhow/verilog_designers_guide/levels_of_abstraction/levels3.gif](http://www.doulos.com/knowhow/verilog_designers_guide/levels_of_abstraction/levels3.gif)
+```
+At the highest level, Verilog contains stochastical functions (queues and random probability distributions) to support performance modelling.
+
+Verilog supports abstract behavioural modeling, so can be used to model the functionality of a system at a high level of abstraction. This is useful at the system analysis and partitioning stage.
+
+Verilog supports Register Transfer Level descriptions, which are used for the detailed design of digital circuits. Synthesis tools transform RTL descriptions to gate level.
+
+Verilog supports gate and switch level descriptions, used for the verification of digital designs, including gate and switch level logic simulation, static and dynamic timing analysis, testability analysis and fault grading.
+
+Verilog can also be used to describe simulation environments; test vectors, expected results, results comparison and analysis.
+
+With some tools, Verilog can be used to control simulation e.g. setting breakpoints, taking checkpoints, restarting from time 0, tracing waveforms. However, most of these functions are not included in the 1364 standard, but are proprietary to particular simulators. Most simulators have their own command languages; with many tools this is based on Tcl, which is an industry-standard tool language. See the Knowhow section on Tcl/Tk for more details
+```
+
+en http://www.asic-world.com/verilog/intro1.html#Verilog_Abstraction_Levels proponen:
+```
+Behavioral level	
+
+This level describes a system by concurrent algorithms (Behavioral). Each algorithm itself is sequential, that means it consists of a set of instructions that are executed one after the other. Functions, Tasks and Always blocks are the main elements. There is no regard to the structural realization of the design.
+
+
+Register-Transfer Level
+
+Designs using the Register-Transfer Level specify the characteristics of a circuit by operations and the transfer of data between the registers. An explicit clock is used. RTL design contains exact timing bounds: operations are scheduled to occur at certain times. Modern RTL code definition is "Any code that is synthesizable is called RTL code".
+
+
+Gate Level
+
+Within the logic level the characteristics of a system are described by logical links and their timing properties. All signals are discrete signals. They can only have definite logical values (`0', `1', `X', `Z`). The usable operations are predefined logic primitives (AND, OR, NOT etc gates). Using gate level modeling might not be a good idea for any level of logic design. Gate level code is generated by tools like synthesis tools and this netlist is used for gate level simulation and for backend.
+```
+
+en http://labspace.open.ac.uk/mod/resource/view.php?id=360535 proponen:
+
+```
+Abstraction Levels
+
+There are three levels of abstraction that can be used to describe digital designs.
+
+    Gate Level
+    Data Flow
+    Behavioural or Algorithmic Level
+
+N.B. These can be compared to machine code, assembly, and 'C' when programming a micro-controller.
+
+Gate level of abstraction describes the circuit purely in terms of gates. This approach works well for simple circuits where the number of gates is small because the designer can instantiate and connect each gate individually. Also this level is very intuitive to the designer because of the direct correspondence between the circuit diagram and the Verilog description.
+
+If the design is very large then a higher level of abstraction should be used above gate level. Data Flow allows the designer to design a circuit in terms of the data flow between registers and how a design processes data rather than the implementation of individual gates. The design tools would then convert the description to a gate level circuit.
+
+This level of abstraction allows designers to describe the circuit's functionality in an algorithmic way. That is the designer describes the behaviour of the circuit without any consideration to how the circuit transfers to hardware.
+
+Note that the term RTL (Register Transfer Level) is commonly used for a combination of Data Flow and Behavioural modeling.
+```
+
+Comportamental: algoritmos usando funciones taks y always, tambien las tablas de verdad de los UDP
+Funcional: tengo confusión, creo que es RTL
+En el estructural hay switch (transistores) y compuertas y solo se define la conexión entre instancias
+### Notas ###
+  * Creo que copié mal, en diapositiva 11 el ejemplo debería ser una nor
+  * Un Test Bench es un buen ejemplo para lo estructural (me di cuenta en verilogref.pdf, 6.0 Structures and Hierarchy)
+  * Nunca se habla de test bench en el material del profesor Melgarejo
+De lo anterior he revisado y creo que lo mejor es iniciar con un Laboratorio (Test Bench) para la compuerta nor
+  * ya tengo una buena idea del ejemplo y el código que voy a usar para la primera parte, esta es la lista de archivos:
+    * CompuertasAndOr\_Lab.v
+    * SumaProductos\_Primitiva.v
+    * SumaProductos\_Estructural.v
+    * SumaProductos\_Funcional.v
+    * SumaProductos\_Comportamental.v
+    * SumaProductos\_Lab.v

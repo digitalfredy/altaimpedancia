@@ -1,0 +1,100 @@
+#summary Como envio un dato por puerto serial desde Linux al AVR
+#labels rolin
+
+== Buscando documentación ==
+ * En la pág 136 de la [http://www.atmel.com/dyn/resources/prod_documents/doc2502.pdf hoja de datos del atmega8535] hablan de Peripherical Interface (SPI) Esto creo que es suficiente pues solo voy a enviar datos desd el router, también existe Universal Syncronous and Asincronous Serial Reciber and Transmiter (USART) y de Two-wire Serial Interface (TWI) que serán útiles en el futuro pero de momento SPI.
+ * [http://winavr.scienceprog.com/avr-gcc-tutorial/serial-peripheral-interface-spi-of-avr-microcontrollers.html Este tutorial es el primero que encuentro]
+ * En avr-libc encontré más de TWI que de SPI
+  * [http://www.nongnu.org/avr-libc/user-manual/group__avr__interrupts.html buscar en tabla SPI, USART y TWI]
+  * [http://www.nongnu.org/avr-libc/user-manual/group__util__twi.html info detallada de twi.h] según entendí es lo mismo que I2C
+  * [http://www.nongnu.org/avr-libc/user-manual/group__twi__demo.html ejemplo con TWI]
+
+Me pregunto si va a tocar usar USART o TWI, bueno sigo buscando ..
+ * En [http://www.avrfreaks.net/index.php?name=PNphpBB2&file=viewtopic&t=84829este foro de avrfreaks] hablan de spi.h, yo he buscado por todo mi disco duro y encontré un spi.h en las cabeceras del kernel de linux por lo cual este no es el camino :(
+ * En [http://www.ermicro.com/blog/?p=1050 este blog] usan #include <avr/io.h> y #define SPI_ ... tocaría ver si con avr-libc en linux funciona, tiene pinta :)
+
+Recuerdo que tengo dos enlaces sobre avr y linux voy a revisar si hablan del puerto serial, tal vez mi busqueda no la deba centrar en SPI sino en linux avr serial
+
+ * [http://pramode.net/articles/lfy/atmega8/pramode.html ESTE documento] hay que revisarlo con detalle, creo que es el que me va a dar luces 
+ * [http://www.mightyohm.com/blog/2009/02/building-a-wifi-radio-part-8-adding-a-tuning-control/ aqui] usan el serial desde shell para enviar datos al avr usando echo :) creo que este proyecto es otra buena REFERENCIA
+  * Puede servir pero para el control de los motores :P mirar la sección de programar puerto serial
+
+Yo sigo empeñado que es por el lado de SPI (soy terco pero pienso por ejemplo que si uno programa el mircro con SPI entonces es el camino)
+
+ * [http://en.wikipedia.org/wiki/Serial_Peripheral_Interface_Bus Aprendiendo un poco sobre SPI en la wikipedia] sigo pensando que este es el camino
+
+=== El puerto serial AVR, PC LINUX y WRT54G con OpenWRT ===
+Mi idea inicial para no perder tiempo era primero enviar algo del pc al micro y luego ver como funcionaba desde el router donde debería ser parecido pero un poco más dificil, he leído un poco en el libro !LinksysUltimateHacking y he llegado a la conclusión que el AVR y el router usan TTL y no requieren un chip MAX232 (Conversor TTL a Serial) que si se requiere para comunicarse con el PC, y bueno con el ánimo de ganar tiempo queda descartada la idea inicial y trabajaré directamente en el router. 
+
+He leído [http://www.herbert-dingfelder.de/WRT54GL_add_on/WRT54GL_add_on.html en esta página] que alguien hizo la conexión directa con el avr, yo traté de usar el avr a 3.3V y no funcionó, no se si estando alimentado funcione pero me da miedo enviar al router 5V y quemarlo, lo ideal sería usar un atmega8535L que puede funcionar a 3.3V pero de momento se me acaba de ocurrir que como el AVR solo va a recibir pues dejar desconectado el cable que transmite :P y ver si recibiendo niveles TTL a 3.3V los puede entender :/
+
+=== Hack puerto serial WRT54GL ===
+En la board en JP1 y JP2 he soldado dos regletas, estoy siguiendo el libro !LinksysUltimateHacking, usaré un conector que tengo para el conector de 10 pines pero en el otro lado solo tiene 9 pines (es un DB9, como los seriales del PC), he solucionado colocando un Juper recortado entre los pines 9 y 10 que según el libro son la tierra. Me ha entrado la duda de si este puerto servirá para SPI primero por lo mencionado de los 3.3V y segundo veo los pines VCC RX TX y otro de 3.3 voltios, me pregunto si alli se pone el CLK
+
+Esta es la idea:
+
+WRT54GL(10pinesMachos)`<--->`Cable1(10pineshembra)`<--->`Cable1(DB9pinesMachos)`<--->`Cable2(DB9pinesHembras)`<--->`Cable2(alambresPelados)
+
+Soldando DB9 de calbe2 soldo cables 9 y 10 al mismo pin, aunque en cable1 el pin 10 está desconectado, esto creo no sirve de nada, solo lo hice para no dejar "suelto" un alambre.
+
+Listo he probado el cable, bueno los cables :), tenía unos problemas de contactos que he solucionado entre otras haciendo aún más pequeño el jumper.
+
+=== Alistando software del router ===
+El router estaba funcionando como switche y no hay forma de accederlo por lo que debo flashearlo via tftp:
+{{{
+echo -e "binary\nrexmt 1\ntimeout 60\ntrace\nput openwrt8_09_1-wrt54g-squashfs-2_4.bin\n" | tftp 192.168.1.1
+}}}
+Usaré la img con kernel 2.4 que se que funciona para no tener problemas adicionales :P
+
+La idea es instalar avrdude para probar, en algún lado vi que estaba para OpenWRT, lo primero es actualizar la lista de paquetes del router para lo cual necesita estar conectado a Internet.
+{{{
+opkg update
+opkg list | grep -i avr
+}}}
+
+Siii!!! avrdude hace parte de OpenWRT y lo he instalado con un simple comando:
+{{{
+opkg install avrdude
+}}}
+
+Ahora que esta instalado viene el tema del miedo .... por lo que [http://wiki.openwrt.org/oldwiki/openwrtdocs/hardware/linksys/wrt54gl#serial.port he leído el puerto serial del router funciona a 3.3V TTL] y creo que el serial del AVR es a 5V TTL pero he leido [http://www.herbert-dingfelder.de/WRT54GL_add_on/WRT54GL_add_on.html The router runs internally on 3.3 volts, so I have simply used this voltage to run the AVR as well]
+
+Leo de nuevo y definitivamente estoy estancado, seguro a el le funcionó por que su AVR funcionaba desde 3.3 voltios, el mío no :( pues hice la prueba alimentandolo con una fuente de 3.3 y no funcionó por que tenía un programa que hacía prender unos leds y no prendieron :(, voy a revisar unos voltajes con el multimetro.
+
+Para avanzar un poco he probado el route usando la batería, funciona perfectamente :P
+
+=== Sigo buscando ===
+He seguido navegando y [http://www.stevediraddo.com/blog/index.php?entry=entry081203-204744 he encontrado este blog] que tengo que REVISAR CON DETALLE
+
+Pienso que si quiero usar SPI la vuelta es usar los GPIO y la referencia es el hack de la memoria MMC
+
+=== Probando atmega168p ===
+He pedido prestado a los nerdbots un atmega168p que si funciona a 3.3V pero no lo he logrado programar,  creo que hay que poner un cristal externo :/
+
+LISTO, ese era el problema, lo solucioné con la configuración sugerida en la hoja de datos, usé un cristal de 10.000 y dos condensadores de 15.
+
+Lo primero que hago es programar el micro para prender un led y funciona :)
+
+Ahora he probado el micro con la fuente de 3.3V y funciona, paso a probarlo con la alimentación del router y .... FUNCIONA !!!!! :)
+
+=== atmega168p y puerto serial ===
+Finalmente he descartado SPI, voy a usar USART y como base usaré [http://www.herbert-dingfelder.de/WRT54GL_add_on/software/WRT54GL_add_on.c este código para atmega8] de [http://www.herbert-dingfelder.de/WRT54GL_add_on/WRT54GL_add_on.html este proyecto] mencionado anteriormente, primero he recortado el código y compila para atmega8 el paso siguiente es compilarlo para atmega168p.
+
+He modificado el [http://www.herbert-dingfelder.de/WRT54GL_add_on/software/makefile makefile] y no compila para atmega168p (si para atmega8), tengo que adaptar el código y voy al [http://www.mightyohm.com/blog/2009/02/building-a-wifi-radio-part-8-adding-a-tuning-control/ proyecto de radio] y uso su [http://mightyohm.com/files/wifiradio/AVR_wifiradio_interface.zip código para el atmega168p] como referencia para el debug
+
+Luego de mucho revisar las hojas de datos comparando los registros hice las modificaciones y el código compiló y tengo certeza de estar usando los registros adecuados, cuando pasé el .hex al micro y empezaron nuevos problemas:
+
+Parece que el código estaba mal documentado o mal hecho, decia que prendía un led por 3 segundos y luego lo apagaba pero hacia lo contrario y me di cuenta que al quitar la alimentación el led se quedaba prendido, luego de investigar y probar lo he solucionado, a mi parecer el código estaba o mal escrito o mal docuementado (respecto a lo de prender y apagar el led) y me di cuenta que cuando ejecutaba la orden de habilitaban las interrupciones se ejecutaba la siguiente instrucción y lo solucione colocando un pequeño retardo de tiempo.
+
+Luego de lo anterior y si estoy en lo correcto al conectar el cable paralelo del programador ocurre una interrupción y el programa la detecta y enciende el led por un tiempo y luego lo apaga, NO ENTIENDO por que una interrupción en el puerto SPI afecta USART y me falta cuadrar los tiempos para que pueda hacer la comunicación.
+
+LO HE LOGRADO :) ya puedo enviar y recibir datos por el puerto serial, el problema que más me costó resolver fue recibir los datos pues el código base usaba la función SIGNAL(SIG_UART_RECV) y compilaba con un warning, como ya estaba recibiendo datos leí y busque hasta que di con el chiste (no sabía que era por ese warning) y usé ISR(USART_RX_vect) y funciona, si presiono cualquier tecla se prende un led por un tiempo determinado 
+
+=== Taladro y segueta al chasis del carro ===
+Hoy he dedicado el día a dejar listo el chasis del carro integrado con el router, con el ánimo de avanzar he dejado pendiente la tapa del baúl y los guardabarros pues sin ellos es funcional.
+
+Aunque este proyecto no es nuevo en mi cabeza y ya había adelantado parte como conseguir una batería adecuada y ya le había quitado pedazos al chasis con el animo de abrir espacio a la board del router tomo bastante tiempo decidir la ubicación exacta de la board, de hecho inicialmente había pensado dejarla hacia adelante y quedó hacia atrás y como consecuencia del cambio de plan adelante quedó una ranura innecesaria (rompí el chasis donde no era necesario), a pesar de tener trabajo adelantado me he gastado todo el Sábado y ha quedado *pendiente solucionar el tema de la alimentación pues el conector queda en un lugar inaccesible y debo hacer un hack en la board para alimentarla por POE o conectar unos cables desde los pindes NC (no conection) de los puertos seriales* como me comentaron los nerdbots habían hecho, también esta *pendiente conseguir algo para que la board no quede directamente sobre la batería y lograr que las antenas suban un poco y evitar rozamientos con las ruedas*.
+
+Estoy satisfecho con el trabajo, incluso me parece divertido poder mantener el conductor del vehiculo en su lugar y por ello la board con la regulación de corriente para los motores y con el avr y todo lo demás que se necesite la dejaré en la parte de abajo del carro, debajo de la batería en lo que quedó de la caja donde originalmente estaban las baterías tipo D y que tendré que seguir rompiendo para permitir que pasen los cables.
+
+He dejado temporalmente unas fotos del chasis con el router en [ftp://torrecampo.digitalfredy.com/Public/rolin mi ftp]

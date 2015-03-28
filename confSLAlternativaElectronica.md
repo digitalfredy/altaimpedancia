@@ -1,0 +1,3 @@
+# Software Libre una alternativa para soluciones en el campo de la electrónica #
+
+Para el campo de la electrónica existe software especializado denominado EDA, en la conferencia se hace una introducción al termino, se muestran algunas alternativas de software libre que se pueden usar para trabajar en el diseño e implementación de circuitos análogos y digitales, finalizando con la presentación de los más importantes proyectos de Open Source Hardware.

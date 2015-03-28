@@ -1,0 +1,69 @@
+#EmQbit Computer Board
+
+# Objetivo General #
+Poner a funcionar y usar las boards
+
+# Objetivos específicos #
+  * Poner a funcionar V1
+
+# Justificación General #
+
+# Justificaciones específicas #
+
+# Entregables #
+  * Tutorial de como poner a funcionar V1
+  * V1 funcionando
+
+# Desarrollo #
+  * Primer inteto: preparar FS en una SD y ponerselo a la board para ver si funciona
+    * Listo Zea se conecto por minicom y arranco u-boot
+  * Ahora yo voy a preparar el sistema de archivos siguiendo http://emqbit.com/deboostrap-debian
+    * el repositorio de la doc (http://ftp.at.debian.org/debian) no funciona, y ahora no hay arm, he puesto armel pero no estoy seguro que sea esa.
+  * config u-boot:
+    * cuando vemos uboot (conctados por minicom con la doc del wiki de emqbit) presionamos cualquier tecla
+
+```
+# debootstrap --verbose --foreign --arch armel sid ./sid   http://ftp.uk.debian.org/debian
+```
+
+## u-boot ##
+Antes de iniciar la carga del sistema presionar cualquier tecla para entrar en la consola de u-boot y realizar cambios en las variables del sistema de booteo.
+
+### Comandos basicos ###
+```
+print | printenv -> imprime el estado actual de las variables configuradas
+set [nombre variable] [valor]| setenv [nombre variable] [valor] -> asigana el valor a la variable indicada
+saveenv -> guarda la configuracion
+boot -> inicia la secuencia de booteo
+```
+
+### Variables configuradas ###
+
+```
+ecb_at91> printenv
+baudrate=115200
+ethaddr=00:00:00:00:00:5b
+autostart=yes
+bootdelay=2
+loadaddr=20200000
+filesize=162dc9
+fileaddr=20200000
+bootcmd=bootm C0021840
+bootfile=ecb_at91.img
+gatewayip=192.168.1.1
+gateway=192.168.1.1
+netmask=255.255.255.0
+serverip=192.168.1.230
+rootpath=/home/v1
+nfsroot=192.168.1.230:/home/v1 ,timeo=200, retrans=500 ip=:::::eth0:on
+ipaddr=192.168.1.200
+nfsargs=mem=32M console=ttyS0,115200n8 root=/dev/nfs nfsroot=192.168.1.230:/home/v1, timeo=200, retrans=500 ip=:::::eth0:on
+console=ttyS0
+sdargs=""
+stdin=serial
+stdout=serial
+stderr=serial
+bootargs=mem=32M root=/dev/nfs nfsroot=192.168.1.230:/home/v1 ip=192.168.1.200:::255.255.255.0::eth0: console=ttyS0,115200n8 init=/bin/sh
+```
+
+## Buscando Info ##

@@ -1,0 +1,46 @@
+Este documento tiene como propósito que las personas interesadas en crear un rolin sepan como hicios el primero, el documento es una guía, no es necesario seguirlo al pié de la letra pues seguramente el chasis no será el mismo e incluso el router puede ser diferente.
+
+## El chasis ##
+Se eligió el chasis de un viejo carro de radiocontrol, por qué?
+  * Este chasis brindaba lo suficiente para hacer la primera implementación, no se necesitaba un rolin escalador, ni explorador ”militar” con orugas tipo tanque de guerra, la intención solo era mover el carro a modo de demostración para que otros vieran el potencial y se animaran a usar la plataforma para solucionar problemas más complejos.
+  * Costo $0 por que era un "jugete" dañado olvidado en el armario.
+  * La circuitería del carro estaba dañada y previamente se había retirado pero sus motores y componentes mecánicos estaban en perfecto estado.
+  * No perder tiempo y dinero haciendo estructuras con "palitos de balso y llanticas de acrilico" que al final son un problema y no una solución.
+
+## La SBC ##
+La [SBC](http://en.wikipedia.org/wiki/Single-board_computer) elegida fué la Board de un router WRT54GL, Por qué?
+  * Costo $0 por que se uso el router inalámbrico de la casa, en todo caso si se hubiese comprado una SBC similar hubiera costado el doble o más que el router nuevo y esto ocurre por que el router es mercado masivo.
+  * Compatible con OpenWRT, distribución Linux para sistemas embebidos que aparte de tener ”drivers para todo” (IP,Ethernet,wi-fi,serial,...) tiene cientos de programas listos para instalar (por ejemplo avrdude para programar un microcontrolador avr) y soporta diferentes lenguajes de programación (c, shell scripting ...)
+  * Comunicación wi-fi, ethernet, serial y jtag.
+  * Por lo menos una docena de hacks conocidos, incluso alguien escribió un [libro](http://books.google.com/books?id=GBtJdvMeAJQC&printsec=frontcover&dq=Linksys+Ultimate+Hacking&hl=es&cd=1#v=onepage&q=&f=false).
+  * Buena información disponible en internet.
+
+## El microcontrolador ##
+Se eligió el microcontrolador de la familia AVR, por qué?
+  * Primero se aclara que a pesar de tener la SBC se requiere el microcontrolador pues la comunicación serial no es adecuada para controlar los motores y el propósito es poder conectar sensores y tal vez otros periféricos.
+  * Es la más amigable con entornos GNU/Linux
+  * Inicialmente se pensó en usar un atmega8 que se tenía en la caja de dispositivos pero finalmente se usó un atmega168p (prestado por [nerdbots](http://nerdbots.info/)), esto por que el atmega168p funciona desde 3.3 Voltios que es el mismo voltaje que puede suministrar la SBC.
+
+## La batería ##
+Una vez elegida la SBC y el chasis se buscó en el mercado electrónico (a la 19 con 9 en Bogotá/Colombia) una batería adecuada, pero qué es adecuada?
+  * 12 Voltios (requeridos por la SBC)
+  * Mínimo 1 Amperio (requerido por la SBC) pero preferiblemente superior pues además de la SBC hay que alimentar los motores y el microcontrolador.
+  * Que brinde un nivel alto de autonomía pero que su peso pueda ser soportado y movilizado por el chasis del carro de radiocontrol.
+  * Que la forma facilite su montaje en el chasis del carro de radiocontrol
+
+## El diseño ##
+Finalmente se decidió usar 3 módulos conectados así:
+```
+Alimentación----------------SBC---------------!ControlMotores
+(Batería)                (WRT54GL)     (PCB con AVR + puente H)
+```
+  * Entre la batería y el router (SBC) un cable de alimentación
+  * Entre el router (SBC) y ControlMotores un solo cable (realmente bus de 10 cables) con:
+    * Datos1 (serial asíncrono, 2 cables)
+    * Datos2 (serial asíncrono, 2 cables)
+    * Tierra (dos cables)
+    * 3.3 Voltios (para el microcontrolador, dos cables)
+    * 12 Voltios (para los motores, dos cables)
+  * En ControlMotores conectores para los moteres, para el puerto serial del la SBC que "sobra" y para los pines no usados del microcontrolador.
+
+## hacking para la SBC ##

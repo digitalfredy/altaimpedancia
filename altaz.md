@@ -1,0 +1,17 @@
+# Definición #
+Publicar un proyecto es:
+  * Poner un nombre de versión: es la fecha en que se suben los archivos a download
+  * Crear una versión binaria para descarga con archivos README e INSTALL
+  * Crear una versión de fuentes para descarga con archivo README
+  * Revisar que las páginas wiki cumplan unos requisitos mínimos
+  * Revisar que se cumpla con lo especificado en [cómo iniciar un proyecto](altazComoIniciarUnProyecto.md)
+
+## Sumario ##
+Esta página es un borrador, el primer proyecto publicado es rolin y dejaré algunas notas para luego mejorar la página
+
+  * Ir al repositorio y decidir que archivos incluir en la distribución binaria, copiarlos en una carpeta.
+  * Hacer el README en el wiki y luego copiarlo al archivo, mirar [rolinReadmeBin](rolinReadmeBin.md)
+  * Hacer el archivo INSTALL en el wiki y copiarlo archivo, mirar [rolinInstallBin](rolinInstallBin.md)
+  * Revisar que todas las páginas tengan incluido el menú y tengan la etiqueta con el nombre corto del proyecto y e la descripción tengan el nombre largo del proyecto y la descripción de la página.
+
+para la distribución de fuentes solo hice readme, y luego comprimí las dos carpetas y las subí.

@@ -1,0 +1,48 @@
+
+---
+
+**Proyecto ld2ud:** [Inicio](ld2ud.md) | [Propuesta](ld2udPropuestaProyecto.md) | [Código](http://code.google.com/p/altaimpedancia/source/browse/#svn/trunk/ld2ud/code) | [Wiki](http://code.google.com/p/altaimpedancia/w/list?q=label:ld2ud)
+
+---
+
+
+  * Exportar a png (DECENTE) los esquematicos
+  * CombinatoriaCodigo.v //mejorar el nombre, el hardware descrito no hace combinación
+  * DesplazaDerecha2Bits.v //Hacerlo funcionar :/
+  * Tags teoria o practica, laboratorio o taller o como se llame el tag
+
+# Reglas y notas para código #
+  * Todo el código dentro de la carpeta code
+  * Archivos .v con mismo Header (//url altaimpedanca)
+  * Todos con footer base (/**base**/)
+    * Marca de Entregable: en el footer (Laboratorio, Teoría)
+    * url alternativa (code.google...)
+  * Código autoexplicativo en vez de comentarios
+Los nombres de los archivos deben describir claramente la funcionalidad del módulo y su nombre debe coincidir con el del modulo que describe, se usa CamelCase, ejemplo:
+```
+NombreDeArchivo.v == NombreDeModulo
+```
+Como muchas veces luego aparece un mejor nombre esta es la forma de cambiar el nombre:
+```
+$ svn mv NombreInicial.v NombreNuevo.v
+$ sed -i 's/NombreInicial/NombreNuevo/g' `grep -l NombreIncial *`
+```
+
+Como agregar el header a varios archivos?
+```
+sed -i '1i\//http://ld2ud.altaimpedancia.org - más información en el pié de página\n' *.v
+sed -i '1i\//Electrónica con Software Libre, Free Hardware Design y Open Source Hardware' *.v
+```
+
+Pie de página:
+```
+/* Para escribir, compilar y visualizar se usó Software Libre:
+  * Debian GNU/Linux como sistema operativo
+  * GNU Emacs 22.2.1 con verilog-mode 404 para escribir el codigo Verilog (.v)
+  * Icarus Verilog version 0.8.6 para compilar y simular
+  * GTKWave Analyzer v3.1.10 para visualizar el resultado de las simulaciones (.vcd)
+ * Autor: Fredy Pulido López (digitalfredy)
+ * Copyright: http://www.fsf.org/licensing/licenses/gpl.html
+ * Agradecimientos:
+*/
+```

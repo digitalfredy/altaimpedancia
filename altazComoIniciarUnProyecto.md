@@ -1,0 +1,74 @@
+# Trabajo por proyectos #
+La dinámica de trabajo del SIG altaimpedancia es el desarrollo de proyectos, procuramos seguir el principio [KISS](http://es.wikipedia.org/wiki/Principio_KISS) y usamos code.google.com para el desarrollo, gestión archivo y publicación.
+
+Esta página es una guia para el desarrollo de proyectos, la _letra inclinada_ debe reemplazarse por el valor correspondiente.
+
+## Definición del proyecto ##
+### Bosquejo ###
+Informalmente (en la cabeza, en una servilleta o charladito con cerveza) hacerse una idea del proyecto que responda **qué, cómo y por qué?** y pensar en un nombre para el proyecto
+
+### Borrador Documento de Propuesta ###
+Se crea una página wiki temporal llamada _BorradorProyectoNombreTemporal_  que contenga:
+  * Nombre del proyecto (Nombre Largo del Proyecto) (Ejemplo: Liberando digitales II UD)
+  * Nombre corto del proyecto (nombrecorto) (**sin espacios y alfanumerico**) (Ejeplo: ld2ud)
+  * Objetivo general (debería ser medible) (como medir la difusión???)
+  * Objetivos especificos (deberían ser medible)
+  * Justificación (de los objetivos general y específicos)
+  * Plan de trabajo (en la medida de posible con horario de trabajo)
+  * Entregables (lo que produce el proyecto, por ejemplo codigo, documentos, participar en un evento, publicar un artículo indexado, un dispositivo de hardware ...)
+
+## Preparación Recursos ##
+  * Agregar desarrolladores y colaboradores: en [Project members](http://code.google.com/p/altaimpedancia/adminMembers) los que falten (pedir a digitalfredy)
+  * Label para páginas wiki: en [Predefined wiki page labels](http://code.google.com/p/altaimpedancia/adminWiki): _nombrecorto_ = _Nombre Largo del Proyecto_  (pedir a digitalfredy)
+  * Página Principal: [Crear página nueva](http://code.google.com/p/altaimpedancia/w/edit)
+    * **Page Name:** _nombrecorto_
+    * **Content:** #summary  _Nombre Largo del Proyecto_
+      * Borrar la plantilla
+      * Se usará para indexar el proyecto (enlaces a codigo, páginas, documentación ...)
+    * **Labels:** _nombrecorto_
+    * **Commit Log:** Iniciando, prometo indexar organizadamente el proyecto mientras lo desarrollo :)
+  * Redirección subdominio: _http://nombrecorto.altaimpedancia.org_ --> _Página Principal_ (pedir a digitalfredy)
+  * Index proyectos: en [pág principal](http://altaimpedancia.org) de altaimpedancia agregar proyecto a la lista  (pedir a digitalfredy)
+  * Página Propuesta Proyecto:[Crear página nueva](http://code.google.com/p/altaimpedancia/w/edit)
+    * **Page Name:** _nombrecortoPropuestaProyecto_
+    * **Content:** #summary  _Nombre Largo del Proyecto_
+      * Borrar la plantilla
+      * Copiar documento desarrollado en página borrador    // se podrá hace svn mv???
+    * **Labels:** _nombrecorto_
+    * **Commit Log:** Propuesta del proyecto, documento inicialmente desarrollado como _BorradorProyectoNombreTemporal_
+    * Guardar y verificar que quedó bien copiado
+  * Borrar página _BorradorProyectoNombreTemporal_
+  * Repositorio: Crear carpeta del proyecto    //abajo en detalle
+
+
+### Repositorio ###
+```
+cd CarpetaRepositorioAltaimpedancia
+svn update
+svn mkdir nombrecorto
+cd nombrecorto
+svn mkdir misc code doc
+echo "http://nombrecorto.altaimpedancia.org" > README
+svn add README
+svn commit
+```
+
+Cada proyecto tiene derecho a una **unica** carpeta en el nivel superior en la que **no se permiten archivos** (excepto el archivo README) y al máximo se evitará la creación de carpetas adicionales, si el proyecto es muy complejo en las carpetas code y doc se pueden crear subcarpetas que contengan módulos del proyecto o subproyectos.
+
+### Wiki ###
+
+Si es necesario crear una [Crear página nueva](http://code.google.com/p/altaimpedancia/w/edit) relacionada con el proyecto **use como prefijo el _nombrecorto_** del proyecto.
+  * **Page Name:** _nombrecortoNombrePagina_
+  * **Content:** #summary  _Nombre Largo del Proyecto_ - _descripción página (la descripción es opcional)_
+  * **Labels:** _nombrecorto_ _orolabel_ ...      // **OBLIGATORIO** _nombrecorto_
+  * **Commit Log:** Creada página _nombrecortoNombrePagina_ para ...
+
+Ejemplos:
+  * ld2udDoc sería la página sobre doc del proyecto ld2ud
+  * ld2udNombreModulo sería para hablar de un módulo ld2ud
+  * [ld2udMisc](ld2udMisc.md) es una página con cosas varias del proyecto ld2ud
+  * ld2udSubproyecto sería la página de un subproyecto de  ld2ud
+
+
+
+**Referencia:** Para el proyecto l2ud yo sabía que quería que me lo valieran como nota para la materia digitales, que necesitaba usar espacios físicos como la rama IEEE y el LAMIC para el desarrollo, y que la idea general era llegar a acuerdos con los profesores para realizar actividades alternativas trabajando sobre linux usando Software Libre y verilog, inicialmente pensé en liberar todos el material de apoyo de la materia (propiedad de los profesores) un profesor me dijo que no y el otro que un pedazo, pensaba hacer los mismos ejemplos de vhdl en verilog pero en teoría hice otros sugeridos por el profesor ... luego de haber charlado y hecho acuerdos verbales hice la primera propuesta formal del documento, se hicieron unos ajustes sobre los entregables y así quedó, al final no se hizo todo al pie de la letra pero charlar, acordar y hacer el documento estructuró muy bien el proyecto en la cabeza y evitó desviarme en el desarrollo.

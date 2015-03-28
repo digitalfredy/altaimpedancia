@@ -1,0 +1,12 @@
+<a href='http://www.youtube.com/watch?feature=player_embedded&v=f5zX4TaSn8I' target='_blank'><img src='http://img.youtube.com/vi/f5zX4TaSn8I/0.jpg' width='425' height=344 /></a>
+
+| Diagrama de bloques | [.vue (Fuente)](http://altaimpedancia.googlecode.com/svn/trunk/rolin/doc/DiagramaBloques.vue) y [.png (Imagen)](http://altaimpedancia.googlecode.com/svn/trunk/rolin/doc/DiagramaBloques.png) | Fuente editable con [VUE](http://vue.tufts.edu/) |
+|:--------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-------------------------------------------------|
+| Esquematico | [.sch (Fuente)](http://altaimpedancia.googlecode.com/svn/trunk/rolin/doc/hardware/rolin.sch), [.png (Imagen)](http://altaimpedancia.googlecode.com/svn/trunk/rolin/doc/hardware/rolin.png) y [.ps (Documento)](http://altaimpedancia.googlecode.com/svn/trunk/rolin/doc/hardware/rolin.ps) | Fuente editable con [geda/gschem](http://www.gpleda.org/tools/gschem/index.html) |
+| Simbolos | [simbolos](http://code.google.com/p/altaimpedancia/source/browse/#svn/trunk/rolin/doc/hardware/symbols) | Referencia a carpeta del repositorio con los simbolos |
+| PCB | [rolin.pcb](http://altaimpedancia.googlecode.com/svn/trunk/rolin/doc/hardware/rolin.pcb) y [Archivos gerber](http://code.google.com/p/altaimpedancia/source/browse/#svn/trunk/rolin/doc/hardware/gerber) | Primera versión del pcb y referencia a la carpeta de los archivos gerber |
+| Programa para AVR | [.c (Fuente)](http://altaimpedancia.googlecode.com/svn/trunk/rolin/code/rolin_avr.c) | Código fuente en c para compilar con [gcc-avr](http://www.avrfreaks.net/index.php?module=FreaksTools&func=viewItem&item_id=145) y [avr-libc](http://www.nongnu.org/avr-libc/) |
+| Make File |[makefile](http://altaimpedancia.googlecode.com/svn/trunk/rolin/code/makefile) | Automatiza compilar codigo y programar micro usando make all, make clean y make program |
+| Hexa AVR | [.hex](http://altaimpedancia.googlecode.com/svn/trunk/rolin/code/rolin_avr.hex) | archivo con instrucciones del programa en hexa para el atmega168p |
+| Script shell | [.sh (shell script)](http://altaimpedancia.googlecode.com/svn/trunk/rolin/code/rolin.sh) | Script para bash que se ejecuta en el enrrutador |
+| Hoja de datos L293B | [.pdf](http://www.datasheetcatalog.org/datasheet/stmicroelectronics/1328.pdf) | Información sobre el chip usado para el puente H |
