@@ -7,8 +7,9 @@ Electrónica con Software Libre, Free Hardware Design y Open Source Hardware
 
 ## Proyectos
 | **Proyecto** | **Nombre Largo** | **Notas** |
-|| [ld2ud] || Liberando digitales II UD || Aprendiendo descripción de hardware con Software Libre (Linux, Verilog, FPGA) ||
-|| [rolin] || Robot Linux Inalámbrico || Plataforma de robótica usando OpenWRT Embedded Linux, WRT54GL, microcontrolador AVR atmega8 y el chasis de un carro de radiocontrol ||
+|--------------|------------------|-----------|
+| [ld2ud] | Liberando digitales II UD | Aprendiendo descripción de hardware con Software Libre (Linux, Verilog, FPGA) |
+| [rolin] || Robot Linux Inalámbrico | Plataforma de robótica usando OpenWRT Embedded Linux, WRT54GL, microcontrolador AVR atmega8 y el chasis de un carro de radiocontrol |
 
 ## Difusión
 || **Fecha** || **Evento / Lugar** || **Enlaces** || **Asistencia** ||
