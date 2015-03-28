@@ -1,17 +1,17 @@
 #altaimpedancia
 Electrónica con Software Libre, Free Hardware Design y Open Source Hardware
 ## Presentación
-*altaimpedancia* es un Special Interest Group (SIG) y su objetivo general es el desarrollo de proyectos y actividades que incentiven o hagan investigación, desarrollo, publicación y difusión de obras (ej: documentación, diseños, software, modelos, ...) relacionadas con Electrónica con Software Libre, Free Hardware Design (FHD) y Open Source Hardware (OSH).
+**altaimpedancia** es un Special Interest Group (SIG) y su objetivo general es el desarrollo de proyectos y actividades que incentiven o hagan investigación, desarrollo, publicación y difusión de obras (ej: documentación, diseños, software, modelos, ...) relacionadas con Electrónica con Software Libre, Free Hardware Design (FHD) y Open Source Hardware (OSH).
 
-*Historia:* altaimpedancia surgió como una reacción a la falta de documentación relacionada con el uso de Software Libre para electrónica, en la red se encontraba buena información (generalmente en ingles) acerca de cuales programas usar para determinadas tareas pero no era común encontrar ejemplos de uso documentados libres y en español. En el proceso de definición y conformación del SIG se hizo una revisión general del estado del arte y se decidió ampliar el área de interés incluyendo el FHD y el OSH. Los grupos de interés que antecedieron a este fueron el proyecto electronix dentro del [http://glud.udistrital.edu.co Grupo Linux de la Universidad Distrital] y [http://slcolombia.org/ProyectoTale Proyecto TALE] en ese orden cronológico.
+**Historia:** altaimpedancia surgió como una reacción a la falta de documentación relacionada con el uso de Software Libre para electrónica, en la red se encontraba buena información (generalmente en ingles) acerca de cuales programas usar para determinadas tareas pero no era común encontrar ejemplos de uso documentados libres y en español. En el proceso de definición y conformación del SIG se hizo una revisión general del estado del arte y se decidió ampliar el área de interés incluyendo el FHD y el OSH. Los grupos de interés que antecedieron a este fueron el proyecto electronix dentro del [http://glud.udistrital.edu.co Grupo Linux de la Universidad Distrital] y [http://slcolombia.org/ProyectoTale Proyecto TALE] en ese orden cronológico.
 
 ## Proyectos
-|| *Proyecto* || *Nombre Largo* || *Notas* ||
+|| **Proyecto** || **Nombre Largo** || **Notas** ||
 || [ld2ud] || Liberando digitales II UD || Aprendiendo descripción de hardware con Software Libre (Linux, Verilog, FPGA) ||
 || [rolin] || Robot Linux Inalámbrico || Plataforma de robótica usando OpenWRT Embedded Linux, WRT54GL, microcontrolador AVR atmega8 y el chasis de un carro de radiocontrol ||
 
 ## Difusión
-|| *Fecha* || *Evento / Lugar* || *Enlaces* || *Asistencia* ||
+|| **Fecha** || **Evento / Lugar** || **Enlaces** || **Asistencia** ||
 <wiki:comment>--------------------------------------------------------</wiki:comment>
 || 2011, octubre 26 || III Muestra Tecnológica Universidad Autónoma de Colombia / Bogotá ||[http://altaimpedancia.googlecode.com/files/confSIM_UAC_Bogota2011.pdf Diapositivas] || 25 personas (aprox)||
 <wiki:comment>--------------------------------------------------------</wiki:comment>
@@ -29,12 +29,12 @@ Electrónica con Software Libre, Free Hardware Design y Open Source Hardware
 <wiki:comment>--------------------------------------------------------</wiki:comment>
 || 2009, julio 6 al 12 || Campus Party / Bogotá Colombia || [http://www.youtube.com/altaimpedancia#g/c/6162547EA09863E2 Video] y [http://altaimpedancia.googlecode.com/files/confOSH_CampusPartyColombia2009.pdf Diapositivas] || 30 personas (aprox) ||
 
-# Grupos relacionados amigos
+## Grupos relacionados amigos
  * [http://liure.uk.to/doku.php Hacklab liure]
  * [http://nerdbots.info laboratorio de experimentación y creación con maquinas]
  * [http://linuxencaja.net/wiki/Main_Page Linux en-Caja]
 
-# Otros documentos de interés
+## Otros documentos de interés
  * [http://altaimpedancia.googlecode.com/files/impvl.tar.gz Introducción a la implementación de sistemas digitales usando Verilog HDL - Verilog HDL con herramientas de Software Libre]
  * [http://slcolombia.org/ProyectoTale/Tutoriales/geda Tutorial de gEDA]
  * [http://slcolombia.org/ProyectoTale/Tutoriales/gnucap Tutorial de gnucap]
